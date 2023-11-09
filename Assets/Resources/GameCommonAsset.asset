@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7403ce754b44c9d9ed2fb8a83c68978, type: 3}
+  m_Name: GameCommonAsset
+  m_EditorClassIdentifier: 
+  DefaultPlayerData: {fileID: 11400000, guid: 7ffb7093ba2272544af65f7c4ef0e3a1, type: 2}
+  AssetFolderInfo_Role:
+    AssetFolder: {fileID: 102900000, guid: 4c54ec2922c4ec048bfcf3e473149ee7, type: 3}
+    PrefixPath: Role/Role/
+  AssetFolderInfo_RoleAction:
+    AssetFolder: {fileID: 102900000, guid: 55a274bf2f3171d499daef12c094acfc, type: 3}
+    PrefixPath: Role/RoleAction/
+  AssetFolderInfo_RoleUnlockAction:
+    AssetFolder: {fileID: 102900000, guid: 10b731337a4fd3e4cb4c89935b73c722, type: 3}
+    PrefixPath: Role/RoleUnlock/
+  AssetFolderInfo_RoleIdentity:
+    AssetFolder: {fileID: 102900000, guid: 7ca4d7c0bd7e90d47803f5dd7a65f636, type: 3}
+    PrefixPath: Role/RoleIdentity/
+  AssetFolderInfo_RoleEquipmentSlot:
+    AssetFolder: {fileID: 102900000, guid: 1016150bdd6249b438c7783ec774ef9f, type: 3}
+    PrefixPath: Role/RoleItemSlot/
+  AssetFolderInfo_RoleItemSlotProvider:
+    AssetFolder: {fileID: 102900000, guid: ce1accc76ce3bb04a96922c34900a2ef, type: 3}
+    PrefixPath: Role/RoleItemSlotProvider/
+  AssetFolderInfo_Item_Weapon:
+    AssetFolder: {fileID: 102900000, guid: 8a4916b74595465488510dd6146e4338, type: 3}
+    PrefixPath: Item/Weapon/
+  AssetFolderInfo_Item_Armor:
+    AssetFolder: {fileID: 0}
+    PrefixPath: 
+  AssetFolderInfo_Item_Shield:
+    AssetFolder: {fileID: 0}
+    PrefixPath: 
+  AssetFolderInfo_Item_CanUsedProp:
+    AssetFolder: {fileID: 0}
+    PrefixPath: 

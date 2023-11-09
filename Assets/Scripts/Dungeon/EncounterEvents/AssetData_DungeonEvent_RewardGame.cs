@@ -1,0 +1,14 @@
+﻿using BattleScene;
+using UnityEngine;
+
+namespace Dungeon {
+    [CreateAssetMenu(fileName = "DungeonEvent_奖励游戏", menuName = "纯数据资源/Dungeon/Event/奖励游戏", order = 0)]
+    public class AssetData_DungeonEvent_RewardGame : AssetData_BaseDungeonEvent {
+        public string GameSucceedContent;
+        public string GameFailureContent;
+        
+        public override void Init() {
+            BattleSceneCtrl.I.UICtrlRef.PanelNotTouchBoundary.Display(this);
+        }
+    }
+}

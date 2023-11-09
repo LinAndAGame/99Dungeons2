@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dbde5402f642769aa0b0849a9103fd, type: 3}
+  m_Name: DungeonLevel
+  m_EditorClassIdentifier: 
+  AllDungeonEvents:
+  - {fileID: 11400000, guid: 005d0d7c3124be241950ffde8a1184b7, type: 2}
+  - {fileID: 11400000, guid: f71716e741bb98f45a75398154a0b460, type: 2}
+  - {fileID: 11400000, guid: 9706af861aca5d749a29dcdf3ce37d53, type: 2}
+  - {fileID: 11400000, guid: d77011e3372d11a4f8857bfda31bf81a, type: 2}
+  AllHiddenDungeonEvents: []

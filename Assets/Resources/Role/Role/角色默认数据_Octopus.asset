@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c7bafff0b94334b4c22df3ce8ef3bc, type: 3}
+  m_Name: "\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_Octopus"
+  m_EditorClassIdentifier: 
+  RoleName: Octopus
+  Damage: 1
+  Hp: 10
+  AllPossibleRoleIdentities:
+  - {fileID: 11400000, guid: 2cfdf047176f7db41931eaf35643411e, type: 2}
+  - {fileID: 11400000, guid: 39fd8908145c89a4cb44525a457e1f1e, type: 2}
+  AllWeaknessDatas:
+  - WeaknessType: 0
+    MaxWeaknessValue: 5
+  AllDefaultRoleActions:
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  AllDefaultItems:
+  - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
+  AllRoleEquipmentSlotProviders:
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}

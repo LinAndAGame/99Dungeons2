@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ec46b53ee147f78d195419f22624a0, type: 3}
+  m_Name: "RoleIdentity_\u72C2\u6218\u58EB"
+  m_EditorClassIdentifier: 
+  IdentityName: "\u72C2\u6218\u58EB"
+  AllPossibleUnlockFixedDatas:
+  - {fileID: 11400000, guid: b34003e6389e56c4dac73408999eb32d, type: 2}
+  AllDefaultRoleActions: []
