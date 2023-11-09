@@ -8,7 +8,7 @@ namespace Role {
         public bool                         IsPlayer;
         public MinMaxValueFloat             Hp;
         public ValueCacheFloat              Damage;
-        public List<BaseWeakness>           AllWeakness = new List<BaseWeakness>();
+        public List<SystemData_BaseWeakness>           AllWeakness = new List<SystemData_BaseWeakness>();
         public BaseBuffSystem               BuffSystem  = new BuffSystemDefault();
         public List<SystemData_Item_Weapon> AllWeapons  = new List<SystemData_Item_Weapon>();
 
@@ -21,8 +21,7 @@ namespace Role {
             IsPlayer = RoleOwner.SaveData.IsPlayer;
             
             foreach (var weaknessData in RoleOwner.SaveData.AllWeaknessDatas) {
-                var weakness = WeaknessCreator.CreateWeakness(weaknessData.WeaknessType);
-                weakness.Init(RoleOwner, weaknessData);
+                var weakness = WeaknessCreator.CreateWeakness(RoleOwner, weaknessData);
                 AllWeakness.Add(weakness);
             }
             
@@ -39,7 +38,7 @@ namespace Role {
             }, RoleOwner.CC.Event);
         }
 
-        public void RemoveWeakness(BaseWeakness needRemovedWeakness) {
+        public void RemoveWeakness(SystemData_BaseWeakness needRemovedWeakness) {
             AllWeakness.Remove(needRemovedWeakness);
         }
 

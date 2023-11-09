@@ -24,9 +24,10 @@ namespace BattleScene.UI.DungeonEvent_NotTouchBoundary {
         }
 
         public void Display(AssetData_DungeonEvent_RewardGame dungeonEventRewardGame) {
-            NotTouchBoundaryCtrl.SetCanPlay(true);
-            NotTouchBoundaryCtrl.gameObject.SetActive(true);
-            _CurDungeonEventRewardGame  = dungeonEventRewardGame;
+            _CurDungeonEventRewardGame = dungeonEventRewardGame;
+            this.gameObject.SetActive(true);
+            NotTouchBoundaryCtrl.StartGame();
+            TMP_StartEventContent.text  = dungeonEventRewardGame.StartEventContent;
             TMP_StartEventContent.color = TMP_StartEventContent.color.SetA(0);
             
             Sequence seq = DOTween.Sequence();
@@ -35,13 +36,16 @@ namespace BattleScene.UI.DungeonEvent_NotTouchBoundary {
 
             seq.AppendCallback(() => {
                 NotTouchBoundaryCtrl.SetCanPlay(true);
+                Hide();
             });
         }
 
         public void Hide() {
             this.gameObject.SetActive(false);
-            NotTouchBoundaryCtrl.gameObject.SetActive(false);
-            NotTouchBoundaryCtrl.SetCanPlay(false);
+        }
+
+        public void GameEnd() {
+            NotTouchBoundaryCtrl.GameEnd();
         }
     }
 }

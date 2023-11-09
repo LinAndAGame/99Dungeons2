@@ -65,7 +65,7 @@ namespace GameMod.UI {
                 SaveData_GameAsset.I.SaveAsync();
 
                 _CurRoleCtrl.RoleComAnimation.FrameAnimationPlayerRef.Init(CurAnimationCollection);
-                _CurRoleCtrl.RoleComAnimation.FrameAnimationPlayerRef.Play(CurAnimationInfoKey);
+                SwitchAnimation(CurAnimationInfoKey);
             });
         }
 
@@ -112,7 +112,6 @@ namespace GameMod.UI {
             var animationInfo = _CurRoleCtrl.RoleComAnimation.FrameAnimationPlayerRef.Play(animationKey);
             if (animationInfo.IsLoop == false) {
                 animationInfo.OnAnimationEnd.AddListener(() => {
-                    _CC.Clear();
                     _CurRoleCtrl.RoleComAnimation.FrameAnimationPlayerRef.Play(animationKey, false);
                 }, _CC.Event);
             }

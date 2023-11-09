@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using MyGameExpand;
 using UnityEngine;
 
 namespace MyGameUtility {
@@ -12,6 +13,14 @@ namespace MyGameUtility {
         private int                                 _CurIndex;
 
         public void Init(SaveData_FrameAnimationCollection saveDataFrameAnimationInfo) {
+            RefreshData(saveDataFrameAnimationInfo);
+        }
+
+        public void RefreshData(SaveData_FrameAnimationCollection saveDataFrameAnimationInfo) {
+            _CurUsedFrameAnimationInfo = null;
+            _NextChangeSpriteTime      = Time.time;
+            _CurIndex                  = 0;
+            _AllFrameAnimationInfos.Clear();
             foreach (var frameAnimationInfo in saveDataFrameAnimationInfo.AllFrameAnimationInfos) {
                 _AllFrameAnimationInfos.Add(new SystemData_FrameAnimationInfo(frameAnimationInfo));
             }
@@ -24,11 +33,18 @@ namespace MyGameUtility {
                 lastUsedFrameAnimationInfo.OnAnimationInterrupted.Invoke();
             }
             
-            if (frameAnimationInfo == null) {
-                throw new ArgumentNullException();
-            }
 
             _CurUsedFrameAnimationInfo = frameAnimationInfo;
+            if (_CurUsedFrameAnimationInfo == null) {
+                _CurIndex = 0;
+                return null;
+            }
+            
+            if (_CurUsedFrameAnimationInfo.FrameSprites.IsNullOrEmpty()) {
+                _CurIndex = 0;
+                return _CurUsedFrameAnimationInfo;
+            }
+            
             if (_CurUsedFrameAnimationInfo.IsLoop == false) {
                 _CurUsedFrameAnimationInfo.OnAnimationStart.Invoke();
             }
@@ -43,7 +59,7 @@ namespace MyGameUtility {
                 SetToNextSprite();
             }
             
-            return frameAnimationInfo;
+            return _CurUsedFrameAnimationInfo;
         }
         
         public SystemData_FrameAnimationInfo Play(string animationKey, bool setFirstFrameImmediately = true) {
@@ -72,21 +88,24 @@ namespace MyGameUtility {
         }
 
         private void SetToNextSprite() {
+            var lastUsedFrameAnimationInfo = _CurUsedFrameAnimationInfo;
             _CurIndex++;
-            if (_CurIndex >= _CurUsedFrameAnimationInfo.FrameSprites.Count) {
-                if (_CurUsedFrameAnimationInfo.IsLoop) {
-                    Play(_CurUsedFrameAnimationInfo, false);
+            CheckAnimationEvents(_CurIndex);
+            if (_CurIndex >= lastUsedFrameAnimationInfo.FrameSprites.Count) {
+                if (lastUsedFrameAnimationInfo.IsLoop) {
+                    Play(lastUsedFrameAnimationInfo, false);
                 }
                 else {
-                    _CurUsedFrameAnimationInfo.OnAnimationEnd.Invoke();
+                    _CurUsedFrameAnimationInfo = null;
+                    _CurIndex                  = 0;
+
+                    lastUsedFrameAnimationInfo.OnAnimationEnd.Invoke();
                 }
             }
             else {
-                TargetSR.sprite       = _CurUsedFrameAnimationInfo.FrameSprites[_CurIndex];
-                _NextChangeSpriteTime = Time.time + _CurUsedFrameAnimationInfo.TimeInterval;
+                TargetSR.sprite       = lastUsedFrameAnimationInfo.FrameSprites[_CurIndex];
+                _NextChangeSpriteTime = Time.time + lastUsedFrameAnimationInfo.TimeInterval;
             }
-
-            CheckAnimationEvents(_CurIndex);
         }
 
         private void CheckAnimationEvents(int curIndex) {

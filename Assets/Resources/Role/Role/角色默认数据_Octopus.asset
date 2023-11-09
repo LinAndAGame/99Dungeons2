@@ -19,8 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2cfdf047176f7db41931eaf35643411e, type: 2}
   - {fileID: 11400000, guid: 39fd8908145c89a4cb44525a457e1f1e, type: 2}
   AllWeaknessDatas:
-  - WeaknessType: 0
-    MaxWeaknessValue: 5
+  - {fileID: 11400000, guid: 694bf90c3c0e0dc4b8b475a5692004cd, type: 2}
   AllDefaultRoleActions:
   - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
   AllDefaultItems:

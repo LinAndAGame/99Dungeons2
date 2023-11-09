@@ -6,7 +6,7 @@ namespace Role {
         public CustomAction<DamageData> OnBeHurtFailure = new CustomAction<DamageData>();
         public CustomAction<DamageData> OnBeHurtSucceed = new CustomAction<DamageData>();
 
-        public CustomAction<BaseWeakness> OnWeaknessBroken = new CustomAction<BaseWeakness>();
+        public CustomAction<SystemData_BaseWeakness> OnWeaknessBroken = new CustomAction<SystemData_BaseWeakness>();
 
         public CustomAction OnActionSkillEnd = new CustomAction();
 

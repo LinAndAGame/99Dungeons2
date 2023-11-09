@@ -13,7 +13,7 @@ namespace BattleScene.UI.DungeonEvent_NotTouchBoundary {
         public void Init() {
             BtnSelf.onClick.AddListener(() => {
                 Hide();
-                BattleSceneCtrl.I.UICtrlRef.PanelNotTouchBoundary.Hide();
+                BattleSceneCtrl.I.UICtrlRef.PanelNotTouchBoundary.GameEnd();
                 BattleSceneCtrl.I.DisplayUIToSelectNextDungeonEvent();
             });
         }

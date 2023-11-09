@@ -62,7 +62,9 @@ namespace Role {
             
             Damage = AssetData.Damage;
             Hp     = new MinMaxValueFloat(0, AssetData.Hp, AssetData.Hp);
-            AllWeaknessDatas.AddRange(AssetData.AllWeaknessDatas);
+            foreach (AssetData_Weakness assetDataAllWeaknessData in AssetData.AllWeaknessDatas) {
+                AllWeaknessDatas.Add(assetDataAllWeaknessData.GetSaveData());
+            }
             
             foreach (AssetData_BaseRoleIdentity possibleRoleIdentity in AssetData.AllPossibleRoleIdentities) {
                 var saveDataRoleIdentity = possibleRoleIdentity.GetSaveDataRoleIdentity();

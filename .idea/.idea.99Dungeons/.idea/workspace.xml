@@ -4,8 +4,157 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="11">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animation/Limits.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animation/Limits/PngLimit.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Animation/Limits/PngLimit.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/AssetData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/AssetData/AssetData_Weakness.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/AssetData/AssetData_Weakness.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/SystemData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_1.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_1.aseprite.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_2.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_2.aseprite.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_3.aseprite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_3.aseprite.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Role/Animation_Slime/Attack/Attack_3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Octopus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Octopus.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Slime.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Slime.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Soldier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Soldier.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAction.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAction/RoleAction_攻击第一个敌人.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAction/RoleAction_攻击第一个敌人.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAction/RoleAction_治疗所有友军.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAction/RoleAction_治疗所有友军.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/AnimationCollection_Octopus.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/AnimationCollection_Octopus.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationEvent.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationEvent.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationInfo_Attack.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationInfo_Attack.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/BeHurt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/BeHurt/FrameAnimationInfo_BeHurt.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/BeHurt/FrameAnimationInfo_BeHurt.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Idle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Idle/FrameAnimationInfo_Idle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Idle/FrameAnimationInfo_Idle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Weakness.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Weakness/FrameAnimationInfo_Weakness.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Weakness/FrameAnimationInfo_Weakness.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/AnimationCollection_Slime.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/AnimationCollection_Slime.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationEvent.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationEvent.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationInfo_Attack.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationInfo_Attack.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/BeHurt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/BeHurt/FrameAnimationInfo_BeHurt.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/BeHurt/FrameAnimationInfo_BeHurt.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Idle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Idle/FrameAnimationInfo_Idle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Idle/FrameAnimationInfo_Idle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Weakness.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Weakness/FrameAnimationInfo_Weakness.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Weakness/FrameAnimationInfo_Weakness.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/AnimationCollection_Soldier.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/AnimationCollection_Soldier.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationEvent.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationEvent.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationInfo_Attack.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationInfo_Attack.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/BeHurt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/BeHurt/FrameAnimationInfo_BeHurt.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/BeHurt/FrameAnimationInfo_BeHurt.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Idle.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Idle/FrameAnimationInfo_Idle.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Idle/FrameAnimationInfo_Idle.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Weakness.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Weakness/FrameAnimationInfo_Weakness.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Weakness/FrameAnimationInfo_Weakness.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleIdentity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleIdentity/RoleIdentity_狂战士.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleIdentity/RoleIdentity_狂战士.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleIdentity/RoleIdentity_肉搏战士.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleIdentity/RoleIdentity_肉搏战士.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_八爪鱼.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_八爪鱼.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_护甲.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_护甲.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器_盾.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器_盾.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_盾.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_盾.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_八爪鱼_触手.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_八爪鱼_触手.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_右手.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_右手.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_头部.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_头部.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_左手.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_左手.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_胸部.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_胸部.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleUnlock.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleUnlock/被普通攻击击中.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleUnlock/被普通攻击击中.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleUnlock/被火焰攻击击中 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleUnlock/被火焰攻击击中 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameModScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameModScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/Panel_NotTouchBoundary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/Panel_NotTouchBoundary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/RewardGame_NotTouchBoundaryCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/RewardGame_NotTouchBoundaryCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_RoleAnimationMod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_RoleAnimationMod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/CanUsedProp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/MissionProp.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Component/UI/Weakness/Container_Weakness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Component/UI/Weakness/Container_Weakness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Component/UI/Weakness/Panel_Weakness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Component/UI/Weakness/Panel_Weakness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Identity/AssetData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Events.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/BaseWeakness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/SystemData/SystemData_BaseWeakness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/BaseWeakness.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/SystemData/SystemData_BaseWeakness.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/Model/SaveData_Weakness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/Model/SaveData_Weakness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessLibrary.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessLibrary/Weakness_TotalDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_TotalDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessLibrary/Weakness_TotalDamage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_TotalDamage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessTypeEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessTypeEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +177,26 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06F3B5FC-6BA6-41E2-AB95-F91BD8A970A8/cd/fc137c42/ImageConversion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/d5/569473e2/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/2d/9b22e8c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/26/117158aa/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/bd/5911ec8f/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/50/4ab5fc12/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/15/dc8e79ec/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/AssetData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/a1/6191d941/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/84/75035a79/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/66/06cc4bc2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -112,28 +265,31 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35005066" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4200">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="4200" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -152,6 +308,8 @@
       <workItem from="1699407319806" duration="20673000" />
       <workItem from="1699496355904" duration="22172000" />
       <workItem from="1699524160159" duration="2634000" />
+      <workItem from="1699535507828" duration="591000" />
+      <workItem from="1699536124172" duration="5845000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -268,6 +426,10 @@
     <option name="localTasksCounter" value="17" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
