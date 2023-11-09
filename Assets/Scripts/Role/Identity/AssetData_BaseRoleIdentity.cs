@@ -3,7 +3,7 @@ using Role.UnlockAction;
 using UnityEngine;
 
 namespace Role {
-    public abstract class BaseRoleIdentity : ScriptableObject {
+    public abstract class AssetData_BaseRoleIdentity : ScriptableObject {
         public string                        IdentityName;
         public List<BaseRoleUnlockFixedData> AllPossibleUnlockFixedDatas;
 

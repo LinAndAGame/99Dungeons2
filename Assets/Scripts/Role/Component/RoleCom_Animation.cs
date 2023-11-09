@@ -10,7 +10,8 @@ namespace Role {
         public override void Init() {
             base.Init();
             SR_Model.sprite = RoleOwner.SaveData.AssetData.GetSprite;
-            FrameAnimationPlayerRef.Init(SaveData_GameAsset.I.GetFrameAnimationCollectionByRoleData(RoleOwner.SaveData));
+            FrameAnimationPlayerRef.Init(SaveData_GameAsset.I.GetFrameAnimationCollection(RoleOwner.SaveData));
+            FrameAnimationPlayerRef.Play("Idle");
         }
 
         public SystemData_FrameAnimationInfo PlayAttackAnimation() {
@@ -26,7 +27,7 @@ namespace Role {
             return info;
         }
 
-        private void OnAnimationAttack(AnimationEvent ae) {
+        private void OnAnimationAttack() {
             RoleOwner.RoleSystemEvents.OnAnimationAttack.Invoke();
             Debug.Log("动画攻击事件激活！");
         }

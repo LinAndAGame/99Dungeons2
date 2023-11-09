@@ -20,8 +20,8 @@ namespace MyGameUtility {
         public SystemData_FrameAnimationInfo Play(SystemData_FrameAnimationInfo frameAnimationInfo, bool setFirstFrameImmediately = true) {
             var lastUsedFrameAnimationInfo = _CurUsedFrameAnimationInfo;
             if (lastUsedFrameAnimationInfo != null) {
-                _CurUsedFrameAnimationInfo.ClearInvokedEvents();
-                _CurUsedFrameAnimationInfo.OnAnimationInterrupted.Invoke();
+                lastUsedFrameAnimationInfo.ClearInvokedEvents();
+                lastUsedFrameAnimationInfo.OnAnimationInterrupted.Invoke();
             }
             
             if (frameAnimationInfo == null) {
@@ -74,9 +74,11 @@ namespace MyGameUtility {
         private void SetToNextSprite() {
             _CurIndex++;
             if (_CurIndex >= _CurUsedFrameAnimationInfo.FrameSprites.Count) {
-                _CurUsedFrameAnimationInfo.OnAnimationEnd.Invoke();
                 if (_CurUsedFrameAnimationInfo.IsLoop) {
                     Play(_CurUsedFrameAnimationInfo, false);
+                }
+                else {
+                    _CurUsedFrameAnimationInfo.OnAnimationEnd.Invoke();
                 }
             }
             else {

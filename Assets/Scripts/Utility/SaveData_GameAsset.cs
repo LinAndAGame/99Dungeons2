@@ -32,8 +32,12 @@ namespace Utility {
         
         public List<SaveData_FrameAnimationCollection> AllFrameAnimationCollections = new List<SaveData_FrameAnimationCollection>();
 
-        public SaveData_FrameAnimationCollection GetFrameAnimationCollectionByRoleData(SaveData_Role saveDataRole) {
+        public SaveData_FrameAnimationCollection GetFrameAnimationCollection(SaveData_Role saveDataRole) {
             return AllFrameAnimationCollections.Find(data => data.AssetData == saveDataRole.AssetData.FrameAnimationCollection);
+        }
+        public SaveData_FrameAnimationInfo GetFrameAnimationInfo(SaveData_Role saveDataRole, string animationKey) {
+            var animationCollection = GetFrameAnimationCollection(saveDataRole);
+            return animationCollection.AllFrameAnimationInfos.Find(data => data.AssetData.AnimationKey == animationKey);
         }
 
         public SaveData_GameAsset() { }

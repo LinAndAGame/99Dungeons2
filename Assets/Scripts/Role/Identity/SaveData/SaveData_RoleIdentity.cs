@@ -11,7 +11,7 @@ namespace Role {
         public Guid       UniqueId;
         public List<Guid> AllUnlockDataGuids = new List<Guid>();
 
-        public BaseRoleIdentity AssetData => Resources.Load<BaseRoleIdentity>($"{GameCommonAsset.I.AssetFolderInfo_RoleIdentity}{IdentityName}");
+        public AssetData_BaseRoleIdentity AssetData => Resources.Load<AssetData_BaseRoleIdentity>($"{GameCommonAsset.I.AssetFolderInfo_RoleIdentity}{IdentityName}");
 
         public SaveData_RoleIdentity() { }
         

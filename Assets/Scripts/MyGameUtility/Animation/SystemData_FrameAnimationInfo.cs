@@ -19,7 +19,7 @@ namespace MyGameUtility {
 
         public SystemData_FrameAnimationInfo(SaveData_FrameAnimationInfo saveData) {
             _SaveData = saveData;
-            FrameSprites                = saveData.FrameSprites;
+            FrameSprites                = saveData.CurFrameSprites;
             foreach (var saveDataFrameAnimationEvent in saveData.AllFrameAnimationEvents) {
                 AllFrameAnimationEvents.Add(new SystemData_FrameAnimationEvent(saveDataFrameAnimationEvent));
             }

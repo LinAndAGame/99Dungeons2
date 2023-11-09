@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using Dungeon;
 using Item;
 using MyGameUtility;
 using Role.Action;
-using Role.RoleAnimationAsset;
 using Role.RoleItemSlotProvider;
 using UnityEngine;
 using Utility;
@@ -14,7 +12,7 @@ namespace Role {
         public string                               RoleName;
         public int                                  Damage;
         public int                                  Hp;
-        public List<BaseRoleIdentity>               AllPossibleRoleIdentities;
+        public List<AssetData_BaseRoleIdentity>               AllPossibleRoleIdentities;
         public List<SaveData_Weakness>              AllWeaknessDatas;
         public List<AssetData_RoleAction>           AllDefaultRoleActions;
         public List<AssetData_Item>                 AllDefaultItems;
