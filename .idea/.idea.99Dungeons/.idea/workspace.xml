@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="11">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Container_AnimationSprite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Container_AnimationSprite.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_AnimationSprite.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_AnimationSprite.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/EncounterDungeonEventAction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/EncounterDungeonEventAction/BaseEncounterDungeonEventAction.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/EncounterDungeonEventAction/BaseEncounterDungeonEventAction.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Identity/AssetData.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameModScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameModScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_BaseDungeonEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_BaseDungeonEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_BaseDungeonEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_BaseDungeonEvent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_EncounterEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_EncounterEnemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_Lounge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_Lounge.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_Lounge.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_Lounge.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_MulitOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_MulitOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_MulitOperations.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_MulitOperations.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_RewardGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_RewardGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/EncounterEvents/AssetData_DungeonEvent_RewardGame.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_RewardGame.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_RoleAnimationMod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_RoleAnimationMod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_OverrideImage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_OverrideImage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/AttackFirstInRange/AssetData_AttackFirstInRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/AttackFirstInRange/AssetData_AttackFirstInRange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/HealAllFriendlyRoles/AssetData_HealAllFriendlyRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/HealAllFriendlyRoles/AssetData_HealAllFriendlyRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_Animation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_Animation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/EncounterEventAction.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Identity/RoleIdentity_狂战士.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Identity/RoleIdentity_狂战士.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Identity/RoleIdentity_肉搏战士.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Identity/RoleIdentity_肉搏战士.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/SaveData_GameAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SaveData_GameAsset.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,10 +47,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/AssetData_RoleItemSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/SaveData_RoleItemSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/PopUpPanelProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/AttackFirstInRange/SystemData_AttackFirstInRange.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_UI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/TeamSetting/Panel_TeamSetting.cs" />
@@ -102,7 +63,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/SaveData_RoleAnimation.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/AssetData_RoleAnimation.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/AssetData_RoleAnimationCollection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAniamtionEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationInfo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationEvent.cs" />
@@ -133,6 +93,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/HealAllFriendlyRoles/AssetData_HealAllFriendlyRole.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/Identity/RoleIdentity_狂战士.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/Identity/RoleIdentity_肉搏战士.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Identity/AssetData_BaseRoleIdentity.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Identity/AssetData_RoleIdentity_狂战士.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Identity/AssetData_RoleIdentity_肉搏战士.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/UnlockAction/ClassLibrary/BeHitByFireDamage/FixedData_BeHitValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2XpKuGHW06H9rQ0UMZv2IF3f2SU" />
@@ -186,7 +151,7 @@
       <workItem from="1699320809811" duration="28505000" />
       <workItem from="1699407319806" duration="20673000" />
       <workItem from="1699496355904" duration="22172000" />
-      <workItem from="1699524160159" duration="2335000" />
+      <workItem from="1699524160159" duration="2634000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -293,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699520616421</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="弱点代码未整理">
+      <created>1699526714848</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699526714848</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -325,7 +297,8 @@
     <MESSAGE value="limit font asset size2" />
     <MESSAGE value="1" />
     <MESSAGE value="GameModTool" />
-    <option name="LAST_COMMIT_MESSAGE" value="GameModTool" />
+    <MESSAGE value="弱点代码未整理" />
+    <option name="LAST_COMMIT_MESSAGE" value="弱点代码未整理" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

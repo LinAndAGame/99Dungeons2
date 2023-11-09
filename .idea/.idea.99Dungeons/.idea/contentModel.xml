@@ -1881,9 +1881,6 @@
               <e p="AssetData_Role.cs" t="Include" />
               <e p="SaveData_Role.cs" t="Include" />
             </e>
-            <e p="RoleAnimationAsset" t="Include">
-              <e p="SaveData_RoleAnimation.cs" t="Include" />
-            </e>
             <e p="RoleCreator.cs" t="Include" />
             <e p="RoleCtrl.cs" t="Include" />
             <e p="RoleItemSlot" t="Include">
@@ -1901,9 +1898,8 @@
               <e p="RoleSystem_Values.cs" t="Include" />
             </e>
             <e p="UnlockAction" t="Include">
-              <e p="Battle" t="Include">
-                <e p="BaseRoleUnlockActionBattle.cs" t="Include" />
-                <e p="BaseRoleUnlockActionBattleWithPlayerData.cs" t="Include" />
+              <e p="AssetData" t="Include">
+                <e p="BaseRoleUnlockFixedData.cs" t="Include" />
               </e>
               <e p="ClassLibrary" t="Include">
                 <e p="BeHitByFireDamage" t="Include">
@@ -1912,12 +1908,13 @@
                   <e p="SystemData_BeHitValue.cs" t="Include" />
                 </e>
               </e>
-              <e p="FixedData" t="Include">
-                <e p="BaseRoleUnlockFixedData.cs" t="Include" />
-              </e>
               <e p="SaveData" t="Include">
                 <e p="SaveData_RoleUnlock.cs" t="Include" />
                 <e p="SaveData_RoleUnlockWithFixedData.cs" t="Include" />
+              </e>
+              <e p="SystemData" t="Include">
+                <e p="BaseRoleUnlockActionBattle.cs" t="Include" />
+                <e p="BaseRoleUnlockActionBattleWithPlayerData.cs" t="Include" />
               </e>
             </e>
             <e p="Weakness" t="Include">
