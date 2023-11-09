@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Reflection;
 using Player;
+using Role;
 using Sirenix.OdinInspector;
 using UnityEngine;
 #if UNITY_EDITOR
@@ -35,6 +37,8 @@ namespace Utility {
         public AssetFolderInfo AssetFolderInfo_Item_Armor;
         public AssetFolderInfo AssetFolderInfo_Item_Shield;
         public AssetFolderInfo AssetFolderInfo_Item_CanUsedProp;
+
+        public List<AssetData_Role> AllAssetDataRoles;
         // public AssetFolderInfo AssetFolderInfo_Item_Weapon;
 
         [Button]

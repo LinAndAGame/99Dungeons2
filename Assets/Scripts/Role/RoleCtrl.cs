@@ -10,18 +10,19 @@ namespace Role {
     public class RoleCtrl : MonoBehaviour {
         public RoleCom_Animation RoleComAnimation;
         public RoleCom_Vfx       RoleComVfx;
-        
+
         public RoleSystem_Values      RoleSystemValues;
         public RoleSystem_Status      RoleSystemStatus;
         public RoleSystem_Events      RoleSystemEvents;
         public RoleSystem_ActionSkill RoleSystemActionSkill;
-        
-        private List<IRoleCallback> AllRoleCallbacks;
-        
-        public  SaveData_Role       SaveData { get; private set; }
-        public  CacheCollection     CC              { get; private set; }
-        
-        private RoleLocatorCtrl _CurRoleLocatorCtrl;
+
+        private List<IRoleCallback> _AllRoleCallbacks;
+        private RoleLocatorCtrl     _CurRoleLocatorCtrl;
+        private bool                _HasInit;
+
+        public SaveData_Role   SaveData { get; private set; }
+        public CacheCollection CC       { get; private set; }
+
         public RoleLocatorCtrl CurRoleLocatorCtrl {
             get => _CurRoleLocatorCtrl;
             set {
@@ -40,7 +41,7 @@ namespace Role {
                 else {
                     _CurRoleLocatorCtrl = value;
                 }
-                
+
                 if (_CurRoleLocatorCtrl != null) {
                     _CurRoleLocatorCtrl.CurRoleCtrl = this;
                 }
@@ -48,38 +49,53 @@ namespace Role {
         }
 
         public void Init(SaveData_Role saveDataRole) {
-            SaveData           = saveDataRole;
+            if (_HasInit) {
+                return;
+            }
+
+            _HasInit              = true;
+            
+            SaveData              = saveDataRole;
             CC                    = new CacheCollection();
             RoleSystemStatus      = new RoleSystem_Status(this);
             RoleSystemValues      = new RoleSystem_Values(this);
             RoleSystemEvents      = new RoleSystem_Events(this);
             RoleSystemActionSkill = new RoleSystem_ActionSkill(this);
-            
+
             RoleSystemEvents.Init();
             RoleSystemValues.Init();
             RoleSystemActionSkill.Init();
             RoleSystemStatus.Init();
-            
-            AllRoleCallbacks = this.GetComponentsInChildren<IRoleCallback>().ToList();
-            foreach (var roleCallback in AllRoleCallbacks) {
+
+            _AllRoleCallbacks = this.GetComponentsInChildren<IRoleCallback>().ToList();
+            foreach (var roleCallback in _AllRoleCallbacks) {
                 roleCallback.Init();
             }
         }
-        
+
         private void Update() {
-            foreach (var roleCallback in AllRoleCallbacks) {
+            if (_HasInit == false) {
+                return;
+            }
+            
+            foreach (var roleCallback in _AllRoleCallbacks) {
                 roleCallback.Update();
             }
         }
 
         public void DestroySelf() {
+            if (_HasInit == false) {
+                return;
+            }
+
             CC.Clear();
-            foreach (var roleCallback in AllRoleCallbacks) {
+            foreach (var roleCallback in _AllRoleCallbacks) {
                 roleCallback.Destroy();
             }
 
             CurRoleLocatorCtrl = null;
             Destroy(this.gameObject);
+            _HasInit = false;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using MyGameUtility;
 using UnityEngine;
+using Utility;
 
 namespace Role {
     public class RoleCom_Animation : BaseRoleCom {
@@ -9,9 +10,10 @@ namespace Role {
         public override void Init() {
             base.Init();
             SR_Model.sprite = RoleOwner.SaveData.AssetData.GetSprite;
+            FrameAnimationPlayerRef.Init(SaveData_GameAsset.I.GetFrameAnimationCollectionByRoleData(RoleOwner.SaveData));
         }
 
-        public FrameAnimationInfo PlayAttackAnimation() {
+        public SystemData_FrameAnimationInfo PlayAttackAnimation() {
             var info = FrameAnimationPlayerRef.Play("Attack");
             info.OnAnimationEnd.AddListener(() => {
                 CC.Event.Clear();

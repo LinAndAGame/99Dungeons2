@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 
 namespace MyGameUtility {
     public static class OtherUtility {
+        private const string ResourceFolderPrefixPath = "Assets/Resources/";
+        
         public static string GetScenePath(GameObject obj) {
             if (obj == null || obj.transform == null) {
                 Debug.LogWarning("输入的对象为空，不能找到路径！");
@@ -22,6 +25,22 @@ namespace MyGameUtility {
             }
 
             return StringUtility.Connect("/", parents.Select(data => data.name).ToArray());
+        }
+
+        public static string GetResourcePath(UnityEngine.Object obj) {
+            if (obj == null) {
+                return string.Empty;
+            }
+
+            string assetPath = AssetDatabase.GetAssetPath(obj);
+            if (assetPath.StartsWith(ResourceFolderPrefixPath)) {
+                string extension = System.IO.Path.GetExtension(assetPath);
+                assetPath = assetPath.Replace(ResourceFolderPrefixPath, string.Empty);
+                assetPath = assetPath.Replace($"{extension}", string.Empty);
+                return assetPath;
+            }
+
+            return string.Empty;
         }
 
         public static void RotateTo2D(Transform target, Vector2 dirTo) {

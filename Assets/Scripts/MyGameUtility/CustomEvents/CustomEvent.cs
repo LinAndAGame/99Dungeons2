@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using MyGameExpand;
 using MyGameUtility;
 using Sirenix.OdinInspector;
-[CustomEvent, ES3NonSerializable]
+[CustomEvent]
 public class CustomAction {
     [ShowInInspector]
     public readonly string EventName;

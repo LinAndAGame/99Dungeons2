@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c43e1424604cd491f1e98a7f1ce606, type: 3}
+  m_Name: Panel
+  m_EditorClassIdentifier: 
+  PrefabObject: {fileID: 1344791765141263380, guid: d6dcc100c6a94f34ea71ef04e3ee9eca, type: 3}
+  AllImagePathInfos:
+  - IsIgnore: 0
+    ImgPath: Panel
+  - IsIgnore: 0
+    ImgPath: Panel\Image

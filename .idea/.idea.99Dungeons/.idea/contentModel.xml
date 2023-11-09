@@ -1462,6 +1462,9 @@
             <e p="DungeonEvent" t="Include" />
             <e p="DungeonLevel" t="Include" />
           </e>
+          <e p="GameMod" t="Include">
+            <e p="Test" t="Include" />
+          </e>
           <e p="Item" t="Include">
             <e p="Weapon" t="Include" />
           </e>
@@ -1469,6 +1472,26 @@
           <e p="Role" t="Include">
             <e p="Role" t="Include" />
             <e p="RoleAction" t="Include" />
+            <e p="RoleAnimation" t="Include">
+              <e p="Octopus" t="Include">
+                <e p="Attack" t="Include" />
+                <e p="BeHurt" t="Include" />
+                <e p="Idle" t="Include" />
+                <e p="Weakness" t="Include" />
+              </e>
+              <e p="Slime" t="Include">
+                <e p="Attack" t="Include" />
+                <e p="BeHurt" t="Include" />
+                <e p="Idle" t="Include" />
+                <e p="Weakness" t="Include" />
+              </e>
+              <e p="Soldier" t="Include">
+                <e p="Attack" t="Include" />
+                <e p="BeHurt" t="Include" />
+                <e p="Idle" t="Include" />
+                <e p="Weakness" t="Include" />
+              </e>
+            </e>
             <e p="RoleIdentity" t="Include" />
             <e p="RoleItemSlot" t="Include" />
             <e p="RoleItemSlotProvider" t="Include" />
@@ -1535,6 +1558,20 @@
               <e p="AssetData_UnlockDungeonHiddenEvent.cs" t="Include" />
             </e>
           </e>
+          <e p="GameMod" t="Include">
+            <e p="GameModCtrl.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="HUD" t="Include">
+                <e p="Container_SpriteImporterImage.cs" t="Include" />
+                <e p="Container_SpriteImporterPrefabUI.cs" t="Include" />
+                <e p="Panel_SpriteImporter.cs" t="Include" />
+                <e p="SpriteImporterCtrl.cs" t="Include" />
+              </e>
+              <e p="RoleAnimationMod" t="Include">
+                <e p="Panel_RoleAnimationMod.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Item" t="Include">
             <e p="AssetData" t="Include">
               <e p="AssetData_Item.cs" t="Include" />
@@ -1574,13 +1611,19 @@
               <e p="MyAddressableUtility.cs" t="Include" />
             </e>
             <e p="Animation" t="Include">
+              <e p="AssetData_FrameAnimationCollection.cs" t="Include" />
+              <e p="AssetData_FrameAnimationEvent.cs" t="Include" />
+              <e p="AssetData_FrameAnimationInfo.cs" t="Include" />
+              <e p="AssetData_PngLimit.cs" t="Include" />
               <e p="AssetData_SpriteImporter.cs" t="Include" />
-              <e p="FrameAnimationEvent.cs" t="Include" />
-              <e p="FrameAnimationInfo.cs" t="Include" />
+              <e p="AssetData_SpriteImporterPrefab.cs" t="Include" />
               <e p="FrameAnimationPlayer.cs" t="Include" />
-              <e p="SaveData_ObjectPath.cs" t="Include" />
-              <e p="SaveData_PrefabObjectPath.cs" t="Include" />
-              <e p="SaveData_SceneObjectPath.cs" t="Include" />
+              <e p="SaveData_FrameAnimationCollection.cs" t="Include" />
+              <e p="SaveData_FrameAnimationEvent.cs" t="Include" />
+              <e p="SaveData_FrameAnimationInfo.cs" t="Include" />
+              <e p="SaveData_OverrideImage.cs" t="Include" />
+              <e p="SystemData_FrameAnimationEvent.cs" t="Include" />
+              <e p="SystemData_FrameAnimationInfo.cs" t="Include" />
             </e>
             <e p="ASM" t="Include">
               <e p="BaseMachine.cs" t="Include" />
@@ -1817,6 +1860,7 @@
                 </e>
               </e>
             </e>
+            <e p="EncounterEventAction" t="Include" />
             <e p="Identity" t="Include">
               <e p="BaseRoleIdentity.cs" t="Include" />
               <e p="RoleIdentity_狂战士.cs" t="Include" />
@@ -1832,6 +1876,9 @@
             <e p="Model" t="Include">
               <e p="AssetData_Role.cs" t="Include" />
               <e p="SaveData_Role.cs" t="Include" />
+            </e>
+            <e p="RoleAnimationAsset" t="Include">
+              <e p="SaveData_RoleAnimation.cs" t="Include" />
             </e>
             <e p="RoleCreator.cs" t="Include" />
             <e p="RoleCtrl.cs" t="Include" />
@@ -1907,6 +1954,7 @@
             <e p="AddressableLabelTypeEnum.cs" t="Include" />
             <e p="GameCommonAsset.cs" t="Include" />
             <e p="GameUtility.cs" t="Include" />
+            <e p="SaveData_GameAsset.cs" t="Include" />
           </e>
         </e>
         <e p="Settings" t="Include">
@@ -1916,6 +1964,27 @@
           <e p="ActionSkill" t="Include" />
           <e p="Role" t="Include" />
           <e p="Weakness" t="Include" />
+        </e>
+        <e p="StandaloneFileBrowser" t="Include">
+          <e p="IStandaloneFileBrowser.cs" t="Include" />
+          <e p="Plugins" t="Include">
+            <e p="Linux" t="Include">
+              <e p="x86_64" t="Include" />
+            </e>
+          </e>
+          <e p="Sample" t="Include">
+            <e p="BasicSample.cs" t="Include" />
+            <e p="CanvasSampleOpenFileImage.cs" t="Include" />
+            <e p="CanvasSampleOpenFileText.cs" t="Include" />
+            <e p="CanvasSampleOpenFileTextMultiple.cs" t="Include" />
+            <e p="CanvasSampleSaveFileImage.cs" t="Include" />
+            <e p="CanvasSampleSaveFileText.cs" t="Include" />
+          </e>
+          <e p="StandaloneFileBrowser.cs" t="Include" />
+          <e p="StandaloneFileBrowserEditor.cs" t="Include" />
+          <e p="StandaloneFileBrowserLinux.cs" t="Include" />
+          <e p="StandaloneFileBrowserMac.cs" t="Include" />
+          <e p="StandaloneFileBrowserWindows.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Documentation" t="Include" />

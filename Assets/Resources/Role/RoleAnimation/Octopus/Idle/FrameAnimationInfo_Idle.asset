@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23d640371fe34fb8b04c7f5ab70ab4a1, type: 3}
+  m_Name: FrameAnimationInfo_Idle
+  m_EditorClassIdentifier: 
+  AnimationKey: Idle
+  FrameSprites: []
+  FPS: 24
+  Loop: 1
+  IgnoreTimeScale: 0
+  AllAnimationEvents: []

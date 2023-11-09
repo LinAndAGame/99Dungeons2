@@ -23,3 +23,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
   AllDefaultItems:
   - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
+  AllRoleEquipmentSlotProviders: []
+  FrameAnimationCollection: {fileID: 11400000, guid: 57c7221d6fbcc224f869d677a52122b8, type: 2}

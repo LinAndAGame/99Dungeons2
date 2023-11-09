@@ -1,50 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 namespace MyGameUtility {
     public class FrameAnimationPlayer : MonoBehaviour {
         public SpriteRenderer     TargetSR;
-        
-        public List<FrameAnimationInfo> OtherFrameAnimationInfos;
 
-        private FrameAnimationInfo           _CurUsedFrameAnimationInfo;
-        private float                        _NextChangeSpriteTime;
-        private int                          _NextIndex;
-        private HashSet<FrameAnimationEvent> _AllInvokedEvents = new HashSet<FrameAnimationEvent>();
-        private float                        _StartPlayTime;
+        private List<SystemData_FrameAnimationInfo> _AllFrameAnimationInfos = new List<SystemData_FrameAnimationInfo>();
+        private SystemData_FrameAnimationInfo       _CurUsedFrameAnimationInfo;
+        private float                               _NextChangeSpriteTime;
+        private int                                 _CurIndex;
+
+        public void Init(SaveData_FrameAnimationCollection saveDataFrameAnimationInfo) {
+            foreach (var frameAnimationInfo in saveDataFrameAnimationInfo.AllFrameAnimationInfos) {
+                _AllFrameAnimationInfos.Add(new SystemData_FrameAnimationInfo(frameAnimationInfo));
+            }
+        }
         
-        public FrameAnimationInfo Play(FrameAnimationInfo frameAnimationInfo, bool setFirstFrameImmediately = true) {
-            _AllInvokedEvents.Clear();
+        public SystemData_FrameAnimationInfo Play(SystemData_FrameAnimationInfo frameAnimationInfo, bool setFirstFrameImmediately = true) {
+            var lastUsedFrameAnimationInfo = _CurUsedFrameAnimationInfo;
+            if (lastUsedFrameAnimationInfo != null) {
+                _CurUsedFrameAnimationInfo.ClearInvokedEvents();
+                _CurUsedFrameAnimationInfo.OnAnimationInterrupted.Invoke();
+            }
+            
             if (frameAnimationInfo == null) {
                 throw new ArgumentNullException();
             }
 
-            _StartPlayTime = Time.time;
-            _AllInvokedEvents.Clear();
-            
-            if (_CurUsedFrameAnimationInfo != null) {
-                _CurUsedFrameAnimationInfo.OnAnimationInterrupted.Invoke();
-            }
-            
             _CurUsedFrameAnimationInfo = frameAnimationInfo;
-            if (setFirstFrameImmediately) {
-                _NextIndex      = 0;
-                TargetSR.sprite = _CurUsedFrameAnimationInfo.FrameSprites[_NextIndex];
+            if (_CurUsedFrameAnimationInfo.IsLoop == false) {
+                _CurUsedFrameAnimationInfo.OnAnimationStart.Invoke();
             }
             else {
-                _NextIndex = -1;
+                if (_CurUsedFrameAnimationInfo != lastUsedFrameAnimationInfo) {
+                    _CurUsedFrameAnimationInfo.OnAnimationStart.Invoke();
+                }
             }
-            TryChangeToNextIndex();
 
+            _CurIndex = -1;
+            if (setFirstFrameImmediately) {
+                SetToNextSprite();
+            }
+            
             return frameAnimationInfo;
         }
         
-        public FrameAnimationInfo Play(string nameKey, bool setFirstFrameImmediately = true) {
-            var frameAnimationInfo = OtherFrameAnimationInfos.Find(data => data.NameKey == nameKey);
+        public SystemData_FrameAnimationInfo Play(string animationKey, bool setFirstFrameImmediately = true) {
+            var frameAnimationInfo = _AllFrameAnimationInfos.Find(data => data.AnimationKey == animationKey);
             if (frameAnimationInfo == null) {
-                Debug.LogException(new Exception($"没有名为【{nameKey}】的序列帧数据！"));
+                Debug.LogException(new Exception($"没有名为【{animationKey}】的序列帧数据！"));
             }
             
             return Play(frameAnimationInfo, setFirstFrameImmediately);
@@ -53,44 +58,39 @@ namespace MyGameUtility {
         private void Update() {
             if (_CurUsedFrameAnimationInfo != null && _CurUsedFrameAnimationInfo.IgnoreTimeScale == false) {
                 if (Time.time >= _NextChangeSpriteTime) {
-                    TryChangeToNextIndex();
+                    SetToNextSprite();
                 }
-
-                TryInvokeEvents();
             }
         }
 
         private void FixedUpdate() {
             if (_CurUsedFrameAnimationInfo != null && _CurUsedFrameAnimationInfo.IgnoreTimeScale) {
                 if (Time.time >= _NextChangeSpriteTime) {
-                    TryChangeToNextIndex();
-                }
-                TryInvokeEvents();
-            }
-        }
-
-        private void TryInvokeEvents() {
-            foreach (var frameAnimationEvent in _CurUsedFrameAnimationInfo.AllAnimationEvents) {
-                if (_AllInvokedEvents.Contains(frameAnimationEvent)) {
-                    continue;
-                }
-                if (Time.time >= frameAnimationEvent.InvokeTime + _StartPlayTime) {
-                    frameAnimationEvent.Invoke(this.gameObject);
-                    _AllInvokedEvents.Add(frameAnimationEvent);
+                    SetToNextSprite();
                 }
             }
         }
 
-        private void TryChangeToNextIndex() {
-            if (_NextIndex + 1 >= _CurUsedFrameAnimationInfo.FrameSprites.Count) {
+        private void SetToNextSprite() {
+            _CurIndex++;
+            if (_CurIndex >= _CurUsedFrameAnimationInfo.FrameSprites.Count) {
                 _CurUsedFrameAnimationInfo.OnAnimationEnd.Invoke();
-                if (_CurUsedFrameAnimationInfo.Loop) {
+                if (_CurUsedFrameAnimationInfo.IsLoop) {
                     Play(_CurUsedFrameAnimationInfo, false);
                 }
             }
             else {
-                _NextIndex++;
+                TargetSR.sprite       = _CurUsedFrameAnimationInfo.FrameSprites[_CurIndex];
                 _NextChangeSpriteTime = Time.time + _CurUsedFrameAnimationInfo.TimeInterval;
+            }
+
+            CheckAnimationEvents(_CurIndex);
+        }
+
+        private void CheckAnimationEvents(int curIndex) {
+            var allReadyInvokedEvents = _CurUsedFrameAnimationInfo.AllFrameAnimationEvents.FindAll(data => data.HasInvoked == false && curIndex >= data.InvokeFrameIndex);
+            foreach (var systemDataFrameAnimationEvent in allReadyInvokedEvents) {
+                systemDataFrameAnimationEvent.Invoke(this.gameObject);
             }
         }
     }

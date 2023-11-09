@@ -34,3 +34,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
   - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
   - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
+  FrameAnimationCollection: {fileID: 11400000, guid: fe4444d664dd80c4690cb415d42c286b, type: 2}

@@ -1,96 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="11">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/PlayerInventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/PlayerInventory/Container_Inventory.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/PlayerInventory/Container_Inventory.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/RoleSetting.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/RoleSetting/Container_ItemSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/RoleSetting/Container_ItemSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/RoleSetting/Container_ItemSlotProvider_触手.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/RoleSetting/Container_ItemSlotProvider_触手.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/FontAsset.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/FontAsset.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_八爪鱼.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_八爪鱼.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_护甲.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_护甲.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器_盾.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_武器_盾.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_盾.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlot/装备槽_盾.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_八爪鱼_触手.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_八爪鱼_触手.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_右手.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_右手.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_头部.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_头部.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_左手.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_左手.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_胸部.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleItemSlotProvider/装备槽提供者_类人_胸部.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_ObjectPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_ObjectPath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_PrefabObjectPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_PrefabObjectPath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_SceneObjectPath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_SceneObjectPath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/AssetData_FontCollection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/AssetData_FontCollection.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/SaveData_FontAsset.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/SaveData_FontAsset.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/TMPFontSet.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/TMPFontSet.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/Panel.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/Panel.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/SpriteImporter.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/SpriteImporter.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/Test.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/Test/GameObject.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/Test/GameObject.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/Test/Panel.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/GameMod/Test/Panel.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/AnimationCollection_Octopus.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/AnimationCollection_Octopus.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationEvent.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationEvent.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationInfo_Attack.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Attack/FrameAnimationInfo_Attack.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/BeHurt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/BeHurt/FrameAnimationInfo_BeHurt.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/BeHurt/FrameAnimationInfo_BeHurt.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Idle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Idle/FrameAnimationInfo_Idle.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Idle/FrameAnimationInfo_Idle.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Weakness.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Weakness/FrameAnimationInfo_Weakness.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Octopus/Weakness/FrameAnimationInfo_Weakness.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/AnimationCollection_Slime.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/AnimationCollection_Slime.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationEvent.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationEvent.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationInfo_Attack.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Attack/FrameAnimationInfo_Attack.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/BeHurt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/BeHurt/FrameAnimationInfo_BeHurt.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/BeHurt/FrameAnimationInfo_BeHurt.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Idle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Idle/FrameAnimationInfo_Idle.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Idle/FrameAnimationInfo_Idle.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Weakness.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Weakness/FrameAnimationInfo_Weakness.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Slime/Weakness/FrameAnimationInfo_Weakness.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/AnimationCollection_Soldier.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/AnimationCollection_Soldier.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationEvent.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationEvent.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationInfo_Attack.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Attack/FrameAnimationInfo_Attack.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/BeHurt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/BeHurt/FrameAnimationInfo_BeHurt.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/BeHurt/FrameAnimationInfo_BeHurt.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Idle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Idle/FrameAnimationInfo_Idle.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Idle/FrameAnimationInfo_Idle.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Weakness.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Weakness/FrameAnimationInfo_Weakness.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/RoleAnimation/Soldier/Weakness/FrameAnimationInfo_Weakness.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GameModScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GameModScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/GameModCtrl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/GameModCtrl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_RoleAnimationMod.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_RoleAnimationMod.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationCollection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationCollection.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_PngLimit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_PngLimit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationCollection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationCollection.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_OverrideImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_OverrideImage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/EncounterEventAction.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/SaveData_RoleAnimation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/SaveData_RoleAnimation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SaveData_GameAsset.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/SaveData_GameAsset.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/IStandaloneFileBrowser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/IStandaloneFileBrowser.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/Linux.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/Linux/x86_64.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/Linux/x86_64/libStandaloneFileBrowser.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/Linux/x86_64/libStandaloneFileBrowser.so.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/Ookii.Dialogs.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.bundle.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.bundle/Contents.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.bundle/Contents/Info.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.bundle/Contents/Info.plist.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.bundle/Contents/MacOS.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.bundle/Contents/MacOS/StandaloneFileBrowser" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.bundle/Contents/MacOS/StandaloneFileBrowser.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.jslib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/StandaloneFileBrowser.jslib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Plugins/System.Windows.Forms.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/BasicSample.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/BasicSample.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/BasicSampleScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/BasicSampleScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleOpenFileImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleOpenFileImage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleOpenFileText.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleOpenFileText.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleOpenFileTextMultiple.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleOpenFileTextMultiple.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleSaveFileImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleSaveFileImage.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleSaveFileText.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleSaveFileText.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/Sample/CanvasSampleScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowser.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserLinux.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserLinux.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserMac.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserMac.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserWindows.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/StandaloneFileBrowser/StandaloneFileBrowserWindows.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AddressableAssetSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Role/Role.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Role/Role.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/ChooseNextEvent/Container_DungeonEvent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/ChooseNextEvent/Container_DungeonEvent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/Lounge/Container_RoleResult.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/Lounge/Container_RoleResult.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/Lounge/Container_SelectRole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/Lounge/Container_SelectRole.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/RewardGame/Container_RewardItemInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/RewardGame/Container_RewardItemInfo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/TeamSetting/Container_RoleInfo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/TownScene/TeamSetting/Container_RoleInfo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Octopus.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Octopus.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Slime.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Slime.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Soldier.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/角色默认数据_Soldier.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_八爪鱼.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_八爪鱼.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_护甲.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_护甲.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_武器.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_武器.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_武器_盾.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_武器_盾.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_盾.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/RoleEquipmentSlot/装备槽_盾.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/BattleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TownScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TownScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/msyh SDF4096.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/msyh SDF4096.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/MyGameExpand/APIExpandUnity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/MyGameExpand/APIExpandUnity.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/PopUpPanelCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/PopUpPanelProcess.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/PopUpPanelCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/PopUpPanelProcess.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporterPrefab.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporterPrefab.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/Container_SpriteImporterImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/Container_SpriteImporterImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/Container_SpriteImporterImage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/Container_SpriteImporterImage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/Container_SpriteImporterPrefabUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/Container_SpriteImporterPrefabUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/Container_SpriteImporterPrefabUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/Container_SpriteImporterPrefabUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/Panel_SpriteImporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/Panel_SpriteImporter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/Panel_SpriteImporter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/Panel_SpriteImporter.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/SpriteImporterCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/SpriteImporterCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/SpriteImporterCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/HUD/SpriteImporterCtrl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/CustomEvents/CustomEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/CustomEvents/CustomEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UtilityScripts/OtherUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UtilityScripts/OtherUtility.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/AttackFirstInRange/SystemData_AttackFirstInRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/AttackFirstInRange/SystemData_AttackFirstInRange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_UI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_Animation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_Animation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/AssetData_RoleItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/AssetData_RoleItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/SaveData_RoleItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/SaveData_RoleItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/TeamSetting/Panel_TeamSetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/TeamSetting/Panel_TeamSetting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TownScene/UICtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TownScene/UICtrl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameUtility.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,76 +206,77 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/d5/569473e2/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/2d/9b22e8c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/AssetData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/bd/5911ec8f/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/26/117158aa/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/a1/6191d941/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/50/4ab5fc12/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/84/75035a79/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06F3B5FC-6BA6-41E2-AB95-F91BD8A970A8/cd/fc137c42/ImageConversion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/15/dc8e79ec/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Item/SaveData/SaveData_Item.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/PlayerInventory/Container_PlayerInventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/PlayerInventory/Container_PlayerInventorySlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlot/SaveData_RoleEquipmentSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlotProvider/SaveData_RoleEquipmentSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlot/AssetData_RoleEquipmentSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AddressableLabelTypeEnum.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlotProvider/AssetData_RoleEquipmentSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_EquipmentSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_EquipmentSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlot/AssetData_RoleItemSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlot/SaveData_RoleItemSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlotProvider/AssetData_RoleItemSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleEquipmentSlotProvider/SaveData_RoleItemSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlotProvider/AssetData_RoleItemSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlotProvider/SaveData_RoleItemSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_ItemSlotProvider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/BasePanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/BaseUI/Panel_TownSceneBasicUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/PopUpPanelCtrl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/BaseUiPanel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/TeamSetting/Container_TeamRole.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/TownSceneCtrl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Panel_RoleSetting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/PlayerInventory/Panel_PlayerInventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_ItemSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/FontAssets.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/SaveData_FontAsset.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/SaveData_FontCollection.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UICtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/TMPFontSet.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Fonts/AssetData_FontCollection.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameUtility.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/AssetData_RoleItemSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/SaveData_RoleItemSlot.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UI/PopUpPanelProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/Action/Library/AttackFirstInRange/SystemData_AttackFirstInRange.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_UI.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/TeamSetting/Panel_TeamSetting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_PrefabObjectPath.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_ObjectPath.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/MyGameExpand/APIExpandUnity.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_SceneObjectPath.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_SpriteImporterPrefab.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/CustomEvents/CustomEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_AnimationEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_AnimationEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/SaveData_RoleAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/AssetData_RoleAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleAnimationAsset/AssetData_RoleAnimationCollection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_OverrideImage.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAniamtionEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/FrameAnimationPlayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SaveData_GameAsset.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Component/RoleCom_Animation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/UtilityScripts/OtherUtility.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/UI/SpriteImporterCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/Panel_RoleAnimationMod.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_PngLimit.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/AssetData_FrameAnimationCollection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameMod/GameModeCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameMod/GameModCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SaveData_FrameAnimationCollection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/Animation/SystemData_FrameAnimationInfo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Role/RoleCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameMod/UI/RoleAnimationMod/Panel_RoleAnimationMod.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2XpKuGHW06H9rQ0UMZv2IF3f2SU" />
@@ -215,10 +309,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2632">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14172">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="2632" />
+      <option name="pid" value="14172" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -235,6 +329,7 @@
       <updated>1699320802788</updated>
       <workItem from="1699320809811" duration="28505000" />
       <workItem from="1699407319806" duration="20673000" />
+      <workItem from="1699496355904" duration="18753000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -368,6 +463,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Utility/SaveData_GameAsset.cs</url>
+          <line>35</line>
+          <properties documentPath="D:\LinWenHao\99Dungeons\99Dungeons\Assets\Scripts\Utility\SaveData_GameAsset.cs" initialLine="35" containingFunctionPresentation="method 'GetFrameAnimationCollectionByRoleData'">
+            <startOffsets>
+              <option value="1307" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1423" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#Role.SaveData_Role" memberName="RoleName" />
@@ -378,6 +490,7 @@
         <watch expression="nameof(AssetFolderInfo.RefreshPath)" language="C#" />
         <watch expression="typeof(AssetFolderInfo).GetMethod(nameof(AssetFolderInfo.RefreshPath), BindingFlags.Public | BindingFlags.Instance)" language="C#" />
         <watch expression="this.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance)" language="C#" />
+        <watch expression="new SaveData_Role(assetDataRole, true)" language="C#" />
       </configuration>
     </watches-manager>
   </component>
