@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="11">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" afterDir="false" />
-    </list>
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="11" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +149,7 @@
       <workItem from="1699320809811" duration="28505000" />
       <workItem from="1699407319806" duration="20673000" />
       <workItem from="1699496355904" duration="22172000" />
-      <workItem from="1699524160159" duration="2634000" />
+      <workItem from="1699524160159" duration="2672000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -265,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699526714848</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="弱点代码未整理2">
+      <created>1699526860309</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699526860309</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
@@ -298,7 +303,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="GameModTool" />
     <MESSAGE value="弱点代码未整理" />
-    <option name="LAST_COMMIT_MESSAGE" value="弱点代码未整理" />
+    <MESSAGE value="弱点代码未整理2" />
+    <option name="LAST_COMMIT_MESSAGE" value="弱点代码未整理2" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
