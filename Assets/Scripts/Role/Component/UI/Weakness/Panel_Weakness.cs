@@ -20,7 +20,7 @@ namespace Role {
             });
 
             void refreshUI() {
-                foreach (BaseWeakness baseWeakness in owner.RoleSystemValues.AllWeakness) {
+                foreach (SystemData_BaseWeakness baseWeakness in owner.RoleSystemValues.AllWeakness) {
                     var ins = Instantiate(WeaknessContainerPrefab, PrefabParent);
                     ins.Init(owner, baseWeakness);
                     _AllContainers.Add(ins);

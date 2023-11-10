@@ -9,8 +9,8 @@ namespace Role {
         public Image           Img_DynamicWeakness;
         public TextMeshProUGUI TMP_WeaknessValue;
         
-        public void Init(RoleCtrl owner, BaseWeakness weakness) {
-            var weaknessSprite = GameUtility.GetSpriteByNameAndLabel(AddressableLabelTypeEnum.WeaknessSprite, weakness.WeaknessDataRef.WeaknessType.ToString());
+        public void Init(RoleCtrl owner, SystemData_BaseWeakness weakness) {
+            var weaknessSprite = GameUtility.GetSpriteByNameAndLabel(AddressableLabelTypeEnum.WeaknessSprite, weakness.SaveData.WeaknessType.ToString());
             Img_Weakness.sprite        = weaknessSprite;
             Img_DynamicWeakness.sprite = weaknessSprite;
             refreshUI();

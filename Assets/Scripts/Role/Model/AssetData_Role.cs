@@ -13,7 +13,7 @@ namespace Role {
         public int                                  Damage;
         public int                                  Hp;
         public List<AssetData_BaseRoleIdentity>               AllPossibleRoleIdentities;
-        public List<SaveData_Weakness>              AllWeaknessDatas;
+        public List<AssetData_Weakness>              AllWeaknessDatas;
         public List<AssetData_RoleAction>           AllDefaultRoleActions;
         public List<AssetData_Item>                 AllDefaultItems;
         public List<AssetData_RoleItemSlotProvider> AllRoleEquipmentSlotProviders;

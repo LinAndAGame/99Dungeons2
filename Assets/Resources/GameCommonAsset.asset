@@ -18,19 +18,19 @@ MonoBehaviour:
     PrefixPath: Role/Role/
   AssetFolderInfo_RoleAction:
     AssetFolder: {fileID: 102900000, guid: 55a274bf2f3171d499daef12c094acfc, type: 3}
-    PrefixPath: Role/RoleAction/
+    PrefixPath: Role/Action/
   AssetFolderInfo_RoleUnlockAction:
     AssetFolder: {fileID: 102900000, guid: 10b731337a4fd3e4cb4c89935b73c722, type: 3}
-    PrefixPath: Role/RoleUnlock/
+    PrefixPath: Role/Unlock/
   AssetFolderInfo_RoleIdentity:
     AssetFolder: {fileID: 102900000, guid: 7ca4d7c0bd7e90d47803f5dd7a65f636, type: 3}
-    PrefixPath: Role/RoleIdentity/
+    PrefixPath: Role/Identity/
   AssetFolderInfo_RoleEquipmentSlot:
     AssetFolder: {fileID: 102900000, guid: 1016150bdd6249b438c7783ec774ef9f, type: 3}
-    PrefixPath: Role/RoleItemSlot/
+    PrefixPath: Role/ItemSlot/
   AssetFolderInfo_RoleItemSlotProvider:
     AssetFolder: {fileID: 102900000, guid: ce1accc76ce3bb04a96922c34900a2ef, type: 3}
-    PrefixPath: Role/RoleItemSlotProvider/
+    PrefixPath: Role/ItemSlotProvider/
   AssetFolderInfo_Item_Weapon:
     AssetFolder: {fileID: 102900000, guid: 8a4916b74595465488510dd6146e4338, type: 3}
     PrefixPath: Item/Weapon/

@@ -17,8 +17,7 @@ MonoBehaviour:
   Hp: 4
   AllPossibleRoleIdentities: []
   AllWeaknessDatas:
-  - WeaknessType: 0
-    MaxWeaknessValue: 5
+  - {fileID: 11400000, guid: 694bf90c3c0e0dc4b8b475a5692004cd, type: 2}
   AllDefaultRoleActions:
   - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
   AllDefaultItems:
