@@ -5,6 +5,7 @@ using MyGameUtility;
 using MyGameUtility.SaveLoad;
 using Role;
 using Unity.VisualScripting;
+using UnlockData;
 using Utility;
 
 namespace Player {
@@ -36,6 +37,7 @@ namespace Player {
 
         public List<SaveData_Role> AllUsedTeamRoles  = new List<SaveData_Role>();
         public List<SaveData_Item> AllInventoryItems = new List<SaveData_Item>();
+        public List<SaveData_Unlock> 
 
         public SaveData_Player() { }
 

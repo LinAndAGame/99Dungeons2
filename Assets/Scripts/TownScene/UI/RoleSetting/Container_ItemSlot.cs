@@ -1,5 +1,5 @@
 ﻿using MyGameUtility;
-using Role.RoleItemSlot;
+using Role.RoleBody;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
