@@ -38,7 +38,7 @@ namespace Utility {
         public AssetFolderInfo AssetFolderInfo_Item_Shield;
         public AssetFolderInfo AssetFolderInfo_Item_CanUsedProp;
 
-        public List<AssetData_Role> AllAssetDataRoles;
+        public List<AssetData_BaseRole> AllAssetDataRoles;
         // public AssetFolderInfo AssetFolderInfo_Item_Weapon;
 
         [Button]

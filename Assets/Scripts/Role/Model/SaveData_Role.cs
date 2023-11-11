@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using Item;
 using MyGameUtility;
 using Role.Action;
-using Role.RoleItemSlot;
-using Role.RoleItemSlotProvider;
+using Role.Characterization;
+using Role.RoleBody;
 using Role.UnlockAction;
 using UnityEngine;
 using Utility;
@@ -20,16 +20,17 @@ namespace Role {
         public float            Damage = 1;
         public MinMaxValueFloat Hp;
         
-        public List<SaveData_RoleIdentity>              AllRoleIdentities             = new List<SaveData_RoleIdentity>();
-        public List<Guid>                               AllActiveRoleIdentityGuids    = new List<Guid>();
-        public List<SaveData_Item>                      AllItemDatas                  = new List<SaveData_Item>();
-        public List<SaveData_Weakness>                  AllWeaknessDatas              = new List<SaveData_Weakness>();
-        public List<SaveData_RoleAction>                AllRoleActionDatas            = new List<SaveData_RoleAction>();
-        public List<SaveData_RoleUnlock>                AllRoleUnlockDatas            = new List<SaveData_RoleUnlock>();
-        public List<Guid>                               AllActiveRoleUnlockDataGuids  = new List<Guid>();
-        public List<SaveData_RoleItemSlotProvider> AllRoleEquipmentSlotProviders = new List<SaveData_RoleItemSlotProvider>();
+        public List<SaveData_RoleIdentity>         AllRoleIdentities             = new List<SaveData_RoleIdentity>();
+        public List<Guid>                          AllActiveRoleIdentityGuids    = new List<Guid>();
+        public List<SaveData_Item>                 AllItemDatas                  = new List<SaveData_Item>();
+        public List<SaveData_Weakness>             AllWeaknessDatas              = new List<SaveData_Weakness>();
+        public List<SaveData_RoleAction>           AllRoleActionDatas            = new List<SaveData_RoleAction>();
+        public List<SaveData_RoleUnlock>           AllRoleUnlockDatas            = new List<SaveData_RoleUnlock>();
+        public List<Guid>                          AllActiveRoleUnlockDataGuids  = new List<Guid>();
+        public List<SaveData_RoleBodyPart> AllRoleEquipmentSlotProviders = new List<SaveData_RoleBodyPart>();
+        public List<SaveData_Characterization>     AllRoleCharacterizations      = new List<SaveData_Characterization>();
         
-        public AssetData_Role AssetData => Resources.Load<AssetData_Role>($"{GameCommonAsset.I.AssetFolderInfo_Role}{AssetDataName}");
+        public AssetData_BaseRole AssetData => Resources.Load<AssetData_BaseRole>($"{GameCommonAsset.I.AssetFolderInfo_Role}{AssetDataName}");
 
         public List<SaveData_RoleIdentity> AllActiveRoleIdentities {
             get {
@@ -55,7 +56,7 @@ namespace Role {
 
         public SaveData_Role() { }
 
-        public SaveData_Role(AssetData_Role assetDataRole, bool isPlayer) {
+        public SaveData_Role(AssetData_BaseRole assetDataRole, bool isPlayer) {
             AssetDataName = assetDataRole.name;
             RoleName      = assetDataRole.RoleName;
             IsPlayer      = isPlayer;
@@ -70,6 +71,10 @@ namespace Role {
                 var saveDataRoleIdentity = possibleRoleIdentity.GetSaveDataRoleIdentity();
                 AllRoleIdentities.Add(saveDataRoleIdentity);
                 AllRoleUnlockDatas.AddRange(saveDataRoleIdentity.GetInitUnlockDatas());
+            }
+            
+            foreach (var assetDataAllCharacterization in AssetData.AllCharacterizations) {
+                AllRoleCharacterizations.Add(new SaveData_Characterization(assetDataAllCharacterization));
             }
             
             foreach (AssetData_RoleAction defaultRoleAction in AssetData.AllDefaultRoleActions) {

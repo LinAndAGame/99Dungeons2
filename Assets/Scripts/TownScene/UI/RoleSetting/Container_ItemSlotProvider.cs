@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Role.RoleItemSlotProvider;
+using Role.RoleBody;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,11 +16,11 @@ namespace TownScene.UI {
             }
         }
         
-        public void RefreshUI(SaveData_RoleItemSlotProvider saveDataRoleItemSlotProvider) {
-            Img_SlotProvider.sprite = saveDataRoleItemSlotProvider.AssetData.GetSprite;
-            TMP_SlotProvider.text   = saveDataRoleItemSlotProvider.AssetData.ProviderName;
-            for (var i = 0; i < saveDataRoleItemSlotProvider.AllRoleItemSlots.Count; i++) {
-                var saveDataRoleItemSlot = saveDataRoleItemSlotProvider.AllRoleItemSlots[i];
+        public void RefreshUI(SaveData_RoleBodyPart saveDataRoleBodyPart) {
+            Img_SlotProvider.sprite = saveDataRoleBodyPart.AssetData.GetSprite;
+            TMP_SlotProvider.text   = saveDataRoleBodyPart.AssetData.ProviderName;
+            for (var i = 0; i < saveDataRoleBodyPart.AllRoleItemSlots.Count; i++) {
+                var saveDataRoleItemSlot = saveDataRoleBodyPart.AllRoleItemSlots[i];
                 AllContainerItemSlots[i].RefreshUI(saveDataRoleItemSlot);
             }
         }

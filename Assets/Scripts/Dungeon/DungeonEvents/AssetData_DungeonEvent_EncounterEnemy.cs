@@ -8,7 +8,7 @@ using Utility;
 namespace Dungeon {
     [CreateAssetMenu(fileName = "DungeonEvent_遭遇敌人", menuName = "纯数据资源/Dungeon/Event/遭遇敌人", order = 0)]
     public class AssetData_DungeonEvent_EncounterEnemy : AssetData_BaseDungeonEvent {
-        public List<AssetData_Role> Enemies;
+        public List<AssetData_BaseRole> Enemies;
 
         public override void Init() {
             createRoles();

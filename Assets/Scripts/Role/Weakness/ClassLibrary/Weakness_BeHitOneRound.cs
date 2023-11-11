@@ -1,4 +1,6 @@
-﻿namespace Role {
+﻿using Buff;
+
+namespace Role {
     public class Weakness_BeHitOneRound : SystemData_BaseWeakness {
         public Weakness_BeHitOneRound(RoleCtrl owner, SaveData_Weakness saveData) : base(owner, saveData) { }
         protected override void InitToTriggerWeakness() {
@@ -8,7 +10,7 @@
         }
 
         protected override void BreakWeaknessEffect() {
-            Owner.RoleSystemValues.BuffSystem.AddBuff(new RoleBuff_Vertigo(Owner, 1));
+            Owner.RoleSystemValues.BuffSystem.AddBuff(new Buff_Vertigo(Owner, 1));
         }
     }
 }
