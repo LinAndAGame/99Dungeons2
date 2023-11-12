@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c162b9f3314afcacc24d0b494c893f, type: 3}
   m_Name: "\u88C5\u5907\u69FD_\u6B66\u5668_\u76FE"
   m_EditorClassIdentifier: 
-  DefaultEquippedItem: {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
-  AllAllowedItemLabels:
-  - Weapon
-  - Armor
+  _ResourcePath: "Role/ItemSlot/\u88C5\u5907\u69FD_\u6B66\u5668_\u76FE"
+  OriginalCanNotRemovedItem: {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
+  AllAllowedItemLabels: 0000000002000000

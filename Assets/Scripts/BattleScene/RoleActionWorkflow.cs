@@ -76,7 +76,7 @@ namespace BattleScene {
 
         public void PlayerWin() {
             Debug.Log("玩家赢了！");
-            BattleSceneCtrl.I.ClearAllRoleCtrl();
+            BattleSceneCtrl.I.CurDungeonEventCallBacks.ClearData();
             BattleSceneCtrl.I.DisplayUIToSelectNextDungeonEvent();
         }
 

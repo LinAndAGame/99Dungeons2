@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using MyGameUtility.UI;
+using Player;
 using TownScene.UI;
 using UnityEngine;
 using UnityEngine.UI;
+using Panel_RoleWeaknessDetailInfo = TownScene.UI.Panel_RoleWeaknessDetailInfo;
 
 namespace TownScene {
     public class UICtrl : MonoBehaviour {
@@ -14,6 +16,10 @@ namespace TownScene {
         public Panel_PlayerInventory PanelPlayerInventory;
         public Panel_TeamSetting     PanelTeamSetting;
 
+        public Panel_RoleWeaknessDetailInfo PanelRoleWeaknessDetailInfo;
+
+        public Panel_StartGameItem PanelStartGameItem;
+
         public List<BaseUiPanel> AllUiPanels;
 
         private PopUpPanelProcess _PopUpPanelProcess = new PopUpPanelProcess();
@@ -24,6 +30,8 @@ namespace TownScene {
                 PanelTeamSetting.RefreshUI();
             });
             
+            PanelPlayerInventory.Init();
+            PanelStartGameItem.Init();
             PanelTownSceneBasicUI.Init();
             PanelRoleSetting.Init();
             PanelTeamSetting.Init();
@@ -34,6 +42,10 @@ namespace TownScene {
 
             PanelTownSceneBasicUI.Display();
 
+            if (SaveData_Player.I.PlayerConfirmStartGameItem == false) {
+                PanelStartGameItem.Display();
+                PanelStartGameItem.RefreshUI();
+            }
         }
 
         public void DisplayPopUpPanel(BaseUiPanel uiPanel) {

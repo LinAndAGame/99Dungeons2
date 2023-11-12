@@ -1,4 +1,5 @@
-﻿using Role.Action;
+﻿using BattleScene;
+using Role.Action;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -15,12 +16,17 @@ namespace Role {
 
         public void Init(RoleCtrl owner, SystemData_BaseRoleAction roleAction) {
             RoleActionRef          = roleAction;
-            Img_ActionSkill.sprite = GameUtility.GetSpriteByNameAndLabel(AddressableLabelTypeEnum.ActionSkillSprite ,roleAction.ActionName);
+            Img_ActionSkill.sprite = roleAction.SaveData.AssetData.GetSprite;
             TMP_Index.text         = owner.RoleSystemActionSkill.GetActionSkillIndex(roleAction).ToString();
+            SetAsNormalStyle();
         }
 
-        public void SetHighLight(bool isHighLight) {
-            HighLightObj.SetActive(isHighLight);
+        public void SetAsCurUsedStyle() {
+            HighLightObj.SetActive(true);
+        }
+
+        public void SetAsNormalStyle() {
+            HighLightObj.SetActive(false);
         }
 
         public void DestroySelf() {
@@ -29,11 +35,12 @@ namespace Role {
         }
         
         public void OnPointerEnter(PointerEventData eventData) {
-            
+            BattleSceneCtrl.I.UICtrlRef.PanelRoleActionDetailInfo.Display();
+            BattleSceneCtrl.I.UICtrlRef.PanelRoleActionDetailInfo.RefreshUI(RoleActionRef);
         }
 
         public void OnPointerExit(PointerEventData eventData) {
-            
+            BattleSceneCtrl.I.UICtrlRef.PanelRoleActionDetailInfo.Hide();
         }
     }
 }

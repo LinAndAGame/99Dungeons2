@@ -7,9 +7,5 @@ namespace Item {
         public override SystemData_Item GetSystemData() {
             return new SystemData_Item_Weapon(this);
         }
-
-        protected override string PathPrefix() {
-            return GameCommonAsset.I.AssetFolderInfo_Item_Weapon.ToString();
-        }
     }
 }

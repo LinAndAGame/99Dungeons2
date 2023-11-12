@@ -7,30 +7,32 @@ using Role.Characterization;
 using Role.RoleBody;
 using Role.UnlockAction;
 using UnityEngine;
+using UnlockData.UnlockProcess;
 using Utility;
 
 namespace Role {
     [Serializable]
     public class SaveData_Role {
         [SerializeField]
-        private string AssetDataName;
+        private string AssetDataPath;
         public  string RoleName;
         // TODO : 此属性待删除，Role本身没有是否为玩家的概念
         public bool             IsPlayer;
-        public float            Damage = 1;
         public MinMaxValueFloat Hp;
         
-        public List<SaveData_RoleIdentity>         AllRoleIdentities             = new List<SaveData_RoleIdentity>();
-        public List<Guid>                          AllActiveRoleIdentityGuids    = new List<Guid>();
-        public List<SaveData_Item>                 AllItemDatas                  = new List<SaveData_Item>();
-        public List<SaveData_Weakness>             AllWeaknessDatas              = new List<SaveData_Weakness>();
-        public List<SaveData_RoleAction>           AllRoleActionDatas            = new List<SaveData_RoleAction>();
-        public List<SaveData_RoleUnlock>           AllRoleUnlockDatas            = new List<SaveData_RoleUnlock>();
-        public List<Guid>                          AllActiveRoleUnlockDataGuids  = new List<Guid>();
-        public List<SaveData_RoleBodyPart> AllRoleEquipmentSlotProviders = new List<SaveData_RoleBodyPart>();
-        public List<SaveData_Characterization>     AllRoleCharacterizations      = new List<SaveData_Characterization>();
-        
-        public AssetData_BaseRole AssetData => Resources.Load<AssetData_BaseRole>($"{GameCommonAsset.I.AssetFolderInfo_Role}{AssetDataName}");
+        public List<SaveData_RoleIdentity>     AllRoleIdentities            = new List<SaveData_RoleIdentity>();
+        public List<Guid>                      AllActiveRoleIdentityGuids   = new List<Guid>();
+        public List<SaveData_Item>             AllItemDatas                 = new List<SaveData_Item>();
+        public List<SaveData_Weakness>         AllWeaknessDatas             = new List<SaveData_Weakness>();
+        public List<SaveData_RoleAction>       AllRoleActionDatas           = new List<SaveData_RoleAction>();
+        public List<SaveData_RoleAction>       AllLearnedRoleActions        = new List<SaveData_RoleAction>();
+        public List<SaveData_RoleUnlock>       AllRoleUnlockDatas           = new List<SaveData_RoleUnlock>();
+        public List<Guid>                      AllActiveRoleUnlockDataGuids = new List<Guid>();
+        public List<SaveData_Characterization> AllRoleCharacterizations     = new List<SaveData_Characterization>();
+        public SaveData_RoleBody               RoleBody;
+        public List<SaveData_UnlockProcess>    AllUnlockProcess = new List<SaveData_UnlockProcess>();
+
+        public AssetData_BaseRole AssetData => Resources.Load<AssetData_BaseRole>(AssetDataPath);
 
         public List<SaveData_RoleIdentity> AllActiveRoleIdentities {
             get {
@@ -54,14 +56,30 @@ namespace Role {
             }
         }
 
+        public List<SaveData_Item> AllEquippedItems {
+            get {
+                List<SaveData_Item> result = new List<SaveData_Item>();
+                foreach (SaveData_RoleBodySlot saveDataRoleBodySlot in RoleBody.AllBodySlots) {
+                    foreach (SaveData_RoleItemSlot saveDataRoleItemSlot in saveDataRoleBodySlot.SaveDataRoleBodyPart.AllRoleItemSlots) {
+                        if (saveDataRoleItemSlot.EquippedItem == null) {
+                            continue;
+                        }
+
+                        result.Add(saveDataRoleItemSlot.EquippedItem);
+                    }
+                }
+
+                return result;
+            }
+        }
+
         public SaveData_Role() { }
 
         public SaveData_Role(AssetData_BaseRole assetDataRole, bool isPlayer) {
-            AssetDataName = assetDataRole.name;
+            AssetDataPath = assetDataRole.ResourcePath;
             RoleName      = assetDataRole.RoleName;
             IsPlayer      = isPlayer;
             
-            Damage = AssetData.Damage;
             Hp     = new MinMaxValueFloat(0, AssetData.Hp, AssetData.Hp);
             foreach (AssetData_Weakness assetDataAllWeaknessData in AssetData.AllWeaknessDatas) {
                 AllWeaknessDatas.Add(assetDataAllWeaknessData.GetSaveData());
@@ -85,9 +103,11 @@ namespace Role {
                 AllItemDatas.Add(defaultItem.GetSaveData());
             }
             
-            foreach (var roleEquipmentSlot in AssetData.AllRoleEquipmentSlotProviders) {
-                AllRoleEquipmentSlotProviders.Add(roleEquipmentSlot.GetSaveData());
+            foreach (AssetData_UnlockProcess assetDataUnlockProcess in AssetData.AllUnlockProcess) {
+                AllUnlockProcess.Add(new SaveData_UnlockProcess(assetDataUnlockProcess));
             }
+
+            RoleBody = new SaveData_RoleBody(AssetData.RoleBody);
 
             RefreshActiveRoleIdentities();
             RefreshActiveRoleUnlockDatas();
@@ -110,13 +130,13 @@ namespace Role {
         }
 
         public void UnEquipItem(SaveData_RoleItemSlot itemSlot) {
-            if (itemSlot.EquippedItem == null) {
+            if (itemSlot.OverrideItem == null) {
                 Debug.LogException(new Exception("装备槽中没有物品，不能将物品卸载！"));
                 return;
             }
             
-            AllItemDatas.Add(itemSlot.EquippedItem);
-            itemSlot.EquippedItem = null;
+            AllItemDatas.Add(itemSlot.OverrideItem);
+            itemSlot.OverrideItem = null;
         }
     }
 }

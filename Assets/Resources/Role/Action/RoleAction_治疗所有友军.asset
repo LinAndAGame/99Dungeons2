@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cabcc8e2d29a4a8ab363157f2eea200d, type: 3}
   m_Name: "RoleAction_\u6CBB\u7597\u6240\u6709\u53CB\u519B"
   m_EditorClassIdentifier: 
+  _ResourcePath: "Role/Action/RoleAction_\u6CBB\u7597\u6240\u6709\u53CB\u519B"
+  RoleActionName: HealAllFriendlyRoles
+  DetailInfo: "\u6CBB\u7597\u6240\u6709\u53CB\u519B"
   HealValue: 5

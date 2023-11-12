@@ -15,6 +15,7 @@ MonoBehaviour:
   RoleName: Soldier
   Damage: 2
   Hp: 20
+  FrameAnimationCollection: {fileID: 11400000, guid: fc366daed2aa6d84bbd8824a16ab937c, type: 2}
   AllPossibleRoleIdentities:
   - {fileID: 11400000, guid: 2cfdf047176f7db41931eaf35643411e, type: 2}
   - {fileID: 11400000, guid: 39fd8908145c89a4cb44525a457e1f1e, type: 2}
@@ -22,11 +23,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 694bf90c3c0e0dc4b8b475a5692004cd, type: 2}
   AllDefaultRoleActions:
   - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
   AllDefaultItems:
   - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
-  AllRoleEquipmentSlotProviders:
-  - {fileID: 11400000, guid: d8c47f7b40bb4164497c31db1fb7c9c7, type: 2}
-  - {fileID: 11400000, guid: 6ef2536a3414b0a4a927d3856b8f5a2f, type: 2}
-  - {fileID: 11400000, guid: da197156c0b6c7f4b9f9b357724acfe4, type: 2}
-  - {fileID: 11400000, guid: 75d844faed7597a4cb474aa64369026f, type: 2}
-  FrameAnimationCollection: {fileID: 11400000, guid: fc366daed2aa6d84bbd8824a16ab937c, type: 2}
+  AllCharacterizations: []
+  RoleBody: {fileID: 11400000, guid: c5312829dcb7fb44aaf1e97bd926b6bf, type: 2}

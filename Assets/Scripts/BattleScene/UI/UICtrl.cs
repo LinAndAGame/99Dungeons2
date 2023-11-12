@@ -1,7 +1,9 @@
-﻿using BattleScene.UI.DungeonEvent_ChooseNextEvent;
+﻿using System.Collections.Generic;
+using BattleScene.UI.DungeonEvent_ChooseNextEvent;
 using BattleScene.UI.DungeonEvent_EncounterEnemy;
 using BattleScene.UI.DungeonEvent_Lounge;
 using BattleScene.UI.DungeonEvent_NotTouchBoundary;
+using MyGameUtility.UI;
 using UnityEngine;
 
 namespace BattleScene.UI {
@@ -14,8 +16,17 @@ namespace BattleScene.UI {
         
         public Panel_RewardGameSucceed PanelRewardGameSucceed;
         public Panel_RewardGameFailure PanelRewardGameFailure;
-        
+
+        public Panel_RoleActionDetailInfo   PanelRoleActionDetailInfo;
+        public Panel_RoleWeaknessDetailInfo PanelRoleWeaknessDetailInfo;
+
+        public List<BaseUiPanel> AllBattlePanels;
+
         public void Init() {
+            foreach (BaseUiPanel battlePanel in AllBattlePanels) {
+                battlePanel.Hide();
+            }
+            
             PanelLounge.Init();
             PanelNotTouchBoundary.Init();
             PanelRewardGameSucceed.Init();

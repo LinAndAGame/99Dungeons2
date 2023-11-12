@@ -8,7 +8,7 @@ namespace Role.Action {
             var selfLocatorGroupCtrl = GameUtility.GetSelfLocatorGroupCtrl(Owner.RoleSystemValues.IsPlayer);
             var allPossibleRoles     = selfLocatorGroupCtrl.AllAliveRoles.FindAll(data => data != Owner);
             foreach (RoleCtrl possibleRole in allPossibleRoles) {
-                possibleRole.RoleSystemValues.Hp.Current += SaveData.AssetData.HealValue;
+                possibleRole.RoleSystemValues.Hp.Current += SaveDataT.AssetDataT.HealValue;
             }
         }
     }

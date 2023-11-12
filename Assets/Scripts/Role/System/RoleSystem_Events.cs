@@ -12,6 +12,9 @@ namespace Role {
 
         public CustomAction<SystemData_BaseRoleAction> OnCurActionSkillChanged = new CustomAction<SystemData_BaseRoleAction>();
 
+        public CustomAction OnFightWinBefore = new CustomAction();
+        public CustomAction OnFightFailure   = new CustomAction();
+
         public CustomAction OnAnimationAttack = new CustomAction();
         
         public RoleSystem_Events(RoleCtrl roleOwner) : base(roleOwner) { }

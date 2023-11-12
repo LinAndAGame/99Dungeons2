@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5c162b9f3314afcacc24d0b494c893f, type: 3}
   m_Name: "\u88C5\u5907\u69FD_\u62A4\u7532"
   m_EditorClassIdentifier: 
+  _ResourcePath: "Role/ItemSlot/\u88C5\u5907\u69FD_\u62A4\u7532"
   DefaultEquippedItem: {fileID: 0}
-  AllAllowedItemLabels:
-  - Armor
+  AllAllowedItemLabels: 01000000

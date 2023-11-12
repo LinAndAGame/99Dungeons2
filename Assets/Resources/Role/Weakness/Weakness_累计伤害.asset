@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e40a1fb6c6048b6b9aadc4a6b75e1e7, type: 3}
   m_Name: "Weakness_\u7D2F\u8BA1\u4F24\u5BB3"
   m_EditorClassIdentifier: 
+  _ResourcePath: "Role/Weakness/Weakness_\u7D2F\u8BA1\u4F24\u5BB3"
   WeaknessType: 0
   DefaultMaxValue: 10
-  _ResourcePath: "Role/Weakness/Weakness_\u7D2F\u8BA1\u4F24\u5BB3"
+  DetailInfo: "\u7D2F\u8BA1\u4F24\u5BB3\u8FBE\u523010"

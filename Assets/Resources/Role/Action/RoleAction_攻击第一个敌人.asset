@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8714f58f2e4499ba9e262dd9e27474d, type: 3}
   m_Name: "RoleAction_\u653B\u51FB\u7B2C\u4E00\u4E2A\u654C\u4EBA"
   m_EditorClassIdentifier: 
+  _ResourcePath: "Role/Action/RoleAction_\u653B\u51FB\u7B2C\u4E00\u4E2A\u654C\u4EBA"
+  RoleActionName: AttackFirstInRange
+  DetailInfo: "\u653B\u51FB\u8303\u56F4\u5185(0,5)\u7684\u7B2C\u4E00\u4E2A\u654C\u4EBA"
   DelayEnd: 0.5
   MoveDuration: 0.5
   AttackUseWeaponType: 0

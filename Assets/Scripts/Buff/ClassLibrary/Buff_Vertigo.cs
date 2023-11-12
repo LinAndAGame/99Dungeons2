@@ -1,4 +1,6 @@
 ﻿using BattleScene;
+using Dungeon.EncounterEnemy;
+using Dungeon.SystemData;
 using Role;
 
 namespace Buff {
@@ -8,9 +10,12 @@ namespace Buff {
         protected override void InitInternal() {
             base.InitInternal();
             CC.Value.Add(DataOwner.RoleSystemStatus.CanAttack.GetCacheElement());
-            BattleSceneCtrl.I.CurRoleActionWorkflow.OnRoleRoundEnd.AddListener(() => {
-                SetLayerOffset(-1);
-            }, CC.Event);
+            var encounterEnemy = (BattleSceneCtrl.I.CurDungeonEventCallBacks as SystemData_DungeonEvent_EncounterEnemy);
+            if (encounterEnemy == null) {
+                return;
+            }
+
+            encounterEnemy.CurRoleActionWorkflow.OnRoleRoundEnd.AddListener(() => { SetLayerOffset(-1); }, CC.Event);
         }
     }
 }

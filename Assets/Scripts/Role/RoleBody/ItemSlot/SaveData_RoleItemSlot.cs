@@ -8,17 +8,31 @@ namespace Role.RoleBody {
     [Serializable]
     public class SaveData_RoleItemSlot {
         [SerializeField]
-        private string AssetDataName;
-        public SaveData_Item EquippedItem;
+        private SaveData_Item OriginalCanNotRemovedItem;
         
-        public AssetData_RoleItemSlot AssetData => Resources.Load<AssetData_RoleItemSlot>($"{GameCommonAsset.I.AssetFolderInfo_RoleEquipmentSlot}{AssetDataName}");
+        [SerializeField]
+        private string AssetDataPath;
+
+        public SaveData_Item OverrideItem;
+
+        public SaveData_Item EquippedItem {
+            get {
+                if (OverrideItem != null) {
+                    return OverrideItem;
+                }
+
+                return OriginalCanNotRemovedItem;
+            }
+        }
+        
+        public AssetData_RoleItemSlot AssetData => Resources.Load<AssetData_RoleItemSlot>(AssetDataPath);
 
         public SaveData_RoleItemSlot() { }
         
         public SaveData_RoleItemSlot(AssetData_RoleItemSlot assetData) {
-            AssetDataName = assetData.name;
-            if (assetData.DefaultEquippedItem != null) {
-                EquippedItem = assetData.DefaultEquippedItem.GetSaveData();
+            AssetDataPath = assetData.ResourcePath;
+            if (assetData.OriginalCanNotRemovedItem != null) {
+                OriginalCanNotRemovedItem = assetData.OriginalCanNotRemovedItem.GetSaveData();
             }
         }
 

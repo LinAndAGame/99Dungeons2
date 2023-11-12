@@ -11,8 +11,8 @@ namespace Item {
         public SystemData_Item_Weapon(SaveData_Item_Weapon saveData) : base(saveData) { }
         
         public override void Init(RoleCtrl roleCtrl) {
-            Damage            = SaveData.AssetData.Damage;
-            DamageElementType = SaveData.AssetData.DamageElementType;
+            Damage            = SaveData.AssetDataT.Damage;
+            DamageElementType = SaveData.AssetDataT.DamageElementType;
         }
 
         public bool GiveDamage_TryGetDamageData(IReceiveDamage receiveDamage, out DamageData damageData) {

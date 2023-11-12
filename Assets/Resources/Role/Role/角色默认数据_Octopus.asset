@@ -15,6 +15,7 @@ MonoBehaviour:
   RoleName: Octopus
   Damage: 1
   Hp: 10
+  FrameAnimationCollection: {fileID: 11400000, guid: fe4444d664dd80c4690cb415d42c286b, type: 2}
   AllPossibleRoleIdentities:
   - {fileID: 11400000, guid: 2cfdf047176f7db41931eaf35643411e, type: 2}
   - {fileID: 11400000, guid: 39fd8908145c89a4cb44525a457e1f1e, type: 2}
@@ -22,15 +23,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 694bf90c3c0e0dc4b8b475a5692004cd, type: 2}
   AllDefaultRoleActions:
   - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
   AllDefaultItems:
   - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
-  AllRoleEquipmentSlotProviders:
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  - {fileID: 11400000, guid: 590aa1a2477f1f44ea4d94416a57580e, type: 2}
-  FrameAnimationCollection: {fileID: 11400000, guid: fe4444d664dd80c4690cb415d42c286b, type: 2}
+  AllCharacterizations: []
+  RoleBody: {fileID: 11400000, guid: 7fb9a06c26148ee4b904abecf0065509, type: 2}

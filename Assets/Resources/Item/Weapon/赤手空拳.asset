@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc00290f1e44639b8f0bdef0b0ef17a, type: 3}
   m_Name: "\u8D64\u624B\u7A7A\u62F3"
   m_EditorClassIdentifier: 
+  _ResourcePath: "Item/Weapon/\u8D64\u624B\u7A7A\u62F3"
   ItemName: "\u8D64\u624B\u7A7A\u62F3"
-  AllLabels:
-  - Weapon
-  Damage: 2
+  AllLabels: 00000000
+  Damage: 1
   DamageElementType: 0

@@ -6,10 +6,14 @@ using UnityEngine.UI;
 
 namespace TownScene.UI {
     public class Panel_RoleSetting : BaseUiPanel {
-        public Button                           Btn_HidePanel;
-        public Image                            Img_Role;
-        public TextMeshProUGUI                  TMP_RoleName;
-        public List<Container_ItemSlotProvider> AllContainerItemSlotProviders;
+        public Button             Btn_HidePanel;
+        public Image              Img_Role;
+        public TextMeshProUGUI    TMP_RoleName;
+        public Panel_RoleBody     PanelRoleBody;
+        public Panel_RoleActions  PanelRoleActions;
+        public Panel_RoleWeakness PanelRoleWeakness;
+        
+        public SaveData_Role SaveDataRole { get; private set; }
 
         private Container_ItemSlot _CurSelectedItemSlot;
         public Container_ItemSlot CurSelectedItemSlot {
@@ -29,18 +33,18 @@ namespace TownScene.UI {
             Btn_HidePanel.onClick.AddListener(() => {
                 TownSceneCtrl.I.UICtrlRef.HideTopPanel();
             });
-            foreach (var containerItemSlotProvider in AllContainerItemSlotProviders) {
-                containerItemSlotProvider.Init();
-            }
+            
+            PanelRoleActions.Init();
         }
 
         public void RefreshUI(SaveData_Role saveDataRole) {
+            SaveDataRole      = saveDataRole;
             Img_Role.sprite   = saveDataRole.AssetData.GetSprite;
             TMP_RoleName.text = saveDataRole.AssetData.RoleName;
-            for (var i = 0; i < AllContainerItemSlotProviders.Count; i++) {
-                var curContainerItemSlotProvider = AllContainerItemSlotProviders[i];
-                curContainerItemSlotProvider.RefreshUI(saveDataRole.AllRoleEquipmentSlotProviders[i]);
-            }
+            
+            PanelRoleBody.RefreshUI(saveDataRole);
+            PanelRoleActions.RefreshUI(saveDataRole);
+            PanelRoleWeakness.RefreshUI(saveDataRole);
         }
     }
 }

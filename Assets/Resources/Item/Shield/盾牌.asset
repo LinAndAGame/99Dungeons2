@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d335596afd9746e69152d9256ae109a9, type: 3}
+  m_Name: "\u76FE\u724C"
+  m_EditorClassIdentifier: 
+  _ResourcePath: "Item/Shield/\u76FE\u724C"
+  ItemName: "\u76FE\u724C"
+  AllLabels: 02000000
+  Damage: 2
+  DamageElementType: 0
+  DefenceValue: 5

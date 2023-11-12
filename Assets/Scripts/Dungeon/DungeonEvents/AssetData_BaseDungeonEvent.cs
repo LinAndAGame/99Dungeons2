@@ -1,10 +1,17 @@
-﻿using UnityEngine;
+﻿using BattleScene;
+using Dungeon.SystemData;
+using MyGameUtility;
+using UnityEngine;
 
 namespace Dungeon {
-    public abstract class AssetData_BaseDungeonEvent : ScriptableObject {
+    public abstract class AssetData_BaseDungeonEvent : BaseAssetData {
         public string EventName;
         public string StartEventContent;
 
-        public abstract void Init();
+        public virtual void RunThisDungeonEvent() {
+            BattleSceneCtrl.I.ChangeDungeonEventCallBacks(GetCallBacks());
+        }
+
+        public abstract ISystemData_DungeonEvent_CallBacks GetCallBacks();
     }
 }
