@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="" />
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,6 +156,7 @@
       <workItem from="1699536124172" duration="5845000" />
       <workItem from="1699584787511" duration="17832000" />
       <workItem from="1699612246101" duration="586000" />
+      <workItem from="1699837579948" duration="1182000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -274,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699612830322</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1">
+      <created>1699837734782</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699837734782</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,11 +318,11 @@
     <MESSAGE value="角色设置界面代码写完，UI没有制作" />
     <MESSAGE value="limit font asset size" />
     <MESSAGE value="limit font asset size2" />
-    <MESSAGE value="1" />
     <MESSAGE value="GameModTool" />
     <MESSAGE value="弱点代码未整理" />
     <MESSAGE value="解锁系统未完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="解锁系统未完成" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
