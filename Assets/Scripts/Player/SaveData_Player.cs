@@ -9,6 +9,7 @@ using Role.RoleBody;
 using Unity.VisualScripting;
 using UnlockData;
 using UnlockData.UnlockProcess;
+using UnlockData.UnlockSystem;
 using Utility;
 
 namespace Player {
@@ -30,6 +31,8 @@ namespace Player {
                             _I.AllInventoryItems.Add(assetDataItem.GetSaveData());
                         }
 
+                        _I.UnlockSystem = new SaveData_UnlockSystem(GameCommonAsset.I.DefaultPlayerData.AllUnlockProcesses);
+
                         ES3.Save(SaveDataPlayerKey, _I);
                     }
                     else {
@@ -41,9 +44,9 @@ namespace Player {
             }
         }
 
-        public List<SaveData_Role>           AllUsedTeamRoles             = new List<SaveData_Role>();
-        public List<SaveData_Item>           AllInventoryItems            = new List<SaveData_Item>();
-        public List<SaveData_UnlockProcess>  AllUnlockProcess             = new List<SaveData_UnlockProcess>();
+        public List<SaveData_Role>           AllUsedTeamRoles  = new List<SaveData_Role>();
+        public List<SaveData_Item>           AllInventoryItems = new List<SaveData_Item>();
+        public SaveData_UnlockSystem         UnlockSystem;
         public SaveData_UnlockDataCollection SaveDataUnlockDataCollection = new SaveData_UnlockDataCollection();
         public bool                          PlayerConfirmStartGameItem;
 
@@ -59,6 +62,7 @@ namespace Player {
             }
 
             roleItemSlot.OverrideItem = saveDataItem;
+            SaveAsync();
         }
 
         public void SaveSync() {

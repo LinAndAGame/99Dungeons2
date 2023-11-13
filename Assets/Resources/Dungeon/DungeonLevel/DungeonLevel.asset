@@ -17,4 +17,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f71716e741bb98f45a75398154a0b460, type: 2}
   - {fileID: 11400000, guid: 9706af861aca5d749a29dcdf3ce37d53, type: 2}
   - {fileID: 11400000, guid: d77011e3372d11a4f8857bfda31bf81a, type: 2}
+  - {fileID: 11400000, guid: 30250ee4347c6a248ab8ee479415683e, type: 2}
   AllHiddenDungeonEvents: []

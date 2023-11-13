@@ -12,6 +12,6 @@ namespace Dungeon {
             BattleSceneCtrl.I.ChangeDungeonEventCallBacks(GetCallBacks());
         }
 
-        public abstract ISystemData_DungeonEvent_CallBacks GetCallBacks();
+        public abstract SystemData_BaseDungeonEvent GetCallBacks();
     }
 }

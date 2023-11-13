@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: "\u73A9\u5BB6\u9ED8\u8BA4\u6570\u636E"
   m_EditorClassIdentifier: 
   AllTeamRoles:
+  - {fileID: 11400000, guid: 80918c6f812973047bc68e457746fb0b, type: 2}
   - {fileID: 11400000, guid: e50947518331ac34db3c0ea1b91c801a, type: 2}
-  - {fileID: 11400000, guid: e50947518331ac34db3c0ea1b91c801a, type: 2}
-  - {fileID: 11400000, guid: e50947518331ac34db3c0ea1b91c801a, type: 2}
-  - {fileID: 11400000, guid: e50947518331ac34db3c0ea1b91c801a, type: 2}
-  - {fileID: 11400000, guid: e50947518331ac34db3c0ea1b91c801a, type: 2}
-  - {fileID: 11400000, guid: e50947518331ac34db3c0ea1b91c801a, type: 2}
+  - {fileID: 11400000, guid: 06d1f1a41ce5b5641844ddedc60c084f, type: 2}
+  - {fileID: 11400000, guid: 40c7067603e7ed44aac79b47d3aefdcf, type: 2}
+  - {fileID: 11400000, guid: 779f9799f35375d46be41582e8ed2642, type: 2}
+  - {fileID: 11400000, guid: a5675db24f14e77458e4fa242241a1c7, type: 2}
   AllInventoryItems:
   - {fileID: 11400000, guid: 891b23f5becff1d49a6e34d8eb84cb41, type: 2}
   - {fileID: 11400000, guid: 891b23f5becff1d49a6e34d8eb84cb41, type: 2}
   - {fileID: 11400000, guid: d5d843e685c140242b40abd3d23eb74c, type: 2}
   - {fileID: 11400000, guid: d5d843e685c140242b40abd3d23eb74c, type: 2}
+  AllUnlockProcesses: []

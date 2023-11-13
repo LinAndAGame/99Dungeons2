@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 512362abc809440180e0ae52fdd9a571, type: 3}
+  m_Name: "DungeonEvent_\u8FD4\u56DE\u57CE\u9547"
+  m_EditorClassIdentifier: 
+  _ResourcePath: "Dungeon/DungeonEvent/DungeonEvent_\u8FD4\u56DE\u57CE\u9547"
+  EventName: "\u8FD4\u56DE\u57CE\u9547"
+  StartEventContent: 
+  ReturnTownContent: "\u4F60\u4EEC\u5DF2\u7ECF\u79BB\u5F00\u57CE\u9547\u5F88\u957F\u65F6\u95F4\u4E86\uFF0C\u75B2\u60EB\u7684\u4F60\u4EEC\u9009\u62E9\u8FD4\u56DE\u57CE\u9547\u8FDB\u884C\u4F11\u606F..."

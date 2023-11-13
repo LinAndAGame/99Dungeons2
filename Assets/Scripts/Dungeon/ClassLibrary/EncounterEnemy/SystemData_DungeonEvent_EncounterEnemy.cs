@@ -2,10 +2,11 @@
 using Dungeon.SystemData;
 using Player;
 using Role;
+using UnityEngine;
 using Utility;
 
 namespace Dungeon.EncounterEnemy {
-    public class SystemData_DungeonEvent_EncounterEnemy : SystemData_BaseDungeonEvent<AssetData_DungeonEvent_EncounterEnemy> {
+    public class SystemData_DungeonEvent_EncounterEnemy : SystemData_BaseDungeonEventWithOwner<AssetData_DungeonEvent_EncounterEnemy> {
         public RoleActionWorkflow       CurRoleActionWorkflow    = new RoleActionWorkflow();
         public EncounterEnemySettlement CurEncounterEnemySettlement = new EncounterEnemySettlement();
 
@@ -15,7 +16,7 @@ namespace Dungeon.EncounterEnemy {
             base.Init();
             createRoles();
             var panelEncounterEnemy = BattleSceneCtrl.I.UICtrlRef.PanelEncounterEnemy;
-            var sequence            = panelEncounterEnemy.Display(AssetData);
+            var sequence            = panelEncounterEnemy.Display(AssetDataT);
             sequence.onComplete += () => {
                 CurRoleActionWorkflow.ReStartWorkflow();
                 panelEncounterEnemy.Hide();
@@ -32,8 +33,8 @@ namespace Dungeon.EncounterEnemy {
                     playerRole.CurRoleLocatorCtrl = GameUtility.GetSelfLocatorGroupCtrl(true).AllLocatorCtrls[i];
                 }
 
-                for (int i = 0; i < AssetData.Enemies.Count; i++) {
-                    SaveData_Role enemySaveDataRole = new SaveData_Role(AssetData.Enemies[i], false);
+                for (int i = 0; i < AssetDataT.Enemies.Count; i++) {
+                    SaveData_Role enemySaveDataRole = new SaveData_Role(AssetDataT.Enemies[i], false);
                     var           enemyRole         = RoleCreator.CreateRole(enemySaveDataRole);
                     enemyRole.CurRoleLocatorCtrl = GameUtility.GetSelfLocatorGroupCtrl(false).AllLocatorCtrls[i];
                 }
@@ -48,6 +49,22 @@ namespace Dungeon.EncounterEnemy {
 
             foreach (RoleCtrl aliveRole in BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef.AllAliveRoles) {
                 aliveRole.DestroySelf();
+            }
+        }
+
+        public void PlayerWin() {
+            Debug.Log("玩家赢了！");
+            foreach (var aliveRole in BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef.AllAliveRoles) {
+                aliveRole.RoleSystemEvents.OnFightWinBefore.Invoke();
+            }
+            BattleSceneCtrl.I.UICtrlRef.PanelBattleSettlement.Display();
+            BattleSceneCtrl.I.UICtrlRef.PanelBattleSettlement.RefreshUI();
+        }
+
+        public void PlayerFailure() {
+            Debug.Log("玩家输了！");
+            foreach (var aliveRole in BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef.AllAliveRoles) {
+                aliveRole.RoleSystemEvents.OnFightWinBefore.Invoke();
             }
         }
     }

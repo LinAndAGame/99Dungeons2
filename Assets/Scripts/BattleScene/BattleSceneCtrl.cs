@@ -15,8 +15,7 @@ namespace BattleScene {
 
         public AssetData_DungeonLevel DungeonLevel;
 
-        private ISystemData_DungeonEvent_CallBacks curDungeonEventCallBacks;
-        public  ISystemData_DungeonEvent_CallBacks CurDungeonEventCallBacks => curDungeonEventCallBacks;
+        public SystemData_BaseDungeonEvent CurDungeonEventCallBacks { get; private set; }
 
         private void Start() {
             CurDungeonProcess = new DungeonProcess(DungeonLevel);
@@ -26,13 +25,17 @@ namespace BattleScene {
             CurDungeonProcess.RunFirstDungeonEvent();
         }
 
-        public void ChangeDungeonEventCallBacks(ISystemData_DungeonEvent_CallBacks dungeonEventCallBacks) {
-            if (curDungeonEventCallBacks != null) {
-                curDungeonEventCallBacks.ClearData();
+        public T GetDungeonEventCallBack<T>() where T : SystemData_BaseDungeonEvent {
+            return CurDungeonEventCallBacks as T;
+        }
+
+        public void ChangeDungeonEventCallBacks(SystemData_BaseDungeonEvent dungeonEventCallBacks) {
+            if (CurDungeonEventCallBacks != null) {
+                CurDungeonEventCallBacks.ClearData();
             }
 
-            curDungeonEventCallBacks = dungeonEventCallBacks;
-            curDungeonEventCallBacks.Init();
+            CurDungeonEventCallBacks = dungeonEventCallBacks;
+            CurDungeonEventCallBacks.Init();
         }
 
         public void DisplayUIToSelectNextDungeonEvent() {

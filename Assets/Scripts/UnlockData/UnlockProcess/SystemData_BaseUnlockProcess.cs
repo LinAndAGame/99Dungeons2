@@ -1,23 +1,29 @@
 ﻿using MyGameUtility;
 using Player;
+using UnlockData.UnlockSystem;
 
 namespace UnlockData.UnlockProcess {
-    public abstract class SystemData_BaseUnlockProcess {
+    public abstract class SystemData_BaseUnlockProcess<T> {
         protected CacheCollection        CC = new CacheCollection();
-        
-        protected SystemData_Player      SystemDataPlayer => SystemData_Player.I;
-        public    SaveData_UnlockProcess SaveData         { get; private set; }
-        
-        public SystemData_BaseUnlockProcess(SaveData_UnlockProcess saveDataUnlockProcess) {
-            SaveData = saveDataUnlockProcess;
-            TryUnlock();
+
+        protected T                       DataOwner    { get; private set; }
+        protected SystemData_UnlockSystem<T> UnlockSystem { get; private set; }
+        public    SaveData_UnlockProcess  SaveData     { get; private set; }
+        protected SystemData_BaseUnlockProcess(T dataOwner, SystemData_UnlockSystem<T> unlockSystem, SaveData_UnlockProcess saveDataUnlockProcess) {
+            DataOwner    = dataOwner;
+            UnlockSystem = unlockSystem;
+            SaveData     = saveDataUnlockProcess;
         }
 
-        protected virtual void TryUnlock() {
+        protected void TryUnlock() {
             if (CheckIsUnlock()) {
-                SystemDataPlayer.RemoveAndRuneNextUnlockProcess(this);
+                OtherUnlockHandle();
+                CC.Clear();
+                UnlockSystem.RemoveAndRuneNextUnlockProcess(this);
             }
         }
+        
+        protected virtual void OtherUnlockHandle(){ }
 
         protected abstract bool CheckIsUnlock();
     }

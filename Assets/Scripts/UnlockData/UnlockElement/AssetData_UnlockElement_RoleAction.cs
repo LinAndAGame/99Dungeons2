@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Player;
+using Role;
 using Role.Action;
 using UnityEngine;
 
@@ -9,5 +11,13 @@ namespace UnlockData.UnlockElement {
         public List<AssetData_RoleAction> AllUnlockRoleActions;
 
         public override List<string> GetUnlockNames() => AllUnlockRoleActions.Select(data => data.RoleActionName).ToList();
+
+        public override void AddToRole(SaveData_Role saveDataRole) {
+            base.AddToRole(saveDataRole);
+            foreach (var assetDataRoleAction in AllUnlockRoleActions) {
+                saveDataRole.AllLearnedRoleActions.Add(assetDataRoleAction.GetSaveData());
+            }
+            SaveData_Player.I.SaveSync();
+        }
     }
 }

@@ -2,14 +2,15 @@
 using Player;
 using Role;
 using Role.RoleBody;
+using Unity.VisualScripting;
 using UnlockData.UnlockProcess;
+using UnlockData.UnlockSystem;
 
 namespace UnlockData {
-    public class SystemData_UnlockProcess_PlayerCreateOctopusMan : SystemData_BaseUnlockProcess {
-        public SystemData_UnlockProcess_PlayerCreateOctopusMan(SaveData_UnlockProcess saveDataUnlockProcess) : base(saveDataUnlockProcess) {
-            SystemDataPlayer.OnRoleBodyChanged.AddListener(TryUnlock, CC.Event);
-        }
-
+    public class SystemData_UnlockProcess_PlayerCreateOctopusMan : SystemData_BaseUnlockProcess<SystemData_Player> {
+        public SystemData_UnlockProcess_PlayerCreateOctopusMan(SystemData_Player dataOwner, SystemData_UnlockSystem<SystemData_Player> unlockSystem, SaveData_UnlockProcess saveDataUnlockProcess) :
+            base(dataOwner, unlockSystem, saveDataUnlockProcess) { }
+        
         protected override bool CheckIsUnlock() {
             foreach (SaveData_Role usedTeamRole in SaveData_Player.I.AllUsedTeamRoles) {
                 foreach (SaveData_RoleBodySlot saveDataRoleBodySlot in usedTeamRole.RoleBody.AllBodySlots) {

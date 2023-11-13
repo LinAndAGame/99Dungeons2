@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
 namespace Dungeon.SystemData {
-    public abstract class SystemData_BaseDungeonEvent<T> : ISystemData_DungeonEvent_CallBacks where T : AssetData_BaseDungeonEvent {
+    public abstract class SystemData_BaseDungeonEvent {
         private   string AssetDataPath;
-        protected T      AssetData => Resources.Load<T>(AssetDataPath);
+        protected AssetData_BaseDungeonEvent      AssetData => Resources.Load<AssetData_BaseDungeonEvent>(AssetDataPath);
 
-        protected SystemData_BaseDungeonEvent(T assetData) {
+        protected SystemData_BaseDungeonEvent(AssetData_BaseDungeonEvent assetData) {
             AssetDataPath = assetData.ResourcePath;
         }
 

@@ -10,7 +10,7 @@ namespace Buff {
         protected override void InitInternal() {
             base.InitInternal();
             CC.Value.Add(DataOwner.RoleSystemStatus.CanAttack.GetCacheElement());
-            var encounterEnemy = (BattleSceneCtrl.I.CurDungeonEventCallBacks as SystemData_DungeonEvent_EncounterEnemy);
+            var encounterEnemy = BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>();
             if (encounterEnemy == null) {
                 return;
             }

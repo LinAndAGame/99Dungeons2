@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c7bafff0b94334b4c22df3ce8ef3bc, type: 3}
   m_Name: "\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_Octopus"
   m_EditorClassIdentifier: 
+  _ResourcePath: "Role/Role/\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_Octopus"
   RoleName: Octopus
-  Damage: 1
-  Hp: 10
+  Hp: 5
   FrameAnimationCollection: {fileID: 11400000, guid: fe4444d664dd80c4690cb415d42c286b, type: 2}
   AllPossibleRoleIdentities:
   - {fileID: 11400000, guid: 2cfdf047176f7db41931eaf35643411e, type: 2}
@@ -30,3 +30,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
   AllCharacterizations: []
   RoleBody: {fileID: 11400000, guid: 7fb9a06c26148ee4b904abecf0065509, type: 2}
+  AllUnlockProcesses: []

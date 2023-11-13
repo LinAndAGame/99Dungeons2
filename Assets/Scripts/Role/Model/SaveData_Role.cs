@@ -8,6 +8,7 @@ using Role.RoleBody;
 using Role.UnlockAction;
 using UnityEngine;
 using UnlockData.UnlockProcess;
+using UnlockData.UnlockSystem;
 using Utility;
 
 namespace Role {
@@ -30,7 +31,7 @@ namespace Role {
         public List<Guid>                      AllActiveRoleUnlockDataGuids = new List<Guid>();
         public List<SaveData_Characterization> AllRoleCharacterizations     = new List<SaveData_Characterization>();
         public SaveData_RoleBody               RoleBody;
-        public List<SaveData_UnlockProcess>    AllUnlockProcess = new List<SaveData_UnlockProcess>();
+        public SaveData_UnlockSystem           UnlockSystem;
 
         public AssetData_BaseRole AssetData => Resources.Load<AssetData_BaseRole>(AssetDataPath);
 
@@ -102,12 +103,9 @@ namespace Role {
             foreach (var defaultItem in AssetData.AllDefaultItems) {
                 AllItemDatas.Add(defaultItem.GetSaveData());
             }
-            
-            foreach (AssetData_UnlockProcess assetDataUnlockProcess in AssetData.AllUnlockProcess) {
-                AllUnlockProcess.Add(new SaveData_UnlockProcess(assetDataUnlockProcess));
-            }
 
-            RoleBody = new SaveData_RoleBody(AssetData.RoleBody);
+            UnlockSystem = new SaveData_UnlockSystem(AssetData.AllUnlockProcesses);
+            RoleBody     = new SaveData_RoleBody(AssetData.RoleBody);
 
             RefreshActiveRoleIdentities();
             RefreshActiveRoleUnlockDatas();
