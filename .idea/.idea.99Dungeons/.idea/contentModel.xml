@@ -1495,6 +1495,10 @@
                 <e p="Weakness" t="Include" />
               </e>
             </e>
+            <e p="Characterization" t="Include">
+              <e p="CharacterizationInfos" t="Include" />
+              <e p="坚守" t="Include" />
+            </e>
             <e p="Identity" t="Include" />
             <e p="ItemSlot" t="Include" />
             <e p="ItemSlotProvider" t="Include" />

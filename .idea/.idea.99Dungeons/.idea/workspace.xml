@@ -4,115 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Characterization.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Characterization/CharacterizationInfos.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Characterization/CharacterizationInfos/RoleCharacterizationInfo_根据敌人数量增加生命值.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Characterization/CharacterizationInfos/RoleCharacterizationInfo_根据敌人数量增加生命值.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Characterization/坚守.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Characterization/坚守/RoleCharacterization_坚守.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Characterization/坚守/RoleCharacterization_坚守.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/AssetData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/AssetData/AssetData_BaseBuff.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/AssetData/AssetData_BaseBuff.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffTypeEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffTypeEnum.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffWithAssetDataAndOwner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffWithAssetDataAndOwner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseAssetData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseAssetData.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Npc.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Npc/AssetData_Npc.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Npc/AssetData_Npc.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Characterization.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Characterization/AssetData_Characterization.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Characterization/AssetData_Characterization.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Characterization/AssetData_CharacterizationInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Characterization/AssetData_CharacterizationInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Characterization/SaveData_Characterization.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Characterization/SaveData_Characterization.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_RoleEnemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_RoleEnemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_RolePlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_RolePlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/Body.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/Body/AssetData_RoleBody.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/Body/AssetData_RoleBody.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/Body/SaveData_RoleBody.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/Body/SaveData_RoleBody.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPartTypeEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPartTypeEnum.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodySlot.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodySlot/AssetData_RoleBodySlot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodySlot/AssetData_RoleBodySlot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodySlot/SaveData_RoleBodySlot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodySlot/SaveData_RoleBodySlot.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/ItemSlot.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Characterization.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Characterization.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Story.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Story/AssetData_Story.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Story/AssetData_Story.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/AssetData_Unlock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/AssetData_Unlock.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/AssetData_Unlock_PlayerCreateNewCreature.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/AssetData_Unlock_PlayerCreateNewCreature.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/SaveData_Unlock_PlayerCreateNewCreature.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/SaveData_Unlock_PlayerCreateNewCreature.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/SystemData_Unlock_PlayerCreateNewCreature.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/SaveData_Unlock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/SaveData_Unlock.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/SaveData_UnlockT.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/SaveData_UnlockT.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/SystemData_Unlock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/SystemData_Unlock.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement_Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement_Item.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SaveData_UnlockElement_Item.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SaveData_UnlockElement_Item.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SystemData_UnlockElement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SystemData_UnlockElement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElementTypeEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElementTypeEnum.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_MulitOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_MulitOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/AssetData_Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/AssetData_Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Buffs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Buffs/RoleBuff_Vertigo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary/Buff_Vertigo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Buffs/RoleBuff_Vertigo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary/Buff_Vertigo.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_BaseRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_Role.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_BaseRole.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/AssetData_RoleItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/ItemSlot/AssetData_RoleItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/AssetData_RoleItemSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/ItemSlot/AssetData_RoleItemSlot.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/SaveData_RoleItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/ItemSlot/SaveData_RoleItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlot/SaveData_RoleItemSlot.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/ItemSlot/SaveData_RoleItemSlot.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlotProvider.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlotProvider/AssetData_RoleItemSlotProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/AssetData_RoleBodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlotProvider/AssetData_RoleItemSlotProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/AssetData_RoleBodyPart.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlotProvider/SaveData_RoleItemSlotProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/SaveData_RoleBodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleItemSlotProvider/SaveData_RoleItemSlotProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/SaveData_RoleBodyPart.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_TotalDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_TotalDamage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_ItemSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_ItemSlot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_ItemSlotProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Container_ItemSlotProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
-    </list>
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -261,7 +153,7 @@
       <workItem from="1699535507828" duration="591000" />
       <workItem from="1699536124172" duration="5845000" />
       <workItem from="1699584787511" duration="17832000" />
-      <workItem from="1699612246101" duration="395000" />
+      <workItem from="1699612246101" duration="586000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -375,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699526714848</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="解锁系统未完成">
+      <created>1699612830322</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699612830322</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +311,8 @@
     <MESSAGE value="1" />
     <MESSAGE value="GameModTool" />
     <MESSAGE value="弱点代码未整理" />
-    <option name="LAST_COMMIT_MESSAGE" value="弱点代码未整理" />
+    <MESSAGE value="解锁系统未完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="解锁系统未完成" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
