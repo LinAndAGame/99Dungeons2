@@ -1,4 +1,5 @@
 ﻿using BattleScene;
+using Dungeon.SystemData;
 using UnityEngine;
 
 namespace Dungeon {
@@ -6,9 +7,9 @@ namespace Dungeon {
     public class AssetData_DungeonEvent_RewardGame : AssetData_BaseDungeonEvent {
         public string GameSucceedContent;
         public string GameFailureContent;
-        
-        public override void Init() {
-            BattleSceneCtrl.I.UICtrlRef.PanelNotTouchBoundary.Display(this);
+
+        public override ISystemData_DungeonEvent_CallBacks GetCallBacks() {
+            return new SystemData_DungeonEvent_RewardGame(this);
         }
     }
 }

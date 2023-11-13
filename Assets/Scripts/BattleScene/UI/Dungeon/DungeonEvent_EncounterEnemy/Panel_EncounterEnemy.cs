@@ -1,5 +1,6 @@
 ﻿using DG.Tweening;
 using Dungeon;
+using Dungeon.EncounterEnemy;
 using TMPro;
 using UnityEngine;
 

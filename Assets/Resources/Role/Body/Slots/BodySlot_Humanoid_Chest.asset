@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ea8b6907ed49f2bda70dedb4df66b6, type: 3}
+  m_Name: BodySlot_Humanoid_Chest
+  m_EditorClassIdentifier: 
+  _ResourcePath: Role/Body/Slots/BodySlot_Humanoid_Chest
+  BodySlotName: "\u7C7B\u4EBA\u80F8\u90E8"
+  BodySlotType: 3
+  DefaultRoleBodyPart: {fileID: 11400000, guid: c444cd05d4ade7d459dd6a5baae56ad6, type: 2}
+  AllAllowedBodyPartTypes: 02000000

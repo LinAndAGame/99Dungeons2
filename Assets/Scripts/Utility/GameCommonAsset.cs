@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using MyGameUtility;
 using Player;
 using Role;
 using Sirenix.OdinInspector;
@@ -50,6 +51,19 @@ namespace Utility {
                 }
 
                 methodInfo.Invoke(fieldInfo.GetValue(this), new object[0]);
+            }
+        }
+
+        [Button]
+        private void RefreshAssetDataPath() {
+            foreach (string guid in AssetDatabase.FindAssets("*", new string[]{"Assets/Resources"})) {
+                var path = AssetDatabase.GUIDToAssetPath(guid);
+                var assetData = AssetDatabase.LoadAssetAtPath<BaseAssetData>(path);
+                if (assetData == null) {
+                    continue;
+                }
+                
+                assetData.RefreshResourcePath();
             }
         }
 

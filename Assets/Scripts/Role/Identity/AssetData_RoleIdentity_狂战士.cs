@@ -7,7 +7,7 @@ namespace Role {
     public class AssetData_RoleIdentity_狂战士 : AssetData_BaseRoleIdentity {
         public override bool IsMeetIdentityRequirement(SaveData_Role saveDataRole) {
             foreach (SaveData_Item equippedItemData in saveDataRole.AllItemDatas) {
-                if (equippedItemData.AssetData.AllLabels.All(data=>data != "Weapon")) {
+                if (equippedItemData.AssetData.AllLabels.All(data=>data != ItemLabelEnum.Weapon)) {
                     return false;
                 }
             }

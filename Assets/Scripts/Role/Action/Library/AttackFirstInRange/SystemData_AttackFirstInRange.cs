@@ -12,25 +12,25 @@ namespace Role.Action {
             var enemyRole = EnemyRole(Owner);
             if (enemyRole != null) {
                 Sequence seq = DOTween.Sequence();
-                seq.Append(Owner.RoleComAnimation.SR_Model.transform.DOMove(enemyRole.RoleComAnimation.SR_Model.transform.position, SaveData.AssetData.MoveDuration));
+                seq.Append(Owner.RoleComAnimation.SR_Model.transform.DOMove(enemyRole.RoleComAnimation.SR_Model.transform.position, SaveDataT.AssetDataT.MoveDuration));
                 seq.AppendCallback(() => {
                     var info = Owner.RoleComAnimation.PlayAttackAnimation();
                     seq.Pause();
                     info.OnAnimationEnd.AddListener(() => { seq.Play(); });
                     DamageProcess.CreateDamageProcessData(Owner.RoleSystemValues.AllWeapons[0], enemyRole.RoleSystemValues);
                 });
-                seq.Append(Owner.RoleComAnimation.SR_Model.transform.DOLocalMove(Vector3.zero, SaveData.AssetData.MoveDuration));
-                seq.AppendInterval(SaveData.AssetData.DelayEnd);
+                seq.Append(Owner.RoleComAnimation.SR_Model.transform.DOLocalMove(Vector3.zero, SaveDataT.AssetDataT.MoveDuration));
+                seq.AppendInterval(SaveDataT.AssetDataT.DelayEnd);
                 seq.AppendCallback(() => { Owner.RoleSystemEvents.OnActionSkillEnd.Invoke(); });
             }
             else {
-                Debug.Log($"ActionSkill【{GetType().Name}】没有所有到可以攻击的对象，攻击范围【{SaveData.AssetData.AttackRange.x}】-【{SaveData.AssetData.AttackRange.y}】");
+                Debug.Log($"ActionSkill【{GetType().Name}】没有所有到可以攻击的对象，攻击范围【{SaveDataT.AssetDataT.AttackRange.x}】-【{SaveDataT.AssetDataT.AttackRange.y}】");
             }
         }
 
         protected RoleCtrl EnemyRole(RoleCtrl owner) {
             var enemyLocatorGroupCtrl     = GameUtility.GetEnemyLocatorGroupCtrl(owner.RoleSystemValues.IsPlayer);
-            var enemyInRangeLocatorCtrls  = enemyLocatorGroupCtrl.GetLocatorCtrlsByRange(SaveData.AssetData.AttackRange.x, SaveData.AssetData.AttackRange.y);
+            var enemyInRangeLocatorCtrls  = enemyLocatorGroupCtrl.GetLocatorCtrlsByRange(SaveDataT.AssetDataT.AttackRange.x, SaveDataT.AssetDataT.AttackRange.y);
             var enemyPossibleLocatorCtrls = enemyInRangeLocatorCtrls.FindAll(data => data.CurRoleCtrl != null);
             if (enemyPossibleLocatorCtrls.IsNullOrEmpty() == false) {
                 return enemyPossibleLocatorCtrls[0].CurRoleCtrl;

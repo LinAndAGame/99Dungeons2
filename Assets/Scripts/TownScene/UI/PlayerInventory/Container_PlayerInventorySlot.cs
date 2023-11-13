@@ -1,4 +1,5 @@
 ﻿using Item;
+using Role;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,10 +11,13 @@ namespace TownScene.UI {
         public TextMeshProUGUI TMP_ItemName;
         public TextMeshProUGUI TMP_ItemCount;
         public Image           Img_Selected;
+        
+        public SaveData_Item SaveDataItem { get; private set; }
 
         public void RefreshUI(SaveData_Item saveDataItem) {
+            SaveDataItem       = saveDataItem;
             Img_Item.sprite    = saveDataItem.AssetData.GetSprite;
-            TMP_ItemName.text  = saveDataItem.ItemName;
+            TMP_ItemName.text  = saveDataItem.AssetData.ItemName;
             TMP_ItemCount.text = saveDataItem.Count.ToString();
         }
 

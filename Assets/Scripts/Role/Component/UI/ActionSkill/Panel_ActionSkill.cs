@@ -13,10 +13,10 @@ namespace Role {
             refreshUI();
             owner.RoleSystemEvents.OnCurActionSkillChanged.AddListener(data => {
                 if (_CurUsedActionSkill != null) {
-                    _CurUsedActionSkill.SetHighLight(false);
+                    _CurUsedActionSkill.SetAsNormalStyle();
                 }
                 _CurUsedActionSkill = _AllActionSkills.Find(data2 => data2.RoleActionRef == data);
-                _CurUsedActionSkill.SetHighLight(true);
+                _CurUsedActionSkill.SetAsCurUsedStyle();
             }, owner.CC.Event);
 
             void refreshUI() {
@@ -31,8 +31,11 @@ namespace Role {
                     _AllActionSkills.Add(ins);
                 }
                 
+                if (_CurUsedActionSkill != null) {
+                    _CurUsedActionSkill.SetAsNormalStyle();
+                }
                 _CurUsedActionSkill = _AllActionSkills[0];
-                _CurUsedActionSkill.SetHighLight(true);
+                _CurUsedActionSkill.SetAsCurUsedStyle();
             }
         }
     }

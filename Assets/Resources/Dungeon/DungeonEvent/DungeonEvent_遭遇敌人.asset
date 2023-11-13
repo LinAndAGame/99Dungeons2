@@ -16,3 +16,5 @@ MonoBehaviour:
   StartEventContent: "\u4F60\u906D\u9047\u4E86\u4E00\u4E9B\u654C\u4EBA"
   Enemies:
   - {fileID: 11400000, guid: 004462cee6532d04693b34a0c3109ee3, type: 2}
+  - {fileID: 11400000, guid: 004462cee6532d04693b34a0c3109ee3, type: 2}
+  - {fileID: 11400000, guid: 0e96cbb69f824d74fb5d6a46b715147a, type: 2}

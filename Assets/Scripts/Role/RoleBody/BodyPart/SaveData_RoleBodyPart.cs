@@ -1,23 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Utility;
 
 namespace Role.RoleBody {
     [Serializable]
     public class SaveData_RoleBodyPart {
         [SerializeField]
-        private string AssetDataName;
-        public bool                             IsActive;
+        private string AssetDataPath;
         public List<SaveData_RoleItemSlot> AllRoleItemSlots = new List<SaveData_RoleItemSlot>();
 
-        public AssetData_RoleBodyPart AssetData => Resources.Load<AssetData_RoleBodyPart>($"{GameCommonAsset.I.AssetFolderInfo_RoleItemSlotProvider}{AssetDataName}");
+        public AssetData_RoleBodyPart AssetData => Resources.Load<AssetData_RoleBodyPart>(AssetDataPath);
         
         public SaveData_RoleBodyPart() { }
 
         public SaveData_RoleBodyPart(AssetData_RoleBodyPart assetDataRoleBodyPart) {
-            AssetDataName = assetDataRoleBodyPart.name;
-            foreach (var assetDataRoleEquipmentSlot in AssetData.AllRoleEquipmentSlots) {
+            AssetDataPath = assetDataRoleBodyPart.ResourcePath;
+            foreach (var assetDataRoleEquipmentSlot in AssetData.AllRoleItemSlots) {
                 AllRoleItemSlots.Add(assetDataRoleEquipmentSlot.GetSaveData());
             }
         }

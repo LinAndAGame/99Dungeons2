@@ -22,7 +22,7 @@ namespace Dungeon {
 
         public void RunDungeonEvent(AssetData_BaseDungeonEvent dungeonEvent) {
             CurDungeonEvent = dungeonEvent;
-            CurDungeonEvent.Init();
+            CurDungeonEvent.RunThisDungeonEvent();
         }
     }
 }

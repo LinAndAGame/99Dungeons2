@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d53b95023144a9381001d74a29205b1, type: 3}
+  m_Name: "\u62A4\u7532"
+  m_EditorClassIdentifier: 
+  _ResourcePath: "Item/Armor/\u62A4\u7532"
+  ItemName: "\u62A4\u7532"
+  AllLabels: 01000000
+  DefenceValue: 10

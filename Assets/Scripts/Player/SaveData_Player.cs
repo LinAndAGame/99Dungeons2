@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Item;
 using MyGameUtility;
 using MyGameUtility.SaveLoad;
 using Role;
+using Role.RoleBody;
 using Unity.VisualScripting;
 using UnlockData;
+using UnlockData.UnlockProcess;
 using Utility;
 
 namespace Player {
     [Serializable]
     public class SaveData_Player {
-        private const string SaveDataPlayerKey = "SaveDataPlayer";
+        public const string SaveDataPlayerKey = "SaveDataPlayer";
 
         private static SaveData_Player _I;
 
@@ -22,6 +25,9 @@ namespace Player {
                         _I = new SaveData_Player();
                         foreach (var assetDataRole in GameCommonAsset.I.DefaultPlayerData.AllTeamRoles) {
                             _I.AllUsedTeamRoles.Add(new SaveData_Role(assetDataRole, true));
+                        }
+                        foreach (AssetData_Item assetDataItem in GameCommonAsset.I.DefaultPlayerData.AllInventoryItems) {
+                            _I.AllInventoryItems.Add(assetDataItem.GetSaveData());
                         }
 
                         ES3.Save(SaveDataPlayerKey, _I);
@@ -35,11 +41,29 @@ namespace Player {
             }
         }
 
-        public List<SaveData_Role> AllUsedTeamRoles  = new List<SaveData_Role>();
-        public List<SaveData_Item> AllInventoryItems = new List<SaveData_Item>();
-        public List<SaveData_Unlock> 
+        public List<SaveData_Role>           AllUsedTeamRoles             = new List<SaveData_Role>();
+        public List<SaveData_Item>           AllInventoryItems            = new List<SaveData_Item>();
+        public List<SaveData_UnlockProcess>  AllUnlockProcess             = new List<SaveData_UnlockProcess>();
+        public SaveData_UnlockDataCollection SaveDataUnlockDataCollection = new SaveData_UnlockDataCollection();
+        public bool                          PlayerConfirmStartGameItem;
 
         public SaveData_Player() { }
+
+        public void SwitchItem(SaveData_RoleItemSlot roleItemSlot, SaveData_Item saveDataItem) {
+            var itemIndex = AllInventoryItems.IndexOf(saveDataItem);
+            if (roleItemSlot.OverrideItem != null) {
+                AllInventoryItems[itemIndex] = roleItemSlot.OverrideItem;
+            }
+            else {
+                AllInventoryItems.RemoveAt(itemIndex);
+            }
+
+            roleItemSlot.OverrideItem = saveDataItem;
+        }
+
+        public void SaveSync() {
+            ES3.Save(SaveDataPlayerKey, _I);
+        }
 
         public void SaveAsync() {
             SaveLoadUtility.AsyncSaveByEs3(SaveDataPlayerKey, this, ES3Settings.defaultSettings);

@@ -6,8 +6,6 @@ namespace Role {
     [Serializable]
     public class SaveData_Weakness {
         public MinMaxValueFloat WeaknessValue;
-
-        public WeaknessTypeEnum WeaknessType => AssetData.WeaknessType;
         
         [SerializeField]
         private string ResourcePath;

@@ -3,5 +3,8 @@
         Item,
         Npc,
         Story,
+        Enemy,
+        DungeonEvent,
+        RoleAction,
     }
 }

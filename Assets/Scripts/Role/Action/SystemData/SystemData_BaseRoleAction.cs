@@ -2,13 +2,14 @@
 
 namespace Role.Action {
     public abstract class SystemData_BaseRoleAction {
-        public string   ActionName;
         public RoleCtrl Owner;
         
-        protected CacheCollection CC = new CacheCollection();
+        public    SaveData_RoleAction SaveData { get; private set; }
+        protected CacheCollection     CC = new CacheCollection();
 
-        protected SystemData_BaseRoleAction(RoleCtrl owner) {
-            Owner = owner;
+        protected SystemData_BaseRoleAction(SaveData_RoleAction saveDataRoleAction, RoleCtrl owner) {
+            SaveData = saveDataRoleAction;
+            Owner    = owner;
         }
 
         public void RunActionSkill() {
