@@ -21,6 +21,7 @@ namespace TownScene.UI {
             set {
                 _CurSelectedContainer = value;
                 if (_CurSelectedContainer != null) {
+                    TownSceneCtrl.I.UICtrlRef.PanelRoleSetting.HideAllRightPanels();
                     PanelRoleActionSwitch.Display();
                     PanelRoleActionSwitch.RefreshUI(_SaveDataRole);
                     EquippedPanelRoleActionDetailInfo.Display();

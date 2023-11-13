@@ -4,14 +4,18 @@ using Damage;
 using Dungeon.EncounterEnemy;
 using Item;
 using MyGameUtility;
+using UnlockData;
+using UnlockData.UnlockProcess;
+using UnlockData.UnlockSystem;
 
 namespace Role {
     public class RoleSystem_Values : BaseRoleSystem, IReceiveDamage {
-        public bool                         IsPlayer;
-        public MinMaxValueFloat             Hp;
-        public List<SystemData_BaseWeakness>           AllWeakness = new List<SystemData_BaseWeakness>();
-        public BaseBuffSystem               BuffSystem  = new BuffSystemDefault();
-        public List<SystemData_Item_Weapon> AllWeapons  = new List<SystemData_Item_Weapon>();
+        public bool                          IsPlayer;
+        public MinMaxValueFloat              Hp;
+        public List<SystemData_BaseWeakness> AllWeakness = new List<SystemData_BaseWeakness>();
+        public BaseBuffSystem                BuffSystem  = new BuffSystemDefault();
+        public List<SystemData_Item_Weapon>  AllWeapons  = new List<SystemData_Item_Weapon>();
+        public SystemData_UnlockSystem<RoleCtrl>       UnlockSystem;
 
         public RoleSystem_Values(RoleCtrl roleOwner) : base(roleOwner) { }
 
@@ -32,6 +36,8 @@ namespace Role {
                     AllWeapons.Add(systemDataItemWeapon);
                 }
             }
+
+            UnlockSystem = new SystemData_UnlockSystem_RoleCtrl(RoleOwner, RoleOwner.SaveData.UnlockSystem);
             
             Hp.OnCurValueEqualsMin.AddListener(Death, RoleOwner.CC.Event);
         }
@@ -62,8 +68,8 @@ namespace Role {
                 if (RoleOwner.SaveData.IsPlayer) {
                     return;
                 }
-            
-                var encounterEnemyEvent = BattleSceneCtrl.I.CurDungeonEventCallBacks as SystemData_DungeonEvent_EncounterEnemy;
+
+                var encounterEnemyEvent = BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>();
                 if (encounterEnemyEvent == null) {
                     return;
                 }

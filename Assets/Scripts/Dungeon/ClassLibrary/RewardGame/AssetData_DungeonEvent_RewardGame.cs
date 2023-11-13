@@ -8,7 +8,7 @@ namespace Dungeon {
         public string GameSucceedContent;
         public string GameFailureContent;
 
-        public override ISystemData_DungeonEvent_CallBacks GetCallBacks() {
+        public override SystemData_BaseDungeonEvent GetCallBacks() {
             return new SystemData_DungeonEvent_RewardGame(this);
         }
     }

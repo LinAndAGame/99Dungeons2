@@ -20,7 +20,7 @@ namespace Role {
         public List<AssetData_Item>               AllDefaultItems;
         public List<AssetData_Characterization>   AllCharacterizations;
         public AssetData_RoleBody                 RoleBody;
-        public List<AssetData_UnlockProcess>      AllUnlockProcess;
+        public List<AssetData_UnlockProcess>      AllUnlockProcesses;
 
         public Sprite GetSprite => GameUtility.GetSpriteByNameAndLabel(AddressableLabelTypeEnum.RoleSprite, RoleName);
     }

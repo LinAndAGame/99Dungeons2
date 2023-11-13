@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: UnlockProcess
   m_EditorClassIdentifier: 
   _ResourcePath: Unlock/UnlockProcess/UnlockProcess
+  UnlockProcessType: 1
   NextUnlockProcess: []
   AllUnlockElements:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: ff8ab7a5299512b44bfc1dea74081a89, type: 2}

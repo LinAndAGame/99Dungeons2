@@ -8,7 +8,7 @@ namespace Dungeon.EncounterEnemy {
     public class AssetData_DungeonEvent_EncounterEnemy : AssetData_BaseDungeonEvent {
         public          List<AssetData_BaseRole>           Enemies;
         
-        public override ISystemData_DungeonEvent_CallBacks GetCallBacks() {
+        public override SystemData_BaseDungeonEvent GetCallBacks() {
             return new SystemData_DungeonEvent_EncounterEnemy(this);
         }
     }

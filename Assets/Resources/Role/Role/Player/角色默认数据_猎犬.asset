@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01c7bafff0b94334b4c22df3ce8ef3bc, type: 3}
+  m_Name: "\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_\u730E\u72AC"
+  m_EditorClassIdentifier: 
+  _ResourcePath: "Role/Role/Player/\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_\u730E\u72AC"
+  RoleName: "\u80CC\u5305\u8FD0\u8F7D\u8005"
+  Hp: 50
+  FrameAnimationCollection: {fileID: 11400000, guid: fc366daed2aa6d84bbd8824a16ab937c, type: 2}
+  AllPossibleRoleIdentities:
+  - {fileID: 11400000, guid: 2cfdf047176f7db41931eaf35643411e, type: 2}
+  - {fileID: 11400000, guid: 39fd8908145c89a4cb44525a457e1f1e, type: 2}
+  AllWeaknessDatas:
+  - {fileID: 11400000, guid: 694bf90c3c0e0dc4b8b475a5692004cd, type: 2}
+  AllDefaultRoleActions:
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  - {fileID: 11400000, guid: 6b30f9164ef8d6e4b800385a92a13a78, type: 2}
+  AllDefaultItems:
+  - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
+  AllCharacterizations: []
+  RoleBody: {fileID: 11400000, guid: 1d1998da26cd91b4db5cd3f600bbfc72, type: 2}
+  AllUnlockProcesses:
+  - {fileID: 11400000, guid: 25548ee1d4a18214a8145c3b23677a8b, type: 2}

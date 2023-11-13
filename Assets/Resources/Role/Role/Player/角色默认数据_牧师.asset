@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01c7bafff0b94334b4c22df3ce8ef3bc, type: 3}
-  m_Name: "\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_Soldier"
+  m_Name: "\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_\u7267\u5E08"
   m_EditorClassIdentifier: 
-  RoleName: Soldier
-  Damage: 2
-  Hp: 20
+  _ResourcePath: "Role/Role/Player/\u89D2\u8272\u9ED8\u8BA4\u6570\u636E_\u7267\u5E08"
+  RoleName: "\u7267\u5E08"
+  Hp: 10
   FrameAnimationCollection: {fileID: 11400000, guid: fc366daed2aa6d84bbd8824a16ab937c, type: 2}
   AllPossibleRoleIdentities:
   - {fileID: 11400000, guid: 2cfdf047176f7db41931eaf35643411e, type: 2}
@@ -30,3 +30,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
   AllCharacterizations: []
   RoleBody: {fileID: 11400000, guid: c5312829dcb7fb44aaf1e97bd926b6bf, type: 2}
+  AllUnlockProcesses:
+  - {fileID: 11400000, guid: 25548ee1d4a18214a8145c3b23677a8b, type: 2}

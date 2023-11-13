@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Dungeon.EncounterEnemy;
 using MyGameUtility;
 using Role;
 using UnityEngine;
@@ -12,11 +13,18 @@ namespace BattleScene {
 
         private CacheCollection CC            = new CacheCollection();
         private Queue<RoleCtrl> _CurRoleQueue = new Queue<RoleCtrl>();
+
+        public RoleActionWorkflow() {
+            
+        }
         
         public void ReStartWorkflow() {
             ResetFightQueue();
             if (_CurRoleQueue.Count == 0) {
-                PlayerWin();
+                var encounterEnemy = BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>();
+                if (encounterEnemy != null) {
+                    encounterEnemy.PlayerWin();
+                }
             }
             else {
                 OnRoleRoundStart.Invoke();
@@ -74,14 +82,18 @@ namespace BattleScene {
             }
         }
 
-        public void PlayerWin() {
-            Debug.Log("玩家赢了！");
-            BattleSceneCtrl.I.CurDungeonEventCallBacks.ClearData();
-            BattleSceneCtrl.I.DisplayUIToSelectNextDungeonEvent();
+        private void PlayerWin() {
+            var encounterEnemy = BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>();
+            if (encounterEnemy != null) {
+                encounterEnemy.PlayerWin();
+            }
         }
 
-        public void PlayerFailure() {
-            Debug.Log("玩家输了！");
+        private void PlayerFailure() {
+            var encounterEnemy = BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>();
+            if (encounterEnemy != null) {
+                encounterEnemy.PlayerFailure();
+            }
         }
     }
 }

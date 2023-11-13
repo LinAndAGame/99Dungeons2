@@ -20,8 +20,6 @@ namespace TownScene.UI {
             SetAsNormalStyle();
             BtnSelf.onClick.AddListener(() => {
                 TownSceneCtrl.I.UICtrlRef.PanelRoleSetting.CurSelectedItemSlot = this;
-                TownSceneCtrl.I.UICtrlRef.PanelPlayerInventory.Display();
-                TownSceneCtrl.I.UICtrlRef.PanelPlayerInventory.RefreshUI(SaveData.AssetData.AllAllowedItemLabels);
             });
         }
 
