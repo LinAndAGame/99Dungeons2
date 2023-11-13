@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8ea8b6907ed49f2bda70dedb4df66b6, type: 3}
-  m_Name: BodySlot_Dog_Head
+  m_Name: BodySlot_SlimeBody
   m_EditorClassIdentifier: 
-  _ResourcePath: Role/Body/Slots/BodySlot_Dog_Head
-  BodySlotName: "\u89E6\u624B"
-  BodySlotType: 2
-  DefaultRoleBodyPart: {fileID: 11400000, guid: 379bfa5696467e8458bc2a03746f898b, type: 2}
-  AllAllowedBodyPartTypes: 00000000
+  _ResourcePath: Role/Body/Slots/BodySlot_SlimeBody
+  BodySlotName: 
+  BodySlotType: 0
+  DefaultRoleBodyPart: {fileID: 11400000, guid: 561bd09786b9c3945955fe1393602626, type: 2}
+  AllAllowedBodyPartTypes: 0000000001000000020000000300000004000000

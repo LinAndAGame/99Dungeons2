@@ -12,37 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7403ce754b44c9d9ed2fb8a83c68978, type: 3}
   m_Name: GameCommonAsset
   m_EditorClassIdentifier: 
+  PlayerRoleBrandCount: 1
+  AllRoleBrands:
+  - {fileID: 11400000, guid: 4881aaaaecd50f0409277ad245750f79, type: 2}
+  - {fileID: 11400000, guid: c3aa867a4a9559b4aa3f6894e37ad2e2, type: 2}
   DefaultPlayerData: {fileID: 11400000, guid: 7ffb7093ba2272544af65f7c4ef0e3a1, type: 2}
-  AssetFolderInfo_Role:
-    AssetFolder: {fileID: 102900000, guid: 4c54ec2922c4ec048bfcf3e473149ee7, type: 3}
-    PrefixPath: Role/Role/
-  AssetFolderInfo_RoleAction:
-    AssetFolder: {fileID: 102900000, guid: 55a274bf2f3171d499daef12c094acfc, type: 3}
-    PrefixPath: Role/Action/
   AssetFolderInfo_RoleUnlockAction:
     AssetFolder: {fileID: 102900000, guid: 10b731337a4fd3e4cb4c89935b73c722, type: 3}
     PrefixPath: Role/Unlock/
   AssetFolderInfo_RoleIdentity:
     AssetFolder: {fileID: 102900000, guid: 7ca4d7c0bd7e90d47803f5dd7a65f636, type: 3}
     PrefixPath: Role/Identity/
-  AssetFolderInfo_RoleEquipmentSlot:
-    AssetFolder: {fileID: 102900000, guid: 1016150bdd6249b438c7783ec774ef9f, type: 3}
-    PrefixPath: Role/ItemSlot/
-  AssetFolderInfo_RoleItemSlotProvider:
-    AssetFolder: {fileID: 102900000, guid: ce1accc76ce3bb04a96922c34900a2ef, type: 3}
-    PrefixPath: Role/ItemSlotProvider/
-  AssetFolderInfo_Item_Weapon:
-    AssetFolder: {fileID: 102900000, guid: 8a4916b74595465488510dd6146e4338, type: 3}
-    PrefixPath: Item/Weapon/
-  AssetFolderInfo_Item_Armor:
-    AssetFolder: {fileID: 0}
-    PrefixPath: 
-  AssetFolderInfo_Item_Shield:
-    AssetFolder: {fileID: 0}
-    PrefixPath: 
-  AssetFolderInfo_Item_CanUsedProp:
-    AssetFolder: {fileID: 0}
-    PrefixPath: 
   AllAssetDataRoles:
   - {fileID: 11400000, guid: 0e96cbb69f824d74fb5d6a46b715147a, type: 2}
   - {fileID: 11400000, guid: 004462cee6532d04693b34a0c3109ee3, type: 2}

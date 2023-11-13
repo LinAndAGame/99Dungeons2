@@ -30,9 +30,8 @@ namespace Role {
             }
             
             foreach (var equippedItemData in RoleOwner.SaveData.AllItemDatas) {
-                var itemSystemData = equippedItemData.GetSystemData();
+                var itemSystemData = equippedItemData.GetSystemData(RoleOwner);
                 if (itemSystemData is SystemData_Item_Weapon systemDataItemWeapon) {
-                    systemDataItemWeapon.Init(RoleOwner);
                     AllWeapons.Add(systemDataItemWeapon);
                 }
             }

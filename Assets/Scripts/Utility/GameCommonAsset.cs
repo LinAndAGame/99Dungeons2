@@ -4,6 +4,7 @@ using System.Reflection;
 using MyGameUtility;
 using Player;
 using Role;
+using Role.Brand;
 using Sirenix.OdinInspector;
 using UnityEngine;
 #if UNITY_EDITOR
@@ -26,19 +27,13 @@ namespace Utility {
             }
         }
 
+        public int                   PlayerRoleBrandCount = 1;
+        public List<AssetData_Brand> AllRoleBrands;
+
         public AssetData_Player DefaultPlayerData;
 
-        public AssetFolderInfo AssetFolderInfo_Role;
-        public AssetFolderInfo AssetFolderInfo_RoleAction;
         public AssetFolderInfo AssetFolderInfo_RoleUnlockAction;
         public AssetFolderInfo AssetFolderInfo_RoleIdentity;
-        public AssetFolderInfo AssetFolderInfo_RoleEquipmentSlot;
-        public AssetFolderInfo AssetFolderInfo_RoleItemSlotProvider;
-        public AssetFolderInfo AssetFolderInfo_Item_Weapon;
-        public AssetFolderInfo AssetFolderInfo_Item_Armor;
-        public AssetFolderInfo AssetFolderInfo_Item_Shield;
-        public AssetFolderInfo AssetFolderInfo_Item_CanUsedProp;
-
         public List<AssetData_BaseRole> AllAssetDataRoles;
         // public AssetFolderInfo AssetFolderInfo_Item_Weapon;
 

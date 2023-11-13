@@ -8,21 +8,21 @@ namespace Item {
         public DamageElementTypeEnum DamageElementType;
         public ValueCacheBool        CanAttack = true;
 
-        public SystemData_Item_Weapon(SaveData_Item_Weapon saveData) : base(saveData) { }
-        
-        public override void Init(RoleCtrl roleCtrl) {
+        public SystemData_Item_Weapon(RoleCtrl roleOwner, SaveData_Item_Weapon saveData) : base(roleOwner, saveData) {
             Damage            = SaveData.AssetDataT.Damage;
             DamageElementType = SaveData.AssetDataT.DamageElementType;
         }
 
         public bool GiveDamage_TryGetDamageData(IReceiveDamage receiveDamage, out DamageData damageData) {
             damageData = new DamageData();
-            if (CanAttack) {
+            if (CanAttack && RoleOwner.RoleSystemStatus.CanAttack) {
                 damageData.TotalDamage       = Damage;
                 damageData.DamageElementType = DamageElementType;
+                RoleOwner.RoleSystemEvents.OnAttackSucceed.Invoke(damageData);
                 return true;
             }
             else {
+                RoleOwner.RoleSystemEvents.OnAttackFailure.Invoke(damageData);
                 return false;
             }
         }

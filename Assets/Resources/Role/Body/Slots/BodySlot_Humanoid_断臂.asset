@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8ea8b6907ed49f2bda70dedb4df66b6, type: 3}
-  m_Name: BodySlot_AllowEverything
+  m_Name: "BodySlot_Humanoid_\u65AD\u81C2"
   m_EditorClassIdentifier: 
-  _ResourcePath: Role/Body/Slots/BodySlot_AllowEverything
-  BodySlotType: 0
-  AllAllowedBodyPartTypes: 0000000001000000020000000300000004000000
+  _ResourcePath: Role/Body/Slots/BodySlot_Humanoid_Arm
+  BodySlotName: "\u7C7B\u4EBA\u624B\u81C2"
+  BodySlotType: 1
+  DefaultRoleBodyPart: {fileID: 11400000, guid: a87c2f2aa66a26c459cd3031352f6fe9, type: 2}
+  AllAllowedBodyPartTypes: 0000000001000000

@@ -29,6 +29,7 @@ MonoBehaviour:
   AllDefaultItems:
   - {fileID: 11400000, guid: ae0bd38ed1aa35c4bba37bdd06d5b2e6, type: 2}
   AllCharacterizations: []
-  RoleBody: {fileID: 11400000, guid: c5312829dcb7fb44aaf1e97bd926b6bf, type: 2}
+  RoleBody: {fileID: 11400000, guid: 38238c467947d164484c7f314099a308, type: 2}
   AllUnlockProcesses:
   - {fileID: 11400000, guid: 25548ee1d4a18214a8145c3b23677a8b, type: 2}
+  AllRoleBrands: []

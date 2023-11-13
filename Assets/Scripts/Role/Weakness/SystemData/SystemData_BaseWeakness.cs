@@ -12,8 +12,9 @@ namespace Role {
             Owner         = owner;
             SaveData      = saveData;
             WeaknessValue = new MinMaxValueFloat(saveData.WeaknessValue.Min, saveData.WeaknessValue.Max, saveData.WeaknessValue.Current);
-            WeaknessValue.OnCurValueEqualsMin.AddListener(() => {
+            WeaknessValue.OnCurValueEqualsMax.AddListener(() => {
                 BreakWeaknessEffect();
+                WeaknessValue.SetCurrentToMin();
                 CC.Clear();
                 Owner.RoleSystemEvents.OnWeaknessBroken.Invoke(this);
             }, CC.Event);

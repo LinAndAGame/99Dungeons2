@@ -5,7 +5,7 @@ namespace Role {
         public Weakness_BeHitOneRound(RoleCtrl owner, SaveData_Weakness saveData) : base(owner, saveData) { }
         protected override void InitToTriggerWeakness() {
             Owner.RoleSystemEvents.OnBeHurtSucceed.AddListener(data => {
-                WeaknessValue.Current--;
+                WeaknessValue.Current++;
             }, CC.Event);
         }
 
