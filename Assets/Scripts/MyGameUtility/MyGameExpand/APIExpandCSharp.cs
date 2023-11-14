@@ -72,7 +72,7 @@ namespace MyGameExpand {
         {
             if (original.IsNullOrEmpty())
             {
-                return default;
+                return new List<T>();
             }
 
             List<T> result = new List<T>(original);

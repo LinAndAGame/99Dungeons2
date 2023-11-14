@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e80396b2b6d43309e196ce74da55cc9, type: 3}
-  m_Name: "DungeonEvent_\u906D\u9047\u654C\u4EBA"
+  m_Name: "DungeonEvent_\u906D\u9047\u654C\u4EBA 1"
   m_EditorClassIdentifier: 
-  _ResourcePath: "Dungeon/DungeonEvent/DungeonEvent_\u906D\u9047\u654C\u4EBA"
+  _ResourcePath: "Dungeon/DungeonEvent/DungeonEvent_\u906D\u9047\u654C\u4EBA 1"
+  OriginalRandomValue: 0
   DungeonEventType: 0
-  EventName: "\u906D\u9047\u654C\u4EBA"
-  StartEventContent: "\u4F60\u906D\u9047\u4E86\u4E00\u4E9B\u654C\u4EBA"
-  EnemyLevel: 1
+  EventName: "\u906D\u9047\u9B54\u795E\u751F\u7269"
+  StartEventContent: "\u4F60\u906D\u9047\u4E86\u4E00\u4E9B\u5F3A\u529B\u654C\u4EBA"
+  EnemyLevel: 2
   Enemies:
   - {fileID: 11400000, guid: 004462cee6532d04693b34a0c3109ee3, type: 2}
   - {fileID: 11400000, guid: 004462cee6532d04693b34a0c3109ee3, type: 2}

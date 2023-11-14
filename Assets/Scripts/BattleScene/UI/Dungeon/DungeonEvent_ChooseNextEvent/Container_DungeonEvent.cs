@@ -23,52 +23,97 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
         private Tweener _CurAnimationTweener;
         private float   _TweenerValue;
         
-        public void RefreshUI(SystemData_BaseDungeonEvent dungeonEvent) {
+        public SystemData_BaseDungeonEvent DungeonEvent { get; private set; }
+        
+        public virtual void RefreshUI(SystemData_BaseDungeonEvent dungeonEvent) {
+            DungeonEvent        = dungeonEvent;
             TMP_DetailInfo.text = dungeonEvent.SaveData.AssetData.EventName;
             BtnSelf.onClick.AddListener(() => {
                 BattleSceneCtrl.I.UICtrlRef.PanelChooseNextEvent.Hide();
                 BattleSceneCtrl.I.CurDungeonProcess.ChooseDungeonEvent(dungeonEvent);
             });
-            PlayDisplayAnimation();
+            SetAlphaImmediately(1);
+            SetDissolveImmediately(0);
         }
 
-        public void Cancel() {
-            PlayCancelAnimation();
+        public Tweener PlayDisplayHandleEffect() {
+            KillEffectTweener();
+
+            _CurAnimationTweener = this.transform.DOShakePosition(0.5f, 50);
+            return _CurAnimationTweener;
         }
 
-        private void PlayDisplayAnimation() {
-            _CurAnimationTweener.Kill(true);
-            _TweenerValue        = 0;
+        public Tweener PlayDisplayEffect() {
+            KillEffectTweener();
+            
             BtnSelf.interactable = false;
-            foreach (var graphic in AllGraphics) {
-                graphic.color = graphic.color.SetA(0);
-            }
+            SetAlphaImmediately(0);
             
             _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
                 _TweenerValue = data;
-                foreach (var graphic in AllGraphics) {
-                    graphic.color = graphic.color.SetA(_TweenerValue);
-                }
+                SetAlphaImmediately(_TweenerValue);
             }, 1, DisplayDuration);
             _CurAnimationTweener.onComplete += () => {
                 BtnSelf.interactable = true;
             };
+
+            return _CurAnimationTweener;
         }
 
-        private void PlayCancelAnimation() {
-            BtnSelf.interactable = false;
-            _CurAnimationTweener.Kill(true);
-            _TweenerValue = 0;
-            foreach (var uiDissolve in AllUIDissolves) {
-                uiDissolve.effectFactor = 0;
-            }
-
+        public Tweener PlayAlphaEffect(float fromValue, float toValue) {
+            KillEffectTweener();
+            SetAlphaImmediately(fromValue);
+            
             _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
                 _TweenerValue = data;
-                foreach (var uiDissolve in AllUIDissolves) {
-                    uiDissolve.effectFactor = _TweenerValue;
-                }
+                SetAlphaImmediately(_TweenerValue);
+            }, toValue, DisplayDuration);
+            return _CurAnimationTweener;
+        }
+
+        public Tweener PlayDissolveEffect(float fromValue, float toValue) {
+            KillEffectTweener();
+            SetDissolveImmediately(fromValue);
+            
+            _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
+                _TweenerValue = data;
+                SetDissolveImmediately(_TweenerValue);
+            }, toValue, DisplayDuration);
+            return _CurAnimationTweener;
+        }
+
+        public void SetAlphaImmediately(float value) {
+            foreach (var graphic in AllGraphics) {
+                graphic.color = graphic.color.SetA(value);
+            }
+        }
+
+        public void SetDissolveImmediately(float value) {
+            foreach (var uiDissolve in AllUIDissolves) {
+                uiDissolve.effectFactor = value;
+            }
+        }
+
+        public Tweener PlayCancelEffect() {
+            KillEffectTweener();
+            
+            BtnSelf.interactable = false;
+            SetDissolveImmediately(0);
+            
+            _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
+                _TweenerValue = data;
+                SetDissolveImmediately(_TweenerValue);
             }, 1, CancelDissolveDuration);
+            return _CurAnimationTweener;
+        }
+
+        public void DestroySelf() {
+            Destroy(this.gameObject);
+        }
+
+        private void KillEffectTweener() {
+            _CurAnimationTweener.Kill(true);
+            _TweenerValue = 0;
         }
     }
 }
