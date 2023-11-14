@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8ea8b6907ed49f2bda70dedb4df66b6, type: 3}
   m_Name: BodySlot_Dog_Back
   m_EditorClassIdentifier: 
-  _ResourcePath: Role/Body/Slots/BodySlot_Tentacle
+  _ResourcePath: Role/Body/Slots/BodySlot_Dog_Back
   BodySlotName: "\u89E6\u624B"
   BodySlotType: 2
-  DefaultRoleBodyPart: {fileID: 11400000, guid: 37c7358328246144795167c18907eace, type: 2}
+  DefaultRoleBodyPart: {fileID: 11400000, guid: 75fc818ba1af8fc4cb1ca7053762f0de, type: 2}
   AllAllowedBodyPartTypes: 00000000

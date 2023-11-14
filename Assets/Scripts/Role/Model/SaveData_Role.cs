@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Item;
+using MyGameExpand;
 using MyGameUtility;
 using Role.Action;
+using Role.Brand;
 using Role.Characterization;
 using Role.RoleBody;
 using Role.UnlockAction;
@@ -17,14 +19,12 @@ namespace Role {
         [SerializeField]
         private string AssetDataPath;
         public  string RoleName;
-        // TODO : 此属性待删除，Role本身没有是否为玩家的概念
         public bool             IsPlayer;
         public MinMaxValueFloat Hp;
         
         public List<SaveData_RoleIdentity>     AllRoleIdentities            = new List<SaveData_RoleIdentity>();
         public List<Guid>                      AllActiveRoleIdentityGuids   = new List<Guid>();
         public List<SaveData_Item>             AllItemDatas                 = new List<SaveData_Item>();
-        public List<SaveData_Weakness>         AllWeaknessDatas             = new List<SaveData_Weakness>();
         public List<SaveData_RoleAction>       AllRoleActionDatas           = new List<SaveData_RoleAction>();
         public List<SaveData_RoleAction>       AllLearnedRoleActions        = new List<SaveData_RoleAction>();
         public List<SaveData_RoleUnlock>       AllRoleUnlockDatas           = new List<SaveData_RoleUnlock>();
@@ -32,6 +32,21 @@ namespace Role {
         public List<SaveData_Characterization> AllRoleCharacterizations     = new List<SaveData_Characterization>();
         public SaveData_RoleBody               RoleBody;
         public SaveData_UnlockSystem           UnlockSystem;
+        public List<SaveData_Brand>            AllRoleBrands    = new List<SaveData_Brand>();
+
+        public List<SaveData_Weakness> AllWeaknessDatas {
+            get {
+                List<SaveData_Weakness> result = new List<SaveData_Weakness>();
+                foreach (SaveData_Brand saveDataBrand in AllRoleBrands) {
+                    result.Add(saveDataBrand.SaveDataWeakness);
+                }
+                foreach (SaveData_RoleBodySlot saveDataRoleBodySlot in RoleBody.AllBodySlots) {
+                    result.AddRange(saveDataRoleBodySlot.SaveDataRoleBodyPart.AllWeaknesses);
+                }
+
+                return result;
+            }
+        }
 
         public AssetData_BaseRole AssetData => Resources.Load<AssetData_BaseRole>(AssetDataPath);
 
@@ -82,9 +97,6 @@ namespace Role {
             IsPlayer      = isPlayer;
             
             Hp     = new MinMaxValueFloat(0, AssetData.Hp, AssetData.Hp);
-            foreach (AssetData_Weakness assetDataAllWeaknessData in AssetData.AllWeaknessDatas) {
-                AllWeaknessDatas.Add(assetDataAllWeaknessData.GetSaveData());
-            }
             
             foreach (AssetData_BaseRoleIdentity possibleRoleIdentity in AssetData.AllPossibleRoleIdentities) {
                 var saveDataRoleIdentity = possibleRoleIdentity.GetSaveDataRoleIdentity();
@@ -102,6 +114,10 @@ namespace Role {
             
             foreach (var defaultItem in AssetData.AllDefaultItems) {
                 AllItemDatas.Add(defaultItem.GetSaveData());
+            }
+            
+            foreach (AssetData_Brand assetDataAllRoleBrand in GameCommonAsset.I.AllRoleBrands.GetRandomList(GameCommonAsset.I.PlayerRoleBrandCount)) {
+                AllRoleBrands.Add(new SaveData_Brand(assetDataAllRoleBrand));
             }
 
             UnlockSystem = new SaveData_UnlockSystem(AssetData.AllUnlockProcesses);

@@ -8,6 +8,7 @@ namespace Role.RoleBody {
     public class AssetData_RoleBodyPart : BaseAssetData {
         public BodyPartTypeEnum             BodyPartType;
         public List<AssetData_RoleItemSlot> AllRoleItemSlots;
+        public List<AssetData_Weakness>     AllWeaknesses;
 
         public Sprite GetSprite => GameUtility.GetSpriteByNameAndLabel(AddressableLabelTypeEnum.EquipmentSlotProviderSprite, BodyPartType.ToString());
     }

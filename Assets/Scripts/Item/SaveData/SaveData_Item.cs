@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Role;
 using UnityEngine;
 
 namespace Item {
@@ -19,6 +20,6 @@ namespace Item {
             Count         = 1;
         }
 
-        public abstract SystemData_Item GetSystemData();
+        public abstract SystemData_Item GetSystemData(RoleCtrl roleCtrl);
     }
 }

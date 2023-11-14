@@ -2,6 +2,10 @@
 
 namespace Item {
     public abstract class SystemData_Item {
-        public abstract void Init(RoleCtrl roleCtrl);
+        protected RoleCtrl RoleOwner;
+
+        protected SystemData_Item(RoleCtrl roleOwner) {
+            RoleOwner = roleOwner;
+        }
     }
 }

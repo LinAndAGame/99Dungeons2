@@ -1,5 +1,5 @@
 ﻿namespace Damage {
-    public struct DamageData {
+    public class DamageData {
         public IGiveDamage    GiveDamage;
         public IReceiveDamage ReceiveDamage;
         

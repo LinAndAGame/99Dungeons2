@@ -4,165 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo_2018.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/AssetData_DungeonProcess.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/AssetData_DungeonProcess.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/com.coffee.uieffect_v3.2.0.unitypackage.meta" afterDir="false" />
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/力量烙印.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/力量烙印.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/火焰烙印.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/火焰烙印.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_力量烙印.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_力量烙印.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_火焰烙印.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_火焰烙印.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/AssetData_Brand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/AssetData_Brand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/RoleBrandTypeEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/RoleBrandTypeEnum.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/SaveData_Brand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/SaveData_Brand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_FireBrand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_FireBrand.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_PowerBrand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_PowerBrand.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/CHANGELOG.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/CHANGELOG.md.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Editor/TMP_SDFShaderGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Editor/TMP_SDFShaderGUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Editor/TMP_SDFShaderGUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Editor/TMP_SDFShaderGUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIDissolve).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIDissolve).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIDissolve).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIDissolve).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIEffect).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIEffect).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIEffect).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIEffect).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIHsvModifier).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIHsvModifier).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIHsvModifier).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIHsvModifier).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIShiny).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIShiny).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIShiny).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UIShiny).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UITransition).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UITransition).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UITransition).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF (UITransition).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIDissolve).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIDissolve).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIDissolve).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIDissolve).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIEffect).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIEffect).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIEffect).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIEffect).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIHsvModifier).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIHsvModifier).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIHsvModifier).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIHsvModifier).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIShiny).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIShiny).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIShiny).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UIShiny).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UITransition).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UITransition).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UITransition).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_SDF-Mobile (UITransition).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIDissolve).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIDissolve).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIDissolve).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIDissolve).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIEffect).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIEffect).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIEffect).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIEffect).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIHsvModifier).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIHsvModifier).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIHsvModifier).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIHsvModifier).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIShiny).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIShiny).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIShiny).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UIShiny).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UITransition).shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UITransition).shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UITransition).shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/TMP_Sprite (UITransition).shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/UI-Effect-TMPro.cginc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/UI-Effect-TMPro.cginc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/UI-Effect-TMPro.cginc.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/ForTMPro/Shaders/UI-Effect-TMPro.cginc.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/LICENSE.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/LICENSE.md.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Dissolve.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Dissolve.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Dissolve.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Dissolve.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-HSV.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-HSV.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-HSV.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-HSV.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Shiny.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Shiny.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Shiny.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Shiny.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Transition.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Transition.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Transition.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect-Transition.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-Effect.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-EffectCapture.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-EffectCapture.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-EffectCapture.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UI-EffectCapture.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UIDissolveNoise.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UIDissolveNoise.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UITransitionTex.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Materials/UITransitionTex.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/README.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/README.md.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BaseMeshEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BaseMeshEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BaseMeshEffect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BaseMeshEffect.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BlurMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BlurMode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BlurMode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/BlurMode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ColorMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ColorMode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ColorMode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ColorMode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectArea.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectArea.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectPlayer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/EffectPlayer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialCache.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialCache.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialCache.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialResolver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialResolver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialResolver.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/MaterialResolver.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Matrix2x3.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Matrix2x3.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Matrix2x3.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Matrix2x3.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Packer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Packer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Packer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/Packer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ParameterTexture.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ParameterTexture.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ParameterTexture.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ParameterTexture.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ShadowStyle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ShadowStyle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ShadowStyle.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ShadowStyle.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ToneMode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ToneMode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ToneMode.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/ToneMode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/UIEffectBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/UIEffectBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/UIEffectBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Common/UIEffectBase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/BaseMeshEffectEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/BaseMeshEffectEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/BaseMeshEffectEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/BaseMeshEffectEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/DeprecatedRemover.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/DeprecatedRemover.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/DeprecatedRemover.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/DeprecatedRemover.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIDissolveEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIDissolveEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIDissolveEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIDissolveEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectCapturedImageEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectCapturedImageEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectCapturedImageEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectCapturedImageEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIEffectEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIGradientEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIGradientEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIGradientEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIGradientEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIHsvModifierEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIHsvModifierEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIHsvModifierEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIHsvModifierEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShadowEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShadowEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShadowEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShadowEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShinyEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShinyEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShinyEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UIShinyEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UITransitionEffectEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UITransitionEffectEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UITransitionEffectEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/Editor/UITransitionEffectEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIDissolve.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIDissolve.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIDissolve.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIDissolve.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffect.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffectCapturedImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffectCapturedImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffectCapturedImage.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIEffectCapturedImage.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIFlip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIFlip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIFlip.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIFlip.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIGradient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIGradient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIGradient.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIGradient.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIHsvModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIHsvModifier.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIHsvModifier.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIHsvModifier.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShadow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShadow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShadow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShadow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShiny.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShiny.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShiny.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UIShiny.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UITransitionEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UITransitionEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UITransitionEffect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Scripts/UITransitionEffect.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Dissolve.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Dissolve.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Dissolve.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Dissolve.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-HSV.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-HSV.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-HSV.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-HSV.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Shiny.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Shiny.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Shiny.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Shiny.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Sprite.cginc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Sprite.cginc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Sprite.cginc.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Sprite.cginc.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Transition.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Transition.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Transition.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect-Transition.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.cginc" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.cginc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.cginc.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.cginc.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-Effect.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-EffectCapture.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-EffectCapture.shader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-EffectCapture.shader.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/Shaders/UI-EffectCapture.shader.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/package.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/package.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/ChooseNextEvent/Container_DungeonEvent.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/UI/DungeonEvent/ChooseNextEvent/Container_DungeonEvent.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Container_DungeonEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Container_DungeonEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/AssetData_DungeonLevel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/AssetData_DungeonLevel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData_DungeonProcess.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData_DungeonProcess.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Body/Slots/BodySlot_Dog_Head.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Body/Slots/BodySlot_Dog_Head.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/Player/角色默认数据_武士.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/Player/角色默认数据_武士.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_一回合击中5次.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_一回合击中5次.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/Damage/DamageData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/Damage/DamageData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterBodyChanger.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterWeaponChanger.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SaveData_Item_Armor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SaveData_Item_Armor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SystemData_Item_Armor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SystemData_Item_Armor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SaveData_Item_Shield.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SaveData_Item_Shield.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SystemData_Item_Shield.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SystemData_Item_Shield.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SaveData/SaveData_Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SaveData/SaveData_Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_ItemWithSaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_ItemWithSaveData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_BaseRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_BaseRole.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/AssetData_RoleBodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/AssetData_RoleBodyPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/SaveData_RoleBodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/SaveData_RoleBodyPart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Events.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/SystemData/SystemData_BaseWeakness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/SystemData/SystemData_BaseWeakness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessTypeEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessTypeEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,27 +76,22 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06F3B5FC-6BA6-41E2-AB95-F91BD8A970A8/cd/fc137c42/ImageConversion.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/d5/569473e2/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/2d/9b22e8c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/26/117158aa/Environment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/bd/5911ec8f/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/50/4ab5fc12/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/15/dc8e79ec/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/RoleActionDetailInfo/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/AssetData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/a1/6191d941/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/84/75035a79/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/66/06cc4bc2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/Story/AssetData_Story.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElementTypeEnum.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SystemData_UnlockElement_Item.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SystemData_UnlockElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement_Item.cs" />
@@ -238,6 +124,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_RewardGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_DungeonEvent_RewardGame.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/EncounterEnemySettlement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/SystemData_UnlockProcess_RoleOnlyUseShieldWin.cs" />
@@ -253,10 +140,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Panel_RoleSetting.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/Panel_RoleActions.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement_RoleAction.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Container_DungeonEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData_DungeonProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/AssetData_DungeonProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2XpKuGHW06H9rQ0UMZv2IF3f2SU" />
@@ -285,15 +168,17 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9968">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="9968" />
+      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -318,8 +203,7 @@
       <workItem from="1699612246101" duration="395000" />
       <workItem from="1699756462616" duration="30685000" />
       <workItem from="1699840514269" duration="9769000" />
-      <workItem from="1699855153186" duration="3823000" />
-      <workItem from="1699924037102" duration="2883000" />
+      <workItem from="1699855153186" duration="3786000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -434,20 +318,13 @@
       <updated>1699526714848</updated>
     </task>
     <task id="LOCAL-00017" summary="1">
-      <created>1699873260678</created>
+      <created>1699879644024</created>
       <option name="number" value="00017" />
       <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1699873260678</updated>
+      <updated>1699879644024</updated>
     </task>
-    <task id="LOCAL-00018" summary="1">
-      <created>1699873264341</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1699873264341</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

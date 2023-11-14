@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e40a1fb6c6048b6b9aadc4a6b75e1e7, type: 3}
-  m_Name: "Weakness_\u4E00\u56DE\u5408\u51FB\u4E2D5\u6B21"
+  m_Name: "Weakness_\u529B\u91CF\u70D9\u5370"
   m_EditorClassIdentifier: 
-  _ResourcePath: "Role/Weakness/Weakness_\u4E00\u56DE\u5408\u51FB\u4E2D5\u6B21"
-  WeaknessType: 1
-  DefaultMaxValue: 3
-  DetailInfo: "\u4E00\u56DE\u5408\u7D2F\u8BA1\u88AB\u51FB\u4E2D5\u6B21"
+  _ResourcePath: "Role/Weakness/Weakness_\u529B\u91CF\u70D9\u5370"
+  WeaknessType: 0
+  DefaultMaxValue: 10
+  DetailInfo: "\u529B\u91CF\u70D9\u5370"

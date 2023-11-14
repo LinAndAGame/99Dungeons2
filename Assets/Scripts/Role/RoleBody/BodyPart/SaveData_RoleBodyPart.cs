@@ -8,6 +8,7 @@ namespace Role.RoleBody {
         [SerializeField]
         private string AssetDataPath;
         public List<SaveData_RoleItemSlot> AllRoleItemSlots = new List<SaveData_RoleItemSlot>();
+        public List<SaveData_Weakness>     AllWeaknesses    = new List<SaveData_Weakness>();
 
         public AssetData_RoleBodyPart AssetData => Resources.Load<AssetData_RoleBodyPart>(AssetDataPath);
         
@@ -17,6 +18,9 @@ namespace Role.RoleBody {
             AssetDataPath = assetDataRoleBodyPart.ResourcePath;
             foreach (var assetDataRoleEquipmentSlot in AssetData.AllRoleItemSlots) {
                 AllRoleItemSlots.Add(assetDataRoleEquipmentSlot.GetSaveData());
+            }
+            foreach (AssetData_Weakness assetDataAllWeakness in AssetData.AllWeaknesses) {
+                AllWeaknesses.Add(new SaveData_Weakness(assetDataAllWeakness));
             }
         }
     }

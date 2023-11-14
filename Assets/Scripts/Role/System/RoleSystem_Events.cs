@@ -5,6 +5,8 @@ namespace Role {
     public class RoleSystem_Events : BaseRoleSystem {
         public CustomAction<DamageData> OnBeHurtFailure = new CustomAction<DamageData>();
         public CustomAction<DamageData> OnBeHurtSucceed = new CustomAction<DamageData>();
+        public CustomAction<DamageData> OnAttackFailure = new CustomAction<DamageData>();
+        public CustomAction<DamageData> OnAttackSucceed = new CustomAction<DamageData>();
 
         public CustomAction<SystemData_BaseWeakness> OnWeaknessBroken = new CustomAction<SystemData_BaseWeakness>();
 

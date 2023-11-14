@@ -2,6 +2,7 @@
 using Item;
 using MyGameUtility;
 using Role.Action;
+using Role.Brand;
 using Role.Characterization;
 using Role.RoleBody;
 using UnityEngine;
@@ -15,7 +16,6 @@ namespace Role {
         public int                                Hp;
         public AssetData_FrameAnimationCollection FrameAnimationCollection;
         public List<AssetData_BaseRoleIdentity>   AllPossibleRoleIdentities;
-        public List<AssetData_Weakness>           AllWeaknessDatas;
         public List<AssetData_RoleAction>         AllDefaultRoleActions;
         public List<AssetData_Item>               AllDefaultItems;
         public List<AssetData_Characterization>   AllCharacterizations;
