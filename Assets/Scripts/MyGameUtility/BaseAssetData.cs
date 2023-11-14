@@ -2,7 +2,7 @@
 using UnityEngine;
 
 namespace MyGameUtility {
-    public class BaseAssetData : ScriptableObject {
+    public abstract class BaseAssetData : ScriptableObject {
         [SerializeField]
         private string _ResourcePath;
         public string ResourcePath => _ResourcePath;

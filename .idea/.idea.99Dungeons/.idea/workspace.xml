@@ -4,8 +4,107 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/DungeonEventFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/DungeonEventFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SaveData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SaveData_DungeonEvent_EncounterEnemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SaveData_DungeonEvent_Lounge.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SaveData_DungeonEvent_Lounge.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SaveData_DungeonEvent_ReturnTown.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SaveData_DungeonEvent_ReturnTown.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SaveData_DungeonEvent_RewardGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SaveData_DungeonEvent_RewardGame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventStateEnum.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventTypeEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventTypeEnum.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEventWithData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEventWithData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_DungeonEventWithData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_DungeonEventWithData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessCtrl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessCtrl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessStateEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessStateEnum.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SaveData_DungeonProcess.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SaveData_DungeonProcess.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SystemData_DungeonProcess.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSaveData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSaveData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSystemData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSystemData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetAssetData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetAssetData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetSaveData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetSaveData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/ISystemDataGiver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/ISystemDataGiver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Container_DungeonEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Container_DungeonEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Panel_ChooseNextEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Panel_ChooseNextEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/Panel_NotTouchBoundary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/Panel_NotTouchBoundary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ReturnTown/Panel_DungeonEvent_ReturnTown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ReturnTown/Panel_DungeonEvent_ReturnTown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameFailure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameFailure.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameSucceed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameSucceed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/AssetData_DungeonProcess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/AssetData_DungeonProcess.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/AssetData_DungeonProcess.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/AssetData_DungeonProcess.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/AssetData_DungeonEvent_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/AssetData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/AssetData_DungeonEvent_EncounterEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/AssetData_DungeonEvent_EncounterEnemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/EncounterEnemySettlement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/EncounterEnemySettlement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/EncounterEnemySettlement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/EncounterEnemySettlement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/EncounterEnemySettlement_UnlockInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/EncounterEnemySettlement_UnlockInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/EncounterEnemySettlement_UnlockInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/EncounterEnemySettlement_UnlockInfo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/Lounge.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/Lounge/AssetData_DungeonEvent_Lounge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/AssetData_DungeonEvent_Lounge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/Lounge/AssetData_DungeonEvent_Lounge.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/AssetData_DungeonEvent_Lounge.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/Lounge/SystemData_DungeonEvent_Lounge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SystemData_DungeonEvent_Lounge.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/Lounge/SystemData_DungeonEvent_Lounge.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SystemData_DungeonEvent_Lounge.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/MulitOperation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/MulitOperation/AssetData_DungeonEvent_MulitOperations.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/MulitOperation/AssetData_DungeonEvent_MulitOperations.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/MulitOperation/SystemData_DungeonEvent_MulitOperations.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/MulitOperation/SystemData_DungeonEvent_MulitOperations.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/ReturnTown.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/ReturnTown/AssetData_DungeonEvent_ReturnTown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/AssetData_DungeonEvent_ReturnTown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/ReturnTown/AssetData_DungeonEvent_ReturnTown.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/AssetData_DungeonEvent_ReturnTown.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/ReturnTown/SystemData_DungeonEvent_ReturnTown.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SystemData_DungeonEvent_ReturnTown.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/ReturnTown/SystemData_DungeonEvent_ReturnTown.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SystemData_DungeonEvent_ReturnTown.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/RewardGame.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/RewardGame/AssetData_DungeonEvent_RewardGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/AssetData_DungeonEvent_RewardGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/RewardGame/AssetData_DungeonEvent_RewardGame.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/AssetData_DungeonEvent_RewardGame.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/RewardGame/SystemData_DungeonEvent_RewardGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SystemData_DungeonEvent_RewardGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/RewardGame/SystemData_DungeonEvent_RewardGame.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SystemData_DungeonEvent_RewardGame.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_BaseDungeonEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/AssetData_BaseDungeonEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_BaseDungeonEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/AssetData_BaseDungeonEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_BaseDungeonEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_BaseDungeonEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_BaseDungeonEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_BaseDungeonEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_BaseDungeonEventWithOwner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_BaseDungeonEventWithOwner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData_DungeonProcess.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData_DungeonProcess.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SystemData_DungeonProcess.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/UnlockHiddenEvent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/UnlockHiddenEvent/AssetData_UnlockDungeonHiddenEvent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/UnlockHiddenEvent/AssetData_UnlockDungeonHiddenEvent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseAssetData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseAssetData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,70 +127,80 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06F3B5FC-6BA6-41E2-AB95-F91BD8A970A8/cd/fc137c42/ImageConversion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/d5/569473e2/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/2d/9b22e8c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/26/117158aa/Environment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/RoleActionDetailInfo/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/bd/5911ec8f/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/50/4ab5fc12/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/15/dc8e79ec/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/AssetData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/66/06cc4bc2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/a1/6191d941/Transform.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/84/75035a79/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Story/AssetData_Story.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElementTypeEnum.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SystemData_UnlockElement_Item.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SystemData_UnlockElement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement_Item.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SaveData_UnlockItems.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SaveData_UnlockItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/SaveData_UnlockElement_Item.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_BaseUnlockElement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockSystem/SaveData_UnlockSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/AssetData_Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockProcess/IHaveDataOwner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockProcess/SystemData_BaseUnlockProcessWithOwner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/SystemData_UnlockProcess_PlayerCreateOctopusMan.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockProcessCreator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockSystem/SystemData_UnlockSystem_RoleCtrl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockSystem/SystemData_UnlockSystem_Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SystemData_Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/UICtrl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_BaseDungeonEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_BaseDungeonEventWithOwner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_DungeonEvent_Lounge.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_DungeonEvent_MulitOperations.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_BaseDungeonEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleActionWorkflow.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary/Buff_Vertigo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/AssetData_DungeonEvent_EncounterEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_Lounge.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_MulitOperations.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvents/AssetData_DungeonEvent_RewardGame.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData/SystemData_DungeonEvent_RewardGame.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/EncounterEnemy/EncounterEnemySettlement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/ClassLibrary/SystemData_UnlockProcess_RoleOnlyUseShieldWin.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockSystem/SystemData_UnlockSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockProcess/SystemData_BaseUnlockProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/BattleSettlement/Panel_RoleEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcessCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/AAA.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData_DungeonProcess.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/aaa.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcessStateEnum.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SaveData_DungeonProcess.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventTypeEnum.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/ISystemDataGiver.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_BaseDungeonEventWithOwner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetAssetData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSaveData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSystemData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonCreator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/AssetData_BaseDungeonEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/AssetData_DungeonEvent_EncounterEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseAssetData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetSaveData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDugneonEventWithData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDugeonEventWithData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/AssetData_DungeonEvent_Lounge.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SaveData_DungeonEvent_Lounge.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SystemData_DungeonEvent_Lounge.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/MulitOperation/AssetData_DungeonEvent_MulitOperations.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/AssetData_DungeonEvent_RewardGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SaveData_DungeonEvent_NotTouchBoundary.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SaveData_DungeonEvent_RewardGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/AssetData_DungeonEvent_ReturnTown.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SaveData_DungeonEvent_ReturnTown.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/DungeonEventFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEventWithData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/Panel_NotTouchBoundary.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameSucceed.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ReturnTown/Panel_DungeonEvent_ReturnTown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/ReturnTown/SystemData_DungeonEvent_ReturnTown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/ClassLibrary/ReturnTown/AssetData_DungeonEvent_ReturnTown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/BattleSettlement/Panel_BattleSettlement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleBody/Container_ItemSlot.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/Panel_RoleSetting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/Panel_RoleActions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UnlockData/UnlockElement/AssetData_UnlockElement_RoleAction.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameFailure.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SaveData_DungeonProcess.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Container_DungeonEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_DungeonEventWithData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SystemData_DungeonEvent_RewardGame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SystemData_DungeonEvent_ReturnTown.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProceeFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SaveData_DungeonEvent_EncounterEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventStateEnum.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SystemData_DungeonProcess.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_BaseDungeonEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Panel_ChooseNextEvent.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2XpKuGHW06H9rQ0UMZv2IF3f2SU" />
@@ -106,7 +215,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35005066" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -120,17 +229,15 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="9968">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="9968" />
-      <option name="projectPathOnTarget" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -276,14 +383,7 @@
       <option name="project" value="LOCAL" />
       <updated>1699879644024</updated>
     </task>
-    <task id="LOCAL-00018" summary="1">
-      <created>1699886971668</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1699886971668</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

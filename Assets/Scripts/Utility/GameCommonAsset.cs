@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Dungeon;
 using MyGameUtility;
 using Player;
 using Role;
@@ -35,6 +36,8 @@ namespace Utility {
         public AssetFolderInfo AssetFolderInfo_RoleUnlockAction;
         public AssetFolderInfo AssetFolderInfo_RoleIdentity;
         public List<AssetData_BaseRole> AllAssetDataRoles;
+
+        public AssetData_DungeonProcess DungeonProcess;
         // public AssetFolderInfo AssetFolderInfo_Item_Weapon;
 
         [Button]

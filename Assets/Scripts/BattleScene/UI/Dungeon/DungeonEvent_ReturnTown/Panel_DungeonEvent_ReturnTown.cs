@@ -1,4 +1,4 @@
-﻿using Dungeon.ReturnTown;
+﻿using Dungeon;
 using MyGameUtility.UI;
 using TMPro;
 using UnityEngine;
@@ -16,7 +16,7 @@ namespace BattleScene.UI {
             });
         }
 
-        public void RefreshUI(SystemData_DungeonEvent_ReturnTown systemDataDungeonEventReturnTown) {
+        public void RefreshUI(SaveData_DungeonEvent_ReturnTown systemDataDungeonEventReturnTown) {
             TMP_Content.text = systemDataDungeonEventReturnTown.AssetDataT.ReturnTownContent;
         }
     }
