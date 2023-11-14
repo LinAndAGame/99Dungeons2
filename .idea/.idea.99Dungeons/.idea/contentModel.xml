@@ -1596,7 +1596,7 @@
             </e>
           </e>
           <e p="Dungeon" t="Include">
-            <e p="AssetData_DungeonLevel.cs" t="Include" />
+            <e p="AssetData_DungeonProcess.cs" t="Include" />
             <e p="ClassLibrary" t="Include">
               <e p="EncounterEnemy" t="Include">
                 <e p="AssetData_DungeonEvent_EncounterEnemy.cs" t="Include" />
@@ -1624,11 +1624,11 @@
             <e p="DungeonEvents" t="Include">
               <e p="AssetData_BaseDungeonEvent.cs" t="Include" />
             </e>
-            <e p="DungeonProcess.cs" t="Include" />
             <e p="SystemData" t="Include">
               <e p="SystemData_BaseDungeonEvent.cs" t="Include" />
               <e p="SystemData_BaseDungeonEventWithOwner.cs" t="Include" />
             </e>
+            <e p="SystemData_DungeonProcess.cs" t="Include" />
             <e p="UnlockHiddenEvent" t="Include">
               <e p="AssetData_UnlockDungeonHiddenEvent.cs" t="Include" />
             </e>

@@ -11,14 +11,12 @@ namespace BattleScene {
             
         public RoleLocatorGroupCtrl PlayerRoleLocatorGroupCtrlRef;
         public RoleLocatorGroupCtrl EnemyRoleLocatorGroupCtrlRef;
-        public DungeonProcess     CurDungeonProcess;
-
-        public AssetData_DungeonLevel DungeonLevel;
+        public SystemData_DungeonProcess     CurDungeonProcess;
 
         public SystemData_BaseDungeonEvent CurDungeonEventCallBacks { get; private set; }
 
         private void Start() {
-            CurDungeonProcess = new DungeonProcess(DungeonLevel);
+            CurDungeonProcess = new SystemData_DungeonProcess(DungeonLevel);
             var handle = Addressables.InitializeAsync();
             handle.WaitForCompletion();
             UICtrlRef.Init();

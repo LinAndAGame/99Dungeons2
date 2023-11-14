@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
 
 namespace Dungeon {
-    public class DungeonProcess {
-        public readonly AssetData_DungeonLevel DungeonLevel;
+    public class SystemData_DungeonProcess {
+        public readonly AssetData_DungeonProcess CurDungeonProcess;
         
         public AssetData_BaseDungeonEvent CurDungeonEvent { get; set; }
         
-        public DungeonProcess(AssetData_DungeonLevel dungeonLevel) {
-            DungeonLevel = dungeonLevel;
+        public SystemData_DungeonProcess(AssetData_DungeonProcess curDungeonProcess) {
+            CurDungeonProcess = curDungeonProcess;
         }
 
         public void RunFirstDungeonEvent() {
-            RunDungeonEvent(DungeonLevel.AllDungeonEvents[0]);
+            RunDungeonEvent(CurDungeonProcess.AllDungeonEvents[0]);
         }
 
         public List<AssetData_BaseDungeonEvent> GetAllNextPossibleDungeonEvents() {
             List<AssetData_BaseDungeonEvent> result = new List<AssetData_BaseDungeonEvent>();
-            result.AddRange(DungeonLevel.AllDungeonEvents);
+            result.AddRange(CurDungeonProcess.AllDungeonEvents);
             return result;
         }
 
