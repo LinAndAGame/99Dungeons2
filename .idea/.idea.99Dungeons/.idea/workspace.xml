@@ -4,56 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/力量烙印.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/力量烙印.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/火焰烙印.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Brand/火焰烙印.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_力量烙印.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_力量烙印.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_火焰烙印.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_火焰烙印.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/AssetData_Brand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/AssetData_Brand.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/RoleBrandTypeEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/RoleBrandTypeEnum.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/SaveData_Brand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Brand/SaveData_Brand.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_FireBrand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_FireBrand.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_PowerBrand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_PowerBrand.cs.meta" afterDir="false" />
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Body/Slots/BodySlot_Dog_Head.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Body/Slots/BodySlot_Dog_Head.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Role/Player/角色默认数据_武士.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Role/Player/角色默认数据_武士.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_一回合击中5次.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Role/Weakness/Weakness_一回合击中5次.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/Damage/DamageData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/Damage/DamageData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterBodyChanger.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterWeaponChanger.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SaveData_Item_Armor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SaveData_Item_Armor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SystemData_Item_Armor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Armor/SystemData_Item_Armor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SaveData_Item_Shield.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SaveData_Item_Shield.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SystemData_Item_Shield.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Shield/SystemData_Item_Shield.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SaveData/SaveData_Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SaveData/SaveData_Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_ItemWithSaveData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Item/SystemData/SystemData_ItemWithSaveData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_BaseRole.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/AssetData_BaseRole.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Model/SaveData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/AssetData_RoleBodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/AssetData_RoleBodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/SaveData_RoleBodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/RoleBody/BodyPart/SaveData_RoleBodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Events.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Events.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/System/RoleSystem_Values.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/SystemData/SystemData_BaseWeakness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/SystemData/SystemData_BaseWeakness.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessTypeEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/WeaknessTypeEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +106,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35005066" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -324,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699879644024</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="1">
+      <created>1699886971668</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699886971668</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
