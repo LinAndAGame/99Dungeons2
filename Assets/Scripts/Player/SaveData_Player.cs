@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Dungeon;
 using Item;
 using MyGameUtility;
 using MyGameUtility.SaveLoad;
@@ -31,6 +32,8 @@ namespace Player {
                             _I.AllInventoryItems.Add(assetDataItem.GetSaveData());
                         }
 
+                        _I.DungeonProcess = DungeonProcessFactory.CreateSaveData(GameCommonAsset.I.DungeonProcess);
+
                         _I.UnlockSystem = new SaveData_UnlockSystem(GameCommonAsset.I.DefaultPlayerData.AllUnlockProcesses);
 
                         ES3.Save(SaveDataPlayerKey, _I);
@@ -49,6 +52,7 @@ namespace Player {
         public SaveData_UnlockSystem         UnlockSystem;
         public SaveData_UnlockDataCollection SaveDataUnlockDataCollection = new SaveData_UnlockDataCollection();
         public bool                          PlayerConfirmStartGameItem;
+        public SaveData_DungeonProcess       DungeonProcess;
 
         public SaveData_Player() { }
 

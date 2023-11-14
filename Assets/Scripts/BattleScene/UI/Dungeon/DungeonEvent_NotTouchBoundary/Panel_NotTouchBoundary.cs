@@ -11,7 +11,7 @@ namespace BattleScene.UI.DungeonEvent_NotTouchBoundary {
         public TextMeshProUGUI                 TMP_StartEventContent;
         public RewardGame_NotTouchBoundaryCtrl NotTouchBoundaryCtrl;
 
-        private AssetData_DungeonEvent_RewardGame _CurDungeonEventRewardGame;
+        private SaveData_DungeonEvent_RewardGame _CurDungeonEventRewardGame;
 
         public void Init() {
             NotTouchBoundaryCtrl.OnSucceed.AddListener(() => {
@@ -23,11 +23,11 @@ namespace BattleScene.UI.DungeonEvent_NotTouchBoundary {
             NotTouchBoundaryCtrl.Init();
         }
 
-        public void Display(AssetData_DungeonEvent_RewardGame dungeonEventRewardGame) {
+        public void Display(SaveData_DungeonEvent_RewardGame dungeonEventRewardGame) {
             _CurDungeonEventRewardGame = dungeonEventRewardGame;
             this.gameObject.SetActive(true);
             NotTouchBoundaryCtrl.StartGame();
-            TMP_StartEventContent.text  = dungeonEventRewardGame.StartEventContent;
+            TMP_StartEventContent.text  = dungeonEventRewardGame.AssetDataT.StartEventContent;
             TMP_StartEventContent.color = TMP_StartEventContent.color.SetA(0);
             
             Sequence seq = DOTween.Sequence();

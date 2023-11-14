@@ -1507,6 +1507,7 @@
               <e p="Slots" t="Include" />
             </e>
             <e p="BodyPart" t="Include" />
+            <e p="Brand" t="Include" />
             <e p="Characterization" t="Include">
               <e p="CharacterizationInfos" t="Include" />
               <e p="坚守" t="Include" />
@@ -1554,11 +1555,9 @@
                   <e p="Container_DungeonEvent.cs" t="Include" />
                   <e p="Panel_ChooseNextEvent.cs" t="Include" />
                 </e>
-                <e p="DungeonEvent_EncounterBodyChanger" t="Include" />
                 <e p="DungeonEvent_EncounterEnemy" t="Include">
                   <e p="Panel_EncounterEnemy.cs" t="Include" />
                 </e>
-                <e p="DungeonEvent_EncounterWeaponChanger" t="Include" />
                 <e p="DungeonEvent_Lounge" t="Include">
                   <e p="Container_RoleResult.cs" t="Include" />
                   <e p="Container_SelectRole.cs" t="Include" />
@@ -1596,41 +1595,48 @@
             </e>
           </e>
           <e p="Dungeon" t="Include">
-            <e p="AssetData_DungeonProcess.cs" t="Include" />
-            <e p="ClassLibrary" t="Include">
-              <e p="EncounterEnemy" t="Include">
-                <e p="AssetData_DungeonEvent_EncounterEnemy.cs" t="Include" />
-                <e p="EncounterEnemySettlement.cs" t="Include" />
-                <e p="EncounterEnemySettlement_UnlockInfo.cs" t="Include" />
-                <e p="SystemData_DungeonEvent_EncounterEnemy.cs" t="Include" />
-              </e>
-              <e p="Lounge" t="Include">
-                <e p="AssetData_DungeonEvent_Lounge.cs" t="Include" />
-                <e p="SystemData_DungeonEvent_Lounge.cs" t="Include" />
-              </e>
-              <e p="MulitOperation" t="Include">
-                <e p="AssetData_DungeonEvent_MulitOperations.cs" t="Include" />
-                <e p="SystemData_DungeonEvent_MulitOperations.cs" t="Include" />
-              </e>
-              <e p="ReturnTown" t="Include">
-                <e p="AssetData_DungeonEvent_ReturnTown.cs" t="Include" />
-                <e p="SystemData_DungeonEvent_ReturnTown.cs" t="Include" />
-              </e>
-              <e p="RewardGame" t="Include">
-                <e p="AssetData_DungeonEvent_RewardGame.cs" t="Include" />
-                <e p="SystemData_DungeonEvent_RewardGame.cs" t="Include" />
-              </e>
-            </e>
-            <e p="DungeonEvents" t="Include">
+            <e p="DungeonEvent" t="Include">
               <e p="AssetData_BaseDungeonEvent.cs" t="Include" />
-            </e>
-            <e p="SystemData" t="Include">
+              <e p="ClassLibrary" t="Include">
+                <e p="DungeonEventFactory.cs" t="Include" />
+                <e p="EncounterEnemy" t="Include">
+                  <e p="AssetData_DungeonEvent_EncounterEnemy.cs" t="Include" />
+                  <e p="CancelDungeonEventInfo.cs" t="Include" />
+                  <e p="EncounterEnemySettlement.cs" t="Include" />
+                  <e p="EncounterEnemySettlement_UnlockInfo.cs" t="Include" />
+                  <e p="SaveData_DungeonEvent_EncounterEnemy.cs" t="Include" />
+                  <e p="SystemData_DungeonEvent_EncounterEnemy.cs" t="Include" />
+                </e>
+                <e p="Lounge" t="Include">
+                  <e p="AssetData_DungeonEvent_Lounge.cs" t="Include" />
+                  <e p="SaveData_DungeonEvent_Lounge.cs" t="Include" />
+                  <e p="SystemData_DungeonEvent_Lounge.cs" t="Include" />
+                </e>
+                <e p="ReturnTown" t="Include">
+                  <e p="AssetData_DungeonEvent_ReturnTown.cs" t="Include" />
+                  <e p="SaveData_DungeonEvent_ReturnTown.cs" t="Include" />
+                  <e p="SystemData_DungeonEvent_ReturnTown.cs" t="Include" />
+                </e>
+                <e p="RewardGame" t="Include">
+                  <e p="AssetData_DungeonEvent_RewardGame.cs" t="Include" />
+                  <e p="SaveData_DungeonEvent_RewardGame.cs" t="Include" />
+                  <e p="SystemData_DungeonEvent_RewardGame.cs" t="Include" />
+                </e>
+              </e>
+              <e p="DungeonEventStateEnum.cs" t="Include" />
+              <e p="DungeonEventTypeEnum.cs" t="Include" />
+              <e p="SaveData_BaseDungeonEvent.cs" t="Include" />
+              <e p="SaveData_BaseDungeonEventWithData.cs" t="Include" />
               <e p="SystemData_BaseDungeonEvent.cs" t="Include" />
-              <e p="SystemData_BaseDungeonEventWithOwner.cs" t="Include" />
+              <e p="SystemData_DungeonEventWithData.cs" t="Include" />
             </e>
-            <e p="SystemData_DungeonProcess.cs" t="Include" />
-            <e p="UnlockHiddenEvent" t="Include">
-              <e p="AssetData_UnlockDungeonHiddenEvent.cs" t="Include" />
+            <e p="DungeonProcess" t="Include">
+              <e p="AssetData_DungeonProcess.cs" t="Include" />
+              <e p="DungeonProcessCtrl.cs" t="Include" />
+              <e p="DungeonProcessFactory.cs" t="Include" />
+              <e p="DungeonProcessStateEnum.cs" t="Include" />
+              <e p="SaveData_DungeonProcess.cs" t="Include" />
+              <e p="SystemData_DungeonProcess.cs" t="Include" />
             </e>
           </e>
           <e p="GameMod" t="Include">
@@ -1705,6 +1711,8 @@
               <e p="BaseStateWithOwner.cs" t="Include" />
             </e>
             <e p="BaseAssetData.cs" t="Include" />
+            <e p="BaseSaveData.cs" t="Include" />
+            <e p="BaseSystemData.cs" t="Include" />
             <e p="CacheCollection.cs" t="Include" />
             <e p="CustomEvents" t="Include">
               <e p="CustomEvent.cs" t="Include" />
@@ -1790,6 +1798,9 @@
               <e p="zh-cn.txt" t="Include" />
               <e p="zh-cn2.txt" t="Include" />
             </e>
+            <e p="IGetAssetData.cs" t="Include" />
+            <e p="IGetSaveData.cs" t="Include" />
+            <e p="ISystemDataGiver.cs" t="Include" />
             <e p="Layout" t="Include">
               <e p="Layout3D.cs" t="Include" />
             </e>
@@ -1918,6 +1929,11 @@
             </e>
             <e p="BaseRoleCom.cs" t="Include" />
             <e p="BaseRoleSystem.cs" t="Include" />
+            <e p="Brand" t="Include">
+              <e p="AssetData_Brand.cs" t="Include" />
+              <e p="RoleBrandTypeEnum.cs" t="Include" />
+              <e p="SaveData_Brand.cs" t="Include" />
+            </e>
             <e p="Characterization" t="Include">
               <e p="AssetData_Characterization.cs" t="Include" />
               <e p="AssetData_CharacterizationInfo.cs" t="Include" />
@@ -2018,6 +2034,8 @@
               </e>
               <e p="ClassLibrary" t="Include">
                 <e p="Weakness_BeHitOneRound.cs" t="Include" />
+                <e p="Weakness_FireBrand.cs" t="Include" />
+                <e p="Weakness_PowerBrand.cs" t="Include" />
                 <e p="Weakness_TotalDamage.cs" t="Include" />
               </e>
               <e p="Model" t="Include">
@@ -2029,9 +2047,6 @@
               <e p="WeaknessCreator.cs" t="Include" />
               <e p="WeaknessTypeEnum.cs" t="Include" />
             </e>
-          </e>
-          <e p="Story" t="Include">
-            <e p="AssetData_Story.cs" t="Include" />
           </e>
           <e p="TownScene" t="Include">
             <e p="TownSceneCtrl.cs" t="Include" />

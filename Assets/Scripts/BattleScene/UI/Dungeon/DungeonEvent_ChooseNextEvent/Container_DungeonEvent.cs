@@ -2,6 +2,7 @@
 using Coffee.UIExtensions;
 using DG.Tweening;
 using Dungeon;
+using Dungeon.SystemData;
 using MyGameExpand;
 using TMPro;
 using UnityEngine;
@@ -22,11 +23,11 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
         private Tweener _CurAnimationTweener;
         private float   _TweenerValue;
         
-        public void RefreshUI(AssetData_BaseDungeonEvent dungeonEvent) {
-            TMP_DetailInfo.text = dungeonEvent.EventName;
+        public void RefreshUI(SystemData_BaseDungeonEvent dungeonEvent) {
+            TMP_DetailInfo.text = dungeonEvent.SaveData.AssetData.EventName;
             BtnSelf.onClick.AddListener(() => {
                 BattleSceneCtrl.I.UICtrlRef.PanelChooseNextEvent.Hide();
-                BattleSceneCtrl.I.CurDungeonProcess.RunDungeonEvent(dungeonEvent);
+                BattleSceneCtrl.I.CurDungeonProcess.ChooseDungeonEvent(dungeonEvent);
             });
             PlayDisplayAnimation();
         }

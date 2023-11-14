@@ -2,7 +2,7 @@
 using Dungeon;
 using Dungeon.SystemData;
 using MyGameUtility;
-using Role;
+using Player;
 using UnityEngine.AddressableAssets;
 
 namespace BattleScene {
@@ -11,29 +11,19 @@ namespace BattleScene {
             
         public RoleLocatorGroupCtrl PlayerRoleLocatorGroupCtrlRef;
         public RoleLocatorGroupCtrl EnemyRoleLocatorGroupCtrlRef;
-        public SystemData_DungeonProcess     CurDungeonProcess;
-
-        public SystemData_BaseDungeonEvent CurDungeonEventCallBacks { get; private set; }
+        
+        public SystemData_DungeonProcess CurDungeonProcess { get; private set; }
 
         private void Start() {
-            CurDungeonProcess = new SystemData_DungeonProcess(DungeonLevel);
+            CurDungeonProcess = DungeonProcessFactory.CreateSystemData(SaveData_Player.I.DungeonProcess);
             var handle = Addressables.InitializeAsync();
             handle.WaitForCompletion();
             UICtrlRef.Init();
-            CurDungeonProcess.RunFirstDungeonEvent();
+            DisplayUIToSelectNextDungeonEvent();
         }
 
         public T GetDungeonEventCallBack<T>() where T : SystemData_BaseDungeonEvent {
-            return CurDungeonEventCallBacks as T;
-        }
-
-        public void ChangeDungeonEventCallBacks(SystemData_BaseDungeonEvent dungeonEventCallBacks) {
-            if (CurDungeonEventCallBacks != null) {
-                CurDungeonEventCallBacks.ClearData();
-            }
-
-            CurDungeonEventCallBacks = dungeonEventCallBacks;
-            CurDungeonEventCallBacks.Init();
+            return CurDungeonProcess.GetDungeonEventCallBack<T>();
         }
 
         public void DisplayUIToSelectNextDungeonEvent() {

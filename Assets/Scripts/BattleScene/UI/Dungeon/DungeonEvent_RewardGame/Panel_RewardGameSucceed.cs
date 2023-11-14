@@ -18,9 +18,9 @@ namespace BattleScene.UI.DungeonEvent_NotTouchBoundary {
             });
         }
         
-        public void Display(AssetData_DungeonEvent_RewardGame dungeonEventRewardGame) {
+        public void Display(SaveData_DungeonEvent_RewardGame dungeonEventRewardGame) {
             this.gameObject.SetActive(true);
-            TMP_SucceedContent.text = dungeonEventRewardGame.GameSucceedContent;
+            TMP_SucceedContent.text = dungeonEventRewardGame.AssetDataT.GameSucceedContent;
         }
 
         public void Hide() {
