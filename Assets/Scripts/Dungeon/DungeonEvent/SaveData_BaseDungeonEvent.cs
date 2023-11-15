@@ -12,6 +12,7 @@ namespace Dungeon {
 
         public SaveData_BaseDungeonEvent(AssetData_BaseDungeonEvent assetData) {
             AssetDataPath = assetData.ResourcePath;
+            RandomValue   = AssetData.OriginalRandomValue;
         }
     }
 }

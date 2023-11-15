@@ -1,6 +1,7 @@
-﻿using BattleScene;
-using Dungeon.SystemData;
-using MyGameUtility;
+﻿using System.Collections.Generic;
+using System.Linq;
+using BattleScene;
+using DG.Tweening;
 using Player;
 using Role;
 using UnityEngine;
@@ -11,10 +12,52 @@ namespace Dungeon.EncounterEnemy {
         public RoleActionWorkflow       CurRoleActionWorkflow    = new RoleActionWorkflow();
         public EncounterEnemySettlement CurEncounterEnemySettlement = new EncounterEnemySettlement();
         
-        public SystemData_DungeonEvent_EncounterEnemy(SaveData_DungeonEvent_EncounterEnemy saveData) : base(saveData) { }
+        public override void DisplayHandle() {
+            DungeonEventHandleGroup handleGroup = new DungeonEventHandleGroup();
+            
+            var allPossibleChosenDungeonEvents = DungeonProcess.AllPossibleChosenDungeonEvents;
+            var curIndex                          = allPossibleChosenDungeonEvents.IndexOf(this);
+            var notChosenTimes                 = SaveDataT.NotChosenTimes;
+            if (notChosenTimes > 0) {
+                handleGroup.Seq.Append(GetContainer(curIndex).PlayDisplayHandleEffect());
+            }
+            for (int i = 1; i <= notChosenTimes; i++) {
+                internalDisplayHandle(curIndex - i);
+                internalDisplayHandle(curIndex + i);
 
-        public override void Init() {
-            base.Init();
+                void internalDisplayHandle(int tempIndex) {
+                    var tempEvent = allPossibleChosenDungeonEvents.ElementAtOrDefault(tempIndex);
+                    if (tempEvent != null) {
+                        if (tempEvent is SystemData_DungeonEvent_EncounterEnemy leftEncounterEnemy) {
+                            if (SaveDataT.EnemyLv == leftEncounterEnemy.SaveDataT.EnemyLv) {
+                            }
+                            else if (SaveDataT.EnemyLv > leftEncounterEnemy.SaveDataT.EnemyLv) {
+                                var assetData  = this.SaveDataT.AssetDataT;
+                                var saveData   = DungeonEventFactory.CreateSaveData(assetData);
+                                var systemData = DungeonEventFactory.CreateSystemData(saveData);
+                                BattleSceneCtrl.I.CurDungeonProcess.AllPossibleChosenDungeonEvents[tempIndex] = systemData;
+                            
+                                handleGroup.Seq.Append(panelChooseNextEvent.ChangeContainerDungeonEvent(tempIndex, systemData));
+                            }
+                        }
+                        else {
+                            handleGroup.Seq.Append(GetContainer(tempIndex).PlayCancelEffect());
+                        }
+                    }
+                }
+            }
+            
+            DungeonProcess.DisplayHandleQueue.Enqueue(handleGroup);
+            base.DisplayHandle();
+        }
+
+        public override void NotChooseHandle() {
+            base.NotChooseHandle();
+            SaveDataT.NotChosenTimes++;
+        }
+
+        public override void ChooseHandle() {
+            SaveDataT.NotChosenTimes = 0;
             createRoles();
             var panelEncounterEnemy = BattleSceneCtrl.I.UICtrlRef.PanelEncounterEnemy;
             var sequence            = panelEncounterEnemy.Display(SaveDataT.AssetDataT);
@@ -42,8 +85,7 @@ namespace Dungeon.EncounterEnemy {
             }
         }
 
-        public override void ClearData() {
-            base.ClearData();
+        public override void EventEndHandle() {
             foreach (RoleCtrl aliveRole in BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef.AllAliveRoles) {
                 aliveRole.DestroySelf();
             }
@@ -68,5 +110,7 @@ namespace Dungeon.EncounterEnemy {
                 aliveRole.RoleSystemEvents.OnFightWinBefore.Invoke();
             }
         }
+
+        public SystemData_DungeonEvent_EncounterEnemy(SaveData_BaseDungeonEvent saveData) : base(saveData) { }
     }
 }

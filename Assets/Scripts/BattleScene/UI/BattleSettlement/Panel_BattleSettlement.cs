@@ -11,7 +11,7 @@ namespace BattleScene.UI.BattleSettlement {
 
         public void Init() {
             Btn_Confirm.onClick.AddListener(() => {
-                BattleSceneCtrl.I.CurDungeonEventCallBacks.ClearData();
+                // BattleSceneCtrl.I.CurDungeonEventCallBacks.ClearData();
                 BattleSceneCtrl.I.DisplayUIToSelectNextDungeonEvent();
                 Hide();
             });

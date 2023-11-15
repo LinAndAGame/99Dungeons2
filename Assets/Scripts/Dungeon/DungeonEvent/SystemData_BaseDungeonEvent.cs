@@ -1,26 +1,38 @@
-﻿using MyGameUtility;
+﻿using BattleScene;
+using BattleScene.UI.DungeonEvent_ChooseNextEvent;
+using MyGameUtility;
 using UnityEngine;
 
 namespace Dungeon.SystemData {
     public abstract class SystemData_BaseDungeonEvent {
         public  DungeonEventStateEnum DungeonEventState = DungeonEventStateEnum.Opened;
 
-        private float _RandomValue;
         
-        public SaveData_BaseDungeonEvent SaveData { get; private set; }
+        public SaveData_BaseDungeonEvent SaveData       { get; private set; }
         
-        protected SystemData_BaseDungeonEvent(SaveData_BaseDungeonEvent saveData) {
-            _RandomValue = saveData.RandomValue;
-            SaveData     = saveData;
+        public SystemData_DungeonProcess DungeonProcess => BattleSceneCtrl.I.CurDungeonProcess;
+        
+        protected SystemData_BaseDungeonEvent( SaveData_BaseDungeonEvent saveData) {
+            SaveData       = saveData;
         }
 
         public bool CanUseThisDungeonEvent() {
             var randomValue = Random.Range(0, 1);
-            return randomValue >= _RandomValue;
+            return randomValue >= SaveData.RandomValue;
         }
 
-        public virtual void DisplayHandle(){ }
+        public virtual void DisplayHandle() {
+            BattleSceneCtrl.I.CurDungeonProcess.TryRunDisplayHandle();
+        }
+        
         public virtual void NotChooseHandle(){ }
         public virtual void ChooseHandle(){ }
+        public virtual void EventEndHandle(){ }
+
+        protected Container_DungeonEvent GetContainer(int index) {
+            return panelChooseNextEvent.GetContainer(index);
+        }
+
+        protected Panel_ChooseNextEvent panelChooseNextEvent => BattleSceneCtrl.I.UICtrlRef.PanelChooseNextEvent;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using BattleScene.UI;
+using DG.Tweening;
 using Dungeon;
 using Dungeon.SystemData;
 using MyGameUtility;
@@ -27,8 +28,12 @@ namespace BattleScene {
         }
 
         public void DisplayUIToSelectNextDungeonEvent() {
-            var allPossibleDungeonEvents = CurDungeonProcess.GetAllNextPossibleDungeonEvents();
-            UICtrlRef.PanelChooseNextEvent.Display(allPossibleDungeonEvents);
+            var allPossibleDungeonEvents = CurDungeonProcess.GetAllPossibleDungeonEvent();
+            var sequence = UICtrlRef.PanelChooseNextEvent.Display(allPossibleDungeonEvents);
+            sequence.AppendCallback(()=> {
+                CurDungeonProcess.RunDisplayHandle();
+                CurDungeonProcess.TryRunDisplayHandle();
+            });
         }
     }
 }
