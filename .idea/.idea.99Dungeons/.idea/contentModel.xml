@@ -1553,6 +1553,7 @@
               <e p="Dungeon" t="Include">
                 <e p="DungeonEvent_ChooseNextEvent" t="Include">
                   <e p="Container_DungeonEvent.cs" t="Include" />
+                  <e p="Container_DungeonEvent_EncounterEnemy.cs" t="Include" />
                   <e p="Panel_ChooseNextEvent.cs" t="Include" />
                 </e>
                 <e p="DungeonEvent_EncounterEnemy" t="Include">
@@ -1601,7 +1602,6 @@
                 <e p="DungeonEventFactory.cs" t="Include" />
                 <e p="EncounterEnemy" t="Include">
                   <e p="AssetData_DungeonEvent_EncounterEnemy.cs" t="Include" />
-                  <e p="CancelDungeonEventInfo.cs" t="Include" />
                   <e p="EncounterEnemySettlement.cs" t="Include" />
                   <e p="EncounterEnemySettlement_UnlockInfo.cs" t="Include" />
                   <e p="SaveData_DungeonEvent_EncounterEnemy.cs" t="Include" />

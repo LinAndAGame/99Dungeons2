@@ -1,5 +1,6 @@
 ﻿using BattleScene;
 using BattleScene.UI.DungeonEvent_ChooseNextEvent;
+using DG.Tweening;
 using MyGameUtility;
 using UnityEngine;
 
@@ -21,8 +22,13 @@ namespace Dungeon.SystemData {
             return randomValue >= SaveData.RandomValue;
         }
 
-        public virtual void DisplayHandle() {
+        protected void RunDisplayHandle() {
             BattleSceneCtrl.I.CurDungeonProcess.TryRunDisplayHandle();
+        }
+
+        public virtual Sequence DisplayHandle() {
+            RunDisplayHandle();
+            return null;
         }
         
         public virtual void NotChooseHandle(){ }

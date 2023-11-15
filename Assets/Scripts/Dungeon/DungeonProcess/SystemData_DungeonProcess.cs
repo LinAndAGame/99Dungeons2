@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using DG.Tweening;
 using Dungeon.SystemData;
 using MyGameExpand;
 using MyGameUtility;
@@ -13,7 +14,6 @@ namespace Dungeon {
         public List<SystemData_BaseDungeonEvent> AllPossibleChosenDungeonEvents = new List<SystemData_BaseDungeonEvent>();
         public List<SystemData_BaseDungeonEvent> AllDungeonEvents               = new List<SystemData_BaseDungeonEvent>();
 
-        public Queue<DungeonEventHandleGroup>     DisplayHandleQueue = new Queue<DungeonEventHandleGroup>();
         public Queue<SystemData_BaseDungeonEvent> DisplayEventQueue  = new Queue<SystemData_BaseDungeonEvent>();
 
         public SystemData_DungeonProcess(SaveData_DungeonProcess saveData) : base(saveData) {
@@ -27,19 +27,18 @@ namespace Dungeon {
         }
 
         public void TryRunDisplayHandle() {
-            if (DisplayHandleQueue.Count > 0) {
-                var displayHandle = DisplayHandleQueue.Dequeue();
-                displayHandle.Seq.onComplete += TryRunDisplayHandle;
-                displayHandle.Handle();
+            if (DisplayEventQueue.Count > 0) {
+                var      displayEvent     = DisplayEventQueue.Dequeue();
+                var      displayHandleSeq = displayEvent.DisplayHandle();
+                
+                if (displayHandleSeq != null) {
+                    Sequence seq = DOTween.Sequence();
+                    seq.Append(displayEvent.DisplayHandle());
+                    seq.onComplete += () => TryRunDisplayHandle();
+                }
             }
             else {
-                if (DisplayEventQueue.Count > 0) {
-                    var displayEvent = DisplayEventQueue.Dequeue();   
-                    displayEvent.DisplayHandle();
-                }
-                else {
-                    OnDisplayHandleFinished.Invoke();
-                }
+                OnDisplayHandleFinished.Invoke();
             }
         }
 

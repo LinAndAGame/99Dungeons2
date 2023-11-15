@@ -17,8 +17,7 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
         public Image           Img;
         public TextMeshProUGUI TMP_DetailInfo;
 
-        public float DisplayDuration;
-        public float CancelDissolveDuration;
+        public float EffectDuration = 1;
 
         private Tweener _CurAnimationTweener;
         private float   _TweenerValue;
@@ -36,10 +35,12 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
             SetDissolveImmediately(0);
         }
 
+#region Effects
+        
         public Tweener PlayDisplayHandleEffect() {
             KillEffectTweener();
 
-            _CurAnimationTweener = this.transform.DOShakePosition(0.5f, 50);
+            _CurAnimationTweener = this.transform.DOShakeRotation(EffectDuration, 10);
             return _CurAnimationTweener;
         }
 
@@ -52,7 +53,7 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
             _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
                 _TweenerValue = data;
                 SetAlphaImmediately(_TweenerValue);
-            }, 1, DisplayDuration);
+            }, 1, EffectDuration);
             _CurAnimationTweener.onComplete += () => {
                 BtnSelf.interactable = true;
             };
@@ -67,7 +68,7 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
             _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
                 _TweenerValue = data;
                 SetAlphaImmediately(_TweenerValue);
-            }, toValue, DisplayDuration);
+            }, toValue, EffectDuration);
             return _CurAnimationTweener;
         }
 
@@ -78,20 +79,8 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
             _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
                 _TweenerValue = data;
                 SetDissolveImmediately(_TweenerValue);
-            }, toValue, DisplayDuration);
+            }, toValue, EffectDuration);
             return _CurAnimationTweener;
-        }
-
-        public void SetAlphaImmediately(float value) {
-            foreach (var graphic in AllGraphics) {
-                graphic.color = graphic.color.SetA(value);
-            }
-        }
-
-        public void SetDissolveImmediately(float value) {
-            foreach (var uiDissolve in AllUIDissolves) {
-                uiDissolve.effectFactor = value;
-            }
         }
 
         public Tweener PlayCancelEffect() {
@@ -103,8 +92,22 @@ namespace BattleScene.UI.DungeonEvent_ChooseNextEvent {
             _CurAnimationTweener = DOTween.To(() => _TweenerValue, data => {
                 _TweenerValue = data;
                 SetDissolveImmediately(_TweenerValue);
-            }, 1, CancelDissolveDuration);
+            }, 1, EffectDuration);
             return _CurAnimationTweener;
+        }
+
+#endregion
+
+        public void SetAlphaImmediately(float value) {
+            foreach (var graphic in AllGraphics) {
+                graphic.color = graphic.color.SetA(value);
+            }
+        }
+
+        public void SetDissolveImmediately(float value) {
+            foreach (var uiDissolve in AllUIDissolves) {
+                uiDissolve.effectFactor = value;
+            }
         }
 
         public void DestroySelf() {
