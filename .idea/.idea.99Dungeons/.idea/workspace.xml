@@ -4,7 +4,108 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="1" />
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Effects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanSelected.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanSelected.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanUse.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanUse.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Card.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole/RoleCtrl.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole/RoleCtrl.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Container_Value.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Container_Value.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Panel_RoleValues.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Panel_RoleValues.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/SkillCard.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/SkillCard.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Boss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/NormalEnemy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BaseComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BaseComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/BaseRoleComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/BaseRoleComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Effect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Effect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EventReceiver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EventReceiver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_UI.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_UI.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI/Panel_Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI/Panel_Role.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/AssetData_Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/AssetData_Role.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_Role.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValueCollection.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValueCollection.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardPile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardPile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardBag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardBag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardPile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardPile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValueTypeEnum.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValueTypeEnum.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardLabel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardLabel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/ClassLibrary.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/ClassLibrary.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_EventReceiver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_EventReceiver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Model.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Model.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_DragUse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_DragUse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,13 +127,15 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://F:/UnityProjects/99Dungeons/Assets/Scripts/MyGameUtility/MyGameExpand/APIExpandCSharp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/dc/846c6f0d/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/RoleActionDetailInfo/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/b4/44e0602f/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/AssetData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,7 +143,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/66/06cc4bc2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/bf/dc8654af/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -129,10 +237,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="6672">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11568">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="6672" />
+      <option name="pid" value="11568" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -159,6 +267,9 @@
       <workItem from="1699756462616" duration="30685000" />
       <workItem from="1699840514269" duration="9769000" />
       <workItem from="1699855153186" duration="3786000" />
+      <workItem from="1700280569514" duration="1353000" />
+      <workItem from="1700286809322" duration="14101000" />
+      <workItem from="1700360154062" duration="21026000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -286,7 +397,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699979216846</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1">
+      <created>1700281115199</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700281115199</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
