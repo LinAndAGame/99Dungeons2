@@ -46,3 +46,6 @@ TagManager:
   - name: RewardGame
     uniqueID: 2848682381
     locked: 0
+  - name: Card
+    uniqueID: 2095414629
+    locked: 0
