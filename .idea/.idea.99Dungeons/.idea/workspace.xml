@@ -5,106 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanSelected.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanSelected.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanUse.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Effects/Card/CardCanUse.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Card.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole/RoleCtrl.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole/RoleCtrl.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Container_Value.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Container_Value.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Panel_RoleValues.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/UI/RoleInfo/Panel_RoleValues.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/SkillCard.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/SkillCard.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Boss.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/NormalEnemy.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BaseComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BaseComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/BaseRoleComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/BaseRoleComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Effect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Effect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EventReceiver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EventReceiver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_UI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_UI.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI/Panel_Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI/Panel_Role.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/AssetData_Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/AssetData_Role.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_Role.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_Role.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValueCollection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValueCollection.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardPile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardPile.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardBag.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardBag.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardPile.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/SaveData_CardPile.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValueTypeEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValueTypeEnum.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardLabel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardLabel.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/ClassLibrary.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/ClassLibrary.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_EventReceiver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_EventReceiver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Model.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Model.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_DragUse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_DragUse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_Location.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_Location.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagPreview.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagPreview.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagReuslt.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagReuslt.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Result.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Result.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Value.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Value.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RuntimeData_RandomBag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RuntimeData_RandomBag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagPreview.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagPreview.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBag.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBag.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagPreview.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagPreview.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/Container_CardLocation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/Container_CardLocation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseAssetData_CardEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseAssetData_CardEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseRuntimeDataT_CardEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseRuntimeDataT_CardEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseRuntimeData_CardEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseRuntimeData_CardEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseSaveDataT_CardEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseSaveDataT_CardEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseSaveData_CardEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseSaveData_CardEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/CardEffectFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/CardEffectFactory.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/CardEffectState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/CardEffectState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/AssetData_CardEffect_AttackByValueType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/AssetData_CardEffect_AttackByValueType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/RuntimeData_CardEffect_AttackByValueType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/RuntimeData_CardEffect_AttackByValueType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/SaveData_CardEffect_AttackByValueType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/SaveData_CardEffect_AttackByValueType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Renderer2D.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/ClassLibrary.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/ClassLibrary.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_DragUse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_DragUse.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,82 +96,87 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06F3B5FC-6BA6-41E2-AB95-F91BD8A970A8/cd/fc137c42/ImageConversion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/d5/569473e2/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/2d/9b22e8c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/bd/5911ec8f/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCC0BBF6-BF4E-430C-91D4-AA05736FC5C6/14/def3ad84/Sequence.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/dc/846c6f0d/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/RoleActionDetailInfo/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/b4/44e0602f/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/AssetData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/66/06cc4bc2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/bf/dc8654af/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCC0BBF6-BF4E-430C-91D4-AA05736FC5C6/fa/42e9a215/Tweener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/84/75035a79/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/26/117158aa/Environment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/RoleActionDetailInfo/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/50/4ab5fc12/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/15/dc8e79ec/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/a1/6191d941/Transform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcessCtrl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/AAA.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SystemData_DungeonProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/aaa.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcessStateEnum.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/SaveData_DungeonProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventTypeEnum.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/ISystemDataGiver.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_BaseDungeonEventWithOwner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetAssetData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseSystemData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonCreator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/AssetData_BaseDungeonEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/AssetData_DungeonEvent_EncounterEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/BaseAssetData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/IGetSaveData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDugneonEventWithData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDugeonEventWithData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/AssetData_DungeonEvent_Lounge.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SaveData_DungeonEvent_Lounge.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/Lounge/SystemData_DungeonEvent_Lounge.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/MulitOperation/AssetData_DungeonEvent_MulitOperations.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/AssetData_DungeonEvent_RewardGame.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SaveData_DungeonEvent_NotTouchBoundary.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SaveData_DungeonEvent_RewardGame.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/AssetData_DungeonEvent_ReturnTown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SaveData_DungeonEvent_ReturnTown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/DungeonEventFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SaveData_BaseDungeonEventWithData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_NotTouchBoundary/Panel_NotTouchBoundary.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameSucceed.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ReturnTown/Panel_DungeonEvent_ReturnTown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_RewardGame/Panel_RewardGameFailure.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SaveData_DungeonProcess.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Container_DungeonEvent.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_DungeonEventWithData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/RewardGame/SystemData_DungeonEvent_RewardGame.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/ReturnTown/SystemData_DungeonEvent_ReturnTown.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProceeFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/DungeonProcessFactory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/SaveData_Player.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SaveData_DungeonEvent_EncounterEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/DungeonEventStateEnum.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonProcess/SystemData_DungeonProcess.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/SystemData_BaseDungeonEvent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_ChooseNextEvent/Panel_ChooseNextEvent.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseSaveData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseSaveData_CardEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseSaveDataT_CardEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/AssetData_CardEffect_AttackByValueType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/SaveData_CardEffect_AttackByValueType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/RandomValueGetter/Panel_RandomValueGetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/RandomValueGetter/RuntimeData_RandomValueGetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/RandomValueGetter/RandomValueGetterCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomValueGetterValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomValueGetterResult.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomValueGetter_Value.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RuntimeData_RandomValueGetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomValueGetter_Result.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomValueGetterCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/Panel_RandomBag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomBag_Result.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomBag_Value.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RandomBagCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomValueGetter/RuntimeData_RandomBag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Value.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagPreview.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagResult.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagPreview.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Result.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagResult.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RuntimeData_RandomBag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/Container_CardLocation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/CardEffectFactory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseRuntimeDataT_CardEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/RuntimeData_CardEffect_AttackByValueType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/CardEffectState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseAssetData_CardEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseRuntimeData_CardEffect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2XpKuGHW06H9rQ0UMZv2IF3f2SU" />
@@ -231,17 +205,15 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="11568">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="11568" />
-      <option name="projectPathOnTarget" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -434,14 +406,14 @@
     <MESSAGE value="合并4" />
     <MESSAGE value="add git lfs2" />
     <MESSAGE value="add git lfs" />
-    <MESSAGE value="2" />
     <MESSAGE value="角色设置界面代码写完，UI没有制作" />
     <MESSAGE value="limit font asset size" />
     <MESSAGE value="limit font asset size2" />
     <MESSAGE value="GameModTool" />
     <MESSAGE value="弱点代码未整理" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

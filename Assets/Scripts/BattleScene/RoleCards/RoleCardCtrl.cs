@@ -7,8 +7,12 @@ using UnityEngine;
 
 namespace BattleScene.RoleCards {
     public class RoleCardCtrl : MonoBehaviour {
+        public Container_CardLocation CardLocationPrefab;
+        public Transform              CardLocationPrefabParent;
+        
         public CardCtrl  CardCtrlPrefab;
-        public Transform PrefabParent;
+
+        public float PushHeight;
 
         public Vector3 StartPos;
         public float   MaxHeight;
@@ -18,25 +22,19 @@ namespace BattleScene.RoleCards {
         public float   MaxEulerAngle;
         public float   MaxIntervalEulerAngle;
 
-        private RaycastHit2D[] _RaycastHit2Ds = new RaycastHit2D[6];
+        public RoleCtrl CurRole { get; private set; }
 
-        private CardCtrl _CurTouchingCardCtrl;
-        public CardCtrl CurTouchingCardCtrl {
-            get => _CurTouchingCardCtrl;
-            private set {
-                if (_CurTouchingCardCtrl != null) {
-                    _CurTouchingCardCtrl.EndTouching();
-                }
-                
-                _CurTouchingCardCtrl = value;
-                
-                if (_CurTouchingCardCtrl != null) {
-                    _CurTouchingCardCtrl.StartTouching();
-                }
-            }
+        private RoleCtrl _CurMouseTouchingRoleCtrl;
+        public RoleCtrl CurMouseTouchingRoleCtrl {
+            get => _CurMouseTouchingRoleCtrl;
+            set => _CurMouseTouchingRoleCtrl = value;
         }
 
-        public RoleCtrl CurRole { get; private set; }
+        private CardCtrl _CurMouseTouchingCardCtrl;
+        public CardCtrl CurMouseTouchingCardCtrl {
+            get => _CurMouseTouchingCardCtrl;
+            set => _CurMouseTouchingCardCtrl = value;
+        }
 
         [Button]
         public void ChangeRole(RoleCtrl roleCtrl) {
@@ -44,18 +42,12 @@ namespace BattleScene.RoleCards {
             RefreshCard();
         }
 
-        public void DrawCard() { }
-
-        public void DropCard() { }
-
-        private void RefreshAllDrawCards() { }
-
         private void RefreshCard() {
             if (CurRole == null) {
                 return;
             }
             
-            PrefabParent.DestroyAllChildren();
+            CardLocationPrefabParent.DestroyAllChildren();
 
             var allCards = CurRole.RuntimeDataRole.CardBag.HandPile.AllCards;
 
@@ -71,7 +63,8 @@ namespace BattleScene.RoleCards {
             
             for (int i = 0; i < allCards.Count; i++) {
                 RuntimeData_Card runtimeDataCard = CurRole.RuntimeDataRole.CardBag.HandPile.AllCards[i];
-                var              cardIns         = Instantiate(CardCtrlPrefab, PrefabParent);
+                var              cardLocationIns = Instantiate(CardLocationPrefab, CardLocationPrefabParent);
+                var              cardIns         = Instantiate(CardCtrlPrefab, cardLocationIns.ContentParent);
 
                 float posY = 0;
                 if (allCards.Count % 2==0) {
@@ -91,33 +84,12 @@ namespace BattleScene.RoleCards {
                     }
                 }
                 
-                cardIns.transform.localPosition = new Vector3(startPosX + widthInterval * i, posY, i * 0.01f);
-                cardIns.transform.localEulerAngles = new Vector3(0, 0, startEulerAngle - eulerAngleInterval * i);
+                cardLocationIns.transform.localPosition    = new Vector3(startPosX + widthInterval * i, posY, i * 0.01f);
+                cardLocationIns.transform.localEulerAngles = new Vector3(0, 0, startEulerAngle - eulerAngleInterval * i);
 
+                cardIns.transform.ResetLocalTrans();
                 cardIns.Init(runtimeDataCard);
                 cardIns.SetLayer(allCards.Count - i);
-            }
-        }
-
-        private void Update() {
-            return;
-            bool setCardCtrl        = false;
-            var  mousePositionWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            int  hitCount           = Physics2D.RaycastNonAlloc(mousePositionWorld, Vector2.zero, _RaycastHit2Ds);
-            for (int i = 0; i < hitCount; i++) {
-                var hitRaycast  = _RaycastHit2Ds[i];
-                var hitCardCtrl = hitRaycast.transform.parent.GetComponent<CardCtrl>();
-                if (hitCardCtrl != null) {
-                    if (CurTouchingCardCtrl != hitCardCtrl) {
-                        CurTouchingCardCtrl = hitCardCtrl;
-                    }
-                    setCardCtrl = true;
-                    break;
-                }
-            }
-
-            if (setCardCtrl == false) {
-                CurTouchingCardCtrl = null;
             }
         }
 

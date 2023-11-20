@@ -1,4 +1,6 @@
-﻿using BattleScene.UI;
+﻿using BattleScene.RandomBag;
+using BattleScene.RoleCards;
+using BattleScene.UI;
 using DG.Tweening;
 using Dungeon;
 using Dungeon.SystemData;
@@ -12,6 +14,9 @@ namespace BattleScene {
             
         public RoleLocatorGroupCtrl PlayerRoleLocatorGroupCtrlRef;
         public RoleLocatorGroupCtrl EnemyRoleLocatorGroupCtrlRef;
+
+        public RoleCardCtrl  RoleCardCtrlRef;
+        public RandomBagCtrl RandomBagCtrlRef;
         
         public SystemData_DungeonProcess CurDungeonProcess { get; private set; }
 
@@ -20,6 +25,7 @@ namespace BattleScene {
             var handle = Addressables.InitializeAsync();
             handle.WaitForCompletion();
             UICtrlRef.Init();
+            RandomBagCtrlRef.Init();
             DisplayUIToSelectNextDungeonEvent();
         }
 

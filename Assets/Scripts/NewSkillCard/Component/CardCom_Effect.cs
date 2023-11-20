@@ -1,13 +1,13 @@
-﻿using System;
+﻿using Dreamteck.Splines;
 using HighlightPlus;
-using NewRole;
-using UnityEngine;
 
 namespace NewSkillCard {
     public class CardCom_Effect : BaseComponent<CardCtrl> {
         public HighlightEffect  HighlightEffectRef;
         public HighlightProfile CanUseHighlightProfile;
         public HighlightProfile TouchingHighlightProfile;
+        public SplineComputer   SplineComputerRef;
+        public SplineRenderer   SplineRendererRef;
 
         public override void Init(CardCtrl comOwner) {
             base.Init(comOwner);
@@ -31,6 +31,10 @@ namespace NewSkillCard {
         public void SetAsTouchingStyle() {
             HighlightEffectRef.ProfileLoad(TouchingHighlightProfile);
             HighlightEffectRef.SetHighlighted(true);
+        }
+
+        public void ArrowFollowMouse() {
+            SplineComputerRef.EvaluatePositions();
         }
     }
 }
