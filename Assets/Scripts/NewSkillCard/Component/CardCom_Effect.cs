@@ -1,6 +1,6 @@
 ﻿using System;
+using Dreamteck.Splines;
 using HighlightPlus;
-using NewRole;
 using UnityEngine;
 
 namespace NewSkillCard {
@@ -8,6 +8,8 @@ namespace NewSkillCard {
         public HighlightEffect  HighlightEffectRef;
         public HighlightProfile CanUseHighlightProfile;
         public HighlightProfile TouchingHighlightProfile;
+        public SplineComputer   SplineComputerRef;
+        public SplineRenderer   SplineRendererRef;
 
         public override void Init(CardCtrl comOwner) {
             base.Init(comOwner);
@@ -31,6 +33,25 @@ namespace NewSkillCard {
         public void SetAsTouchingStyle() {
             HighlightEffectRef.ProfileLoad(TouchingHighlightProfile);
             HighlightEffectRef.SetHighlighted(true);
+        }
+
+        public void Update() {
+            var mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+            var pos1          = ComOwner.transform.position;
+            var pos3          = mouseWorldPos;
+            var pos2          = new Vector3(pos1.x, pos3.y, pos3.z);
+
+            var oldPoints = SplineComputerRef.GetPoints();
+            oldPoints[0].position = pos1;
+            oldPoints[1].position = pos2;
+            oldPoints[2].position = pos3;
+            SplineComputerRef.SetPoints(oldPoints);
+        }
+
+        public void ArrowFollowMouse() {
+            SplineComputerRef.enabled = true;
+            SplineRendererRef.enabled = true;
+            SplineComputerRef.EvaluatePositions();
         }
     }
 }

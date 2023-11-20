@@ -2,30 +2,26 @@
 using NewRole;
 
 namespace NewSkillCard {
-    public abstract class RuntimeData_Card {
+    public class RuntimeData_Card {
         public bool IsTempCard;
-        
-        protected RuntimeData_Role Role;
 
-        private List<object> _SelectObjects = new List<object>();
-
-        public SaveData_Card SaveData { get; private set; }
+        public BaseRuntimeData_CardEffect       MainCardEffect;
+        public List<BaseRuntimeData_CardEffect> AllAdditionalCardEffects = new List<BaseRuntimeData_CardEffect>();
         
-        protected RuntimeData_Card(RuntimeData_Role role, SaveData_Card saveData) {
-            Role     = role;
-            SaveData = saveData;
+        public RuntimeData_Role RoleOwner { get; private set; }
+        public SaveData_Card    SaveData  { get; private set; }
+        
+        public RuntimeData_Card(RuntimeData_Role roleOwner, SaveData_Card saveData) {
+            RoleOwner           = roleOwner;
+            SaveData       = saveData;
+            MainCardEffect = CardEffectFactory.GetRuntimeData(saveData.MainCardEffect);
+            foreach (var saveDataAllAdditionalCardEffect in saveData.AllAdditionalCardEffects) {
+                AllAdditionalCardEffects.Add(CardEffectFactory.GetRuntimeData(saveDataAllAdditionalCardEffect));
+            }
         }
 
-        public virtual void TrySelectObj(object obj) {
-            
-        }
-        
-        public void CancelCardEffect() {
-            _SelectObjects.Clear();
-        }
-        
-        public void Save(){
-            
+        public void RunEffect(RoleCtrl fromRole, RoleCtrl toRole, int value) {
+            MainCardEffect.RunEffect(fromRole, toRole, value);
         }
     }
 }

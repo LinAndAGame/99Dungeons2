@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using BattleScene;
+using UnityEngine;
 
 namespace NewRole {
     public class RoleCtrl : MonoBehaviour {
@@ -14,6 +16,14 @@ namespace NewRole {
 
         public void DestroySelf() {
             RoleComUI.DestroySelf();
+        }
+
+        private void OnMouseEnter() {
+            BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl = this;
+        }
+
+        private void OnMouseExit() {
+            BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl = null;
         }
     }
 }

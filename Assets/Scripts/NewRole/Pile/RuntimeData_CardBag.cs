@@ -22,7 +22,7 @@ namespace NewRole {
             CostPile = new RuntimeData_CardPile(SaveData.CostPile);
             
             foreach (SaveData_Card card in SaveData.DrawPile.AllCards) {
-                DrawPile.AllCards.Add(new ClassLibrary.Card_AddHpToSelf(role, card));   
+                DrawPile.AllCards.Add(new RuntimeData_Card(role, card));   
             }
         }
 

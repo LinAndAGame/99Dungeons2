@@ -12,14 +12,13 @@ namespace Dungeon.EncounterEnemy {
         public RoleActionWorkflow       CurRoleActionWorkflow    = new RoleActionWorkflow();
         public EncounterEnemySettlement CurEncounterEnemySettlement = new EncounterEnemySettlement();
         
-        public override void DisplayHandle() {
-            DungeonEventHandleGroup handleGroup = new DungeonEventHandleGroup();
-            
-            var allPossibleChosenDungeonEvents = DungeonProcess.AllPossibleChosenDungeonEvents;
-            var curIndex                          = allPossibleChosenDungeonEvents.IndexOf(this);
-            var notChosenTimes                 = SaveDataT.NotChosenTimes;
+        public override Sequence DisplayHandle() {
+            Sequence seq                            = DOTween.Sequence();
+            var      allPossibleChosenDungeonEvents = DungeonProcess.AllPossibleChosenDungeonEvents;
+            var      curIndex                       = allPossibleChosenDungeonEvents.IndexOf(this);
+            var      notChosenTimes                 = SaveDataT.NotChosenTimes;
             if (notChosenTimes > 0) {
-                handleGroup.Seq.Append(GetContainer(curIndex).PlayDisplayHandleEffect());
+                seq.Append(GetContainer(curIndex).PlayDisplayHandleEffect());
             }
             for (int i = 1; i <= notChosenTimes; i++) {
                 internalDisplayHandle(curIndex - i);
@@ -37,18 +36,18 @@ namespace Dungeon.EncounterEnemy {
                                 var systemData = DungeonEventFactory.CreateSystemData(saveData);
                                 BattleSceneCtrl.I.CurDungeonProcess.AllPossibleChosenDungeonEvents[tempIndex] = systemData;
                             
-                                handleGroup.Seq.Append(panelChooseNextEvent.ChangeContainerDungeonEvent(tempIndex, systemData));
+                                seq.Append(panelChooseNextEvent.ChangeContainerDungeonEvent(tempIndex, systemData));
                             }
                         }
                         else {
-                            handleGroup.Seq.Append(GetContainer(tempIndex).PlayCancelEffect());
+                            seq.Append(GetContainer(tempIndex).PlayCancelEffect());
                         }
                     }
                 }
             }
-            
-            DungeonProcess.DisplayHandleQueue.Enqueue(handleGroup);
-            base.DisplayHandle();
+
+            seq.AppendCallback(RunDisplayHandle);
+            return seq;
         }
 
         public override void NotChooseHandle() {
