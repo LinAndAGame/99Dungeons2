@@ -28,7 +28,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06F3B5FC-6BA6-41E2-AB95-F91BD8A970A8/cd/fc137c42/ImageConversion.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/d5/569473e2/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/LinWenHao/99Dungeons/99Dungeons/Assets/Scripts/Dungeon/DungeonEvent/SystemData_BaseDungeonEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/2d/9b22e8c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/26/117158aa/Environment.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
@@ -165,6 +164,7 @@
       <workItem from="1699840514269" duration="9769000" />
       <workItem from="1699855153186" duration="3786000" />
       <workItem from="1700015780600" duration="3021000" />
+      <workItem from="1700442763203" duration="335000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -292,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700040061114</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="1">
+      <created>1700442836444</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700442836444</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
