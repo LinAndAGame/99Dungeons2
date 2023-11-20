@@ -12,7 +12,8 @@
         }
 
         public RuntimeData_RoleValue(SaveData_RoleValue saveData) {
-            SaveData = saveData;
+            SaveData   = saveData;
+            SavedValue = SaveData.Value;
         }
 
         public void Save() {

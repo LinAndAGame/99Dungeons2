@@ -5,6 +5,7 @@ using UnityEngine;
 namespace NewRole {
     public class RoleCtrl : MonoBehaviour {
         public RoleCom_UI     RoleComUI;
+        public RoleCom_Effect RoleComEffect;
         
         public RuntimeData_Role RuntimeDataRole { get; private set; }
 
@@ -12,6 +13,7 @@ namespace NewRole {
             RuntimeDataRole = runtimeDataRole;
             
             RoleComUI.Init(this);
+            RoleComEffect.Init(this);
         }
 
         public void DestroySelf() {
@@ -20,10 +22,12 @@ namespace NewRole {
 
         private void OnMouseEnter() {
             BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl = this;
+            RoleComEffect.SetAsTouchingStyle();
         }
 
         private void OnMouseExit() {
             BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl = null;
+            RoleComEffect.SetAsNormalStyle();
         }
     }
 }

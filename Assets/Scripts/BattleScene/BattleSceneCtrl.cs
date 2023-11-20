@@ -1,10 +1,12 @@
-﻿using BattleScene.RandomBag;
+﻿using System.Collections.Generic;
+using BattleScene.RandomBag;
 using BattleScene.RoleCards;
 using BattleScene.UI;
 using DG.Tweening;
 using Dungeon;
 using Dungeon.SystemData;
 using MyGameUtility;
+using NewRole;
 using Player;
 using UnityEngine.AddressableAssets;
 
@@ -17,16 +19,18 @@ namespace BattleScene {
 
         public RoleCardCtrl  RoleCardCtrlRef;
         public RandomBagCtrl RandomBagCtrlRef;
-        
+
+        public List<RoleCtrl> AllRoleCtrls;
+
         public SystemData_DungeonProcess CurDungeonProcess { get; private set; }
 
         private void Start() {
-            CurDungeonProcess = DungeonProcessFactory.CreateSystemData(SaveData_Player.I.DungeonProcess);
+            // CurDungeonProcess = DungeonProcessFactory.CreateSystemData(SaveData_Player.I.DungeonProcess);
             var handle = Addressables.InitializeAsync();
             handle.WaitForCompletion();
-            UICtrlRef.Init();
+            // UICtrlRef.Init();
             RandomBagCtrlRef.Init();
-            DisplayUIToSelectNextDungeonEvent();
+            // DisplayUIToSelectNextDungeonEvent();
         }
 
         public T GetDungeonEventCallBack<T>() where T : SystemData_BaseDungeonEvent {

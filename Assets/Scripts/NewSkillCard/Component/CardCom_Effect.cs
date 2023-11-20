@@ -36,22 +36,24 @@ namespace NewSkillCard {
         }
 
         public void Update() {
-            var mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
-            var pos1          = ComOwner.transform.position;
-            var pos3          = mouseWorldPos;
-            var pos2          = new Vector3(pos1.x, pos3.y, pos3.z);
+            if (SplineComputerRef.gameObject.activeSelf) {
+                var mouseWorldPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+                var pos1          = ComOwner.transform.position;
+                var pos3          = mouseWorldPos;
+                var pos2          = new Vector3(pos1.x, pos3.y, pos3.z);
 
-            var oldPoints = SplineComputerRef.GetPoints();
-            oldPoints[0].position = pos1;
-            oldPoints[1].position = pos2;
-            oldPoints[2].position = pos3;
-            SplineComputerRef.SetPoints(oldPoints);
+                var oldPoints = SplineComputerRef.GetPoints();
+                oldPoints[0].position = pos1;
+                oldPoints[1].position = pos2;
+                oldPoints[2].position = pos3;
+                SplineComputerRef.SetPoints(oldPoints);
+            }
         }
 
-        public void ArrowFollowMouse() {
-            SplineComputerRef.enabled = true;
-            SplineRendererRef.enabled = true;
-            SplineComputerRef.EvaluatePositions();
+        public void SetArrowFollowMouse(bool enable) {
+            SplineComputerRef.gameObject.SetActive(enable);
+            SplineComputerRef.enabled = enable;
+            SplineRendererRef.enabled = enable;
         }
     }
 }
