@@ -172,11 +172,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/RoleCardCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/RuntimeData_Card.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/CardEffectState.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseAssetData_CardEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/BaseRuntimeData_CardEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2XpKuGHW06H9rQ0UMZv2IF3f2SU" />
@@ -413,7 +413,8 @@
     <MESSAGE value="弱点代码未整理" />
     <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
