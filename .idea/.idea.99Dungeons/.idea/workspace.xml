@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RoleCardCtrl.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/CardEffect.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/CardEffect/Attack.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/CardEffect/Attack.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo_2018.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/NewRole/RoleCtrl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole/RoleCtrl.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_Location.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_Location.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagPreview.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagPreview.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagReuslt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagReuslt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/SkillCard.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/SkillCard.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagPreview.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/com.coffee.uieffect_v3.2.0.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Effect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/AssetData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/AssetData_CardEffect_AttackByValueType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/AssetData_CardEffect_AttackByValueType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/RuntimeData_CardEffect_AttackByValueType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/CardEffect/ClassLibrary/RuntimeData_CardEffect_AttackByValueType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Effect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Model.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCom_Model.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewSkillCard/SaveData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +43,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/66/06cc4bc2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/bf/dc8654af/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://F:/UnityProjects/99Dungeons/Assets/Scripts/NewSkillCard/AssetData_Card.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
@@ -349,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700477821980</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="1">
+      <created>1700493128635</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1700493128635</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,30 +358,13 @@
     <MESSAGE value="limit font asset size2" />
     <MESSAGE value="GameModTool" />
     <MESSAGE value="弱点代码未整理" />
-    <MESSAGE value="1" />
     <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="4" />
-    <option name="LAST_COMMIT_MESSAGE" value="4" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/NewSkillCard/Component/CardCtrl.cs</url>
-          <line>80</line>
-          <properties documentPath="F:\UnityProjects\99Dungeons\Assets\Scripts\NewSkillCard\Component\CardCtrl.cs" initialLine="80" containingFunctionPresentation="local function 'push'">
-            <startOffsets>
-              <option value="2871" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2969" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#Item.SaveData_Item" memberName="AssetDataPath" />
