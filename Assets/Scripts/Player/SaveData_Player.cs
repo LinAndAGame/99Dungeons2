@@ -5,6 +5,7 @@ using Dungeon;
 using Item;
 using MyGameUtility;
 using MyGameUtility.SaveLoad;
+using NewRole;
 using Role;
 using Role.RoleBody;
 using Unity.VisualScripting;
@@ -26,7 +27,7 @@ namespace Player {
                     if (ES3.KeyExists(SaveDataPlayerKey) == false) {
                         _I = new SaveData_Player();
                         foreach (var assetDataRole in GameCommonAsset.I.DefaultPlayerData.AllTeamRoles) {
-                            _I.AllUsedTeamRoles.Add(new SaveData_Role(assetDataRole, true));
+                            _I.AllUsedTeamRoles.Add(RoleFactory.CreateSaveData(assetDataRole));
                         }
                         foreach (AssetData_Item assetDataItem in GameCommonAsset.I.DefaultPlayerData.AllInventoryItems) {
                             _I.AllInventoryItems.Add(assetDataItem.GetSaveData());

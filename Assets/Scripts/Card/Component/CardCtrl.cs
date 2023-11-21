@@ -10,14 +10,18 @@ namespace Card {
         public CardCom_Model         CardComModel;
         public float                 MoveSpeed = 20;
 
-        private RoleCtrl _SelectRoleCtrl;
         private Vector3  _DragOffset;
         private bool     _IsInUsing;
+        private RoleCtrl _TempFromRole;
+        public  RoleCtrl _TempToRole;
+        
 
+        public RoleCtrl         RoleCtrlOwner     { get; private set; }
         public RuntimeData_Card RuntimeDataCard   { get; private set; }
         public bool             CanMoveToLocation { get; set; }
 
-        public void Init(RuntimeData_Card runtimeDataCard) {
+        public void Init(RuntimeData_Card runtimeDataCard, RoleCtrl roleCtrl) {
+            RoleCtrlOwner   = roleCtrl;
             RuntimeDataCard = runtimeDataCard;
             
             CardComEffect.Init(this);
@@ -87,7 +91,7 @@ namespace Card {
 
             bool canPush() {
                 if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
-                    if (RuntimeDataCard.MainCardEffect.GetSelectTargetsOnDrag().Contains(BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl) == false) {
+                    if (RuntimeDataCard.MainCardEffect.GetSelectTargetsOnDrag(RoleCtrlOwner).Contains(BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl) == false) {
                         return false;
                     }
                 }
@@ -101,6 +105,8 @@ namespace Card {
             }
 
             void push() {
+                _TempFromRole = BattleSceneCtrl.I.CardLayoutCtrlRef.CurControlledRoleCtrl;
+                _TempToRole   = BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl;
                 var roleValueType = RuntimeDataCard.MainCardEffect.SaveData.AssetData.RoleValueType;
                 var roleValue     = RuntimeDataCard.RoleOwner.RoleValueCollectionInfo.GetRoleValue(roleValueType);
                 BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel(roleValue.Value, 1);
@@ -111,7 +117,7 @@ namespace Card {
                     else {
                         Debug.Log("卡牌发动成功！");
                         var totalValue = data.Value;
-                        this.RuntimeDataCard.RunEffect(BattleSceneCtrl.I.CardLayoutCtrlRef.CurRole, BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl, totalValue);
+                        this.RuntimeDataCard.RunEffect(_TempFromRole, _TempToRole, totalValue);
                     }
 
                     RuntimeDataCard.RoleOwner.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);

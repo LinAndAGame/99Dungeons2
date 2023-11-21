@@ -40,7 +40,8 @@ namespace Utility {
 
         public AssetData_DungeonProcess DungeonProcess;
 
-        public RoleCtrl RoleCtrlPrefab;
+        public RoleCtrl RolePlayerPrefab;
+        public RoleCtrl RoleEnemyPrefab;
         // public AssetFolderInfo AssetFolderInfo_Item_Weapon;
 
         [Button]

@@ -8,6 +8,7 @@ using Dungeon.SystemData;
 using MyGameUtility;
 using NewRole;
 using Player;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 namespace BattleScene {
@@ -20,15 +21,17 @@ namespace BattleScene {
         public CardLayoutCtrl  CardLayoutCtrlRef;
         public RandomBagCtrl RandomBagCtrlRef;
 
-        public List<RoleCtrl> AllRoleCtrls;
+        public List<Transform> PlayerLocationTrans;
+        public List<Transform> EnemyLocationTrans;
 
         public SystemData_DungeonProcess CurDungeonProcess { get; private set; }
 
         private void Start() {
-            // CurDungeonProcess = DungeonProcessFactory.CreateSystemData(SaveData_Player.I.DungeonProcess);
             var handle = Addressables.InitializeAsync();
             handle.WaitForCompletion();
-            // UICtrlRef.Init();
+            CurDungeonProcess = DungeonProcessFactory.CreateSystemData(SaveData_Player.I.DungeonProcess);
+            CurDungeonProcess.ChooseDungeonEvent(CurDungeonProcess.AllDungeonEvents[0]);
+            UICtrlRef.Init();
             RandomBagCtrlRef.Init();
             // DisplayUIToSelectNextDungeonEvent();
         }

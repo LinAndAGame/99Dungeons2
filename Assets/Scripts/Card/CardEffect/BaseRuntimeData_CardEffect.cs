@@ -9,7 +9,7 @@ namespace Card {
             SaveData = saveData;
         }
         
-        public virtual List<RoleCtrl> GetSelectTargetsOnDrag() {
+        public virtual List<RoleCtrl> GetSelectTargetsOnDrag(RoleCtrl fromRole) {
             return new List<RoleCtrl>();
         }
         

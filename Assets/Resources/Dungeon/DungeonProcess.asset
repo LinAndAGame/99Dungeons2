@@ -15,8 +15,7 @@ MonoBehaviour:
   _ResourcePath: Dungeon/DungeonProcess
   MaxDungeonEvent: 5
   AllDefaultOpenedDungeonEvents:
-  - {fileID: 11400000, guid: d77011e3372d11a4f8857bfda31bf81a, type: 2}
+  - {fileID: 11400000, guid: 005d0d7c3124be241950ffde8a1184b7, type: 2}
   - {fileID: 11400000, guid: 005d0d7c3124be241950ffde8a1184b7, type: 2}
   - {fileID: 11400000, guid: 30250ee4347c6a248ab8ee479415683e, type: 2}
-  - {fileID: 11400000, guid: f71716e741bb98f45a75398154a0b460, type: 2}
   - {fileID: 11400000, guid: 1a281c4baa694d84aa973d8281db9a68, type: 2}
