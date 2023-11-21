@@ -11,7 +11,7 @@ namespace BattleScene.UI.DungeonEvent_Lounge {
         public void Init() {
             for (var i = 0; i < SaveData_Player.I.AllUsedTeamRoles.Count; i++) {
                 var usedTeamRole = SaveData_Player.I.AllUsedTeamRoles[i];
-                AllContainerRoleResults[i].Init(usedTeamRole);
+                // AllContainerRoleResults[i].Init(usedTeamRole);
             }
             
             Btn_EventEnd.onClick.AddListener(() => {

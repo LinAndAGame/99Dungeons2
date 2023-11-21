@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Card;
 using MyGameExpand;
-using NewSkillCard;
 using UnityEngine;
 
 namespace NewRole {
@@ -41,6 +41,10 @@ namespace NewRole {
 
             var drawCard = DrawPile.AllCards[0];
             TryMoveCardFromTo(drawCard, DrawPile, HandPile);
+        }
+
+        public void UseHandCardToUsedPile(RuntimeData_Card card) {
+            TryMoveCardFromTo(card, HandPile, UsedPile);
         }
         
         public bool TryMoveCardFromTo(RuntimeData_Card card, RuntimeData_CardPile fromPile, RuntimeData_CardPile toPile) {

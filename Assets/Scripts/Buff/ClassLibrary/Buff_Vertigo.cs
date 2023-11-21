@@ -15,7 +15,7 @@ namespace Buff {
                 return;
             }
 
-            encounterEnemy.CurRoleActionWorkflow.OnRoleRoundEnd.AddListener(() => { SetLayerOffset(-1); }, CC.Event);
+            // encounterEnemy.CurRoleActionWorkflow.OnRoleRoundEnd.AddListener(() => { SetLayerOffset(-1); }, CC.Event);
         }
     }
 }

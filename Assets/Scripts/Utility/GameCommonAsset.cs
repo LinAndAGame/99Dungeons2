@@ -8,6 +8,7 @@ using Role;
 using Role.Brand;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using RoleCtrl = NewRole.RoleCtrl;
 #if UNITY_EDITOR
 using UnityEditor;
 
@@ -38,6 +39,8 @@ namespace Utility {
         public List<AssetData_BaseRole> AllAssetDataRoles;
 
         public AssetData_DungeonProcess DungeonProcess;
+
+        public RoleCtrl RoleCtrlPrefab;
         // public AssetFolderInfo AssetFolderInfo_Item_Weapon;
 
         [Button]

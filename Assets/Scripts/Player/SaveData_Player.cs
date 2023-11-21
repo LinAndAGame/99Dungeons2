@@ -47,7 +47,7 @@ namespace Player {
             }
         }
 
-        public List<SaveData_Role>           AllUsedTeamRoles  = new List<SaveData_Role>();
+        public List<NewRole.SaveData_Role>   AllUsedTeamRoles  = new List<NewRole.SaveData_Role>();
         public List<SaveData_Item>           AllInventoryItems = new List<SaveData_Item>();
         public SaveData_UnlockSystem         UnlockSystem;
         public SaveData_UnlockDataCollection SaveDataUnlockDataCollection = new SaveData_UnlockDataCollection();

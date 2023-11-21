@@ -25,7 +25,7 @@ namespace TownScene.UI {
                 Container_TeamRole[] roles = ContainerParentTrans.GetComponentsInChildren<Container_TeamRole>();
                 for (int i = 0; i < roles.Length; i++) {
                     Container_TeamRole componentsInChild = roles[i];
-                    SaveData_Player.I.AllUsedTeamRoles[i] = componentsInChild.SaveDataRole;
+                    // SaveData_Player.I.AllUsedTeamRoles[i] = componentsInChild.SaveDataRole;
                 }
                 
                 SaveData_Player.I.SaveAsync();
@@ -36,7 +36,7 @@ namespace TownScene.UI {
             for (var i = 0; i < AllContainerTeamRoles.Count; i++) {
                 var containerTeamRole = AllContainerTeamRoles[i];
                 containerTeamRole.transform.SetSiblingIndex(i);
-                containerTeamRole.RefreshUI(SaveData_Player.I.AllUsedTeamRoles[i]);
+                // containerTeamRole.RefreshUI(SaveData_Player.I.AllUsedTeamRoles[i]);
             }
         }
     }

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using NewSkillCard;
+using Card;
 
 namespace NewRole {
     [Serializable]

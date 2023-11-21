@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: a8e0126d683906b46a5030ff9e13cac5
   m_currentHash:
     serializedVersion: 2
-    Hash: 9f74f8ac4cc59ce1fc30f0bbdb6ec3bd
+    Hash: b788ec0544168fc26dbcfa03e49093e7
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_BundleLocalCatalog: 0
@@ -49,6 +49,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 24deecbdcfcd4cb4abefc3025505a63b, type: 2}
   - {fileID: 11400000, guid: 2db9cbdd43fd4014c980e5d7251f8b15, type: 2}
   - {fileID: 11400000, guid: b2f32362852c2354cbca495a143f32b2, type: 2}
+  - {fileID: 11400000, guid: 4282492ea85f60c419fbf3945f860b69, type: 2}
+  - {fileID: 11400000, guid: 6a7da6dcff8510746b318cea62a171b4, type: 2}
+  - {fileID: 11400000, guid: 6cc8b7a66af87f14b85f43eebe4cf8b0, type: 2}
+  - {fileID: 11400000, guid: 34dc4b40fadaa9746bb7353a341cc554, type: 2}
+  - {fileID: 11400000, guid: 7f2fbb4899a50be4188e9bf94079db87, type: 2}
+  - {fileID: 11400000, guid: c1b9b916c110081479cd9bc5e15e45cd, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -93,6 +99,10 @@ MonoBehaviour:
     - ActionSkillSprite
     - WeaknessSprite
     - RoleSprite
+    - Locale
+    - Locale-en
+    - Preload
+    - Locale-zh-SG
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 758d05ba39fd6874c9b1730631fb58e8, type: 2}
