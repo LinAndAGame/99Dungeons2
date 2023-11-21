@@ -9,6 +9,7 @@ namespace NewSkillCard {
         public CardCom_Effect        CardComEffect;
         public CardCom_EventReceiver CardComEventReceiver;
         public CardCom_Model         CardComModel;
+        public float                 MoveSpeed = 20;
 
         private RoleCtrl _SelectRoleCtrl;
         private Vector3  _DragOffset;
@@ -21,6 +22,9 @@ namespace NewSkillCard {
             
             CardComEffect.Init(this);
             CardComEventReceiver.Init(this);
+            CardComModel.Init(this);
+            
+            CardComModel.RefreshUI();
         }
 
         public void SetLayer(int index) {
@@ -29,8 +33,8 @@ namespace NewSkillCard {
 
         private void Update() {
             if (CanMoveToLocation) {
-                this.transform.localPosition    = Vector3.MoveTowards(this.transform.localPosition, Vector3.zero, Time.deltaTime * 10);
-                this.transform.localEulerAngles = Vector3.RotateTowards(this.transform.localEulerAngles, Vector3.zero, Time.deltaTime * 10,Time.deltaTime * 10);
+                this.transform.localPosition = Vector3.MoveTowards(this.transform.localPosition, Vector3.zero, Time.deltaTime    * MoveSpeed);
+                this.transform.localRotation = Quaternion.Lerp(this.transform.localRotation, Quaternion.identity, Time.deltaTime * MoveSpeed);
             }
         }
 
@@ -47,6 +51,7 @@ namespace NewSkillCard {
         }
 
         private void OnMouseUp() {
+            CardComEffect.SetArrowFollowMouse(false);
             if (canPush() == false) {
                 CanMoveToLocation = true;
             }
@@ -57,11 +62,13 @@ namespace NewSkillCard {
             BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl = null;
 
             bool canPush() {
-                if (transform.position.y < BattleSceneCtrl.I.RoleCardCtrlRef.PushHeight) {
-                    return false;
-                }
                 if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
                     if (RuntimeDataCard.MainCardEffect.GetSelectTargetsOnDrag().Contains(BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl) == false) {
+                        return false;
+                    }
+                }
+                else {
+                    if (transform.position.y < BattleSceneCtrl.I.RoleCardCtrlRef.PushHeight) {
                         return false;
                     }
                 }
@@ -87,14 +94,26 @@ namespace NewSkillCard {
         }
 
         public void OnDrag(PointerEventData eventData) {
-            var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, -Camera.main.transform.position.z));
-            this.transform.position = worldMousePos + _DragOffset;
+            if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles == false) {
+                var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, -Camera.main.transform.position.z));
+                this.transform.position = worldMousePos + _DragOffset;
+            }
         }
 
         public void OnBeginDrag(PointerEventData eventData) {
             var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
             _DragOffset       = this.transform.position - worldMousePos;
-            CanMoveToLocation = false;
+
+            if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
+                CardComEffect.SetArrowFollowMouse(true);
+                CanMoveToLocation = true;
+                Debug.Log("箭头跟踪鼠标！");
+            }
+            else {
+                CardComEffect.SetArrowFollowMouse(false);
+                CanMoveToLocation = false;
+                Debug.Log("正常拖拽！");
+            }
         }
     }
 }

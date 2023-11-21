@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65def67166a34348ae6d5cfee9be9a21, type: 3}
+  m_Name: SkillCard
+  m_EditorClassIdentifier: 
+  _ResourcePath: Card/Card/SkillCard
+  CardName: "\u653B\u51FB0"
+  CardLabels: 00000000
+  MainCardEffect: {fileID: 11400000, guid: 9a716bc896aebae408331ec0e5427dec, type: 2}
+  AllAdditionalCardEffects: []
+  Description: "\u6CBB\u7597\u81EA\u8EAB"

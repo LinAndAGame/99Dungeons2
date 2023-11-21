@@ -6,7 +6,7 @@ namespace NewSkillCard {
     [Serializable]
     public class SaveData_Card {
         public BaseSaveData_CardEffect       MainCardEffect;
-        public List<BaseSaveData_CardEffect> AllAdditionalCardEffects;
+        public List<BaseSaveData_CardEffect> AllAdditionalCardEffects = new List<BaseSaveData_CardEffect>();
         
         private string              AssetDataPath;
         public  AssetData_Card AssetData => Resources.Load<AssetData_Card>(AssetDataPath);

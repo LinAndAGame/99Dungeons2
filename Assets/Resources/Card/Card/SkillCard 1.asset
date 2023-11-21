@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65def67166a34348ae6d5cfee9be9a21, type: 3}
-  m_Name: SkillCard
+  m_Name: SkillCard 1
   m_EditorClassIdentifier: 
-  _ResourcePath: Card/SkillCard
-  CardName: "\u6CBB\u7597"
-  CardLabels: 01000000
+  _ResourcePath: Card/Card/SkillCard 1
+  CardName: "\u653B\u51FB1"
+  CardLabels: 00000000
+  MainCardEffect: {fileID: 11400000, guid: 005719c3180941a47b92232cb25faa4d, type: 2}
+  AllAdditionalCardEffects: []
   Description: "\u6CBB\u7597\u81EA\u8EAB"

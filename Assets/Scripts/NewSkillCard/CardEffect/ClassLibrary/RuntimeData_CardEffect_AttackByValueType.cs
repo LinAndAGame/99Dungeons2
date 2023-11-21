@@ -1,4 +1,6 @@
-﻿using Role;
+﻿using System.Collections.Generic;
+using BattleScene;
+using Role;
 using RoleCtrl = NewRole.RoleCtrl;
 
 namespace NewSkillCard {
@@ -7,6 +9,10 @@ namespace NewSkillCard {
         
         public override void RunEffect(RoleCtrl fromRole, RoleCtrl toRole, int value) {
             toRole.RuntimeDataRole.Hp.Current -= value;
+        }
+
+        public override List<RoleCtrl> GetSelectTargetsOnDrag() {
+            return BattleSceneCtrl.I.AllRoleCtrls;
         }
     }
 }

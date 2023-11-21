@@ -6,7 +6,12 @@ namespace BattleScene.RandomBag {
         public TextMeshProUGUI TMP_Value;
 
         public void RefreshUI(RandomBag_Value value) {
-            TMP_Value.text = value.ToString();
+            if (value == null) {
+                TMP_Value.text = "大失败";
+            }
+            else {
+                TMP_Value.text = value.ToString();
+            }
         }
     }
 }

@@ -18,8 +18,8 @@ MonoBehaviour:
   Hp: 100
   AllDefaultCards:
   - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}
-  - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}
-  - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}
+  - {fileID: 11400000, guid: b35b2fe0d2ef6a540877c639ec8c53b8, type: 2}
+  - {fileID: 11400000, guid: b35b2fe0d2ef6a540877c639ec8c53b8, type: 2}
   RoleValueCollectionInfo:
     StrengthValue:
       Value: 3
