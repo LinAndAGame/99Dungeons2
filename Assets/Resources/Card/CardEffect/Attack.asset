@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb098044172c4d588e8ecbdd4759b3ac, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
-  _ResourcePath: 
-  CardEffectName: 
+  _ResourcePath: Card/CardEffect/Attack
+  CardEffectName: "\u653B\u51FB\u3010#\u3011"
   RoleValueType: 0
   IsAdditionalEffect: 0
-  CanSelectRoles: 0
+  CanSelectRoles: 1

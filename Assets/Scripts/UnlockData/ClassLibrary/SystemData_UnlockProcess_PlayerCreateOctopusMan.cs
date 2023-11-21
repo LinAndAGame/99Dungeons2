@@ -12,20 +12,20 @@ namespace UnlockData {
             base(dataOwner, unlockSystem, saveDataUnlockProcess) { }
         
         protected override bool CheckIsUnlock() {
-            foreach (SaveData_Role usedTeamRole in SaveData_Player.I.AllUsedTeamRoles) {
-                foreach (SaveData_RoleBodySlot saveDataRoleBodySlot in usedTeamRole.RoleBody.AllBodySlots) {
-                    if (saveDataRoleBodySlot.AssetData.BodySlotType == BodySlotTypeEnum.Humanoid_Head) {
-                        if (saveDataRoleBodySlot.SaveDataRoleBodyPart == null || saveDataRoleBodySlot.SaveDataRoleBodyPart.AssetData.BodyPartType != BodyPartTypeEnum.Tentacle) {
-                            return false;
-                        }
-                    }
-                    else if (saveDataRoleBodySlot.AssetData.BodySlotType == BodySlotTypeEnum.Humanoid_Arm) {
-                        if (saveDataRoleBodySlot.SaveDataRoleBodyPart == null || saveDataRoleBodySlot.SaveDataRoleBodyPart.AssetData.BodyPartType != BodyPartTypeEnum.Tentacle) {
-                            return false;
-                        }
-                    }
-                }
-            }
+            // foreach (SaveData_Role usedTeamRole in SaveData_Player.I.AllUsedTeamRoles) {
+            //     foreach (SaveData_RoleBodySlot saveDataRoleBodySlot in usedTeamRole.RoleBody.AllBodySlots) {
+            //         if (saveDataRoleBodySlot.AssetData.BodySlotType == BodySlotTypeEnum.Humanoid_Head) {
+            //             if (saveDataRoleBodySlot.SaveDataRoleBodyPart == null || saveDataRoleBodySlot.SaveDataRoleBodyPart.AssetData.BodyPartType != BodyPartTypeEnum.Tentacle) {
+            //                 return false;
+            //             }
+            //         }
+            //         else if (saveDataRoleBodySlot.AssetData.BodySlotType == BodySlotTypeEnum.Humanoid_Arm) {
+            //             if (saveDataRoleBodySlot.SaveDataRoleBodyPart == null || saveDataRoleBodySlot.SaveDataRoleBodyPart.AssetData.BodyPartType != BodyPartTypeEnum.Tentacle) {
+            //                 return false;
+            //             }
+            //         }
+            //     }
+            // }
 
             return true;
         }

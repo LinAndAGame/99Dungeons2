@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Card;
 using MyGameExpand;
-using NewSkillCard;
 
 namespace NewRole {
     public class RuntimeData_CardPile {

@@ -4,30 +4,34 @@ using UnityEngine;
 
 namespace NewRole {
     public class RoleCtrl : MonoBehaviour {
-        public RoleCom_UI     RoleComUI;
-        public RoleCom_Effect RoleComEffect;
-        
+        public MouseEventReceiver    MouseEventReceiverRef;
+        public RoleCom_UI            RoleComUI;
+        public RoleCom_Effect        RoleComEffect;
+
         public RuntimeData_Role RuntimeDataRole { get; private set; }
 
         public void Init(RuntimeData_Role runtimeDataRole) {
             RuntimeDataRole = runtimeDataRole;
             
-            RoleComUI.Init(this);
-            RoleComEffect.Init(this);
+            foreach (var baseComponent in this.GetComponents<BaseComponent<RoleCtrl>>()) {
+                baseComponent.Init(this);
+            }
+            
+            RuntimeDataRole.DrawCards();
+            
+            MouseEventReceiverRef.OnMouseEnterAct.AddListener(() => {
+                BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl = this;
+                RoleComEffect.SetAsTouchingStyle();
+            });
+            MouseEventReceiverRef.OnMouseExitAct.AddListener(() => {
+                BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl = null;
+                RoleComEffect.SetAsNormalStyle();
+            });
         }
 
         public void DestroySelf() {
             RoleComUI.DestroySelf();
-        }
-
-        private void OnMouseEnter() {
-            BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl = this;
-            RoleComEffect.SetAsTouchingStyle();
-        }
-
-        private void OnMouseExit() {
-            BattleSceneCtrl.I.RoleCardCtrlRef.CurMouseTouchingRoleCtrl = null;
-            RoleComEffect.SetAsNormalStyle();
+            Destroy(this.gameObject);
         }
     }
 }

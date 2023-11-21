@@ -1,6 +1,6 @@
 ﻿using System;
+using Card;
 using MyGameUtility;
-using NewSkillCard;
 using UnityEngine;
 
 namespace NewRole {

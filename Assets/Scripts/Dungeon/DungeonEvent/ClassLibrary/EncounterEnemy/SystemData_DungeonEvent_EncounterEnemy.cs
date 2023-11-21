@@ -2,15 +2,21 @@
 using System.Linq;
 using BattleScene;
 using DG.Tweening;
+using NewRole;
 using Player;
 using Role;
 using UnityEngine;
 using Utility;
+using RoleCtrl = Role.RoleCtrl;
+using SaveData_Role = Role.SaveData_Role;
 
 namespace Dungeon.EncounterEnemy {
     public class SystemData_DungeonEvent_EncounterEnemy : SystemData_DungeonEventWithData<SaveData_DungeonEvent_EncounterEnemy> {
         public RoleActionWorkflow       CurRoleActionWorkflow    = new RoleActionWorkflow();
         public EncounterEnemySettlement CurEncounterEnemySettlement = new EncounterEnemySettlement();
+
+        public List<NewRole.RoleCtrl> AllPlayerRoles = new List<NewRole.RoleCtrl>();
+        public List<NewRole.RoleCtrl> AllEnemyRoles  = new List<NewRole.RoleCtrl>();
         
         public override Sequence DisplayHandle() {
             Sequence seq                            = DOTween.Sequence();
@@ -67,12 +73,12 @@ namespace Dungeon.EncounterEnemy {
 
             void createRoles() {
                 for (int i = 0; i < SaveData_Player.I.AllUsedTeamRoles.Count; i++) {
-                    SaveData_Role playerSaveDataRole = SaveData_Player.I.AllUsedTeamRoles[i];
+                    NewRole.SaveData_Role playerSaveDataRole = SaveData_Player.I.AllUsedTeamRoles[i];
                     if (playerSaveDataRole == null) {
                         continue;
                     }
 
-                    var playerRole = RoleCreator.CreateRole(playerSaveDataRole);
+                    var playerRole = RoleFactory.CreateRoleCtrl(playerSaveDataRole);
                     playerRole.CurRoleLocatorCtrl = GameUtility.GetSelfLocatorGroupCtrl(true).AllLocatorCtrls[i];
                 }
 

@@ -17,7 +17,7 @@ namespace BattleScene {
         public RoleLocatorGroupCtrl PlayerRoleLocatorGroupCtrlRef;
         public RoleLocatorGroupCtrl EnemyRoleLocatorGroupCtrlRef;
 
-        public RoleCardCtrl  RoleCardCtrlRef;
+        public CardLayoutCtrl  CardLayoutCtrlRef;
         public RandomBagCtrl RandomBagCtrlRef;
 
         public List<RoleCtrl> AllRoleCtrls;

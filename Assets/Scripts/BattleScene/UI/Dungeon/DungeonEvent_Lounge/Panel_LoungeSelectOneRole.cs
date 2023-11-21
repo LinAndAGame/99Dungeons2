@@ -11,7 +11,7 @@ namespace BattleScene.UI.DungeonEvent_Lounge {
         public void Init(Panel_Lounge panelLounge) {
             for (var i = 0; i < SaveData_Player.I.AllUsedTeamRoles.Count; i++) {
                 var usedTeamRole = SaveData_Player.I.AllUsedTeamRoles[i];
-                AllContainerSelectRoles[i].Init(panelLounge, usedTeamRole);
+                // AllContainerSelectRoles[i].Init(panelLounge, usedTeamRole);
                 
             }
             

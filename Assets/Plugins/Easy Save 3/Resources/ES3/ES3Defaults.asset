@@ -37,6 +37,7 @@ MonoBehaviour:
     - Dreamteck.Utilities
     - ProCamera2D.Examples
     - ProCamera2D.Runtime
+    - Sirenix.OdinInspector.Modules.UnityLocalization
     - UnityUIExtensions
     - UnityUIExtensions.examples
     showAdvancedSettings: 0

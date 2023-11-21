@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Translation Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Translation
+  m_TableCollectionNameGuidString: 51c9645be6396c24b80342e19dc2518f
+  m_Entries:
+  - m_Id: 29845344256
+    m_Key: Enum_NewRole.RoleValueTypeEnum.Strength
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9240960552960
+    m_Key: Enum_NewRole.RoleValueTypeEnum.Agility
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9244638957568
+    m_Key: Enum_NewRole.RoleValueTypeEnum.Defense
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9247755325440
+    m_Key: Enum_NewRole.RoleValueTypeEnum.Immunity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9250716504064
+    m_Key: Enum_NewRole.RoleValueTypeEnum.Perception
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9254629789696
+    m_Key: Enum_NewRole.RoleValueTypeEnum.Luck
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7501137086080090137
+  references:
+    version: 2
+    RefIds:
+    - rid: 7501137086080090137
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1700544024949

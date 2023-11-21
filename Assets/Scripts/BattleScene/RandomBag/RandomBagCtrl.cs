@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 namespace BattleScene.RandomBag {
     public class RandomBagCtrl : MonoBehaviour {
@@ -15,6 +16,7 @@ namespace BattleScene.RandomBag {
         }
 
         public void DisplayPanel(int num, int nullCount) {
+            OnFinished = new CustomAction<RandomBag_Result>();
             RefreshValues(GetListToNum(num), nullCount);
             PanelRandomBag.Display();
             PanelRandomBag.RefreshUI();
@@ -24,11 +26,9 @@ namespace BattleScene.RandomBag {
             var randomValue = RandomBag.GetRandomValue();
             Result.AddValue(randomValue);
             RandomBag.ReplaceMinValueToNull();
-            if (Result.IsSucceed) {
-                PanelRandomBag.RefreshUI();
-            }
-            else {
-                Finish();
+            PanelRandomBag.RefreshUI();
+            if (Result.IsSucceed == false) {
+                PanelRandomBag.Btn_GetRandomValue.interactable = false;
             }
         }
 
