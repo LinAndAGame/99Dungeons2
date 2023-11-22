@@ -1,4 +1,5 @@
 ﻿using BattleScene;
+using Dungeon.EncounterEnemy;
 
 namespace NewRole {
     public class RoleCom_Player : BaseComponent<RoleCtrl> {
@@ -6,7 +7,7 @@ namespace NewRole {
             base.Init(comOwner);
             
             ComOwner.MouseEventReceiverRef.OnMouseUpAsButtonAct.AddListener(() => {
-                BattleSceneCtrl.I.CardLayoutCtrlRef.ChangeRole(ComOwner);
+                DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl = ComOwner;
             });
         }
     }

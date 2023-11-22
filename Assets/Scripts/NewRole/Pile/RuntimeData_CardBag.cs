@@ -13,7 +13,7 @@ namespace NewRole {
 
         public SaveData_CardBag SaveData { get; private set; }
 
-        public RuntimeData_CardBag(RuntimeData_Role role, SaveData_CardBag saveData) {
+        public RuntimeData_CardBag(SaveData_CardBag saveData) {
             SaveData = saveData;
 
             DrawPile = new RuntimeData_CardPile(SaveData.DrawPile);
@@ -22,7 +22,7 @@ namespace NewRole {
             CostPile = new RuntimeData_CardPile(SaveData.CostPile);
             
             foreach (SaveData_Card card in SaveData.DrawPile.AllCards) {
-                DrawPile.AllCards.Add(new RuntimeData_Card(role, card));   
+                DrawPile.AllCards.Add(new RuntimeData_Card(card));   
             }
         }
 

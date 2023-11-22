@@ -6,7 +6,6 @@ using DG.Tweening;
 using Dungeon;
 using Dungeon.SystemData;
 using MyGameUtility;
-using NewRole;
 using Player;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
@@ -18,11 +17,7 @@ namespace BattleScene {
         public RoleLocatorGroupCtrl PlayerRoleLocatorGroupCtrlRef;
         public RoleLocatorGroupCtrl EnemyRoleLocatorGroupCtrlRef;
 
-        public CardLayoutCtrl  CardLayoutCtrlRef;
         public RandomBagCtrl RandomBagCtrlRef;
-
-        public List<Transform> PlayerLocationTrans;
-        public List<Transform> EnemyLocationTrans;
 
         public SystemData_DungeonProcess CurDungeonProcess { get; private set; }
 

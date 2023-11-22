@@ -25,29 +25,6 @@ namespace BattleScene.RoleCards {
         public float   MaxEulerAngle;
         public float   MaxIntervalEulerAngle;
 
-        private RoleCtrl _CurMouseTouchingRoleCtrl;
-        public RoleCtrl CurMouseTouchingRoleCtrl {
-            get => _CurMouseTouchingRoleCtrl;
-            set => _CurMouseTouchingRoleCtrl = value;
-        }
-
-        private CardCtrl _CurMouseTouchingCardCtrl;
-        public CardCtrl CurMouseTouchingCardCtrl {
-            get => _CurMouseTouchingCardCtrl;
-            set => _CurMouseTouchingCardCtrl = value;
-        }
-
-        public RoleCtrl CurControlledRoleCtrl {
-            get => BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>().CurControlledRoleCtrl;
-            set => BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>().CurControlledRoleCtrl = value;
-        }
-
-        [Button]
-        public void ChangeRole(RoleCtrl roleCtrl) {
-            CurControlledRoleCtrl = roleCtrl;
-            RefreshCard();
-        }
-
         public void MoveCardCtrlToUsedPile(CardCtrl cardCtrl) {
             var     splineMoveIns = MyPoolSimpleComponent.Get(SplineMoveCtrlPrefab);
             Vector3 pos1          = cardCtrl.transform.position;
@@ -59,6 +36,7 @@ namespace BattleScene.RoleCards {
         }
 
         public void RefreshCard() {
+            RoleCtrl CurControlledRoleCtrl = DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl;
             if (CurControlledRoleCtrl == null) {
                 return;
             }
