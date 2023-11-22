@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using BattleScene;
+using Dungeon.EncounterEnemy;
 using RoleCtrl = NewRole.RoleCtrl;
 
 namespace Card {
@@ -10,8 +11,8 @@ namespace Card {
             toRole.RuntimeDataRole.Hp.Current -= value;
         }
 
-        public override List<RoleCtrl> GetSelectTargetsOnDrag() {
-            return BattleSceneCtrl.I.AllRoleCtrls;
+        public override List<RoleCtrl> GetSelectTargetsOnDrag(RoleCtrl fromRole) {
+            return BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>().GetAllOtherRoles(fromRole);
         }
     }
 }

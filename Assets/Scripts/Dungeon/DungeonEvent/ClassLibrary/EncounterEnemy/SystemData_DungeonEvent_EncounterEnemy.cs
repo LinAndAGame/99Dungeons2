@@ -2,22 +2,30 @@
 using System.Linq;
 using BattleScene;
 using DG.Tweening;
+using MyGameExpand;
 using NewRole;
 using Player;
-using Role;
 using UnityEngine;
-using Utility;
-using RoleCtrl = Role.RoleCtrl;
-using SaveData_Role = Role.SaveData_Role;
 
 namespace Dungeon.EncounterEnemy {
     public class SystemData_DungeonEvent_EncounterEnemy : SystemData_DungeonEventWithData<SaveData_DungeonEvent_EncounterEnemy> {
-        public RoleActionWorkflow       CurRoleActionWorkflow    = new RoleActionWorkflow();
+        public RoleActionWorkflow       CurRoleActionWorkflow       = new RoleActionWorkflow();
         public EncounterEnemySettlement CurEncounterEnemySettlement = new EncounterEnemySettlement();
 
-        public List<NewRole.RoleCtrl> AllPlayerRoles = new List<NewRole.RoleCtrl>();
-        public List<NewRole.RoleCtrl> AllEnemyRoles  = new List<NewRole.RoleCtrl>();
-        
+        public List<RoleCtrl> AllPlayerRoles = new List<RoleCtrl>();
+        public List<RoleCtrl> AllEnemyRoles  = new List<RoleCtrl>();
+
+        public RoleCtrl CurControlledRoleCtrl;
+
+        public List<RoleCtrl> GetAllOtherRoles(RoleCtrl fromRole) {
+            if (AllPlayerRoles.Contains(fromRole)) {
+                return AllEnemyRoles;
+            }
+            else {
+                return AllPlayerRoles;
+            }
+        }
+
         public override Sequence DisplayHandle() {
             Sequence seq                            = DOTween.Sequence();
             var      allPossibleChosenDungeonEvents = DungeonProcess.AllPossibleChosenDungeonEvents;
@@ -26,6 +34,7 @@ namespace Dungeon.EncounterEnemy {
             if (notChosenTimes > 0) {
                 seq.Append(GetContainer(curIndex).PlayDisplayHandleEffect());
             }
+
             for (int i = 1; i <= notChosenTimes; i++) {
                 internalDisplayHandle(curIndex - i);
                 internalDisplayHandle(curIndex + i);
@@ -34,14 +43,13 @@ namespace Dungeon.EncounterEnemy {
                     var tempEvent = allPossibleChosenDungeonEvents.ElementAtOrDefault(tempIndex);
                     if (tempEvent != null) {
                         if (tempEvent is SystemData_DungeonEvent_EncounterEnemy leftEncounterEnemy) {
-                            if (SaveDataT.EnemyLv == leftEncounterEnemy.SaveDataT.EnemyLv) {
-                            }
+                            if (SaveDataT.EnemyLv      == leftEncounterEnemy.SaveDataT.EnemyLv) { }
                             else if (SaveDataT.EnemyLv > leftEncounterEnemy.SaveDataT.EnemyLv) {
                                 var assetData  = this.SaveDataT.AssetDataT;
                                 var saveData   = DungeonEventFactory.CreateSaveData(assetData);
                                 var systemData = DungeonEventFactory.CreateSystemData(saveData);
                                 BattleSceneCtrl.I.CurDungeonProcess.AllPossibleChosenDungeonEvents[tempIndex] = systemData;
-                            
+
                                 seq.Append(panelChooseNextEvent.ChangeContainerDungeonEvent(tempIndex, systemData));
                             }
                         }
@@ -67,7 +75,7 @@ namespace Dungeon.EncounterEnemy {
             var panelEncounterEnemy = BattleSceneCtrl.I.UICtrlRef.PanelEncounterEnemy;
             var sequence            = panelEncounterEnemy.Display(SaveDataT.AssetDataT);
             sequence.onComplete += () => {
-                CurRoleActionWorkflow.ReStartWorkflow();
+                // CurRoleActionWorkflow.ReStartWorkflow();
                 panelEncounterEnemy.Hide();
             };
 
@@ -78,26 +86,30 @@ namespace Dungeon.EncounterEnemy {
                         continue;
                     }
 
-                    var playerRole = RoleFactory.CreateRoleCtrl(playerSaveDataRole);
-                    playerRole.CurRoleLocatorCtrl = GameUtility.GetSelfLocatorGroupCtrl(true).AllLocatorCtrls[i];
+                    var roleCtrl = RoleFactory.CreateRoleCtrl(playerSaveDataRole, true);
+                    roleCtrl.transform.SetParent(BattleSceneCtrl.I.PlayerLocationTrans[i]);
+                    roleCtrl.transform.ResetLocalTrans();
+                    AllPlayerRoles.Add(roleCtrl);
                 }
 
                 for (int i = 0; i < SaveDataT.AssetDataT.Enemies.Count; i++) {
-                    SaveData_Role enemySaveDataRole = new SaveData_Role(SaveDataT.AssetDataT.Enemies[i], false);
-                    var           enemyRole         = RoleCreator.CreateRole(enemySaveDataRole);
-                    enemyRole.CurRoleLocatorCtrl = GameUtility.GetSelfLocatorGroupCtrl(false).AllLocatorCtrls[i];
+                    var curEnemyAssetData = SaveDataT.AssetDataT.Enemies[i];
+                    var roleCtrl          = RoleFactory.CreateRoleCtrl(curEnemyAssetData, false);
+                    roleCtrl.transform.SetParent(BattleSceneCtrl.I.EnemyLocationTrans[i]);
+                    roleCtrl.transform.ResetLocalTrans();
+                    AllEnemyRoles.Add(roleCtrl);
                 }
             }
         }
 
         public override void EventEndHandle() {
-            foreach (RoleCtrl aliveRole in BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef.AllAliveRoles) {
-                aliveRole.DestroySelf();
-            }
-
-            foreach (RoleCtrl aliveRole in BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef.AllAliveRoles) {
-                aliveRole.DestroySelf();
-            }
+            // foreach (RoleCtrl aliveRole in BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef.AllAliveRoles) {
+            //     aliveRole.DestroySelf();
+            // }
+            //
+            // foreach (RoleCtrl aliveRole in BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef.AllAliveRoles) {
+            //     aliveRole.DestroySelf();
+            // }
         }
 
         public void PlayerWin() {
@@ -105,6 +117,7 @@ namespace Dungeon.EncounterEnemy {
             foreach (var aliveRole in BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef.AllAliveRoles) {
                 aliveRole.RoleSystemEvents.OnFightWinBefore.Invoke();
             }
+
             BattleSceneCtrl.I.UICtrlRef.PanelBattleSettlement.Display();
             BattleSceneCtrl.I.UICtrlRef.PanelBattleSettlement.RefreshUI();
         }

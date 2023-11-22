@@ -8,6 +8,7 @@ namespace Card {
         public BaseSaveData_CardEffect       MainCardEffect;
         public List<BaseSaveData_CardEffect> AllAdditionalCardEffects = new List<BaseSaveData_CardEffect>();
         
+        [SerializeField]
         private string              AssetDataPath;
         public  AssetData_Card AssetData => Resources.Load<AssetData_Card>(AssetDataPath);
 
