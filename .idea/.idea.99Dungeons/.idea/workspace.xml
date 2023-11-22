@@ -4,91 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo_2018.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterEnemy/Panel_Round.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterEnemy/Panel_Round.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardOperate.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardOperate/CardSelectObjectType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardOperate/CardSelectObjectType.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardOperate/RuntimeData_BaseCardSelectObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardOperate/RuntimeData_BaseCardSelectObject.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/com.coffee.uieffect_v3.2.0.unitypackage.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/AssetData_BodyPart.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/AssetData_BodyPart.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/BodyPartTypeEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/BodyPartTypeEnum.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/BodyPartCtrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/BodyPartCtrl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/ComGroup_Equipment.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/ComGroup_Equipment.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/RoleDataValueChangerCtrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/RoleDataValueChangerCtrl.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/RuntimeData_BodyPart.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/RuntimeData_BodyPart.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/SaveData_BodyPart.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/SaveData_BodyPart.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Container_MiniRoleInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Container_MiniRoleInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Container_RoleValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Container_RoleValue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/AssetData_RoleValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/AssetData_RoleValue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/AssetData_RoleValueCollection.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/AssetData_RoleValueCollection.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RoleValueChangerTypeEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RoleValueChangerTypeEnum.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValueChanger.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValueChanger.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/CardLayoutCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/CardLayoutCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterEnemy/Panel_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterEnemy/Panel_EncounterEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/UICtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/UICtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/BaseRuntimeData_CardEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/BaseRuntimeData_CardEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/CardEffectState.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/CardEffectState.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/ClassLibrary/AttackByValueType/RuntimeData_CardEffect_AttackByValueType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/ClassLibrary/AttackByValueType/RuntimeData_CardEffect_AttackByValueType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/ClassLibrary/Heal/RuntimeData_CardEffect_Heal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/ClassLibrary/Heal/RuntimeData_CardEffect_Heal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/RuntimeData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/RuntimeData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/BaseValueCacheNumber.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/BaseValueCacheNumber.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheBool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheBool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheFloat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheFloat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheInt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/ValueCacheInt.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/MouseEventReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/MouseEventReceiver.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EnemyPushCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EnemyPushCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/AssetData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/AssetData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RuntimeData_RoleValue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RuntimeData_RoleValue.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RuntimeData_RoleValueCollection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleValueCollection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RuntimeData_RoleValueCollection.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValue.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValueCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValueCollection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/SaveData_RoleValueCollection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValueCollection.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
-    </list>
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,9 +63,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/CardLayoutCtrl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/UICtrl.cs" />
@@ -195,9 +108,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterEnemy/Panel_Round.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardSelectObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardSelectObject/CardSelectObjectType.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardSelectObject/RuntimeData_BaseCardSelectObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardEffect/BaseRuntimeData_CardEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardOperate/CardSelectObjectType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardSelectObjectType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Card/AssetData_Card.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardSelectObject/RuntimeData_CardSelectObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Card/CardSelectObject/RuntimeData_BaseCardSelectObject.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2XpKuGHW06H9rQ0UMZv2IF3f2SU" />
@@ -426,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700529283757</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="2">
+      <created>1700650016984</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1700650016986</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,12 +384,12 @@
     <MESSAGE value="limit font asset size2" />
     <MESSAGE value="GameModTool" />
     <MESSAGE value="弱点代码未整理" />
-    <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="4" />
     <MESSAGE value="5" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
