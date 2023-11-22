@@ -1,20 +1,21 @@
 ﻿using BattleScene;
+using Dungeon.EncounterEnemy;
+using MyGameUtility;
 using NewRole;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Card {
-    public class CardCtrl : MonoBehaviour, IBeginDragHandler, IDragHandler {
+    public class CardCtrl : MonoBehaviour {
+        public MouseEventReceiver    MouseEventReceiverRef;
         public CardCom_Effect        CardComEffect;
         public CardCom_EventReceiver CardComEventReceiver;
         public CardCom_Model         CardComModel;
         public float                 MoveSpeed = 20;
 
-        private Vector3  _DragOffset;
-        private bool     _IsInUsing;
-        private RoleCtrl _TempFromRole;
-        public  RoleCtrl _TempToRole;
-        
+        private Vector3         _DragOffset;
+        private bool            _IsInUsing;
+        private CacheCollection _CC = new CacheCollection();
 
         public RoleCtrl         RoleCtrlOwner     { get; private set; }
         public RuntimeData_Card RuntimeDataCard   { get; private set; }
@@ -27,6 +28,72 @@ namespace Card {
             CardComEffect.Init(this);
             CardComEventReceiver.Init(this);
             CardComModel.Init(this);
+            
+            MouseEventReceiverRef.OnMouseEnterAct.AddListener(() => {
+                if (_IsInUsing == false) {
+                    return;
+                }
+            
+                CardComEffect.SetAsTouchingStyle();
+            },_CC.Event);
+            MouseEventReceiverRef.OnMouseExitAct.AddListener(() => {
+                if (_IsInUsing == false) {
+                    return;
+                }
+
+                CardComEffect.SetAsNormalStyle();
+            },_CC.Event);
+            MouseEventReceiverRef.OnMouseDownAct.AddListener(() => {
+                if (_IsInUsing == false) {
+                    return;
+                }
+
+                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl = this;
+            },_CC.Event);
+            MouseEventReceiverRef.OnMouseUpAsButtonAct.AddListener(() => {
+                if (_IsInUsing == false) {
+                    return;
+                }
+
+                CardComEffect.SetArrowFollowMouse(false);
+                if (CanPush() == false) {
+                    CanMoveToLocation = true;
+                }
+                else {
+                    Push();
+                }
+
+                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl = null;
+            });
+            MouseEventReceiverRef.OnBeginDragAct.AddListener(eventData => {
+                if (_IsInUsing == false) {
+                    return;
+                }
+
+                var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
+                _DragOffset = this.transform.position - worldMousePos;
+
+                if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
+                    CardComEffect.SetArrowFollowMouse(true);
+                    CanMoveToLocation = true;
+                    Debug.Log("箭头跟踪鼠标！");
+                }
+                else {
+                    CardComEffect.SetArrowFollowMouse(false);
+                    CanMoveToLocation = false;
+                    Debug.Log("正常拖拽！");
+                }
+            });
+            MouseEventReceiverRef.OnDragAct.AddListener(eventData => {
+                if (_IsInUsing == false) {
+                    return;
+                }
+
+                if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles == false) {
+                    var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, -Camera.main.transform.position.z));
+                    this.transform.position = worldMousePos + _DragOffset;
+                }
+            });
 
             _IsInUsing = true;
         }
@@ -36,6 +103,8 @@ namespace Card {
         }
 
         public void DestroySelf() {
+            _IsInUsing = false;
+            _CC.Clear();
             Destroy(this.gameObject);
         }
 
@@ -50,111 +119,50 @@ namespace Card {
             }
         }
 
-        private void OnMouseEnter() {
-            if (_IsInUsing == false) {
-                return;
-            }
-            
-            CardComEffect.SetAsTouchingStyle();
-        }
-
-        private void OnMouseExit() {
-            if (_IsInUsing == false) {
-                return;
-            }
-
-            CardComEffect.SetAsNormalStyle();
-        }
-
-        private void OnMouseDown() {
-            if (_IsInUsing == false) {
-                return;
-            }
-
-            BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingCardCtrl = this;
-        }
-
-        private void OnMouseUp() {
-            if (_IsInUsing == false) {
-                return;
-            }
-
-            CardComEffect.SetArrowFollowMouse(false);
-            if (canPush() == false) {
-                CanMoveToLocation = true;
+        private bool CanPush() {
+            if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
+                if (CanRunPush(DungeonEvent_EncounterEnemyCtrl.I.AllCurCardCtrlUsedDatas) == false) {
+                    return false;
+                }
             }
             else {
-                push();
+                if (transform.position.y < DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.PushHeight) {
+                    return false;
+                }
             }
-            BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingCardCtrl = null;
-            BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl = null;
 
-            bool canPush() {
-                if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
-                    if (RuntimeDataCard.MainCardEffect.GetSelectTargetsOnDrag(RoleCtrlOwner).Contains(BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl) == false) {
-                        return false;
-                    }
+            return true;
+        }
+
+        private void Push() {
+            var roleValueType = RuntimeDataCard.MainCardEffect.SaveData.AssetData.RoleValueType;
+            var roleValue     = RoleCtrlOwner.RuntimeDataRole.RoleValueCollectionInfo.GetRoleValue(roleValueType);
+            BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel(1,roleValue.CurrentValue.GetValue(), 1);
+            BattleSceneCtrl.I.RandomBagCtrlRef.OnFinished.AddListener(data => {
+                if (data.IsSucceed == false) {
+                    Debug.Log("卡牌发动失败！");
                 }
                 else {
-                    if (transform.position.y < BattleSceneCtrl.I.CardLayoutCtrlRef.PushHeight) {
-                        return false;
-                    }
+                    Debug.Log("卡牌发动成功！");
+                    var totalValue = data.Value;
+                    this.RunEffect(totalValue, DungeonEvent_EncounterEnemyCtrl.I.AllCurCardCtrlUsedDatas);
                 }
 
-                return true;
-            }
-
-            void push() {
-                _TempFromRole = BattleSceneCtrl.I.CardLayoutCtrlRef.CurControlledRoleCtrl;
-                _TempToRole   = BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl;
-                var roleValueType = RuntimeDataCard.MainCardEffect.SaveData.AssetData.RoleValueType;
-                var roleValue     = RuntimeDataCard.RoleOwner.RoleValueCollectionInfo.GetRoleValue(roleValueType);
-                BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel(roleValue.Value, 1);
-                BattleSceneCtrl.I.RandomBagCtrlRef.OnFinished.AddListener(data => {
-                    if (data.IsSucceed == false) {
-                        Debug.Log("卡牌发动失败！");
-                    }
-                    else {
-                        Debug.Log("卡牌发动成功！");
-                        var totalValue = data.Value;
-                        this.RuntimeDataCard.RunEffect(_TempFromRole, _TempToRole, totalValue);
-                    }
-
-                    RuntimeDataCard.RoleOwner.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);
-                    BattleSceneCtrl.I.CardLayoutCtrlRef.MoveCardCtrlToUsedPile(this);
-                });
-            }
+                RoleCtrlOwner.RuntimeDataRole.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);
+                DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.MoveCardCtrlToUsedPile(this);
+            });
         }
 
-        public void OnDrag(PointerEventData eventData) {
-            if (_IsInUsing == false) {
-                return;
-            }
-
-            if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles == false) {
-                var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, -Camera.main.transform.position.z));
-                this.transform.position = worldMousePos + _DragOffset;
-            }
+        public bool CanAddOtherData(object otherData) {
+            return RuntimeDataCard.MainCardEffect.CanAddOtherData(RoleCtrlOwner, otherData);
         }
 
-        public void OnBeginDrag(PointerEventData eventData) {
-            if (_IsInUsing == false) {
-                return;
-            }
+        public bool CanRunPush(params object[] otherDatas) {
+            return RuntimeDataCard.MainCardEffect.CanRunEffect(RoleCtrlOwner, otherDatas);
+        }
 
-            var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
-            _DragOffset       = this.transform.position - worldMousePos;
-
-            if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
-                CardComEffect.SetArrowFollowMouse(true);
-                CanMoveToLocation = true;
-                Debug.Log("箭头跟踪鼠标！");
-            }
-            else {
-                CardComEffect.SetArrowFollowMouse(false);
-                CanMoveToLocation = false;
-                Debug.Log("正常拖拽！");
-            }
+        public void RunEffect(int value, params object[] otherDatas) {
+            RuntimeDataCard.MainCardEffect.RunEffect(RoleCtrlOwner, value, otherDatas);
         }
     }
 }

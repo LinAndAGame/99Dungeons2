@@ -4,6 +4,9 @@ namespace MyGameUtility {
     public class ValueCacheElement<T> : IValueCacheElement {
         public Action OnValueChanged;
 
+        [NonSerialized]
+        public readonly object ElementUser;
+
         private T _Value;
         public T Value {
             get => _Value;
@@ -15,9 +18,10 @@ namespace MyGameUtility {
 
         private BaseValueCache<T> _FromCache;
 
-        public ValueCacheElement(T defaultValue,BaseValueCache<T> fromCache) {
-            Value      = defaultValue;
-            _FromCache = fromCache;
+        public ValueCacheElement(T defaultValue,BaseValueCache<T> fromCache, object elementUser = null) {
+            Value       = defaultValue;
+            _FromCache  = fromCache;
+            ElementUser = elementUser;
         }
 
         public void Remove() {

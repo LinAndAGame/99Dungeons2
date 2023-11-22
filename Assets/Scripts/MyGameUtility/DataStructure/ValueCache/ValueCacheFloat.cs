@@ -11,8 +11,8 @@
             return result;
         }
 
-        protected override ValueCacheElement<float> GenElement(float defaultValue) {
-            return new ValueCacheElement<float>(defaultValue,this);
+        protected override ValueCacheElement<float> GenElement(float defaultValue, object elementUser = null) {
+            return new ValueCacheElement<float>(defaultValue,this, elementUser);
         }
 
         public static ValueCacheFloat operator +(ValueCacheFloat a, float b) {

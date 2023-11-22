@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Dungeon;
 using MyGameUtility;
+using NewRole;
 using Player;
 using Role;
 using Role.Brand;
@@ -42,19 +43,9 @@ namespace Utility {
 
         public RoleCtrl RolePlayerPrefab;
         public RoleCtrl RoleEnemyPrefab;
-        // public AssetFolderInfo AssetFolderInfo_Item_Weapon;
 
-        [Button]
-        private void RefreshPrefixPaths() {
-            var methodInfo = typeof(AssetFolderInfo).GetMethod(nameof(AssetFolderInfo.RefreshPath), BindingFlags.Public | BindingFlags.Instance);
-            foreach (var fieldInfo in this.GetType().GetFields(BindingFlags.Public | BindingFlags.Instance)) {
-                if (fieldInfo.FieldType != typeof(AssetFolderInfo)) {
-                    continue;
-                }
+        public List<AssetData_RoleValue> AllAssetDataRoleValues;
 
-                methodInfo.Invoke(fieldInfo.GetValue(this), new object[0]);
-            }
-        }
 
         [Button]
         private void RefreshAssetDataPath() {

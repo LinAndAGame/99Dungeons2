@@ -1,5 +1,6 @@
 ﻿using System;
 using BattleScene;
+using Dungeon.EncounterEnemy;
 using UnityEngine;
 
 namespace NewRole {
@@ -20,11 +21,11 @@ namespace NewRole {
             RuntimeDataRole.DrawCards();
             
             MouseEventReceiverRef.OnMouseEnterAct.AddListener(() => {
-                BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl = this;
+                DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl = this;
                 RoleComEffect.SetAsTouchingStyle();
             });
             MouseEventReceiverRef.OnMouseExitAct.AddListener(() => {
-                BattleSceneCtrl.I.CardLayoutCtrlRef.CurMouseTouchingRoleCtrl = null;
+                DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl = null;
                 RoleComEffect.SetAsNormalStyle();
             });
         }

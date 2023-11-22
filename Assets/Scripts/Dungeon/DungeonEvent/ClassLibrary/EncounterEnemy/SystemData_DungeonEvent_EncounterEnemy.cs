@@ -81,13 +81,13 @@ namespace Dungeon.EncounterEnemy {
 
             void createRoles() {
                 for (int i = 0; i < SaveData_Player.I.AllUsedTeamRoles.Count; i++) {
-                    NewRole.SaveData_Role playerSaveDataRole = SaveData_Player.I.AllUsedTeamRoles[i];
+                    SaveData_Role playerSaveDataRole = SaveData_Player.I.AllUsedTeamRoles[i];
                     if (playerSaveDataRole == null) {
                         continue;
                     }
 
                     var roleCtrl = RoleFactory.CreateRoleCtrl(playerSaveDataRole, true);
-                    roleCtrl.transform.SetParent(BattleSceneCtrl.I.PlayerLocationTrans[i]);
+                    roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.PlayerLocationTrans[i]);
                     roleCtrl.transform.ResetLocalTrans();
                     AllPlayerRoles.Add(roleCtrl);
                 }
@@ -95,7 +95,7 @@ namespace Dungeon.EncounterEnemy {
                 for (int i = 0; i < SaveDataT.AssetDataT.Enemies.Count; i++) {
                     var curEnemyAssetData = SaveDataT.AssetDataT.Enemies[i];
                     var roleCtrl          = RoleFactory.CreateRoleCtrl(curEnemyAssetData, false);
-                    roleCtrl.transform.SetParent(BattleSceneCtrl.I.EnemyLocationTrans[i]);
+                    roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.EnemyLocationTrans[i]);
                     roleCtrl.transform.ResetLocalTrans();
                     AllEnemyRoles.Add(roleCtrl);
                 }

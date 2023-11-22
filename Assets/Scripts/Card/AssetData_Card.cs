@@ -11,5 +11,6 @@ namespace Card {
         public BaseAssetData_CardEffect       MainCardEffect;
         public List<BaseAssetData_CardEffect> AllAdditionalCardEffects;
         public string                         Description;
+        public CardSelectObjectTypeEnum       CardSelectObjectType = CardSelectObjectTypeEnum.NoSelect;
     }
 }

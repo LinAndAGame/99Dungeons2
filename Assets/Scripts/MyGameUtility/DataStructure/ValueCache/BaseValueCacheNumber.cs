@@ -15,12 +15,12 @@
             _OriginalValue = originalValue;
         }
 
-        public ValueCacheElement<T> GetCacheElement(T defaultValue) {
-            ValueCacheElement<T> element = GenElement(defaultValue);
+        public ValueCacheElement<T> GetCacheElement(T defaultValue, object elementUser = null) {
+            ValueCacheElement<T> element = GenElement(defaultValue, elementUser);
             ElementCaches.Add(element);
             OnValueChangedInvoke();
             return element;
         }
-        protected abstract ValueCacheElement<T> GenElement(T defaultValue);
+        protected abstract ValueCacheElement<T> GenElement(T defaultValue, object elementUser = null);
     }
 }

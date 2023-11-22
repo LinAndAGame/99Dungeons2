@@ -5,6 +5,7 @@ using BattleScene.UI.DungeonEvent_ChooseNextEvent;
 using BattleScene.UI.DungeonEvent_EncounterEnemy;
 using BattleScene.UI.DungeonEvent_Lounge;
 using BattleScene.UI.DungeonEvent_NotTouchBoundary;
+using Dungeon.EncounterEnemy;
 using MyGameUtility.UI;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,9 +39,9 @@ namespace BattleScene.UI {
             }
             
             Btn_DrawCard.onClick.AddListener(() => {
-                if (BattleSceneCtrl.I.CardLayoutCtrlRef.CurControlledRoleCtrl != null) {
-                    BattleSceneCtrl.I.CardLayoutCtrlRef.CurControlledRoleCtrl.RuntimeDataRole.CardBag.DrawRandomToHand();
-                    BattleSceneCtrl.I.CardLayoutCtrlRef.RefreshCard();
+                if (DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl != null) {
+                    DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl.RuntimeDataRole.CardBag.DrawRandomToHand();
+                    DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.RefreshCard();
                 }
             });
             

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Card;
 using MyGameUtility;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace NewRole {
         public SaveData_RoleValueCollection RoleValueCollectionInfo;
         public MinMaxValueFloat             Hp;
         public SaveData_CardBag             CardBag;
+        public List<SaveData_BodyPart>      AllBodyParts = new List<SaveData_BodyPart>();
 
         [SerializeField]
         private string         AssetDataPath;
@@ -18,11 +20,14 @@ namespace NewRole {
 
         public SaveData_Role(AssetData_Role assetData) {
             AssetDataPath           = assetData.ResourcePath;
-            RoleValueCollectionInfo = assetData.RoleValueCollectionInfo.Copy();
             CardBag                 = new SaveData_CardBag();
             Hp                      = new MinMaxValueFloat(0, AssetData.Hp, AssetData.Hp);
-            foreach (AssetData_Card assetDataAllDefaultCard in AssetData.AllDefaultCards) {
+            foreach (AssetData_Card assetDataAllDefaultCard in AssetData.AllDefaultAssetDataCards) {
                 CardBag.DrawPile.AllCards.Add(new SaveData_Card(assetDataAllDefaultCard));
+            }
+            RoleValueCollectionInfo = new SaveData_RoleValueCollection(assetData.AssetDataRoleValueCollection);
+            foreach (var assetDataAllAssetDataBodyPart in assetData.AllAssetDataBodyParts) {
+                AllBodyParts.Add(new SaveData_BodyPart(assetDataAllAssetDataBodyPart));
             }
         }
     }

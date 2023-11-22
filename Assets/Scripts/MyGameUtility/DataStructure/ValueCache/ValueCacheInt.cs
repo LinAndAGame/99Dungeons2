@@ -11,8 +11,8 @@
             return result;
         }
 
-        protected override ValueCacheElement<int> GenElement(int defaultValue) {
-            return new ValueCacheElement<int>(defaultValue,this);
+        protected override ValueCacheElement<int> GenElement(int defaultValue, object elementUser = null) {
+            return new ValueCacheElement<int>(defaultValue,this, elementUser);
         }
 
         public static ValueCacheInt operator +(ValueCacheInt a, int b) {

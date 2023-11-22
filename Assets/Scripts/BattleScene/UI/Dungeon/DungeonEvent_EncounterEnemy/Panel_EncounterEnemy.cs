@@ -11,6 +11,8 @@ namespace BattleScene.UI.DungeonEvent_EncounterEnemy {
         public float           ScaleDuration   = 0.5f;
         public float           DisplayDuration = 1;
         public float           HideDuration    = 0.5f;
+        
+        
 
         public Sequence Display(AssetData_DungeonEvent_EncounterEnemy dungeonEventEncounterEnemy) {
             this.gameObject.SetActive(true);

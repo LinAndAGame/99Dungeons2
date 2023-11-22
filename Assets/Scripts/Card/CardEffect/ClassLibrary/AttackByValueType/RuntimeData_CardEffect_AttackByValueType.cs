@@ -1,18 +1,26 @@
 ﻿using System.Collections.Generic;
-using BattleScene;
+using System.Linq;
 using Dungeon.EncounterEnemy;
-using RoleCtrl = NewRole.RoleCtrl;
+using NewRole;
 
 namespace Card {
     public class RuntimeData_CardEffect_AttackByValueType : BaseRuntimeDataT_CardEffect<SaveData_CardEffect_AttackByValueType> {
         public RuntimeData_CardEffect_AttackByValueType(SaveData_CardEffect_AttackByValueType saveDataT) : base(saveDataT) { }
-        
-        public override void RunEffect(RoleCtrl fromRole, RoleCtrl toRole, int value) {
-            toRole.RuntimeDataRole.Hp.Current -= value;
+
+        public override bool CanAddOtherData(RoleCtrl fromRole, object otherData) {
+            if (otherData is RoleCtrl otherRoleCtrl) {
+                return DungeonEvent_EncounterEnemyCtrl.I.GetAllOtherRoles(fromRole).Contains(otherRoleCtrl);
+            }
+
+            return base.CanAddOtherData(fromRole, otherData);
         }
 
-        public override List<RoleCtrl> GetSelectTargetsOnDrag(RoleCtrl fromRole) {
-            return BattleSceneCtrl.I.GetDungeonEventCallBack<SystemData_DungeonEvent_EncounterEnemy>().GetAllOtherRoles(fromRole);
+        public override bool CanRunEffect(RoleCtrl fromRole, params object[] otherDatas) {
+            return otherDatas.Length == 1 && otherDatas[0] is RoleCtrl;
+        }
+
+        public override void RunEffect(RoleCtrl fromRole, int value, params object[] otherDatas) {
+            (otherDatas[0] as RoleCtrl).RuntimeDataRole.Hp.Current -= value;
         }
     }
 }

@@ -8,9 +8,14 @@ namespace NewRole {
         public CustomAction                   OnMouseEnterAct      = new CustomAction();
         public CustomAction                   OnMouseUpAsButtonAct = new CustomAction();
         public CustomAction                   OnMouseUpAct         = new CustomAction();
+        public CustomAction                   OnMouseDownAct         = new CustomAction();
         public CustomAction<PointerEventData> OnBeginDragAct       = new CustomAction<PointerEventData>();
         public CustomAction<PointerEventData> OnDragAct            = new CustomAction<PointerEventData>();
         public CustomAction<PointerEventData> OnEndDragAct         = new CustomAction<PointerEventData>();
+
+        private void OnMouseDown() {
+            OnMouseDownAct.Invoke();
+        }
 
         private void OnMouseUpAsButton() {
             OnMouseUpAsButtonAct.Invoke();

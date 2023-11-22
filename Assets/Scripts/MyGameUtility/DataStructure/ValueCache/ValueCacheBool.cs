@@ -6,8 +6,8 @@
             _OriginalValue = originalValue;
         }
         
-        public ValueCacheElement<bool> GetCacheElement() {
-            ValueCacheElement<bool> element = new ValueCacheElement<bool>(!_OriginalValue,this);
+        public ValueCacheElement<bool> GetCacheElement(object elementUser = null) {
+            ValueCacheElement<bool> element = new ValueCacheElement<bool>(!_OriginalValue,this, elementUser);
             ElementCaches.Add(element);
             OnValueChangedInvoke();
             return element;

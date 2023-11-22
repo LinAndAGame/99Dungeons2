@@ -15,9 +15,9 @@ namespace BattleScene.RandomBag {
             PanelRandomBag.Init(this);
         }
 
-        public void DisplayPanel(int num, int nullCount) {
+        public void DisplayPanel(int min, int max, int nullCount) {
             OnFinished = new CustomAction<RandomBag_Result>();
-            RefreshValues(GetListToNum(num), nullCount);
+            RefreshValues(GetListToNum(min, max), nullCount);
             PanelRandomBag.Display();
             PanelRandomBag.RefreshUI();
         }
@@ -32,9 +32,9 @@ namespace BattleScene.RandomBag {
             }
         }
 
-        public List<int> GetListToNum(int num) {
+        public List<int> GetListToNum(int min, int max) {
             List<int> result = new List<int>();
-            for (int i = 1; i <= num; i++) {
+            for (int i = min; i <= max; i++) {
                 result.Add(i);
             }
 
