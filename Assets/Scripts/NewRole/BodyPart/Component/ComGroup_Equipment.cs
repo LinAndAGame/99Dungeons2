@@ -2,6 +2,6 @@
 
 namespace NewRole {
     public class ComGroup_Equipment : MonoBehaviour {
-        public SpriteRenderer SR_
+        public SpriteRenderer SR_Equipment;
     }
 }

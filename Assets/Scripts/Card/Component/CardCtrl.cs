@@ -1,4 +1,5 @@
-﻿using BattleScene;
+﻿using System.Linq;
+using BattleScene;
 using Dungeon.EncounterEnemy;
 using MyGameUtility;
 using NewRole;
@@ -16,6 +17,7 @@ namespace Card {
         private Vector3         _DragOffset;
         private bool            _IsInUsing;
         private CacheCollection _CC = new CacheCollection();
+        private RoleCtrl        _TempToRoleCtrl;
 
         public RoleCtrl         RoleCtrlOwner     { get; private set; }
         public RuntimeData_Card RuntimeDataCard   { get; private set; }
@@ -50,20 +52,20 @@ namespace Card {
 
                 DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl = this;
             },_CC.Event);
-            MouseEventReceiverRef.OnMouseUpAsButtonAct.AddListener(() => {
+            MouseEventReceiverRef.OnMouseUpAct.AddListener(() => {
                 if (_IsInUsing == false) {
                     return;
                 }
 
                 CardComEffect.SetArrowFollowMouse(false);
                 if (CanPush() == false) {
-                    CanMoveToLocation = true;
+                    CanMoveToLocation                                       = true;
+                    DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl = null;
+                    _TempToRoleCtrl                                         = null;
                 }
                 else {
                     Push();
                 }
-
-                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl = null;
             });
             MouseEventReceiverRef.OnBeginDragAct.AddListener(eventData => {
                 if (_IsInUsing == false) {
@@ -120,24 +122,25 @@ namespace Card {
         }
 
         private bool CanPush() {
-            if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
-                if (CanRunPush(DungeonEvent_EncounterEnemyCtrl.I.AllCurCardCtrlUsedDatas) == false) {
-                    return false;
+            if (RuntimeDataCard.RuntimeDataBaseCardSelectObject.AssetData.CardSelectObjectType == CardSelectObjectTypeEnum.NoSelect) {
+                if (this.transform.position.y >= DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.PushHeight) {
+                    return true;
                 }
             }
             else {
-                if (transform.position.y < DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.PushHeight) {
-                    return false;
+                if (RuntimeDataCard.GetSelectRoles().Any(data=>data == DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl)) {
+                    _TempToRoleCtrl = DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl;
+                    return true;
                 }
             }
 
-            return true;
+            return false;
         }
 
         private void Push() {
-            var roleValueType = RuntimeDataCard.MainCardEffect.SaveData.AssetData.RoleValueType;
-            var roleValue     = RoleCtrlOwner.RuntimeDataRole.RoleValueCollectionInfo.GetRoleValue(roleValueType);
-            BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel(1,roleValue.CurrentValue.GetValue(), 1);
+            var roleValue     = RuntimeDataCard.GetUsedRoleValue();
+            RuntimeDataCard.RandomBag.RefreshValue(roleValue.CurrentValue.GetValue(), 1);
+            BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel();
             BattleSceneCtrl.I.RandomBagCtrlRef.OnFinished.AddListener(data => {
                 if (data.IsSucceed == false) {
                     Debug.Log("卡牌发动失败！");
@@ -145,24 +148,15 @@ namespace Card {
                 else {
                     Debug.Log("卡牌发动成功！");
                     var totalValue = data.Value;
-                    this.RunEffect(totalValue, DungeonEvent_EncounterEnemyCtrl.I.AllCurCardCtrlUsedDatas);
+                    this.RuntimeDataCard.RunEffect(totalValue, _TempToRoleCtrl);
                 }
+
+                _TempToRoleCtrl = null;
 
                 RoleCtrlOwner.RuntimeDataRole.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);
                 DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.MoveCardCtrlToUsedPile(this);
+                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl = null;
             });
-        }
-
-        public bool CanAddOtherData(object otherData) {
-            return RuntimeDataCard.MainCardEffect.CanAddOtherData(RoleCtrlOwner, otherData);
-        }
-
-        public bool CanRunPush(params object[] otherDatas) {
-            return RuntimeDataCard.MainCardEffect.CanRunEffect(RoleCtrlOwner, otherDatas);
-        }
-
-        public void RunEffect(int value, params object[] otherDatas) {
-            RuntimeDataCard.MainCardEffect.RunEffect(RoleCtrlOwner, value, otherDatas);
         }
     }
 }

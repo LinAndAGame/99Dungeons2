@@ -4,10 +4,10 @@ using NewRole;
 
 namespace Card {
     public class RuntimeData_CardEffect_Heal : BaseRuntimeDataT_CardEffect<SaveData_CardEffect_Heal> {
-        public RuntimeData_CardEffect_Heal(SaveData_CardEffect_Heal saveDataT) : base(saveDataT) { }
+        public RuntimeData_CardEffect_Heal(RuntimeData_Role roleCtrlOwner, SaveData_CardEffect_Heal saveDataT) : base(roleCtrlOwner, saveDataT) { }
 
-        public override void RunEffect(RoleCtrl fromRole, int value, params object[] otherDatas) {
-            fromRole.RuntimeDataRole.Hp.Current += value;
+        public override void RunEffect(RuntimeData_Role fromRole, int value, params object[] otherDatas) {
+            fromRole.Hp.Current += value;
         }
     }
 }

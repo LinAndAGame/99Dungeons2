@@ -45,6 +45,10 @@ namespace BattleScene.UI {
                 }
             });
             
+            Btn_EndTurn.onClick.AddListener(() => {
+                DungeonEvent_EncounterEnemyCtrl.I.EnterEnemyTurn();
+            });
+            
             PanelDungeonEventReturnTown.Init();
             PanelBattleSettlement.Init();
             PanelLounge.Init();

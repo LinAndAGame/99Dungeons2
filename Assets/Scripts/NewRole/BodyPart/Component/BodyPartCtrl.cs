@@ -34,12 +34,7 @@ namespace NewRole {
         }
 
         private void RegisteMouseTouchEffect() {
-            MouseEventReceiverRef.OnMouseEnterAct.AddListener(() => {
-                DungeonEvent_EncounterEnemyCtrl.I.CurTouchingBodyPartCtrl = this;
-            }, _CC.Event);
-            MouseEventReceiverRef.OnMouseExitAct.AddListener(() => {
-                DungeonEvent_EncounterEnemyCtrl.I.CurTouchingBodyPartCtrl = null;
-            }, _CC.Event);
+            
         }
     }
 }

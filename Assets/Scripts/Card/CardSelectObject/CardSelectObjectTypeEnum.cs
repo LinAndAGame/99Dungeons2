@@ -1,6 +1,8 @@
 ﻿namespace Card {
     public enum CardSelectObjectTypeEnum {
         NoSelect,
-        SelectOneRole,
+        SelectFriends,
+        SelectEnemies,
+        SelectAll,
     }
 }

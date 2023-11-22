@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
+using Dungeon.EncounterEnemy;
 using UnityEngine;
-using UnityEngine.Localization.Settings;
 
 namespace BattleScene.RandomBag {
     public class RandomBagCtrl : MonoBehaviour {
@@ -8,49 +8,20 @@ namespace BattleScene.RandomBag {
 
         public Panel_RandomBag PanelRandomBag;
 
-        public RuntimeData_RandomBag RandomBag { get; private set; }
-        public RandomBag_Result      Result     { get; private set; }
-
         public void Init() {
             PanelRandomBag.Init(this);
         }
 
-        public void DisplayPanel(int min, int max, int nullCount) {
+        public void DisplayPanel() {
             OnFinished = new CustomAction<RandomBag_Result>();
-            RefreshValues(GetListToNum(min, max), nullCount);
             PanelRandomBag.Display();
             PanelRandomBag.RefreshUI();
         }
 
-        public void GetRandomValue() {
-            var randomValue = RandomBag.GetRandomValue();
-            Result.AddValue(randomValue);
-            RandomBag.ReplaceMinValueToNull();
-            PanelRandomBag.RefreshUI();
-            if (Result.IsSucceed == false) {
-                PanelRandomBag.Btn_GetRandomValue.interactable = false;
-            }
-        }
-
-        public List<int> GetListToNum(int min, int max) {
-            List<int> result = new List<int>();
-            for (int i = min; i <= max; i++) {
-                result.Add(i);
-            }
-
-            return result;
-        }
-
         public void Finish() {
             PanelRandomBag.Hide();
-            var result = Result;
+            var result = DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag.Result;
             OnFinished.Invoke(result);
-        }
-
-        private void RefreshValues(List<int> values, int nullCount) {
-            RandomBag = new RuntimeData_RandomBag();
-            RandomBag.RefreshValue(values, nullCount);
-            Result = new RandomBag_Result();
         }
     }
 }

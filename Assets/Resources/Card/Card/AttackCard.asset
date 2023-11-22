@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ResourcePath: Card/Card/AttackCard
   CardName: "\u653B\u51FB\u76EE\u6807"
+  AssetDataCardSelectObject: {fileID: 11400000, guid: 58b16de9fb704484e8256110d90977d4, type: 2}
   CardSprite: {fileID: 0}
   CardLabels: 00000000
   MainCardEffect: {fileID: 11400000, guid: 9a716bc896aebae408331ec0e5427dec, type: 2}
