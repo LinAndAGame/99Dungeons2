@@ -27,6 +27,15 @@ namespace Dungeon.EncounterEnemy {
         public List<RoleCtrl> AllPlayerRoles = new List<RoleCtrl>();
         public List<RoleCtrl> AllEnemyRoles  = new List<RoleCtrl>();
 
+        public List<RoleCtrl> AllRoles {
+            get {
+                List<RoleCtrl> result = new List<RoleCtrl>();
+                result.AddRange(AllPlayerRoles);
+                result.AddRange(AllEnemyRoles);
+                return result;
+            }
+        }
+
         private RoleCtrl _CurControlledRoleCtrl;
         public RoleCtrl CurControlledRoleCtrl {
             get => _CurControlledRoleCtrl;
@@ -43,24 +52,12 @@ namespace Dungeon.EncounterEnemy {
         public RoleCtrl CurTouchingRoleCtrl {
             get => _CurTouchingRoleCtrl;
             set {
-                _CurTouchingRoleCtrl = value;
-                if (CurControlledCardCtrl != null) {
-                    if (CurControlledCardCtrl.CanAddOtherData(_CurTouchingRoleCtrl)) {
-                        AllCurCardCtrlUsedDatas.Add(_CurTouchingRoleCtrl);
-                    }
+                if (_CurTouchingRoleCtrl != null) {
+                    AllCurCardCtrlUsedDatas.Remove(_CurTouchingRoleCtrl);
                 }
-            }
-        }
-        private BodyPartCtrl _CurTouchingBodyPartCtrl;
-        public BodyPartCtrl CurTouchingBodyPartCtrl {
-            get => _CurTouchingBodyPartCtrl;
-            set {
-                _CurTouchingBodyPartCtrl = value;
-                
-                if (CurControlledCardCtrl != null) {
-                    if (CurControlledCardCtrl.CanAddOtherData(_CurTouchingBodyPartCtrl)) {
-                        AllCurCardCtrlUsedDatas.Add(_CurTouchingBodyPartCtrl);
-                    }
+                _CurTouchingRoleCtrl = value;
+                if (_CurTouchingRoleCtrl != null) {
+                    AllCurCardCtrlUsedDatas.Add(_CurTouchingRoleCtrl);
                 }
             }
         }
@@ -81,12 +78,24 @@ namespace Dungeon.EncounterEnemy {
 
             return null;
         }
+        public List<RoleCtrl> GetAllFriendRoles(RoleCtrl fromRole) {
+            if (AllPlayerRoles.Contains(fromRole)) {
+                return AllPlayerRoles;
+            }
+            else if (AllEnemyRoles.Contains(fromRole)) {
+                return AllEnemyRoles;
+            }
 
-        public void RunEnemyAi() {
+            return null;
+        }
+
+        public void EnterEnemyTurn() {
             foreach (var enemyRole in AllEnemyRoles) {
                 var enemyAi = enemyRole.GetComponent<RoleCom_EnemyPushCard>();
-                enemyAi.
+                enemyAi.RunAi();
             }
+
+            FightRound++;
         }
     }
 }

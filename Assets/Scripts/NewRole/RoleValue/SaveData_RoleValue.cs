@@ -17,7 +17,7 @@ namespace NewRole {
         public SaveData_RoleValue(RoleValueTypeEnum roleValueType, int value) {
             Value         = value;
 
-            AssetDataPath = GameCommonAsset.I.AllAssetDataRoleValues.Find(data => data.RoleValueTypeEnum == roleValueType).ResourcePath;
+            AssetDataPath = GameCommonAsset.I.GetAssetDataRoleValue(roleValueType).ResourcePath;
         }
     }
 }

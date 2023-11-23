@@ -30,3 +30,10 @@ MonoBehaviour:
   DungeonProcess: {fileID: 11400000, guid: 023ab674d1fd81e4ca2f260134770551, type: 2}
   RolePlayerPrefab: {fileID: 6785357937079815368, guid: e298abe35025bd843aca9cf9ba85c7d7, type: 3}
   RoleEnemyPrefab: {fileID: 4565293776743933939, guid: e3c4c9aafc2c91545a766efeea0743f4, type: 3}
+  AllAssetDataRoleValues:
+  - {fileID: 11400000, guid: e96bd2bfb26071d4ba9bc3f9fbdfe221, type: 2}
+  - {fileID: 11400000, guid: 3a119b719ad1fd34594e5f95aee27b89, type: 2}
+  - {fileID: 11400000, guid: df89b30a00540b3479f2c609e583b91e, type: 2}
+  - {fileID: 11400000, guid: 3f847be0accc35d448a520834bf91586, type: 2}
+  - {fileID: 11400000, guid: e66b7a05d3b0c7a4c98947aed8170c99, type: 2}
+  - {fileID: 11400000, guid: 105c28f0cdc24434ebbd0854e7ea3d0b, type: 2}

@@ -14,22 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ResourcePath: "NewRole/NormalEnemy/Role_\u87D1\u8782"
   RoleName: "\u87D1\u8782"
-  RoleSprite: {fileID: 0}
+  SpriteRole: {fileID: 0}
   Hp: 5
-  AllDefaultCards:
+  AllDefaultAssetDataCards:
   - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}
-  - {fileID: 11400000, guid: b35b2fe0d2ef6a540877c639ec8c53b8, type: 2}
-  - {fileID: 11400000, guid: b35b2fe0d2ef6a540877c639ec8c53b8, type: 2}
-  RoleValueCollectionInfo:
-    StrengthValue:
-      Value: 1
-    AgilityValue:
-      Value: 1
-    DefenseValue:
-      Value: 1
-    ImmunityValue:
-      Value: 1
-    Perception:
-      Value: 1
-    LuckValue:
-      Value: 1
+  AssetDataRoleValueCollection: {fileID: 11400000, guid: b3a828e2aea73c54fae1cb9c1bcc9ff0, type: 2}
+  AllAssetDataBodyParts: []

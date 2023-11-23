@@ -2026,6 +2026,7 @@ GameObject:
   - component: {fileID: 7845513589841588884}
   - component: {fileID: 2604932941237856762}
   - component: {fileID: 1980120811850336350}
+  - component: {fileID: 7052578554540722246}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -2067,9 +2068,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2f6c7a8b324c3c933d2e974539544f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MouseEventReceiverRef: {fileID: 7052578554540722246}
   CardComEffect: {fileID: 7845513589841588884}
   CardComEventReceiver: {fileID: 6090821158939179119}
   CardComModel: {fileID: 2604932941237856762}
+  MoveSpeed: 20
 --- !u!114 &7845513589841588884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2160,3 +2163,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5104394, y: 5.0136404}
   m_EdgeRadius: 0
+--- !u!114 &7052578554540722246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8678691700629110350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5333c5c66e524137814b942483bd6008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

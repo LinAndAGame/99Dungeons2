@@ -5,9 +5,12 @@ namespace BattleScene.RandomBag {
     public class RuntimeData_RandomBag {
         private List<RandomBag_Value> _Values = new List<RandomBag_Value>();
 
+        public RandomBag_Result Result { get; private set; }
+
         public List<RandomBag_Value> Values => _Values.Clone();
-        
+
         public void RefreshValue(List<int> values, int failureCount) {
+            _Values.Clear();
             for (int i = 0; i < failureCount; i++) {
                 _Values.Add(null);
             }
@@ -16,10 +19,28 @@ namespace BattleScene.RandomBag {
             foreach (var value in values) {
                 _Values.Add(value);
             }
+
+            Result = new RandomBag_Result();
         }
 
-        public RandomBag_Value GetRandomValue() {
-            return _Values.GetRandomElement();
+        public void RefreshValue(int maxValue, int failureCount) {
+            List<int> values = new List<int>();
+            for (int i = 1; i <= maxValue; i++) {
+                values.Add(i);
+            }
+
+            RefreshValue(values, failureCount);
+        }
+
+        public void AddRandomValueToResult() {
+            Result.AddValue(_Values.GetRandomElement());
+            ReplaceMinValueToNull();
+        }
+
+        public RandomBag_Result GetRandomResult(int maxValue, int failureCount) {
+            RefreshValue(maxValue, failureCount);
+            AddRandomValueToResult();
+            return Result;
         }
 
         public void ReplaceMinValueToNull() {

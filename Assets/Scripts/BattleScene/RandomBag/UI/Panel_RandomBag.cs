@@ -1,4 +1,5 @@
-﻿using MyGameUtility.UI;
+﻿using Dungeon.EncounterEnemy;
+using MyGameUtility.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,13 +18,16 @@ namespace BattleScene.RandomBag {
                 _RandomBagCtrl.Finish();
             });
             Btn_GetRandomValue.onClick.AddListener(() => {
-                _RandomBagCtrl.GetRandomValue();
+                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag.AddRandomValueToResult();
+                RefreshUI();
             });
         }
 
         public void RefreshUI() {
-            PanelRandomBagPreview.RefreshUI(_RandomBagCtrl.RandomBag.Values);
-            PanelRandomBagResult.RefreshUI(_RandomBagCtrl.Result);
+            var randomBag = DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag;
+            PanelRandomBagPreview.RefreshUI(randomBag.Values);
+            PanelRandomBagResult.RefreshUI(randomBag.Result);
+            Btn_GetRandomValue.interactable = randomBag.Result.IsSucceed == true;
         }
     }
 }

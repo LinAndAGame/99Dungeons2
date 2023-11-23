@@ -46,6 +46,10 @@ namespace Utility {
 
         public List<AssetData_RoleValue> AllAssetDataRoleValues;
 
+        public AssetData_RoleValue GetAssetDataRoleValue(RoleValueTypeEnum roleValueType) {
+            return AllAssetDataRoleValues.Find(data => data.RoleValueTypeEnum == roleValueType);
+        }
+
 
         [Button]
         private void RefreshAssetDataPath() {

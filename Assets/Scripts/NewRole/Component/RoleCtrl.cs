@@ -12,13 +12,12 @@ namespace NewRole {
         public RuntimeData_Role RuntimeDataRole { get; private set; }
 
         public void Init(RuntimeData_Role runtimeDataRole) {
-            RuntimeDataRole = runtimeDataRole;
+            RuntimeDataRole               = runtimeDataRole;
+            RuntimeDataRole.RoleCtrlOwner = this;
             
             foreach (var baseComponent in this.GetComponents<BaseComponent<RoleCtrl>>()) {
                 baseComponent.Init(this);
             }
-            
-            RuntimeDataRole.DrawCards();
             
             MouseEventReceiverRef.OnMouseEnterAct.AddListener(() => {
                 DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl = this;

@@ -11,20 +11,7 @@ namespace Dungeon.EncounterEnemy {
     public class SystemData_DungeonEvent_EncounterEnemy : SystemData_DungeonEventWithData<SaveData_DungeonEvent_EncounterEnemy> {
         public RoleActionWorkflow       CurRoleActionWorkflow       = new RoleActionWorkflow();
         public EncounterEnemySettlement CurEncounterEnemySettlement = new EncounterEnemySettlement();
-
-        public List<RoleCtrl> AllPlayerRoles = new List<RoleCtrl>();
-        public List<RoleCtrl> AllEnemyRoles  = new List<RoleCtrl>();
-
-        public RoleCtrl CurControlledRoleCtrl;
-
-        public List<RoleCtrl> GetAllOtherRoles(RoleCtrl fromRole) {
-            if (AllPlayerRoles.Contains(fromRole)) {
-                return AllEnemyRoles;
-            }
-            else {
-                return AllPlayerRoles;
-            }
-        }
+        
 
         public override Sequence DisplayHandle() {
             Sequence seq                            = DOTween.Sequence();
@@ -89,7 +76,7 @@ namespace Dungeon.EncounterEnemy {
                     var roleCtrl = RoleFactory.CreateRoleCtrl(playerSaveDataRole, true);
                     roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.PlayerLocationTrans[i]);
                     roleCtrl.transform.ResetLocalTrans();
-                    AllPlayerRoles.Add(roleCtrl);
+                    DungeonEvent_EncounterEnemyCtrl.I.AllPlayerRoles.Add(roleCtrl);
                 }
 
                 for (int i = 0; i < SaveDataT.AssetDataT.Enemies.Count; i++) {
@@ -97,7 +84,7 @@ namespace Dungeon.EncounterEnemy {
                     var roleCtrl          = RoleFactory.CreateRoleCtrl(curEnemyAssetData, false);
                     roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.EnemyLocationTrans[i]);
                     roleCtrl.transform.ResetLocalTrans();
-                    AllEnemyRoles.Add(roleCtrl);
+                    DungeonEvent_EncounterEnemyCtrl.I.AllEnemyRoles.Add(roleCtrl);
                 }
             }
         }
