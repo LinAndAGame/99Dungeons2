@@ -20,7 +20,7 @@ namespace BattleScene.RandomBag {
 
         public void Finish() {
             PanelRandomBag.Hide();
-            var result = DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag.Result;
+            var result = DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.GetRandomBagResult();
             OnFinished.Invoke(result);
         }
     }

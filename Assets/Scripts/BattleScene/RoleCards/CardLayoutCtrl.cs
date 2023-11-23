@@ -4,7 +4,6 @@ using Dungeon.EncounterEnemy;
 using MyGameExpand;
 using MyGameUtility;
 using NewRole;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace BattleScene.RoleCards {

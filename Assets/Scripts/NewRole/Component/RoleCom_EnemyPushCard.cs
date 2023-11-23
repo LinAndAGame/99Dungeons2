@@ -9,7 +9,11 @@ namespace NewRole {
             ComOwner.RuntimeDataRole.CardBag.DrawRandomToHand();
             var handCard    = ComOwner.RuntimeDataRole.CardBag.HandPile.AllCards[0];
             var targetRole  = handCard.GetSelectRoles().GetRandomElement();
-            var randomValue = handCard.RandomBag.GetRandomResult(handCard.GetUsedRoleValue().CurrentValue.GetValue(), 0);
+            
+            handCard.CreateRandomBag();
+            handCard.RandomBag.RefreshValue(handCard.GetUsedRoleValue().CurrentValue.GetValue(), 0);
+            var randomValue = handCard.GetRandomBagResult();
+            
             handCard.RunEffect(randomValue.Value, targetRole);
             ComOwner.RuntimeDataRole.CardBag.UseHandCardToUsedPile(handCard);
             return seq;

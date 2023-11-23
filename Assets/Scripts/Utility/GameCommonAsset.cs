@@ -46,6 +46,8 @@ namespace Utility {
 
         public List<AssetData_RoleValue> AllAssetDataRoleValues;
 
+        public Com_RoleDataValueChanger ComRoleDataValueChangerPrefab;
+
         public AssetData_RoleValue GetAssetDataRoleValue(RoleValueTypeEnum roleValueType) {
             return AllAssetDataRoleValues.Find(data => data.RoleValueTypeEnum == roleValueType);
         }

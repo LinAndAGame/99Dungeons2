@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using BattleScene;
+using BattleScene.RandomBag;
 using Dungeon.EncounterEnemy;
 using MyGameUtility;
 using NewRole;
@@ -139,7 +140,10 @@ namespace Card {
 
         private void Push() {
             var roleValue     = RuntimeDataCard.GetUsedRoleValue();
+            
+            RuntimeDataCard.CreateRandomBag();
             RuntimeDataCard.RandomBag.RefreshValue(roleValue.CurrentValue.GetValue(), 1);
+            
             BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel();
             BattleSceneCtrl.I.RandomBagCtrlRef.OnFinished.AddListener(data => {
                 if (data.IsSucceed == false) {

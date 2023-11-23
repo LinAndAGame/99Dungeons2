@@ -44,7 +44,12 @@ namespace NewRole {
         }
 
         public void UseHandCardToUsedPile(RuntimeData_Card card) {
-            TryMoveCardFromTo(card, HandPile, UsedPile);
+            if (card.IsTempCard) {
+                HandPile.RemoveCard(card);
+            }
+            else {
+                TryMoveCardFromTo(card, HandPile, UsedPile);
+            }
         }
         
         public bool TryMoveCardFromTo(RuntimeData_Card card, RuntimeData_CardPile fromPile, RuntimeData_CardPile toPile) {
