@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using Dungeon;
+using Equipment;
 using MyGameUtility;
 using NewRole;
 using Player;
@@ -47,9 +48,11 @@ namespace Utility {
         public List<AssetData_RoleValue> AllAssetDataRoleValues;
 
         public Com_RoleDataValueChanger ComRoleDataValueChangerPrefab;
+        public ComGroup_BodyPart        ComGroupBodyPartPrefab;
+        public ComGroup_Equipment       ComGroupEquipmentPrefab;
 
         public AssetData_RoleValue GetAssetDataRoleValue(RoleValueTypeEnum roleValueType) {
-            return AllAssetDataRoleValues.Find(data => data.RoleValueTypeEnum == roleValueType);
+            return AllAssetDataRoleValues.Find(data => data.RoleValueType == roleValueType);
         }
 
 

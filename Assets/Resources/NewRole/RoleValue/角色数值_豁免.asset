@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: "\u89D2\u8272\u6570\u503C_\u8C41\u514D"
   m_EditorClassIdentifier: 
   _ResourcePath: "NewRole/RoleValue/\u89D2\u8272\u6570\u503C_\u8C41\u514D"
-  RoleValueTypeEnum: 3
+  RoleValueType: 3
   RoleValueName: "\u8C41\u514D"
-  SpriteRoleValue: {fileID: 0}
+  SpriteRoleValue: {fileID: 21300000, guid: 763e13699209a614b8800c76fc9dee48, type: 3}

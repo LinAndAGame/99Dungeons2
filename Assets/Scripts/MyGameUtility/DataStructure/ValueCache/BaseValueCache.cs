@@ -12,6 +12,8 @@ namespace MyGameUtility {
             ElementCaches.Remove(element);
         }
 
+        public List<ValueCacheElement<T>> AllElementCachesCopy => new List<ValueCacheElement<T>>(ElementCaches);
+
         public abstract T GetValue();
 
         protected void OnValueChangedInvoke() {

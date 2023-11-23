@@ -14,7 +14,7 @@ namespace BattleScene.RandomEvent {
         }
 
         public RandomEvent_Result GetResult() {
-            return RandomBagFactory.GetRandomEventResult(EventDifficult, RoleValue.CurrentValue.GetValue(), 0);
+            return RandomBagFactory.GetRandomEventResult(RoleValue.SaveData.RoleValueType, EventDifficult, RoleValue.CurrentValue.GetValue(), 0);
         }
     }
 }

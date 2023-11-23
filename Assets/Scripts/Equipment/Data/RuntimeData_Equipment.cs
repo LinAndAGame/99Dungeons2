@@ -22,12 +22,19 @@ namespace Equipment {
                 SetCardToRoleHandPile();
             });
             
+            TriggerRoleValueChanger();
         }
 
         public void SetCardToRoleHandPile() {
             var card = new RuntimeData_Card(BodyPartRef.RoleRef, SaveData.SaveDataCard);
             card.IsTempCard = true;
             BodyPartRef.RoleRef.CardBag.HandPile.AddCard(card);
+        }
+
+        public void TriggerRoleValueChanger() {
+            foreach (RuntimeData_RoleValueChanger roleValueChanger in AllRoleValueChangers) {
+                roleValueChanger.RunValueChanger();
+            }
         }
     }
 }

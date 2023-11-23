@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe3e3cdc90be4d2387357acc0cb8d157, type: 3}
+  m_Name: "\u5934\u76D4"
+  m_EditorClassIdentifier: 
+  _ResourcePath: "Equipment/\u5934\u76D4"
+  EquipmentName: "\u5934\u76D4"
+  SpriteEquipment: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
+  Card: {fileID: 11400000, guid: fa32cc6aa77efbb43aa41310ca86354a, type: 2}
+  AllRoleValueChangers:
+  - RoleValueType: 0
+    RoleValueChangerType: 0
+    Offset: 1

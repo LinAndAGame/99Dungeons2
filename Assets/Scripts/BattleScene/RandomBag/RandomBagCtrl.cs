@@ -18,9 +18,13 @@ namespace BattleScene.RandomBag {
             PanelRandomBag.RefreshUI();
         }
 
+        public void RefreshUI() {
+            PanelRandomBag.RefreshUI();
+        }
+
         public void Finish() {
             PanelRandomBag.Hide();
-            var result = DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.GetRandomBagResult();
+            var result = DungeonEvent_EncounterEnemyCtrl.I.CurOperateRandomBagCardCtrl.RuntimeDataCard.GetRandomBagResult();
             OnFinished.Invoke(result);
         }
     }

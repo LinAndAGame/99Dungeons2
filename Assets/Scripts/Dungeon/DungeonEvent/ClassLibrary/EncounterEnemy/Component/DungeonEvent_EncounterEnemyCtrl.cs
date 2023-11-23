@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using BattleScene.RandomBag;
 using BattleScene.RoleCards;
 using Card;
 using MyGameUtility;
@@ -14,6 +15,9 @@ namespace Dungeon.EncounterEnemy {
         public CardLayoutCtrl  CardLayoutCtrlRef;
         public List<Transform> PlayerLocationTrans;
         public List<Transform> EnemyLocationTrans;
+
+        public PlayerTurnStateEnum   CurPlayerTurnState = PlayerTurnStateEnum.SelectCard;
+        public RuntimeData_RandomBag CurOperatingRandomBag;
 
         public SystemData_DungeonEvent_EncounterEnemy SystemData;
 
@@ -44,10 +48,12 @@ namespace Dungeon.EncounterEnemy {
             set {
                 _CurControlledRoleCtrl = value;
                 CardLayoutCtrlRef.RefreshCard();
+                CardLayoutCtrlRef.RefreshRole();
             }
         }
 
         public CardCtrl       CurControlledCardCtrl   { get; set; }
+        public CardCtrl       CurOperateRandomBagCardCtrl   { get; set; }
 
         private RoleCtrl     _CurTouchingRoleCtrl;
 

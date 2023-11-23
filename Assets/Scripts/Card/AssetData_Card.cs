@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using MyGameUtility;
+using NewRole;
 using UnityEngine;
 
 namespace Card {
@@ -12,5 +13,6 @@ namespace Card {
         public BaseAssetData_CardEffect       MainCardEffect;
         public List<BaseAssetData_CardEffect> AllAdditionalCardEffects;
         public string                         Description;
+        public List<ClassData_RoleValue>      AllRoleValues;
     }
 }

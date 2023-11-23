@@ -24,7 +24,7 @@ namespace NewRole {
             }
             
             Hp.OnCurValueEqualsMin.AddListener(() => {
-                var eventResult = RandomBagFactory.GetRandomEventResult(5, RoleValueCollectionInfo.LuckValue.CurrentValue, 0);
+                var eventResult = RandomBagFactory.GetRandomEventResult(RoleValueTypeEnum.Luck, 5, RoleValueCollectionInfo.LuckValue.CurrentValue, 0);
                 if (eventResult.IsSucceed == false) {
                     RoleCtrlOwner.Death();
                 }
