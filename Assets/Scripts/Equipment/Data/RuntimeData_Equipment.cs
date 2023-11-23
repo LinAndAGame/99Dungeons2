@@ -21,6 +21,7 @@ namespace Equipment {
             DungeonEvent_EncounterEnemyCtrl.I.OnPlayerTurnStarted.AddListener(() => {
                 SetCardToRoleHandPile();
             });
+            
         }
 
         public void SetCardToRoleHandPile() {
