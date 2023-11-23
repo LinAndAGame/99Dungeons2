@@ -30,8 +30,15 @@ namespace NewRole {
         }
 
         public void DestroySelf() {
-            RoleComUI.DestroySelf();
+            foreach (var baseComponent in this.GetComponents<BaseComponent<RoleCtrl>>()) {
+                baseComponent.DestroySelf();
+            }
             Destroy(this.gameObject);
+        }
+
+        public void Death() {
+            Debug.Log("角色死亡");
+            DestroySelf();
         }
     }
 }

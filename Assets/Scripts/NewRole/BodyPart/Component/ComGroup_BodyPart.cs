@@ -4,8 +4,9 @@ using MyGameUtility;
 using UnityEngine;
 
 namespace NewRole {
-    public class BodyPartCtrl : MonoBehaviour {
+    public class ComGroup_BodyPart : MonoBehaviour {
         public MouseEventReceiver MouseEventReceiverRef;
+        public Com_BodyPartUI     ComBodyPartUIRef;
 
         private CacheCollection _CC = new CacheCollection();
         
@@ -16,6 +17,10 @@ namespace NewRole {
             RoleCtrlOwner = roleCtrlOwner;
             RuntimeData   = runtimeDataBodyPart;
 
+            foreach (var componentsInChild in this.GetComponentsInChildren<BaseComponent<ComGroup_BodyPart>>()) {
+                componentsInChild.Init(this);
+            }
+
             RegisteMouseTouchEffect();
         }
 
@@ -24,12 +29,14 @@ namespace NewRole {
         }
 
         public void Disability() {
-            RuntimeData.Disability();
             _CC.Clear();
+            RuntimeData.Disability();
+            ComBodyPartUIRef.SetAsDisabilityStyle();
         }
 
         public void Recovery() {
             RuntimeData.Recovery();
+            ComBodyPartUIRef.SetAsNormalStyle();
             RegisteMouseTouchEffect();
         }
 

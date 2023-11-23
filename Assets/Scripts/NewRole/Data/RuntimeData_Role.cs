@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using BattleScene.RandomBag;
 using MyGameUtility;
 
 namespace NewRole {
@@ -19,8 +20,15 @@ namespace NewRole {
             CardBag                 = new RuntimeData_CardBag(this, SaveData.CardBag);
             RoleValueCollectionInfo = new RuntimeData_RoleValueCollection(saveData.RoleValueCollectionInfo);
             foreach (var saveDataAllBodyPart in saveData.AllBodyParts) {
-                AllBodyParts.Add(new RuntimeData_BodyPart(saveDataAllBodyPart));
+                AllBodyParts.Add(new RuntimeData_BodyPart(this, saveDataAllBodyPart));
             }
+            
+            Hp.OnCurValueEqualsMin.AddListener(() => {
+                var eventResult = RandomBagFactory.GetRandomEventResult(5, RoleValueCollectionInfo.LuckValue.CurrentValue, 0);
+                if (eventResult.IsSucceed == false) {
+                    RoleCtrlOwner.Death();
+                }
+            });
         }
 
         public void DrawCards() {

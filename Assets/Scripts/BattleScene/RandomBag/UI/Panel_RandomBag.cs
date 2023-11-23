@@ -19,6 +19,7 @@ namespace BattleScene.RandomBag {
             });
             Btn_GetRandomValue.onClick.AddListener(() => {
                 DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag.AddRandomValueToResult();
+                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag.ReplaceMinValueToNull();
                 RefreshUI();
             });
         }

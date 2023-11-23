@@ -8,6 +8,8 @@ using UnityEngine;
 namespace Dungeon.EncounterEnemy {
     public class DungeonEvent_EncounterEnemyCtrl : MonoSingletonSimple<DungeonEvent_EncounterEnemyCtrl> {
         public CustomAction<int> OnFightRoundChanged = new CustomAction<int>();
+        public CustomAction      OnPlayerTurnStarted = new CustomAction();
+        public CustomAction      OnEnemyTurnStarted  = new CustomAction();
         
         public CardLayoutCtrl  CardLayoutCtrlRef;
         public List<Transform> PlayerLocationTrans;
@@ -15,7 +17,7 @@ namespace Dungeon.EncounterEnemy {
 
         public SystemData_DungeonEvent_EncounterEnemy SystemData;
 
-        private int _FightRound = 1;
+        private int _FightRound;
         public int FightRound {
             get => _FightRound;
             set {
@@ -66,6 +68,8 @@ namespace Dungeon.EncounterEnemy {
 
         public void Init(SaveData_DungeonEvent_EncounterEnemy saveData) {
             SystemData = new SystemData_DungeonEvent_EncounterEnemy(saveData);
+
+            StartNewTurn();
         }
 
         public List<RoleCtrl> GetAllOtherRoles(RoleCtrl fromRole) {
@@ -89,13 +93,19 @@ namespace Dungeon.EncounterEnemy {
             return null;
         }
 
+        public void StartNewTurn() {
+            FightRound++;
+            OnPlayerTurnStarted.Invoke();
+        }
+
         public void EnterEnemyTurn() {
+            OnEnemyTurnStarted.Invoke();
             foreach (var enemyRole in AllEnemyRoles) {
                 var enemyAi = enemyRole.GetComponent<RoleCom_EnemyPushCard>();
                 enemyAi.RunAi();
             }
 
-            FightRound++;
+            StartNewTurn();
         }
     }
 }
