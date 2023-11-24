@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using BattleScene;
 using BattleScene.RandomBag;
 using Dungeon.EncounterEnemy;
@@ -72,19 +73,29 @@ namespace Card {
                 if (_IsInUsing == false) {
                     return;
                 }
-
+                
                 var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
                 _DragOffset = this.transform.position - worldMousePos;
-
-                if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
-                    CardComEffect.SetArrowFollowMouse(true);
-                    CanMoveToLocation = true;
-                    Debug.Log("箭头跟踪鼠标！");
-                }
-                else {
-                    CardComEffect.SetArrowFollowMouse(false);
-                    CanMoveToLocation = false;
-                    Debug.Log("正常拖拽！");
+                switch (DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState) {
+                    case PlayerTurnStateEnum.SelectCard:
+                        if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
+                            CardComEffect.SetArrowFollowMouse(true);
+                            CanMoveToLocation = true;
+                            Debug.Log("箭头跟踪鼠标！");
+                        }
+                        else {
+                            CardComEffect.SetArrowFollowMouse(false);
+                            CanMoveToLocation = false;
+                            Debug.Log("正常拖拽！");
+                        }
+                        break;
+                    case PlayerTurnStateEnum.OperateRandomBag:
+                        CardComEffect.SetArrowFollowMouse(false);
+                        CanMoveToLocation = false;
+                        Debug.Log("正常拖拽！");
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
                 }
             });
             MouseEventReceiverRef.OnDragAct.AddListener(eventData => {
@@ -92,7 +103,20 @@ namespace Card {
                     return;
                 }
 
-                if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles == false) {
+                switch (DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState) {
+                    case PlayerTurnStateEnum.SelectCard:
+                        if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles == false) {
+                            drag();
+                        }
+                        break;
+                    case PlayerTurnStateEnum.OperateRandomBag:
+                        drag();
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
+
+                void drag() {
                     var worldMousePos = Camera.main.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, -Camera.main.transform.position.z));
                     this.transform.position = worldMousePos + _DragOffset;
                 }
@@ -123,44 +147,79 @@ namespace Card {
         }
 
         private bool CanPush() {
-            if (RuntimeDataCard.RuntimeDataBaseCardSelectObject.AssetData.CardSelectObjectType == CardSelectObjectTypeEnum.NoSelect) {
-                if (this.transform.position.y >= DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.PushHeight) {
-                    return true;
-                }
-            }
-            else {
-                if (RuntimeDataCard.GetSelectRoles().Any(data=>data == DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl)) {
-                    _TempToRoleCtrl = DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl;
-                    return true;
-                }
-            }
+            switch (DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState) {
+                case PlayerTurnStateEnum.SelectCard:
+                    if (RuntimeDataCard.RuntimeDataBaseCardSelectObject.AssetData.CardSelectObjectType == CardSelectObjectTypeEnum.NoSelect) {
+                        if (this.transform.position.y >= DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.PushHeight) {
+                            return true;
+                        }
+                    }
+                    else {
+                        if (RuntimeDataCard.GetSelectRoles().Any(data=>data == DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl)) {
+                            _TempToRoleCtrl = DungeonEvent_EncounterEnemyCtrl.I.CurTouchingRoleCtrl;
+                            return true;
+                        }
+                    }
 
-            return false;
+                    return false;
+                case PlayerTurnStateEnum.OperateRandomBag:
+                    if (this.transform.position.y >= DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.PushHeight) {
+                        if (RuntimeDataCard.AllRoleValues.Find(data=>data.SaveData.AssetData.RoleValueType == DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag.RoleValueType) != null) {
+                            return true;
+                        }
+                    }
+
+                    return false;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
 
         private void Push() {
-            var roleValue     = RuntimeDataCard.GetUsedRoleValue();
-            
-            RuntimeDataCard.CreateRandomBag();
-            RuntimeDataCard.RandomBag.RefreshValue(roleValue.CurrentValue.GetValue(), 1);
-            
-            BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel();
-            BattleSceneCtrl.I.RandomBagCtrlRef.OnFinished.AddListener(data => {
-                if (data.IsSucceed == false) {
-                    Debug.Log("卡牌发动失败！");
-                }
-                else {
-                    Debug.Log("卡牌发动成功！");
-                    var totalValue = data.Value;
-                    this.RuntimeDataCard.RunEffect(totalValue, _TempToRoleCtrl);
-                }
+            switch (DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState) {
+                case PlayerTurnStateEnum.SelectCard:
+                    DungeonEvent_EncounterEnemyCtrl.I.CurOperateRandomBagCardCtrl = this;
 
-                _TempToRoleCtrl = null;
+                    var roleValue = RuntimeDataCard.GetUsedRoleValue();
+            
+                    RuntimeDataCard.CreateRandomBag();
+                    DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag = RuntimeDataCard.RandomBag;
+                    RuntimeDataCard.RandomBag.RefreshValue(RuntimeDataCard.MainCardEffect.SaveData.AssetData.RoleValueType, roleValue.CurrentValue.GetValue(), 1);
+            
+                    BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel();
+                    BattleSceneCtrl.I.RandomBagCtrlRef.OnFinished.AddListener(data => {
+                        if (data.IsSucceed == false) {
+                            Debug.Log("卡牌发动失败！");
+                        }
+                        else {
+                            Debug.Log("卡牌发动成功！");
+                            var totalValue = data.Value;
+                            this.RuntimeDataCard.RunEffect(totalValue, _TempToRoleCtrl);
+                        }
 
-                RoleCtrlOwner.RuntimeDataRole.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);
-                DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.MoveCardCtrlToUsedPile(this);
-                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl = null;
-            });
+                        _TempToRoleCtrl = null;
+
+                        RoleCtrlOwner.RuntimeDataRole.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);
+                        if (this != null) {
+                            DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.MoveCardCtrlToUsedPile(this);
+                        }
+                        DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag       = null;
+                        DungeonEvent_EncounterEnemyCtrl.I.CurOperateRandomBagCardCtrl = null;
+                        DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState          = PlayerTurnStateEnum.SelectCard;
+                    });
+
+                    DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState = PlayerTurnStateEnum.OperateRandomBag;
+                    break;
+                case PlayerTurnStateEnum.OperateRandomBag:
+                    var tempRoleValue = RuntimeDataCard.AllRoleValues.Find(data => data.SaveData.AssetData.RoleValueType == DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag.RoleValueType);
+                    DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag.AddMaxValue(tempRoleValue.CurrentValue.GetValue());
+                    BattleSceneCtrl.I.RandomBagCtrlRef.RefreshUI();
+                    RoleCtrlOwner.RuntimeDataRole.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);
+                    DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.MoveCardCtrlToUsedPile(this);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
     }
 }

@@ -17,7 +17,7 @@ namespace NewRole {
         }
         public void RefreshUI(RoleValueTypeEnum roleValueType, RoleValueChangerTypeEnum roleValueChangerType, int offset) {
             SR_RoleValueType.sprite       = GameCommonAsset.I.GetAssetDataRoleValue(roleValueType).SpriteRoleValue;
-            TMP_RoleValueChangerType.text = roleValueChangerType.ToString();
+            // TMP_RoleValueChangerType.text = roleValueChangerType.ToString();
 
             if (offset > 0) {
                 TMP_Value.text = $"+{offset}";

@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 using Card;
+using Equipment;
 
 namespace NewRole {
     public class RuntimeData_BodyPart {
         public CustomAction<bool> OnDisabilityStateChanged = new CustomAction<bool>();
+
+        public RuntimeData_Equipment RuntimeDataEquipment;
         
         public List<RuntimeData_RoleValueChanger> AllRoleValueChangers { get; private set; }
         
@@ -19,6 +22,10 @@ namespace NewRole {
             AllRoleValueChangers = new List<RuntimeData_RoleValueChanger>();
             foreach (var saveDataRoleValueChanger in SaveData.AllRoleValueChanger) {
                 AllRoleValueChangers.Add(new RuntimeData_RoleValueChanger(RoleRef, saveDataRoleValueChanger));
+            }
+
+            if (SaveData.SaveDataEquipment != null) {
+                RuntimeDataEquipment = new RuntimeData_Equipment(this, SaveData.SaveDataEquipment);
             }
         }
 

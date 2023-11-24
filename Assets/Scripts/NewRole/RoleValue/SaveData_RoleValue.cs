@@ -5,7 +5,7 @@ using Utility;
 namespace NewRole {
     [Serializable]
     public class SaveData_RoleValue {
-        public RoleValueTypeEnum RoleValueType => AssetData.RoleValueTypeEnum;
+        public RoleValueTypeEnum RoleValueType => AssetData.RoleValueType;
         public int               Value;
 
         [SerializeField]
@@ -19,5 +19,7 @@ namespace NewRole {
 
             AssetDataPath = GameCommonAsset.I.GetAssetDataRoleValue(roleValueType).ResourcePath;
         }
+
+        public SaveData_RoleValue(ClassData_RoleValue classDataRoleValue) : this(classDataRoleValue.RoleValueType, classDataRoleValue.Value) { }
     }
 }

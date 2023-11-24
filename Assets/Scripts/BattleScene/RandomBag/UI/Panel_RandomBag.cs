@@ -18,14 +18,14 @@ namespace BattleScene.RandomBag {
                 _RandomBagCtrl.Finish();
             });
             Btn_GetRandomValue.onClick.AddListener(() => {
-                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag.AddRandomValueToResult();
-                DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag.ReplaceMinValueToNull();
+                DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag.AddRandomValueToResult();
+                DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag.ReplaceMinValueToNull();
                 RefreshUI();
             });
         }
 
         public void RefreshUI() {
-            var randomBag = DungeonEvent_EncounterEnemyCtrl.I.CurControlledCardCtrl.RuntimeDataCard.RandomBag;
+            var randomBag = DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag;
             PanelRandomBagPreview.RefreshUI(randomBag.Values);
             PanelRandomBagResult.RefreshUI(randomBag.Result);
             Btn_GetRandomValue.interactable = randomBag.Result.IsSucceed == true;

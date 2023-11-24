@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using Card;
 using Dungeon.EncounterEnemy;
 using MyGameExpand;
 using MyGameUtility;
 using NewRole;
 using UnityEngine;
+using Utility;
 
 namespace BattleScene.RoleCards {
     public class CardLayoutCtrl : MonoBehaviour {
@@ -24,6 +26,11 @@ namespace BattleScene.RoleCards {
         public float   MaxEulerAngle;
         public float   MaxIntervalEulerAngle;
 
+        public Transform BodyPartParentTrans;
+
+        public List<Com_RoleValue> AllComRoleValues;
+        public SpriteRenderer      SR_Role;
+
         public void MoveCardCtrlToUsedPile(CardCtrl cardCtrl) {
             var     splineMoveIns = MyPoolSimpleComponent.Get(SplineMoveCtrlPrefab);
             Vector3 pos1          = cardCtrl.transform.position;
@@ -34,15 +41,34 @@ namespace BattleScene.RoleCards {
             });
         }
 
+        public void RefreshRole() {
+            RoleCtrl curControlledRoleCtrl = DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl;
+            if (curControlledRoleCtrl == null) {
+                return;
+            }
+
+            SR_Role.sprite = curControlledRoleCtrl.RuntimeDataRole.SaveData.AssetData.SpriteRole;
+            for (int i = 0; i < curControlledRoleCtrl.RuntimeDataRole.RoleValueCollectionInfo.AllValues.Count; i++) {
+                RuntimeData_RoleValue runtimeDataRoleValue = curControlledRoleCtrl.RuntimeDataRole.RoleValueCollectionInfo.AllValues[i];
+                AllComRoleValues[i].RefreshUI(runtimeDataRoleValue);
+            }
+
+            BodyPartParentTrans.DestroyAllChildren();
+            foreach (RuntimeData_BodyPart runtimeDataBodyPart in curControlledRoleCtrl.RuntimeDataRole.AllBodyParts) {
+                var ins = Instantiate(GameCommonAsset.I.ComGroupBodyPartPrefab, BodyPartParentTrans);
+                ins.Init(curControlledRoleCtrl, runtimeDataBodyPart);
+            }
+        }
+
         public void RefreshCard() {
-            RoleCtrl CurControlledRoleCtrl = DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl;
-            if (CurControlledRoleCtrl == null) {
+            RoleCtrl curControlledRoleCtrl = DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl;
+            if (curControlledRoleCtrl == null) {
                 return;
             }
             
             CardLocationPrefabParent.DestroyAllChildren();
 
-            var allCards = CurControlledRoleCtrl.RuntimeDataRole.CardBag.HandPile.AllCards;
+            var allCards = curControlledRoleCtrl.RuntimeDataRole.CardBag.HandPile.AllCards;
 
             float widthInterval      = Mathf.Min(MaxWidth              / allCards.Count, MaxIntervalWidth);
             float heightInterval     = Mathf.Min(MaxHeight             / allCards.Count, MaxIntervalHeight);
@@ -55,7 +81,7 @@ namespace BattleScene.RoleCards {
             int half = allCards.Count / 2;
             
             for (int i = 0; i < allCards.Count; i++) {
-                RuntimeData_Card runtimeDataCard = CurControlledRoleCtrl.RuntimeDataRole.CardBag.HandPile.AllCards[i];
+                RuntimeData_Card runtimeDataCard = curControlledRoleCtrl.RuntimeDataRole.CardBag.HandPile.AllCards[i];
                 var              cardLocationIns = Instantiate(CardLocationPrefab, CardLocationPrefabParent);
                 var              cardIns         = Instantiate(CardCtrlPrefab, cardLocationIns.ContentParent);
 
@@ -81,7 +107,7 @@ namespace BattleScene.RoleCards {
                 cardLocationIns.transform.localEulerAngles = new Vector3(0, 0, startEulerAngle - eulerAngleInterval * i);
 
                 cardIns.transform.ResetLocalTrans();
-                cardIns.Init(runtimeDataCard, CurControlledRoleCtrl);
+                cardIns.Init(runtimeDataCard, curControlledRoleCtrl);
                 cardIns.SetLayer(allCards.Count - i);
             }
         }

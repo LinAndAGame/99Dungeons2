@@ -35,6 +35,8 @@ MonoBehaviour:
     - Assembly-CSharp-firstpass
     - Dreamteck.Splines
     - Dreamteck.Utilities
+    - Flexalon
+    - Flexalon.Samples
     - ProCamera2D.Examples
     - ProCamera2D.Runtime
     - Sirenix.OdinInspector.Modules.UnityLocalization

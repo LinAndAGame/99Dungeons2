@@ -2,6 +2,7 @@
 using Dungeon.EncounterEnemy;
 using MyGameUtility;
 using UnityEngine;
+using Utility;
 
 namespace NewRole {
     public class ComGroup_BodyPart : MonoBehaviour {
@@ -19,6 +20,11 @@ namespace NewRole {
 
             foreach (var componentsInChild in this.GetComponentsInChildren<BaseComponent<ComGroup_BodyPart>>()) {
                 componentsInChild.Init(this);
+            }
+
+            if (RuntimeData.RuntimeDataEquipment != null) {
+                var equipment = Instantiate(GameCommonAsset.I.ComGroupEquipmentPrefab, this.transform);
+                equipment.Init(RuntimeData.RuntimeDataEquipment);
             }
 
             RegisteMouseTouchEffect();

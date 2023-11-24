@@ -1,6 +1,7 @@
 ﻿using BattleScene.RandomEvent;
 using Com.LuisPedroFonseca.ProCamera2D.TopDownShooter;
 using MyGameUtility;
+using NewRole;
 using UnityEngine.Pool;
 
 namespace BattleScene.RandomBag {
@@ -19,9 +20,9 @@ namespace BattleScene.RandomBag {
             RandomBagPool.Release(randomBag);
         }
 
-        public static RandomEvent_Result GetRandomEventResult(int eventDifficult, int usedMaxValue, int failureCount) {
+        public static RandomEvent_Result GetRandomEventResult(RoleValueTypeEnum roleValueType, int eventDifficult, int usedMaxValue, int failureCount) {
             var randomBag = GetRandomBag();
-            randomBag.RefreshValue(usedMaxValue, failureCount);
+            randomBag.RefreshValue(roleValueType, usedMaxValue, failureCount);
             randomBag.AddRandomValueToResult();
             RandomEvent_Result eventResult = new RandomEvent_Result(randomBag.Result, eventDifficult);
             return eventResult;

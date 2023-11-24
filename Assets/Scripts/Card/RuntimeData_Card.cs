@@ -9,7 +9,9 @@ namespace Card {
         public RuntimeData_BaseCardSelectObject RuntimeDataBaseCardSelectObject;
         public BaseRuntimeData_CardEffect       MainCardEffect;
         public List<BaseRuntimeData_CardEffect> AllAdditionalCardEffects = new List<BaseRuntimeData_CardEffect>();
-        
+        // TODO : 换成其他的固定RoleValue类
+        public List<RuntimeData_RoleValue>      AllRoleValues            = new List<RuntimeData_RoleValue>();
+
         private RuntimeData_RandomBag _RandomBag;
         public  RuntimeData_RandomBag RandomBag => _RandomBag;
         
@@ -25,6 +27,10 @@ namespace Card {
             }
 
             RuntimeDataBaseCardSelectObject = CardSelectObjectFactory.GetRuntimeData(SaveData.AssetData.AssetDataCardSelectObject);
+            
+            foreach (SaveData_RoleValue saveDataAllRoleValue in SaveData.AllRoleValues) {
+                AllRoleValues.Add(new RuntimeData_RoleValue(saveDataAllRoleValue));
+            }
         }
 
         public void CreateRandomBag() {

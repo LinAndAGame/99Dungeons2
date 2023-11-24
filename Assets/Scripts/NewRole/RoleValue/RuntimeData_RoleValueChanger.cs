@@ -15,7 +15,7 @@ namespace NewRole {
         public void RunValueChanger() {
             ClearValueChangerData();
             var roleValue = RuntimeDataRole.RoleValueCollectionInfo.GetRoleValue(SaveData.RoleValueType);
-            _CC.Value.Add(roleValue.CurrentValue.GetCacheElement(-SaveData.Offset));
+            _CC.Value.Add(roleValue.CurrentValue.GetCacheElement(SaveData.Offset));
         }
 
         public void ClearValueChangerData() {
