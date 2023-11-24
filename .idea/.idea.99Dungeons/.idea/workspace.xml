@@ -5,655 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/CHANGELOG.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/CHANGELOG.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable/assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable/assets/_layout.0154a58a.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable/assets/_layout.0154a58a.css.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable/assets/_layout.30a7846c.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable/assets/_layout.30a7846c.css.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable/assets/_page.7eb0c3ee.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/_app/immutable/assets/_page.7eb0c3ee.css.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/adapters.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/adapters.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/alignLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/alignLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/animators.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/animators.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Adapter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Adapter.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Align.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Align.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Axis.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Axis.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Constraint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Constraint.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.DataBinding.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.DataBinding.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.DataSource.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.DataSource.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Direction.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Direction.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Directions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Directions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonAlignLayoutEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonAlignLayoutEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonCircleLayoutEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonCircleLayoutEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonClonerEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonClonerEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonComponentEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonComponentEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonConstraintEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonConstraintEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonCurveLayoutEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonCurveLayoutEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonDragTargetEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonDragTargetEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonFlexibleLayoutEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonFlexibleLayoutEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonGridCellEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonGridCellEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonGridLayoutEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonGridLayoutEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonInteractableEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonInteractableEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonObjectEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonObjectEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonRandomLayoutEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonRandomLayoutEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonRandomModifierEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonRandomModifierEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonResultEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonResultEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonShapeLayoutEditor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonShapeLayoutEditor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonTrial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.FlexalonTrial.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Editor.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Flexalon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Flexalon.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonAlignLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonAlignLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.InitialRadiusOptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.InitialRadiusOptions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.RadiusOptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.RadiusOptions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.RotateOptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.RotateOptions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.SpacingOptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.SpacingOptions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCircleLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCloner.CloneTypes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCloner.CloneTypes.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCloner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCloner.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonComponent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonComponent.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonConstraint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonConstraint.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveAnimator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveAnimator.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.CurvePoint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.CurvePoint.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.ExtendBehavior.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.ExtendBehavior.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.RotationOptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.RotationOptions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.SpacingOptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.SpacingOptions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.TangentMode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.TangentMode.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonCurveLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonDragTarget.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonDragTarget.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonFlexibleLayout.GapOptions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonFlexibleLayout.GapOptions.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonFlexibleLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonFlexibleLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridCell.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridCell.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridLayout.CellSizeTypes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridLayout.CellSizeTypes.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridLayout.CellTypes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridLayout.CellTypes.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonGridLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.InteractableEvent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.InteractableEvent.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.InteractableState.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.InteractableState.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.RestrictionType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.RestrictionType.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonInteractable.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonLerpAnimator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonLerpAnimator.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonModifier.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonModifier.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonMouseInputProvider.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonMouseInputProvider.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonNode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonNode.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonObject.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonObject.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRandomLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRandomLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRandomModifier.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRandomModifier.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonResult.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonResult.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRigidBodyAnimator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRigidBodyAnimator.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRigidBodyCurveAnimator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRigidBodyCurveAnimator.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRigidBodyMagnetAnimator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonRigidBodyMagnetAnimator.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonShapeLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.FlexalonShapeLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.InputMode.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.InputMode.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.InputProvider.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.InputProvider.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Layout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.LayoutBase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.LayoutBase.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Math.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Math.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Plane.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.Plane.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.SizeType.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.SizeType.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.TransformUpdater.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.TransformUpdater.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/Flexalon.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/fonts/glyphicons-halflings-regular.svg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/fonts/glyphicons-halflings-regular.woff2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/images.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/images/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/images/favicon.svg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/images/logo_32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/images/logo_32x32.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/styles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/styles/docfx.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/styles/docfx.css.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/styles/docfx.vendor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/styles/docfx.vendor.css.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/styles/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/styles/main.css.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/toc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/toc.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/tochead.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/api/tochead.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/challenges.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/challenges.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/circleLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/circleLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/cloner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/cloner.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/constraints.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/constraints.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/coreConcepts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/coreConcepts.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/curveLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/curveLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/customAnimators.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/customAnimators.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/customLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/customLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/flexalonObject.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/flexalonObject.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/flexibleLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/flexibleLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/gridLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/gridLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/interactable.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/interactable.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/pipeline.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/pipeline.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/randomLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/randomLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/randomModifier.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/randomModifier.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/shapeLayout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/shapeLayout.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/templates.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/templates.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/ui.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/ui.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/xr.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/docs/xr.html.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/S6uyw4BMUTPHjx4wXg.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/S6uyw4BMUTPHjx4wXg.woff2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/S6uyw4BMUTPHjxAwXjeu.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/S6uyw4BMUTPHjxAwXjeu.woff2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfp8uP.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfp8uP.woff2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfqMuPP9g.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfqMuPP9g.woff2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfqcuPP9g.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/fonts/w8gdH283Tvk__Lua32TysjIfqcuPP9g.woff2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/ChatCanvasStyles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/ChatCanvasStyles.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/discord.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/discord.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-align-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-align-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-align.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-align.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-box.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-box.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-challenge1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-challenge1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-challenge2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-challenge2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-challenge3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-challenge3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-circle-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-circle-2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-circle-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-circle-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-circle.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-cloner-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-cloner-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-constraint-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-constraint-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve-animator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve-animator.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve-editor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve-editor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-curve.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-drag-target-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-drag-target-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-flexible-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-flexible-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-flexible.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-flexible.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-flexible2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-flexible2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-google-search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-google-search.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-grid-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-grid-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-grid.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-interactable-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-interactable-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-interactable-state-machine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-interactable-state-machine.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-interactable-xr.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-interactable-xr.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-lerp-animator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-lerp-animator.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-object.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-object.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-oculus-components.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-oculus-components.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random-modifier-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random-modifier-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random-modifier.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random-modifier.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-random.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-rb-animator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-rb-animator.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-shape-options.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-shape-options.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-shape.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-shape.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-singleton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-singleton.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-size-handles.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-size-handles.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-ui-flex.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-ui-flex.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-ui-wrap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-ui-wrap.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-xri-components.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/doc-xri-components.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/favicon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/favicon.svg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/flexalon-1200x630.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/flexalon-1200x630.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/flexalon-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/flexalon-logo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/menu.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_01.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_02.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_03.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_04.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_05.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_06.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_08.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_10.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_12.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_14.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_15.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/template_16.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/templates.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Documentation/images/templates.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Cloner.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Cloner/FlexalonClonerEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Cloner/FlexalonClonerEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonComponentEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonComponentEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonEditorBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonEditorBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonObjectEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonObjectEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonResultEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Core/FlexalonResultEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Flexalon.Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Flexalon.Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Interaction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Interaction/FlexalonDragTargetEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Interaction/FlexalonDragTargetEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Interaction/FlexalonInteractableEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Interaction/FlexalonInteractableEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Layouts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Layouts/FlexalonGridCellEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Layouts/FlexalonGridCellEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Layouts/FlexalonGridLayoutEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Layouts/FlexalonGridLayoutEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Modifiers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Modifiers/FlexalonRandomModifierEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Modifiers/FlexalonRandomModifierEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/FlexalonMenu.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/FlexalonMenu.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/FlexalonSurvey.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/FlexalonSurvey.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/FlexalonTrial.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/FlexalonTrial.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/WindowUtil.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Editor/Windows/WindowUtil.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/LICENSE.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/README.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Animators.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Animators/FlexalonCurveAnimator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Animators/FlexalonCurveAnimator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Animators/FlexalonLerpAnimator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Animators/FlexalonLerpAnimator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Animators/FlexalonRigidBodyAnimator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Animators/FlexalonRigidBodyAnimator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/AssemblyInfo.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Cloner.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Cloner/FlexalonCloner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Cloner/FlexalonCloner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Cloner/FlexalonDataBinding.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Cloner/FlexalonDataBinding.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Cloner/FlexalonDataSource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Cloner/FlexalonDataSource.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/Flex.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/Flex.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/Flexalon.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/Flexalon.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonAdapter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonAdapter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonComponent.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonDict.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonDict.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonLayout.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonLayout.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonLayoutBase.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonLayoutBase.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonLog.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonLog.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonMath.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonMath.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonModifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonModifier.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonObject.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonObject.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonResult.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonSize.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonSize.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonTransformUpdater.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonTransformUpdater.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonTypes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Core/FlexalonTypes.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Flexalon.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Flexalon.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonDragTarget.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonDragTarget.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonInputProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonInputProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonInteractable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonInteractable.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonMouseInputProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonMouseInputProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonOculusInputProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonOculusInputProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonRaycaster.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonRaycaster.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonXRInputProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Interaction/FlexalonXRInputProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Layouts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Layouts/FlexalonGridCell.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Layouts/FlexalonGridCell.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Layouts/FlexalonGridLayout.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Layouts/FlexalonGridLayout.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Modifiers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Modifiers/FlexalonRandomModifier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Runtime/Modifiers/FlexalonRandomModifier.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Editor/CustomLayoutEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Editor/CustomLayoutEditor.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Editor/Flexalon.Samples.Editor.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Editor/Flexalon.Samples.Editor.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleBlue.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleBlue.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleBlueHDRP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleBlueHDRP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleBlueURP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleBlueURP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGreen.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGreen.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGreenHDRP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGreenHDRP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGreenURP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGreenURP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGrid.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGrid.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGridHDRP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGridHDRP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGridURP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleGridURP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleRed.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleRed.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleRedHDRP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleRedHDRP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleRedURP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleRedURP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleWhite.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleWhite.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleWhiteHDRP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleWhiteHDRP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleWhiteURP.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Materials/FlexalonSampleWhiteURP.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Prefabs/TextPrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Prefabs/TextPrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/CustomLayout.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/CustomLayout.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/Flexalon.Samples.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/Flexalon.Samples.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/FlexalonColorGradient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/FlexalonColorGradient.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/FlexalonDynamicMaterial.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/FlexalonDynamicMaterial.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/FlexalonSampleCamera.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/FlexalonSampleCamera.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/InputFieldDataSource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/InputFieldDataSource.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/SampleLightConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/SampleLightConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/SampleMaterialPicker.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/SampleMaterialPicker.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/TextDataBinding.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Runtime/TextDataBinding.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Scenes/3D.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Scenes/3D/CustomLayoutSample.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Scenes/3D/CustomLayoutSample.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Scenes/3D/GridLayoutSample.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Scenes/3D/GridLayoutSample.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Textures.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Textures/FlexalonSampleGridTexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Textures/FlexalonSampleGridTexture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Textures/FlexalonSampleRoughTexture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Samples/Textures/FlexalonSampleRoughTexture.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/copilot-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/copilot-logo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/flexalon-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/flexalon-logo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/proxima_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/proxima_logo.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/survey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/Sprites/survey.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Flexalon/package.json.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Equipment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Equipment/装备.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Equipment/装备.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/RoleValue.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/RoleValue/Com_RoleValue.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/RoleValue/Com_RoleValue.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/RoleValue/Com_RoleValueChanger.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/RoleValue/Com_RoleValueChanger.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/部位.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/部位/ComGroup_BodyPart.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Role/部位/ComGroup_BodyPart.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/EquipmentCard.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/EquipmentCard.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/大砍刀.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/大砍刀.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/头盔.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/头盔.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/手电筒.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/手电筒.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/护体神甲.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/护体神甲.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/魔法项链.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/魔法项链.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/BodyParts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值_圣骑士.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值_圣骑士.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值_蟑螂.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值_蟑螂.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/PlayerTurnStateEnum.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/PlayerTurnStateEnum.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/ClassData_RoleValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/ClassData_RoleValue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/Component/Com_RoleValue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/Component/Com_RoleValue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo_2018.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/com.coffee.uieffect_v3.2.0.unitypackage.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo_2018.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3Defaults.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_力量.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_力量.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_幸运.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_幸运.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_感知.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_感知.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_敏捷.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_敏捷.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_豁免.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_豁免.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_防御.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValue/角色数值_防御.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/玩家默认数据.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/玩家默认数据.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RuntimeData_RandomBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RuntimeData_RandomBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEventData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEventData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/CardLayoutCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/CardLayoutCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/AssetData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/AssetData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/RuntimeData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/RuntimeData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/SaveData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/SaveData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Equipment/Data/RuntimeData_Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Equipment/Data/RuntimeData_Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/BaseValueCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/DataStructure/ValueCache/BaseValueCache.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/com.coffee.uieffect_v3.2.0.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/ComGroup_BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/ComGroup_BodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Data/AssetData_BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Data/AssetData_BodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Data/RuntimeData_BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Data/RuntimeData_BodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Data/SaveData_BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Data/SaveData_BodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EnemyPushCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_EnemyPushCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/AssetData_RoleValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/AssetData_RoleValue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/Component/Com_RoleDataValueChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/Component/Com_RoleDataValueChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RuntimeData_RoleValueChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/RuntimeData_RoleValueChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/RoleValue/SaveData_RoleValue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -676,34 +35,46 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Settings/Database/LocalizedStringDatabase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Settings/Database/LocalizedDatabase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Component Localizers/LocalizeStringEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06F3B5FC-6BA6-41E2-AB95-F91BD8A970A8/cd/fc137c42/ImageConversion.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/f6/9c4865e4/GenericPool`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/d5/569473e2/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/2d/9b22e8c3/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Tables/DetailedLocalizationTable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/bd/5911ec8f/Texture2D.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CAB4CD49-4110-4705-846E-3433671ECD50/2d/4f904a7e/Exception.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCC0BBF6-BF4E-430C-91D4-AA05736FC5C6/14/def3ad84/Sequence.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/f1/1fe37fb7/ObjectPool`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/AssetData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FCC0BBF6-BF4E-430C-91D4-AA05736FC5C6/fa/42e9a215/Tweener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.21.18/Runtime/ResourceManager/ResourceManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/84/75035a79/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Component Localizers/LocalizeStringEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605BF8B3-1FCB-444B-8517-6DA963870AA7/26/117158aa/Environment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/25/bc8c3a73/ListPool`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaskableGraphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_SubMeshUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/37C17420-D9DE-45D9-A612-7F6BBBFBED85/45/09166ccc/AssetData_Role.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/RoleActionDetailInfo/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Settings/Database/LocalizedDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Settings/Database/LocalizedStringDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73C7CF64-7337-4ECA-8332-474B6BD3C29A/50/4ab5fc12/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Tables/TableReference.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/15/dc8e79ec/Sprite.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshPro.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65557046-7A33-4BB3-84E3-67C156617D53/a1/6191d941/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Tables/StringTable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Operations/GetLocalizedStringOperation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Tables/TableReference.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TextMeshProUGUI.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/dc/846c6f0d/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TownScene/UI/RoleSetting/RoleAction/RoleActionDetailInfo/Panel_RoleActionDetailInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.localization@1.3.2/Runtime/Tables/DetailedLocalizationTable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/b4/44e0602f/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SystemData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Item/Library/Weapon/SaveData_Item_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/605bf8b31fcb444b85176da963870aa746ac00/66/06cc4bc2/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/655570467a334bb384e367c156617d53171e00/bf/dc8654af/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Graphic.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_Private.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -786,17 +157,15 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22728">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="22728" />
-      <option name="projectPathOnTarget" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
