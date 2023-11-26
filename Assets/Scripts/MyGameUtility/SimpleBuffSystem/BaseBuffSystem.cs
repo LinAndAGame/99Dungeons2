@@ -6,16 +6,19 @@ using Sirenix.OdinInspector;
 namespace MyGameUtility {
     [Serializable]
     public abstract class BaseBuffSystem {
+        public CustomAction OnBuffListChanged  = new CustomAction();
         public CustomAction OnAddBuffBefore    = new CustomAction();
         public CustomAction OnAddBuffAfter     = new CustomAction();
         public CustomAction OnNeedToRemoveBuff = new CustomAction();
-        public CustomAction OnRemoveBuffAfter = new CustomAction();
+        public CustomAction OnRemoveBuffAfter  = new CustomAction();
 
         public ValueCacheBool CanAddBuff    = true;
         public ValueCacheBool CanRemoveBuff = true;
 
         [ShowInInspector, ReadOnly]
         private List<BaseBuff> _AllBuffs = new List<BaseBuff>();
+
+        public List<BaseBuff> AllBuffsClone => _AllBuffs.Clone();
 
         public virtual void AddBuff(BaseBuff otherBuff, BuffCollection buffCollection = null) {
             OnAddBuffBefore.Invoke();
@@ -35,6 +38,8 @@ namespace MyGameUtility {
             else {
                 aliveBuff.MergeBuff(otherBuff);
             }
+            
+            OnBuffListChanged.Invoke();
         }
 
         public virtual void AddBuffs(List<BaseBuff> readyAddedBuffs, BuffCollection buffCollection = null) {
@@ -87,6 +92,7 @@ namespace MyGameUtility {
                 _AllBuffs.Remove(aliveBuff);
                 aliveBuff.ClearBuff();
                 OnRemoveBuffAfter.Invoke();
+                OnBuffListChanged.Invoke();
             }
         }
 
@@ -102,6 +108,7 @@ namespace MyGameUtility {
             }
 
             _AllBuffs.Clear();
+            OnBuffListChanged.Invoke();
         }
 
         protected virtual BaseBuff GetAliveBuff(BaseBuff otherBuff) {

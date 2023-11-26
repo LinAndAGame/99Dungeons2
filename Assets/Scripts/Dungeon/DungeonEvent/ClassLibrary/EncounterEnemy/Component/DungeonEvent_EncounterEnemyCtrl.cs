@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
-using BattleScene.RandomBag;
 using BattleScene.RoleCards;
 using Card;
 using MyGameUtility;
 using NewRole;
+using Player;
+using RandomValue.RandomBag;
 using UnityEngine;
 
 namespace Dungeon.EncounterEnemy {
@@ -72,8 +73,8 @@ namespace Dungeon.EncounterEnemy {
 
         public List<object> AllCurCardCtrlUsedDatas = new List<object>();
 
-        public void Init(SaveData_DungeonEvent_EncounterEnemy saveData) {
-            SystemData = new SystemData_DungeonEvent_EncounterEnemy(saveData);
+        public void Init(SystemData_DungeonEvent_EncounterEnemy systemData) {
+            SystemData = systemData;
 
             StartNewTurn();
         }
@@ -101,16 +102,28 @@ namespace Dungeon.EncounterEnemy {
 
         public void StartNewTurn() {
             FightRound++;
+            foreach (RoleCtrl playerRole in AllPlayerRoles) {
+                playerRole.RuntimeDataRole.DrawCards();
+            }
             OnPlayerTurnStarted.Invoke();
         }
 
         public void EnterEnemyTurn() {
+            foreach (RoleCtrl playerRole in AllPlayerRoles) {
+                playerRole.RuntimeDataRole.RoleEvents.OnTurnEnd.Invoke();
+            }
+            
             OnEnemyTurnStarted.Invoke();
+            
             foreach (var enemyRole in AllEnemyRoles) {
                 var enemyAi = enemyRole.GetComponent<RoleCom_EnemyPushCard>();
                 enemyAi.RunAi();
             }
 
+            foreach (var enemyRole in AllEnemyRoles) {
+                enemyRole.RuntimeDataRole.RoleEvents.OnTurnEnd.Invoke();
+            }
+            
             StartNewTurn();
         }
     }

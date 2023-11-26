@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using BattleScene;
-using BattleScene.RandomBag;
 using Dungeon.EncounterEnemy;
 using MyGameUtility;
 using NewRole;
@@ -180,11 +179,12 @@ namespace Card {
                 case PlayerTurnStateEnum.SelectCard:
                     DungeonEvent_EncounterEnemyCtrl.I.CurOperateRandomBagCardCtrl = this;
 
-                    var roleValue = RuntimeDataCard.GetUsedRoleValue();
             
                     RuntimeDataCard.CreateRandomBag();
-                    DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag = RuntimeDataCard.RandomBag;
+                    var roleValue = RuntimeDataCard.GetUsedRoleValue();
                     RuntimeDataCard.RandomBag.RefreshValue(RuntimeDataCard.MainCardEffect.SaveData.AssetData.RoleValueType, roleValue.CurrentValue.GetValue(), 1);
+                    RuntimeDataCard.AddRandomValueEffect();
+                    DungeonEvent_EncounterEnemyCtrl.I.CurOperatingRandomBag = RuntimeDataCard.RandomBag;
             
                     BattleSceneCtrl.I.RandomBagCtrlRef.DisplayPanel();
                     BattleSceneCtrl.I.RandomBagCtrlRef.OnFinished.AddListener(data => {
@@ -195,6 +195,7 @@ namespace Card {
                             Debug.Log("卡牌发动成功！");
                             var totalValue = data.Value;
                             this.RuntimeDataCard.RunEffect(totalValue, _TempToRoleCtrl);
+                            data.RunValueEffects(RoleCtrlOwner.RuntimeDataRole, _TempToRoleCtrl?.RuntimeDataRole);
                         }
 
                         _TempToRoleCtrl = null;

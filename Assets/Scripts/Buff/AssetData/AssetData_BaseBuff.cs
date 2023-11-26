@@ -2,17 +2,11 @@
 using UnityEngine;
 
 namespace Buff {
-    public class AssetData_BaseBuff : ScriptableObject {
-        [SerializeField]
-        private string _ResourcePath;
-        public string ResourcePath => _ResourcePath;
-        
-        private void OnValidate() {
-            setResourcePath();
-
-            void setResourcePath() {
-                _ResourcePath = OtherUtility.GetResourcePath(this);
-            }
-        }
+    [CreateAssetMenu(fileName = "Buff", menuName = "纯数据资源/Buff")]
+    public class AssetData_BaseBuff : BaseAssetData {
+        public BuffTypeEnum BuffType;
+        public string       BuffName;
+        public Sprite       BuffSprite;
+        public string       Description;
     }
 }

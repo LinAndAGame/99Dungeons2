@@ -63,6 +63,7 @@ namespace Dungeon.EncounterEnemy {
             var sequence            = panelEncounterEnemy.Display(SaveDataT.AssetDataT);
             sequence.onComplete += () => {
                 // CurRoleActionWorkflow.ReStartWorkflow();
+                DungeonEvent_EncounterEnemyCtrl.I.Init(this);
                 panelEncounterEnemy.Hide();
             };
 

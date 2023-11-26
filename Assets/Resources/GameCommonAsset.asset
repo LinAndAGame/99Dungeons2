@@ -40,3 +40,6 @@ MonoBehaviour:
   ComRoleDataValueChangerPrefab: {fileID: 2724919963507743063, guid: 4cd005d33f0158249b26cabd5c96418f, type: 3}
   ComGroupBodyPartPrefab: {fileID: 3193289507006707204, guid: 70a0ec301fbafb54599e4e2d8560323a, type: 3}
   ComGroupEquipmentPrefab: {fileID: 573864518343526578, guid: 73b60b609d9bc3145a8090c94b030af0, type: 3}
+  ContainerRandomValueEffectPrefab: {fileID: 8373392378822040604, guid: c9f07ab259d05ab46b930b56d7372163, type: 3}
+  ContainerRandomValuePrefab: {fileID: 3546046791188000114, guid: b40858a39d4a3f6408fd1771407fdcb0, type: 3}
+  ContainerBuffPrefab: {fileID: 1395920006611039180, guid: 5a68be90bbb654e40ba757f3233ccbec, type: 3}

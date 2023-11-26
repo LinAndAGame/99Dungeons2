@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Buff.Component;
 using Dungeon;
 using Equipment;
 using MyGameUtility;
 using NewRole;
 using Player;
+using RandomValue;
+using RandomValue.RandomBag;
 using Role;
 using Role.Brand;
 using Sirenix.OdinInspector;
@@ -47,9 +50,12 @@ namespace Utility {
 
         public List<AssetData_RoleValue> AllAssetDataRoleValues;
 
-        public Com_RoleDataValueChanger ComRoleDataValueChangerPrefab;
-        public ComGroup_BodyPart        ComGroupBodyPartPrefab;
-        public ComGroup_Equipment       ComGroupEquipmentPrefab;
+        public Com_RoleDataValueChanger    ComRoleDataValueChangerPrefab;
+        public ComGroup_BodyPart           ComGroupBodyPartPrefab;
+        public ComGroup_Equipment          ComGroupEquipmentPrefab;
+        public Container_RandomValueEffect ContainerRandomValueEffectPrefab;
+        public Container_RandomValue       ContainerRandomValuePrefab;
+        public Container_Buff              ContainerBuffPrefab;
 
         public AssetData_RoleValue GetAssetDataRoleValue(RoleValueTypeEnum roleValueType) {
             return AllAssetDataRoleValues.Find(data => data.RoleValueType == roleValueType);

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using BattleScene.RandomBag;
 using MyGameUtility;
+using RandomValue.RandomBag;
 
 namespace NewRole {
     public class RuntimeData_Role {
@@ -8,6 +8,8 @@ namespace NewRole {
         public MinMaxValueFloat                Hp;
         public RuntimeData_CardBag             CardBag;
         public List<RuntimeData_BodyPart>      AllBodyParts = new List<RuntimeData_BodyPart>();
+        public RuntimeData_RoleEvents          RoleEvents   = new RuntimeData_RoleEvents();
+        public BaseBuffSystem                  BuffSystem   = new BuffSystemDefault();
 
         public int DrawCount => RoleValueCollectionInfo.Perception.CurrentValue;
 

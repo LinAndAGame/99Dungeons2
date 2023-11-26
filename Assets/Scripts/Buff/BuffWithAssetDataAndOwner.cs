@@ -8,8 +8,8 @@ namespace Buff {
         public readonly TAssetData AssetData;
         protected TDataOwner DataOwner;
 
-        public BuffWithAssetDataAndOwner(TDataOwner dataOwner, int layer) : base(layer) {
-            AssetData = Resources.Load<TAssetData>($"Buff/{GetType().Name}");
+        public BuffWithAssetDataAndOwner(TAssetData assetData, TDataOwner dataOwner, int layer) : base(assetData, layer) {
+            AssetData = assetData;
             DataOwner = dataOwner;
         }
     }

@@ -20,3 +20,9 @@ MonoBehaviour:
   MainCardEffect: {fileID: 11400000, guid: 9a716bc896aebae408331ec0e5427dec, type: 2}
   AllAdditionalCardEffects: []
   Description: "\u653B\u51FB\u76EE\u6807\u3010#\u3011\u4F24\u5BB3"
+  AllRoleValues: []
+  AllRandomValueEffect:
+  - {fileID: 11400000, guid: 7d36d6e589577dd4cae583fd42d5d630, type: 2}
+  - {fileID: 11400000, guid: 7d36d6e589577dd4cae583fd42d5d630, type: 2}
+  - {fileID: 11400000, guid: 7d36d6e589577dd4cae583fd42d5d630, type: 2}
+  - {fileID: 11400000, guid: 7d36d6e589577dd4cae583fd42d5d630, type: 2}
