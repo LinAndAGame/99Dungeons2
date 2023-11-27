@@ -4,130 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Buff.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Buff/Container_Buff.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/Buff/Container_Buff.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Contaienr_RandomValueEffect.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Contaienr_RandomValueEffect.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomValue.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomValue.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Buff.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Buff/Buff_中毒.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Buff/Buff_中毒.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/RandomValueEffect.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/RandomValueEffect/随机值效果_添加Buff.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/RandomValueEffect/随机值效果_添加Buff.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary/Buff_Poison.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary/Buff_Poison.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/Component.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/Component/Container_Buff.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/Component/Container_Buff.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleEvents.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleEvents.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/Component.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/Component/Container_RandomValueEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/Component/Container_RandomValueEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/AssetData_BaseRandomValueEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/AssetData_BaseRandomValueEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/ClassLibrary.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/ClassLibrary/AssetData_RandomValueEffect_BuffGiver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/ClassLibrary/AssetData_RandomValueEffect_BuffGiver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/ClassLibrary/RuntimeData_RandomValueEffect_BuffGiver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/ClassLibrary/RuntimeData_RandomValueEffect_BuffGiver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/ClassLibrary/SaveData_RandomValueEffect_BuffGiver.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/ClassLibrary/SaveData_RandomValueEffect_BuffGiver.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/RuntimeData_BaseRandomValueEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/RuntimeData_BaseRandomValueEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/RuntimeData_BaseRandomValueEffectT.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/RuntimeData_BaseRandomValueEffectT.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/SaveData_BaseRandomValueEffect.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/SaveData_BaseRandomValueEffect.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/SaveData_BaseRandomValueEffectT.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueEffect/SaveData_BaseRandomValueEffectT.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomValueFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Rewards.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/NewRole/BaseRoleCtrl.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/NewRole/BaseRoleCtrl.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagPreview.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagPreview.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagReuslt.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/RandomBag/Container_RandomBagReuslt.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Role/部位/ComGroup_BodyPart.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Role/部位/ComGroup_BodyPart.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/Card/AttackCard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/AttackCard.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/Card/EquipmentCard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/EquipmentCard.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameCommonAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/NormalEnemy/Role_蟑螂.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/NormalEnemy/Role_蟑螂.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_普通人.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_普通人.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/BattleSceneCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBagCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBagCtrl.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBagFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBagFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBagFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBag_Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Result.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBag_Result.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Value.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBag_Value.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RandomBag_Value.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RandomBag_Value.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RuntimeData_RandomBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RuntimeData_RandomBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/RuntimeData_RandomBag.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/RuntimeData_RandomBag.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagPreview.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagPreview.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Container_RandomValue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Container_RandomBagResult.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Container_RandomValue.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Panel_RandomBag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBag.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Panel_RandomBag.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagPreview.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Panel_RandomBagPreview.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagPreview.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Panel_RandomBagPreview.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagResult.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Panel_RandomBagResult.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomBag/UI/Panel_RandomBagResult.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomBag/UI/Panel_RandomBagResult.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEventCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/RandomEventCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEventCtrl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/RandomEventCtrl.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEventData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/RandomEventData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEventData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/RandomEventData.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEvent_Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/RandomEvent_Result.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/RandomEvent_Result.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/RandomEvent_Result.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/UI.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/UI/Panel_RandomEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/UI/Panel_RandomEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RandomEvent/UI/Panel_RandomEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RandomValue/RandomEvent/UI/Panel_RandomEvent.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/CardLayoutCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/RoleCards/CardLayoutCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buff/AssetData/AssetData_BaseBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/AssetData/AssetData_BaseBuff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffTypeEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffTypeEnum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffWithAssetDataAndOwner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buff/BuffWithAssetDataAndOwner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary/Buff_Vertigo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buff/ClassLibrary/Buff_Vertigo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/AssetData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/AssetData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCom_Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCom_Effect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/RuntimeData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/RuntimeData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/SaveData_Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/SaveData_Card.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/SimpleBuffSystem/BaseBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/SimpleBuffSystem/BaseBuff.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/SimpleBuffSystem/BaseBuffSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/SimpleBuffSystem/BaseBuffSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/SimpleBuffSystem/BaseBuffWithOwner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/SimpleBuffSystem/BaseBuffWithOwner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/ComGroup_BodyPart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/ComGroup_BodyPart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/Com_BodyPartUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/BodyPart/Component/Com_BodyPartUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/RoleCom_UI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI/Panel_Role.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Component/UI/Panel_Role.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_BeHitOneRound.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_PowerBrand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_PowerBrand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_TotalDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Role/Weakness/ClassLibrary/Weakness_TotalDamage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameCommonAsset.cs" afterDir="false" />
-    </list>
+    <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -302,7 +179,7 @@
       <workItem from="1700702209538" duration="22793000" />
       <workItem from="1700876980518" duration="2931000" />
       <workItem from="1700882175780" duration="16041000" />
-      <workItem from="1700971393935" duration="8692000" />
+      <workItem from="1700971393935" duration="8750000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
@@ -507,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700757563076</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="1">
+      <created>1701014817878</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1701014817878</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,9 +430,9 @@
     <MESSAGE value="5" />
     <MESSAGE value="3" />
     <MESSAGE value="afternoon : 拉取" />
-    <MESSAGE value="1" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
