@@ -22,13 +22,5 @@ namespace Utility {
             asyncOperationHandle.WaitForCompletion();
             return result;
         }
-
-        public static RoleLocatorGroupCtrl GetEnemyLocatorGroupCtrl(bool isPlayer) {
-            return isPlayer ? BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef : BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef;
-        }
-
-        public static RoleLocatorGroupCtrl GetSelfLocatorGroupCtrl(bool isPlayer) {
-            return isPlayer ? BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef : BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef;
-        }
     }
 }

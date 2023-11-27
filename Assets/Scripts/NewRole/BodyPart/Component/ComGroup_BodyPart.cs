@@ -29,19 +29,24 @@ namespace NewRole {
             }
 
             RegisteMouseTouchEffect();
-        }
-
-        public void EquipCard(CardCtrl cardCtrl) {
             
+            runtimeDataBodyPart.OnDisabilityStateChanged.AddListener(data => {
+                if (data == false) {
+                    Disability();
+                }
+                else {
+                    Recovery();
+                }
+            });
         }
 
-        public void Disability() {
+        private void Disability() {
             _CC.Clear();
             RuntimeData.Disability();
             ComBodyPartUIRef.SetAsDisabilityStyle();
         }
 
-        public void Recovery() {
+        private void Recovery() {
             RuntimeData.Recovery();
             ComBodyPartUIRef.SetAsNormalStyle();
             RegisteMouseTouchEffect();

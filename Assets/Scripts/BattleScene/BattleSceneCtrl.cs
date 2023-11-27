@@ -13,9 +13,6 @@ using UnityEngine.AddressableAssets;
 namespace BattleScene {
     public class BattleSceneCtrl : MonoSingletonSimple<BattleSceneCtrl> {
         public UICtrl UICtrlRef;
-            
-        public RoleLocatorGroupCtrl PlayerRoleLocatorGroupCtrlRef;
-        public RoleLocatorGroupCtrl EnemyRoleLocatorGroupCtrlRef;
 
         public RandomBagCtrl RandomBagCtrlRef;
 

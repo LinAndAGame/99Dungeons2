@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
 using Buff.Component;
 using Dungeon;
 using Equipment;
@@ -9,8 +8,6 @@ using NewRole;
 using Player;
 using RandomValue;
 using RandomValue.RandomBag;
-using Role;
-using Role.Brand;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using RoleCtrl = NewRole.RoleCtrl;
@@ -34,15 +31,7 @@ namespace Utility {
             }
         }
 
-        public int                   PlayerRoleBrandCount = 1;
-        public List<AssetData_Brand> AllRoleBrands;
-
         public AssetData_Player DefaultPlayerData;
-
-        public AssetFolderInfo AssetFolderInfo_RoleUnlockAction;
-        public AssetFolderInfo AssetFolderInfo_RoleIdentity;
-        public List<AssetData_BaseRole> AllAssetDataRoles;
-
         public AssetData_DungeonProcess DungeonProcess;
 
         public RoleCtrl RolePlayerPrefab;
@@ -56,6 +45,7 @@ namespace Utility {
         public Container_RandomValueEffect ContainerRandomValueEffectPrefab;
         public Container_RandomValue       ContainerRandomValuePrefab;
         public Container_Buff              ContainerBuffPrefab;
+        public Com_RoleValue               ComRoleValuePrefab;
 
         public AssetData_RoleValue GetAssetDataRoleValue(RoleValueTypeEnum roleValueType) {
             return AllAssetDataRoleValues.Find(data => data.RoleValueType == roleValueType);
@@ -72,33 +62,6 @@ namespace Utility {
                 }
                 
                 assetData.RefreshResourcePath();
-            }
-        }
-
-        [Serializable]
-        public class AssetFolderInfo {
-#if UNITY_EDITOR
-            public DefaultAsset AssetFolder;
-#endif
-            public string PrefixPath;
-
-            public void RefreshPath() {
-                if (AssetFolder == null) {
-                    PrefixPath = string.Empty;
-                    return;
-                }
-
-                var    originPath      = AssetDatabase.GetAssetPath(AssetFolder);
-                string needRemovedPath = "Assets/Resources/";
-                if (originPath.StartsWith(needRemovedPath)) {
-                    PrefixPath = originPath.Replace(needRemovedPath, string.Empty);
-                }
-
-                PrefixPath += "/";
-            }
-
-            public override string ToString() {
-                return PrefixPath;
             }
         }
     }

@@ -7,14 +7,16 @@ namespace BattleScene.RandomEvent {
         public RuntimeData_RoleValue RoleValue;
         public int                   EventDifficult;
 
+        public RandomEvent_Result Result { get; private set; }
+        
         public RandomEventData(string eventName, RuntimeData_RoleValue roleValue, int eventDifficult) {
             EventName      = eventName;
             RoleValue      = roleValue;
             EventDifficult = eventDifficult;
         }
 
-        public RandomEvent_Result GetResult() {
-            return RandomBagFactory.GetRandomEventResult(RoleValue.SaveData.RoleValueType, EventDifficult, RoleValue.CurrentValue.GetValue(), 0);
+        public void CreateResult() {
+            Result = RandomBagFactory.GetRandomEventResult(RoleValue.SaveData.RoleValueType, EventDifficult, RoleValue.CurrentValue.GetValue(), 0);
         }
     }
 }

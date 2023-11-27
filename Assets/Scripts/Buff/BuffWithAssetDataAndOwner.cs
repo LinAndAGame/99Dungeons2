@@ -1,6 +1,4 @@
 ﻿using MyGameUtility;
-using Role;
-using UnityEngine;
 
 namespace Buff {
     public abstract class BuffWithAssetDataAndOwner<TAssetData, TDataOwner> : BaseBuff

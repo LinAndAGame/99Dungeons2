@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using BattleScene.RoleCards;
-using BattleScene.UI.BattleSettlement;
 using BattleScene.UI.DungeonEvent_ChooseNextEvent;
 using BattleScene.UI.DungeonEvent_EncounterEnemy;
 using BattleScene.UI.DungeonEvent_Lounge;
@@ -24,11 +22,6 @@ namespace BattleScene.UI {
         public Panel_RewardGameSucceed PanelRewardGameSucceed;
         public Panel_RewardGameFailure PanelRewardGameFailure;
 
-        public Panel_RoleActionDetailInfo   PanelRoleActionDetailInfo;
-        public Panel_RoleWeaknessDetailInfo PanelRoleWeaknessDetailInfo;
-
-        public Panel_BattleSettlement PanelBattleSettlement;
-
         public Panel_DungeonEvent_ReturnTown PanelDungeonEventReturnTown;
         
         public List<BaseUiPanel> AllBattlePanels;
@@ -50,7 +43,6 @@ namespace BattleScene.UI {
             });
             
             PanelDungeonEventReturnTown.Init();
-            PanelBattleSettlement.Init();
             PanelLounge.Init();
             PanelNotTouchBoundary.Init();
             PanelRewardGameSucceed.Init();

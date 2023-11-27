@@ -12,5 +12,9 @@ namespace Equipment {
         public Sprite                          SpriteEquipment;
         public AssetData_Card                  Card;
         public List<SaveData_RoleValueChanger> AllRoleValueChangers;
+        
+        public string GetAssetInfo() {
+            return $"装备 : {EquipmentName}";
+        }
     }
 }

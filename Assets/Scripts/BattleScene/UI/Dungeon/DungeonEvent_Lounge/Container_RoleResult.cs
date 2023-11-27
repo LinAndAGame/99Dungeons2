@@ -1,5 +1,5 @@
 ﻿using DG.Tweening;
-using Role;
+using NewRole;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

@@ -4,6 +4,7 @@ using MyGameUtility;
 using MyGameUtility.Location;
 using TMPro;
 using UnityEngine;
+using Utility;
 
 namespace Card {
     public class CardCom_Model : BaseComponent<CardCtrl> {
@@ -11,6 +12,8 @@ namespace Card {
         public TextMeshPro    TMP_CardLabels;
         public TextMeshPro    TMP_CardEffectDescription;
         public SpriteRenderer SR_Card;
+
+        public Transform ValueParentTrans;
 
         public List<GameObject> SortedLayers;
 
@@ -28,6 +31,11 @@ namespace Card {
             TMP_CardLabels.text            = StringUtility.Connect(",", assetData.CardLabels.Select(data => data.ToString()).ToArray());
             TMP_CardEffectDescription.text = assetData.Description.Replace("#",assetData.MainCardEffect.RoleValueType.GetLocalizedString());
             SR_Card.sprite                 = assetData.CardSprite;
+            
+            foreach (var roleValue in ComOwner.RuntimeDataCard.AllRoleValues) {
+                var ins = Instantiate(GameCommonAsset.I.ComRoleValuePrefab, ValueParentTrans);
+                ins.RefreshUI(roleValue);
+            }
         }
 
         public void SetLayer(int index) {
