@@ -1,9 +1,13 @@
 ﻿using System;
+using Buff;
 using Sirenix.OdinInspector;
 
 namespace MyGameUtility {
     [Serializable, ReadOnly]
     public abstract class BaseBuff {
+        public CustomAction OnMerged       = new CustomAction();
+        public CustomAction OnLayerChanged = new CustomAction();
+        
         [ShowInInspector]
         private string TypeName => GetType().Name;
         
@@ -13,14 +17,13 @@ namespace MyGameUtility {
             get => _Layer;
         }
 
-        protected CustomAction OnMerged = new CustomAction();
-        protected CustomAction OnLayerChanged = new CustomAction();
-
         protected CacheCollection CC = new CacheCollection();
         
-        public BaseBuffSystem BuffOwner { get; private set; }
+        public AssetData_BaseBuff AssetData { get; private set; }
+        public BaseBuffSystem     BuffOwner { get; private set; }
 
-        public BaseBuff(int layer) {
+        public BaseBuff(AssetData_BaseBuff assetData, int layer) {
+            AssetData   = assetData;
             this._Layer = layer;
         }
 
@@ -62,6 +65,10 @@ namespace MyGameUtility {
 
         public BuffCache GetBuffCache() {
             return new BuffCache(this, Layer);
+        }
+
+        public virtual string GetDescription() {
+            return AssetData.Description;
         }
     }
 }

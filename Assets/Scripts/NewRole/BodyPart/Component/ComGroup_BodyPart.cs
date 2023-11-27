@@ -8,6 +8,7 @@ namespace NewRole {
     public class ComGroup_BodyPart : MonoBehaviour {
         public MouseEventReceiver MouseEventReceiverRef;
         public Com_BodyPartUI     ComBodyPartUIRef;
+        public Transform          EquipmentParentTrans;
 
         private CacheCollection _CC = new CacheCollection();
         
@@ -23,7 +24,7 @@ namespace NewRole {
             }
 
             if (RuntimeData.RuntimeDataEquipment != null) {
-                var equipment = Instantiate(GameCommonAsset.I.ComGroupEquipmentPrefab, this.transform);
+                var equipment = Instantiate(GameCommonAsset.I.ComGroupEquipmentPrefab, EquipmentParentTrans);
                 equipment.Init(RuntimeData.RuntimeDataEquipment);
             }
 

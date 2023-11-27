@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using BattleScene.RandomBag;
 using BattleScene.RoleCards;
 using BattleScene.UI;
 using DG.Tweening;
@@ -7,6 +6,7 @@ using Dungeon;
 using Dungeon.SystemData;
 using MyGameUtility;
 using Player;
+using RandomValue.RandomBag;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 

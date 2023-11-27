@@ -6,7 +6,7 @@ namespace NewRole {
     public class Com_BodyPartUI : BaseComponent<ComGroup_BodyPart> {
         public TextMeshPro    TMP_BodyPartName;
         public SpriteRenderer SR_BodyPart;
-        public Transform      BodyPartParentTrans;
+        public Transform      ValueChangerParentTrans;
 
         public override void Init(ComGroup_BodyPart comOwner) {
             base.Init(comOwner);
@@ -18,7 +18,7 @@ namespace NewRole {
             SR_BodyPart.sprite    = runtimeDataBodyPart.SaveData.AssetData.SpriteBodyPart;
             
             foreach (var roleValueChanger in runtimeDataBodyPart.AllRoleValueChangers) {
-                var ins = Instantiate(GameCommonAsset.I.ComRoleDataValueChangerPrefab, BodyPartParentTrans);
+                var ins = Instantiate(GameCommonAsset.I.ComRoleDataValueChangerPrefab, ValueChangerParentTrans);
                 ins.RefreshUI(roleValueChanger);
             }
 

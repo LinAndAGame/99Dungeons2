@@ -108,7 +108,7 @@ namespace BattleScene.RoleCards {
 
                 cardIns.transform.ResetLocalTrans();
                 cardIns.Init(runtimeDataCard, curControlledRoleCtrl);
-                cardIns.SetLayer(allCards.Count - i);
+                // cardIns.SetLayer(allCards.Count - i);
             }
         }
     }

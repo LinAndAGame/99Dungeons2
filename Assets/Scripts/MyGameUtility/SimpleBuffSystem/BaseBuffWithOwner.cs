@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Buff;
 
 namespace MyGameUtility {
-    public class BaseBuffWithOwner<T> : BaseBuff {
+    public abstract class BaseBuffWithOwner<T> : BaseBuff {
         protected T DataOwner;
 
-        public BaseBuffWithOwner(T dataOwner, int layer) : base(layer) {
+        protected BaseBuffWithOwner(T dataOwner, AssetData_BaseBuff assetData, int layer) : base(assetData, layer) {
             DataOwner = dataOwner;
         }
     }

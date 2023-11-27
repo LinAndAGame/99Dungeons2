@@ -1,5 +1,6 @@
 ﻿using Dreamteck.Splines;
 using HighlightPlus;
+using MyGameExpand;
 using UnityEngine;
 
 namespace Card {
@@ -10,8 +11,11 @@ namespace Card {
         public SplineComputer   SplineComputerRef;
         public SplineRenderer   SplineRendererRef;
 
+        private float _OriginalZ;
+        
         public override void Init(CardCtrl comOwner) {
             base.Init(comOwner);
+            _OriginalZ = this.transform.position.z;
             ComOwner.CardComEventReceiver.OnEnterTouch.AddListener(() => {
                 SetAsTouchingStyle();
             }, CC.Event);
@@ -22,6 +26,7 @@ namespace Card {
 
         public void SetAsNormalStyle() {
             HighlightEffectRef.SetHighlighted(false);
+            this.transform.position.SetZ(_OriginalZ);
         }
 
         public void SetAsCanUseStyle() {
@@ -32,6 +37,7 @@ namespace Card {
         public void SetAsTouchingStyle() {
             HighlightEffectRef.ProfileLoad(TouchingHighlightProfile);
             HighlightEffectRef.SetHighlighted(true);
+            this.transform.position.SetZ(-2);
         }
 
         public void Update() {

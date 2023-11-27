@@ -10,7 +10,7 @@ namespace Role {
         }
 
         protected override void BreakWeaknessEffect() {
-            Owner.RoleSystemValues.BuffSystem.AddBuff(new Buff_Vertigo(Owner, 1));
+            // Owner.RoleSystemValues.BuffSystem.AddBuff(new Buff_Vertigo(Owner, 1));
         }
     }
 }
