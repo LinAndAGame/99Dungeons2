@@ -9,10 +9,6 @@ using UnityEngine;
 
 namespace Dungeon.EncounterEnemy {
     public class SystemData_DungeonEvent_EncounterEnemy : SystemData_DungeonEventWithData<SaveData_DungeonEvent_EncounterEnemy> {
-        public RoleActionWorkflow       CurRoleActionWorkflow       = new RoleActionWorkflow();
-        public EncounterEnemySettlement CurEncounterEnemySettlement = new EncounterEnemySettlement();
-        
-
         public override Sequence DisplayHandle() {
             Sequence seq                            = DOTween.Sequence();
             var      allPossibleChosenDungeonEvents = DungeonProcess.AllPossibleChosenDungeonEvents;
@@ -102,19 +98,10 @@ namespace Dungeon.EncounterEnemy {
 
         public void PlayerWin() {
             Debug.Log("玩家赢了！");
-            foreach (var aliveRole in BattleSceneCtrl.I.PlayerRoleLocatorGroupCtrlRef.AllAliveRoles) {
-                aliveRole.RoleSystemEvents.OnFightWinBefore.Invoke();
-            }
-
-            BattleSceneCtrl.I.UICtrlRef.PanelBattleSettlement.Display();
-            BattleSceneCtrl.I.UICtrlRef.PanelBattleSettlement.RefreshUI();
         }
 
         public void PlayerFailure() {
             Debug.Log("玩家输了！");
-            foreach (var aliveRole in BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef.AllAliveRoles) {
-                aliveRole.RoleSystemEvents.OnFightWinBefore.Invoke();
-            }
         }
 
         public SystemData_DungeonEvent_EncounterEnemy(SaveData_BaseDungeonEvent saveData) : base(saveData) { }

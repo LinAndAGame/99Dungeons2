@@ -1,5 +1,5 @@
-﻿using Player;
-using Role;
+﻿using NewRole;
+using Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,8 +14,8 @@ namespace BattleScene.UI.DungeonEvent_Lounge {
         public TextMeshProUGUI TMP_MaxHp;
         
         public void Init(Panel_Lounge panelLounge, SaveData_Role saveDataRole) {
-            Img_Role.sprite   = saveDataRole.AssetData.GetSprite;
-            TMP_RoleName.text = saveDataRole.RoleName;
+            Img_Role.sprite   = saveDataRole.AssetData.SpriteRole;
+            TMP_RoleName.text = saveDataRole.AssetData.RoleName;
             Sld_Hp.value      = saveDataRole.Hp.Ratio;
             TMP_CurHp.text    = saveDataRole.Hp.Current.ToString();
             TMP_MaxHp.text    = saveDataRole.Hp.Max.ToString();

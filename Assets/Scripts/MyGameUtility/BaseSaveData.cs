@@ -8,6 +8,8 @@ namespace MyGameUtility {
         private string AssetDataPath;
         public T AssetData => Resources.Load<T>(AssetDataPath);
 
+        public BaseSaveData() { }
+
         public BaseSaveData(T assetData) {
             AssetDataPath = assetData.ResourcePath;
         }

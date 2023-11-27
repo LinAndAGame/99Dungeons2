@@ -1,7 +1,4 @@
-﻿using Item;
-using Role;
-
-namespace Damage {
+﻿namespace Damage {
     public static class DamageProcess {
         public static void CreateDamageProcessData(IGiveDamage giveDamage, IReceiveDamage receiveDamage) {
             var attackSucceed = giveDamage.GiveDamage_TryGetDamageData(receiveDamage, out DamageData damageData);

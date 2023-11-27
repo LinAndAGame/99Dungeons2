@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using MyGameUtility;
 using NewRole;
+using Newtonsoft.Json.Serialization;
 using RandomValue.RandomEffect;
 using UnityEngine;
 
@@ -16,5 +17,9 @@ namespace Card {
         public string                                Description;
         public List<ClassData_RoleValue>             AllRoleValues;
         public List<AssetData_BaseRandomValueEffect> AllRandomValueEffect;
+
+        public string GetAssetInfo() {
+            return $"卡牌 : {CardName}";
+        }
     }
 }

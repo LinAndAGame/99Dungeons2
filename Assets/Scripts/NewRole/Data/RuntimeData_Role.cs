@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using MyGameExpand;
 using MyGameUtility;
 using RandomValue.RandomBag;
 
@@ -24,18 +25,19 @@ namespace NewRole {
             foreach (var saveDataAllBodyPart in saveData.AllBodyParts) {
                 AllBodyParts.Add(new RuntimeData_BodyPart(this, saveDataAllBodyPart));
             }
-            
-            Hp.OnCurValueEqualsMin.AddListener(() => {
-                var eventResult = RandomBagFactory.GetRandomEventResult(RoleValueTypeEnum.Luck, 5, RoleValueCollectionInfo.LuckValue.CurrentValue, 0);
-                if (eventResult.IsSucceed == false) {
-                    RoleCtrlOwner.Death();
-                }
-            });
         }
 
         public void DrawCards() {
             for (int i = 0; i < DrawCount; i++) {
                 CardBag.DrawRandomToHand();
+            }
+        }
+
+        public void DisabilityRandomBodyPart() {
+            var allAllowedBodyParts = AllBodyParts.FindAll(data => data.IsDisability == false);
+            if (allAllowedBodyParts.IsNullOrEmpty() == false) {
+                var bodyPart = allAllowedBodyParts.GetRandomElement();
+                bodyPart.Disability();
             }
         }
     }

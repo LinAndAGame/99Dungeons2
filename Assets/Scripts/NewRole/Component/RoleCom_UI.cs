@@ -12,6 +12,8 @@ namespace NewRole {
         public TextMeshProUGUI TMP_CurHp;
         public TextMeshProUGUI TMP_MaxHp;
 
+        public Panel_RandomEvent PanelRandomEvent;
+
         public Transform BuffParent;
 
         private RuntimeData_Role _RuntimeDataRole;
