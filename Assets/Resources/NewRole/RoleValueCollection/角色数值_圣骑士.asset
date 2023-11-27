@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47632d8699534566aeb337689ee5fc1c, type: 3}
   m_Name: "\u89D2\u8272\u6570\u503C_\u5723\u9A91\u58EB"
   m_EditorClassIdentifier: 
-  _ResourcePath: "NewRole/RoleValueCollection/\u89D2\u8272\u6570\u503C"
+  _ResourcePath: "NewRole/RoleValueCollection/\u89D2\u8272\u6570\u503C_\u5723\u9A91\u58EB"
   StrengthValue: 3
   AgilityValue: 2
   DefenseValue: 1
   ImmunityValue: 1
   PerceptionValue: 1
-  LuckValue: 2
+  LuckValue: 20

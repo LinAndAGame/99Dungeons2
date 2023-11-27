@@ -5,7 +5,7 @@ using RandomValue.RandomBag;
 
 namespace NewRole {
     public class RoleCom_Player : BaseComponent<RoleCtrl> {
-        private int _DeathEventDifficult = 5;
+        private int _DeathEventDifficult = 1;
         
         public override void Init(RoleCtrl comOwner) {
             base.Init(comOwner);

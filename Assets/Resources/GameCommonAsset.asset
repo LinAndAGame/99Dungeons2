@@ -12,21 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7403ce754b44c9d9ed2fb8a83c68978, type: 3}
   m_Name: GameCommonAsset
   m_EditorClassIdentifier: 
-  PlayerRoleBrandCount: 1
-  AllRoleBrands:
-  - {fileID: 11400000, guid: 4881aaaaecd50f0409277ad245750f79, type: 2}
-  - {fileID: 11400000, guid: c3aa867a4a9559b4aa3f6894e37ad2e2, type: 2}
   DefaultPlayerData: {fileID: 11400000, guid: 7ffb7093ba2272544af65f7c4ef0e3a1, type: 2}
-  AssetFolderInfo_RoleUnlockAction:
-    AssetFolder: {fileID: 102900000, guid: 10b731337a4fd3e4cb4c89935b73c722, type: 3}
-    PrefixPath: Role/Unlock/
-  AssetFolderInfo_RoleIdentity:
-    AssetFolder: {fileID: 102900000, guid: 7ca4d7c0bd7e90d47803f5dd7a65f636, type: 3}
-    PrefixPath: Role/Identity/
-  AllAssetDataRoles:
-  - {fileID: 11400000, guid: 0e96cbb69f824d74fb5d6a46b715147a, type: 2}
-  - {fileID: 11400000, guid: 004462cee6532d04693b34a0c3109ee3, type: 2}
-  - {fileID: 11400000, guid: e50947518331ac34db3c0ea1b91c801a, type: 2}
   DungeonProcess: {fileID: 11400000, guid: 023ab674d1fd81e4ca2f260134770551, type: 2}
   RolePlayerPrefab: {fileID: 6785357937079815368, guid: e298abe35025bd843aca9cf9ba85c7d7, type: 3}
   RoleEnemyPrefab: {fileID: 4565293776743933939, guid: e3c4c9aafc2c91545a766efeea0743f4, type: 3}
@@ -43,3 +29,4 @@ MonoBehaviour:
   ContainerRandomValueEffectPrefab: {fileID: 8373392378822040604, guid: c9f07ab259d05ab46b930b56d7372163, type: 3}
   ContainerRandomValuePrefab: {fileID: 3546046791188000114, guid: b40858a39d4a3f6408fd1771407fdcb0, type: 3}
   ContainerBuffPrefab: {fileID: 1395920006611039180, guid: 5a68be90bbb654e40ba757f3233ccbec, type: 3}
+  ComRoleValuePrefab: {fileID: 6396329725086207410, guid: 1c2a24456cb3aaa4babf39022a3edf8e, type: 3}

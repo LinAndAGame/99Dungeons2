@@ -16,12 +16,7 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: a8e0126d683906b46a5030ff9e13cac5
-  m_SerializeEntries:
-  - m_GUID: 7e3833d5ffbf1d14f86e572974886ae8
-    m_Address: Assets/Prefab/Role/Role.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
+  m_SerializeEntries: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f2a08c153b34df84199c355b071e8cc1, type: 2}
   m_SchemaSet:
