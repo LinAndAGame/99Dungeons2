@@ -30,12 +30,12 @@ namespace NewRole {
         }
 
         public void DestroySelf() {
+            DungeonEvent_EncounterEnemyCtrl.I.RemoveRoleCtrl(this);
+
+            this.enabled = false;
             foreach (var baseComponent in this.GetComponents<BaseComponent<RoleCtrl>>()) {
                 baseComponent.DestroySelf();
             }
-
-            DungeonEvent_EncounterEnemyCtrl.I.AllPlayerRoles.Remove(this);
-            DungeonEvent_EncounterEnemyCtrl.I.AllEnemyRoles.Remove(this);
             
             Destroy(this.gameObject, 3);
         }

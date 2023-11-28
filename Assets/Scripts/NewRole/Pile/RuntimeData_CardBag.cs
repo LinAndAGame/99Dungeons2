@@ -51,6 +51,17 @@ namespace NewRole {
                 TryMoveCardFromTo(card, HandPile, UsedPile);
             }
         }
+
+        public void MoveAllHandCardsToUsedPile() {
+            if (HandPile.IsEmpty) {
+                return;
+            }
+
+            for (var i = HandPile.AllCards.Count - 1; i >= 0; i--) {
+                var runtimeDataCard = HandPile.AllCards[i];
+                TryMoveCardFromTo(runtimeDataCard, HandPile, UsedPile);
+            }
+        }
         
         public bool TryMoveCardFromTo(RuntimeData_Card card, RuntimeData_CardPile fromPile, RuntimeData_CardPile toPile) {
             if (fromPile.ContainsCard(card) == false) {

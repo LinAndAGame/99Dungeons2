@@ -89,6 +89,10 @@ namespace Card {
                         }
                         break;
                     case PlayerTurnStateEnum.OperateRandomBag:
+                        if (DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl.RuntimeDataRole.RemainingRandomBagHelpCount <= 0) {
+                            return;
+                        }
+                        
                         CardComEffect.SetArrowFollowMouse(false);
                         CanMoveToLocation = false;
                         Debug.Log("正常拖拽！");
@@ -109,6 +113,10 @@ namespace Card {
                         }
                         break;
                     case PlayerTurnStateEnum.OperateRandomBag:
+                        if (DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl.RuntimeDataRole.RemainingRandomBagHelpCount <= 0) {
+                            return;
+                        }
+
                         drag();
                         break;
                     default:
@@ -217,6 +225,7 @@ namespace Card {
                     BattleSceneCtrl.I.RandomBagCtrlRef.RefreshUI();
                     RoleCtrlOwner.RuntimeDataRole.CardBag.UseHandCardToUsedPile(this.RuntimeDataCard);
                     DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.MoveCardCtrlToUsedPile(this);
+                    DungeonEvent_EncounterEnemyCtrl.I.CurControlledRoleCtrl.RuntimeDataRole.RemainingRandomBagHelpCount--;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

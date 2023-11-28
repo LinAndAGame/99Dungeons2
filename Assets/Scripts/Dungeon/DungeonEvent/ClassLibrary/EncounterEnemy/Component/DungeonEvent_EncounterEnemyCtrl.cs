@@ -3,8 +3,8 @@ using BattleScene.RoleCards;
 using Card;
 using MyGameUtility;
 using NewRole;
-using Player;
 using RandomValue.RandomBag;
+using Sirenix.Utilities;
 using UnityEngine;
 
 namespace Dungeon.EncounterEnemy {
@@ -54,7 +54,17 @@ namespace Dungeon.EncounterEnemy {
         }
 
         public CardCtrl       CurControlledCardCtrl   { get; set; }
-        public CardCtrl       CurOperateRandomBagCardCtrl   { get; set; }
+
+        private CardCtrl _CurOperateRandomBagCardCtrl;
+        public CardCtrl CurOperateRandomBagCardCtrl {
+            get => _CurOperateRandomBagCardCtrl;
+            set {
+                _CurOperateRandomBagCardCtrl = value;
+                foreach (var playerRole in AllPlayerRoles) {
+                    playerRole.RuntimeDataRole.RemainingRandomBagHelpCount = 1;
+                }
+            }
+        }
 
         private RoleCtrl     _CurTouchingRoleCtrl;
 
@@ -106,6 +116,25 @@ namespace Dungeon.EncounterEnemy {
                 playerRole.RuntimeDataRole.DrawCards();
             }
             OnPlayerTurnStarted.Invoke();
+        }
+
+        public void RemoveRoleCtrl(RoleCtrl roleCtrl) {
+            AllPlayerRoles.Remove(roleCtrl);
+            AllEnemyRoles.Remove(roleCtrl);
+
+            if (AllPlayerRoles.IsNullOrEmpty()) {
+                Debug.Log("战斗失败！");
+            }
+            else if (AllEnemyRoles.IsNullOrEmpty()) {
+                Debug.Log("战斗胜利！");
+            }
+
+            if (CurControlledRoleCtrl == roleCtrl) {
+                CurControlledCardCtrl = null;
+                CurControlledRoleCtrl = null;
+                CurOperatingRandomBag = null;
+                CurTouchingRoleCtrl   = null;
+            }
         }
 
         public void EnterEnemyTurn() {

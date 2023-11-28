@@ -12,7 +12,8 @@ namespace BattleScene.UI {
     public class UICtrl : MonoBehaviour {
         public Button Btn_DrawCard;
         public Button Btn_EndTurn;
-        
+
+        public Panel_Round           PanelRound;
         public Panel_EncounterEnemy  PanelEncounterEnemy;
         public Panel_Lounge          PanelLounge;
         public Panel_ChooseNextEvent PanelChooseNextEvent;
@@ -42,6 +43,7 @@ namespace BattleScene.UI {
                 DungeonEvent_EncounterEnemyCtrl.I.EnterEnemyTurn();
             });
             
+            PanelRound.Init();
             PanelDungeonEventReturnTown.Init();
             PanelLounge.Init();
             PanelNotTouchBoundary.Init();
