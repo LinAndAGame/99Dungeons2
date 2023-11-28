@@ -17,5 +17,5 @@ MonoBehaviour:
   AgilityValue: 2
   DefenseValue: 1
   ImmunityValue: 1
-  PerceptionValue: 1
+  PerceptionValue: 3
   LuckValue: 20

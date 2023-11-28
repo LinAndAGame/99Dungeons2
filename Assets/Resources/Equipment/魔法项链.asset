@@ -15,7 +15,7 @@ MonoBehaviour:
   _ResourcePath: "Equipment/\u9B54\u6CD5\u9879\u94FE"
   EquipmentName: "\u9B54\u6CD5\u9879\u94FE"
   SpriteEquipment: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  Card: {fileID: 11400000, guid: fa32cc6aa77efbb43aa41310ca86354a, type: 2}
+  Card: {fileID: 0}
   AllRoleValueChangers:
   - RoleValueType: 0
     RoleValueChangerType: 0

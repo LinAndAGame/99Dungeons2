@@ -16,7 +16,9 @@ MonoBehaviour:
   CardName: "\u6CBB\u7597\u81EA\u8EAB"
   AssetDataCardSelectObject: {fileID: 11400000, guid: 6b040d829e34aca4f9da2ec360d8129d, type: 2}
   CardSprite: {fileID: 0}
-  CardLabels: 00000000
+  CardLabels: 01000000
   MainCardEffect: {fileID: 11400000, guid: 1aca32d471765954baafe911025d39c9, type: 2}
   AllAdditionalCardEffects: []
   Description: "\u6CBB\u7597\u81EA\u8EAB\u3010#\u3011"
+  AllRoleValues: []
+  AllRandomValueEffect: []

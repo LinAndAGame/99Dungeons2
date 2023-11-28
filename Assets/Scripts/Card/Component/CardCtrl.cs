@@ -77,7 +77,7 @@ namespace Card {
                 _DragOffset = this.transform.position - worldMousePos;
                 switch (DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState) {
                     case PlayerTurnStateEnum.SelectCard:
-                        if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles) {
+                        if (RuntimeDataCard.SaveData.AssetData.AssetDataCardSelectObject.CardSelectObjectType != CardSelectObjectTypeEnum.NoSelect) {
                             CardComEffect.SetArrowFollowMouse(true);
                             CanMoveToLocation = true;
                             Debug.Log("箭头跟踪鼠标！");
@@ -108,7 +108,7 @@ namespace Card {
 
                 switch (DungeonEvent_EncounterEnemyCtrl.I.CurPlayerTurnState) {
                     case PlayerTurnStateEnum.SelectCard:
-                        if (RuntimeDataCard.MainCardEffect.SaveData.AssetData.CanSelectRoles == false) {
+                        if (RuntimeDataCard.SaveData.AssetData.AssetDataCardSelectObject.CardSelectObjectType == CardSelectObjectTypeEnum.NoSelect) {
                             drag();
                         }
                         break;

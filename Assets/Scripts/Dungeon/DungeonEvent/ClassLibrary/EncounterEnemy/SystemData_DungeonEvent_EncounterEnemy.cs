@@ -6,6 +6,7 @@ using MyGameExpand;
 using NewRole;
 using Player;
 using UnityEngine;
+using Utility;
 
 namespace Dungeon.EncounterEnemy {
     public class SystemData_DungeonEvent_EncounterEnemy : SystemData_DungeonEventWithData<SaveData_DungeonEvent_EncounterEnemy> {
@@ -54,35 +55,33 @@ namespace Dungeon.EncounterEnemy {
 
         public override void ChooseHandle() {
             SaveDataT.NotChosenTimes = 0;
-            createRoles();
             var panelEncounterEnemy = BattleSceneCtrl.I.UICtrlRef.PanelEncounterEnemy;
             var sequence            = panelEncounterEnemy.Display(SaveDataT.AssetDataT);
-            sequence.onComplete += () => {
-                // CurRoleActionWorkflow.ReStartWorkflow();
-                DungeonEvent_EncounterEnemyCtrl.I.Init(this);
-                panelEncounterEnemy.Hide();
-            };
+        }
 
-            void createRoles() {
-                for (int i = 0; i < SaveData_Player.I.AllUsedTeamRoles.Count; i++) {
-                    SaveData_Role playerSaveDataRole = SaveData_Player.I.AllUsedTeamRoles[i];
-                    if (playerSaveDataRole == null) {
-                        continue;
-                    }
-
-                    var roleCtrl = RoleFactory.CreateRoleCtrl(playerSaveDataRole, true);
-                    roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.PlayerLocationTrans[i]);
-                    roleCtrl.transform.ResetLocalTrans();
-                    DungeonEvent_EncounterEnemyCtrl.I.AllPlayerRoles.Add(roleCtrl);
+        public void CreateRoles() {
+            List<SaveData_Role> roles = new List<SaveData_Role>();
+            foreach (var assetDataRole in GameCommonAsset.I.DefaultPlayerData.AllTeamRoles) {
+                roles.Add(RoleFactory.CreateSaveData(assetDataRole));
+            }
+            for (int i = 0; i < roles.Count; i++) {
+                SaveData_Role playerSaveDataRole = roles[i];
+                if (playerSaveDataRole == null) {
+                    continue;
                 }
 
-                for (int i = 0; i < SaveDataT.AssetDataT.Enemies.Count; i++) {
-                    var curEnemyAssetData = SaveDataT.AssetDataT.Enemies[i];
-                    var roleCtrl          = RoleFactory.CreateRoleCtrl(curEnemyAssetData, false);
-                    roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.EnemyLocationTrans[i]);
-                    roleCtrl.transform.ResetLocalTrans();
-                    DungeonEvent_EncounterEnemyCtrl.I.AllEnemyRoles.Add(roleCtrl);
-                }
+                var roleCtrl = RoleFactory.CreateRoleCtrl(playerSaveDataRole, true);
+                roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.PlayerLocationTrans[i]);
+                roleCtrl.transform.ResetLocalTrans();
+                DungeonEvent_EncounterEnemyCtrl.I.AllPlayerRoles.Add(roleCtrl);
+            }
+
+            for (int i = 0; i < SaveDataT.AssetDataT.Enemies.Count; i++) {
+                var curEnemyAssetData = SaveDataT.AssetDataT.Enemies[i];
+                var roleCtrl          = RoleFactory.CreateRoleCtrl(curEnemyAssetData, false);
+                roleCtrl.transform.SetParent(DungeonEvent_EncounterEnemyCtrl.I.EnemyLocationTrans[i]);
+                roleCtrl.transform.ResetLocalTrans();
+                DungeonEvent_EncounterEnemyCtrl.I.AllEnemyRoles.Add(roleCtrl);
             }
         }
 
@@ -94,14 +93,6 @@ namespace Dungeon.EncounterEnemy {
             // foreach (RoleCtrl aliveRole in BattleSceneCtrl.I.EnemyRoleLocatorGroupCtrlRef.AllAliveRoles) {
             //     aliveRole.DestroySelf();
             // }
-        }
-
-        public void PlayerWin() {
-            Debug.Log("玩家赢了！");
-        }
-
-        public void PlayerFailure() {
-            Debug.Log("玩家输了！");
         }
 
         public SystemData_DungeonEvent_EncounterEnemy(SaveData_BaseDungeonEvent saveData) : base(saveData) { }

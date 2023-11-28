@@ -27,6 +27,10 @@ namespace NewRole {
                 AllBodyParts.Add(new RuntimeData_BodyPart(this, saveDataAllBodyPart));
             }
             
+            RoleEvents.OnTurnStart.AddListener(() => {
+                DrawCards();
+            });
+            
             RoleEvents.OnTurnEnd.AddListener(() => {
                 CardBag.MoveAllHandCardsToUsedPile();
             });
