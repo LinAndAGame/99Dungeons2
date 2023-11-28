@@ -9,5 +9,9 @@ namespace MyGameUtility.UI {
         public virtual void Hide() {
             this.gameObject.SetActive(false);
         }
+
+        public virtual void DestroySelf() {
+            
+        }
     }
 }

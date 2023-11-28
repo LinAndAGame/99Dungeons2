@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using MyGameExpand;
 using MyGameUtility;
 using MyGameUtility.Location;
 using TMPro;
@@ -22,6 +23,11 @@ namespace Card {
             LocalizationUtility.LocalizedStringTable.TableChanged += value => {
                 RefreshUI();
             };
+            ValueParentTrans.DestroyAllChildren();
+            foreach (var roleValue in ComOwner.RuntimeDataCard.AllRoleValues) {
+                var ins = Instantiate(GameCommonAsset.I.ComRoleValuePrefab, ValueParentTrans);
+                ins.RefreshUI(roleValue);
+            }
             RefreshUI();
         }
 
@@ -31,11 +37,6 @@ namespace Card {
             TMP_CardLabels.text            = StringUtility.Connect(",", assetData.CardLabels.Select(data => data.ToString()).ToArray());
             TMP_CardEffectDescription.text = assetData.Description.Replace("#",assetData.MainCardEffect.RoleValueType.GetLocalizedString());
             SR_Card.sprite                 = assetData.CardSprite;
-            
-            foreach (var roleValue in ComOwner.RuntimeDataCard.AllRoleValues) {
-                var ins = Instantiate(GameCommonAsset.I.ComRoleValuePrefab, ValueParentTrans);
-                ins.RefreshUI(roleValue);
-            }
         }
 
         public void SetLayer(int index) {

@@ -17,6 +17,10 @@ namespace NewRole {
 
         private Tween _Tween;
 
+        public void Init() {
+            Hide();
+        }
+
         public void RefreshUI(RandomEventData randomEventData) {
             TMP_RandomEventName.text = randomEventData.EventName;
 
@@ -35,6 +39,15 @@ namespace NewRole {
             foreach (var graphic in AllGraphics) {
                 seq.Insert(0, graphic.DOFade(0, HideDuration));
             }
+
+            seq.AppendCallback(() => {
+                Hide();
+            });
+        }
+
+        public override void DestroySelf() {
+            base.DestroySelf();
+            _Tween.Kill();
         }
     }
 }

@@ -33,7 +33,11 @@ namespace NewRole {
             foreach (var baseComponent in this.GetComponents<BaseComponent<RoleCtrl>>()) {
                 baseComponent.DestroySelf();
             }
-            Destroy(this.gameObject);
+
+            DungeonEvent_EncounterEnemyCtrl.I.AllPlayerRoles.Remove(this);
+            DungeonEvent_EncounterEnemyCtrl.I.AllEnemyRoles.Remove(this);
+            
+            Destroy(this.gameObject, 3);
         }
 
         public void Death() {

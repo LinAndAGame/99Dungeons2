@@ -21,21 +21,6 @@ namespace NewRole {
                 var ins = Instantiate(GameCommonAsset.I.ComRoleDataValueChangerPrefab, ValueChangerParentTrans);
                 ins.RefreshUI(roleValueChanger);
             }
-
-            if (runtimeDataBodyPart.IsDisability) {
-                SetAsDisabilityStyle();
-            }
-            else {
-                SetAsNormalStyle();
-            }
-        }
-
-        public void SetAsNormalStyle() {
-            this.transform.localEulerAngles = Vector3.zero;
-        }
-
-        public void SetAsDisabilityStyle() {
-            this.transform.localEulerAngles = new Vector3(0, 180, 0);
         }
     }
 }

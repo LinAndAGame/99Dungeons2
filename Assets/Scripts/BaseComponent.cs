@@ -10,7 +10,7 @@ public class BaseComponent<T> : MonoBehaviour {
         ComOwner = comOwner;
     }
 
-    public void DestroySelf() {
+    public virtual void DestroySelf() {
         CC.Clear();
     }
 }

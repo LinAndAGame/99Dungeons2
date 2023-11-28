@@ -12,6 +12,7 @@ namespace NewRole {
             
             handCard.CreateRandomBag();
             handCard.RandomBag.RefreshValue(handCard.MainCardEffect.SaveData.AssetData.RoleValueType, handCard.GetUsedRoleValue().CurrentValue.GetValue(), 0);
+            handCard.RandomBag.AddRandomValueToResult();
             var randomValue = handCard.GetRandomBagResult();
             
             handCard.RunEffect(randomValue.Value, targetRole);

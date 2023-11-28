@@ -23,6 +23,7 @@ namespace NewRole {
             TMP_RoleName.text = _RuntimeDataRole.SaveData.AssetData.RoleName;
 
             RefreshUI();
+            PanelRandomEvent.Init();
             _RuntimeDataRole.Hp.OnAnyValueChangedAfter.AddListener(RefreshHp);
             _RuntimeDataRole.BuffSystem.OnBuffListChanged.AddListener(RefreshBuff);
         }
@@ -44,6 +45,11 @@ namespace NewRole {
                 var buffIns = Instantiate(GameCommonAsset.I.ContainerBuffPrefab, BuffParent);
                 buffIns.RefreshUI(baseBuff);
             }
+        }
+
+        public override void DestroySelf() {
+            base.DestroySelf();
+            PanelRandomEvent.DestroySelf();
         }
     }
 }

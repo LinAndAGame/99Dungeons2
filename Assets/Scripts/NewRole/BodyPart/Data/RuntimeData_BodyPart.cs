@@ -33,7 +33,7 @@ namespace NewRole {
         /// 进入伤残状态
         /// </summary>
         public void Disability() {
-            if (SaveData.IsDisability == false) {
+            if (SaveData.IsDisability) {
                 return;
             }
             
@@ -49,7 +49,7 @@ namespace NewRole {
         /// 从伤残状态恢复
         /// </summary>
         public void Recovery() {
-            if (SaveData.IsDisability == true) {
+            if (SaveData.IsDisability == false) {
                 return;
             }
             

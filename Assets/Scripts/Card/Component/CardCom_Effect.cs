@@ -26,7 +26,7 @@ namespace Card {
 
         public void SetAsNormalStyle() {
             HighlightEffectRef.SetHighlighted(false);
-            this.transform.position.SetZ(_OriginalZ);
+            this.transform.position = this.transform.position.SetZ(_OriginalZ);
         }
 
         public void SetAsCanUseStyle() {
@@ -37,7 +37,7 @@ namespace Card {
         public void SetAsTouchingStyle() {
             HighlightEffectRef.ProfileLoad(TouchingHighlightProfile);
             HighlightEffectRef.SetHighlighted(true);
-            this.transform.position.SetZ(-2);
+            this.transform.position = this.transform.position.SetZ(-2);
         }
 
         public void Update() {

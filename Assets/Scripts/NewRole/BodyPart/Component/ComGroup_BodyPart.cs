@@ -32,23 +32,21 @@ namespace NewRole {
             
             runtimeDataBodyPart.OnDisabilityStateChanged.AddListener(data => {
                 if (data == false) {
-                    Disability();
+                    Recovery();
                 }
                 else {
-                    Recovery();
+                    Disability();
                 }
             });
         }
 
         private void Disability() {
             _CC.Clear();
-            RuntimeData.Disability();
-            ComBodyPartUIRef.SetAsDisabilityStyle();
+            this.transform.localEulerAngles = new Vector3(0, 180, 0);
         }
 
         private void Recovery() {
-            RuntimeData.Recovery();
-            ComBodyPartUIRef.SetAsNormalStyle();
+            this.transform.localEulerAngles = Vector3.zero;
             RegisteMouseTouchEffect();
         }
 
