@@ -11,6 +11,7 @@ public class BaseComponent<T> : MonoBehaviour {
     }
 
     public virtual void DestroySelf() {
+        this.enabled = false;
         CC.Clear();
     }
 }

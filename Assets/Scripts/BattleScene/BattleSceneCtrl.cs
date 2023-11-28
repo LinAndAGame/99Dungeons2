@@ -28,10 +28,6 @@ namespace BattleScene {
             // DisplayUIToSelectNextDungeonEvent();
         }
 
-        public T GetDungeonEventCallBack<T>() where T : SystemData_BaseDungeonEvent {
-            return CurDungeonProcess.GetDungeonEventCallBack<T>();
-        }
-
         public void DisplayUIToSelectNextDungeonEvent() {
             var allPossibleDungeonEvents = CurDungeonProcess.GetAllPossibleDungeonEvent();
             var sequence = UICtrlRef.PanelChooseNextEvent.Display(allPossibleDungeonEvents);

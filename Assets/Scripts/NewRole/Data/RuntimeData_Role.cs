@@ -8,9 +8,10 @@ namespace NewRole {
         public RuntimeData_RoleValueCollection RoleValueCollectionInfo;
         public MinMaxValueFloat                Hp;
         public RuntimeData_CardBag             CardBag;
-        public List<RuntimeData_BodyPart>      AllBodyParts = new List<RuntimeData_BodyPart>();
-        public RuntimeData_RoleEvents          RoleEvents   = new RuntimeData_RoleEvents();
-        public BaseBuffSystem                  BuffSystem   = new BuffSystemDefault();
+        public List<RuntimeData_BodyPart>      AllBodyParts                = new List<RuntimeData_BodyPart>();
+        public RuntimeData_RoleEvents          RoleEvents                  = new RuntimeData_RoleEvents();
+        public BaseBuffSystem                  BuffSystem                  = new BuffSystemDefault();
+        public int                             RemainingRandomBagHelpCount = 1;
 
         public int DrawCount => RoleValueCollectionInfo.Perception.CurrentValue;
 
@@ -25,6 +26,10 @@ namespace NewRole {
             foreach (var saveDataAllBodyPart in saveData.AllBodyParts) {
                 AllBodyParts.Add(new RuntimeData_BodyPart(this, saveDataAllBodyPart));
             }
+            
+            RoleEvents.OnTurnEnd.AddListener(() => {
+                CardBag.MoveAllHandCardsToUsedPile();
+            });
         }
 
         public void DrawCards() {
