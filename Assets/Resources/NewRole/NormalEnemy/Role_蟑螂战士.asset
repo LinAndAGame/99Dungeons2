@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433d27af1e334f828f583786aa847bc3, type: 3}
+  m_Name: "Role_\u87D1\u8782\u6218\u58EB"
+  m_EditorClassIdentifier: 
+  _ResourcePath: "NewRole/NormalEnemy/Role_\u87D1\u8782\u6218\u58EB"
+  RoleName: "\u87D1\u8782\u6218\u58EB"
+  SpriteRole: {fileID: -6497069345201802358, guid: 093954b8e846bb745811480d258b5e19, type: 3}
+  Hp: 20
+  AllDefaultAssetDataCards:
+  - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}
+  AssetDataRoleValueCollection: {fileID: 11400000, guid: b3a828e2aea73c54fae1cb9c1bcc9ff0, type: 2}
+  AllAssetDataBodyParts: []

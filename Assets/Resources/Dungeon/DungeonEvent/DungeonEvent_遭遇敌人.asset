@@ -19,6 +19,6 @@ MonoBehaviour:
   StartEventContent: "\u4F60\u906D\u9047\u4E86\u4E00\u4E9B\u654C\u4EBA"
   EnemyLevel: 1
   Enemies:
-  - {fileID: 11400000, guid: 1a38bfc5e344e114fa83120a91a0a76f, type: 2}
-  - {fileID: 11400000, guid: 1a38bfc5e344e114fa83120a91a0a76f, type: 2}
+  - {fileID: 11400000, guid: 4e348f8805131f34998f5011b106ae28, type: 2}
+  - {fileID: 11400000, guid: 39176a0d5101b634ab3f6a336bf2e04d, type: 2}
   - {fileID: 11400000, guid: 1a38bfc5e344e114fa83120a91a0a76f, type: 2}

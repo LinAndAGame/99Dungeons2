@@ -7,10 +7,6 @@ namespace MyGameUtility {
         private string _ResourcePath;
         public string ResourcePath => _ResourcePath;
 
-        private void OnEnable() {
-            RefreshResourcePath();
-        }
-
         private void OnValidate() {
             RefreshResourcePath();
         }

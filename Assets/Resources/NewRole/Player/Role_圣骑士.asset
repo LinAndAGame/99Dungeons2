@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ResourcePath: "NewRole/Player/Role_\u5723\u9A91\u58EB"
   RoleName: "\u5723\u9A91\u58EB"
-  SpriteRole: {fileID: 7198885617343061750, guid: af75389decf709d42bfcb7eb0c91a2b8, type: 3}
+  SpriteRole: {fileID: -4673042933797132616, guid: af75389decf709d42bfcb7eb0c91a2b8, type: 3}
   Hp: 20
   AllDefaultAssetDataCards:
   - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}
-  - {fileID: 11400000, guid: b35b2fe0d2ef6a540877c639ec8c53b8, type: 2}
+  - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}
   - {fileID: 11400000, guid: b35b2fe0d2ef6a540877c639ec8c53b8, type: 2}
   AssetDataRoleValueCollection: {fileID: 11400000, guid: 344276de0860d3e4baf2ef6cd0faf764, type: 2}
   AllAssetDataBodyParts:

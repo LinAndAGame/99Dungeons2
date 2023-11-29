@@ -4,6 +4,14 @@ using MyGameExpand;
 
 namespace NewRole {
     public class RoleCom_EnemyPushCard : BaseComponent<RoleCtrl> {
+        public override void Init(RoleCtrl comOwner) {
+            base.Init(comOwner);
+            
+            ComOwner.RuntimeDataRole.Hp.OnCurValueEqualsMin.AddListener(() => {
+                ComOwner.RuntimeDataRole.RoleCtrlOwner.Death();
+            });
+        }
+
         public Sequence RunAi() {
             Sequence seq = DOTween.Sequence();
             ComOwner.RuntimeDataRole.CardBag.DrawRandomToHand();

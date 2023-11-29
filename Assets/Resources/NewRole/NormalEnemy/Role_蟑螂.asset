@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ResourcePath: "NewRole/NormalEnemy/Role_\u87D1\u8782"
   RoleName: "\u87D1\u8782"
-  SpriteRole: {fileID: -6497069345201802358, guid: 093954b8e846bb745811480d258b5e19, type: 3}
+  SpriteRole: {fileID: -4383216852025641733, guid: d84854cb5ca6eea4984cf7dbdafa3c6b, type: 3}
   Hp: 20
   AllDefaultAssetDataCards:
   - {fileID: 11400000, guid: 1f508e0972714df41b0ba2b3a5b75428, type: 2}

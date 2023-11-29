@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace MyGameUtility {
     public static class OtherUtility {
@@ -32,6 +35,7 @@ namespace MyGameUtility {
                 return string.Empty;
             }
 
+#if UNITY_EDITOR
             string assetPath = AssetDatabase.GetAssetPath(obj);
             if (assetPath.StartsWith(ResourceFolderPrefixPath)) {
                 string extension = System.IO.Path.GetExtension(assetPath);
@@ -39,6 +43,7 @@ namespace MyGameUtility {
                 assetPath = assetPath.Replace($"{extension}", string.Empty);
                 return assetPath;
             }
+#endif
 
             return string.Empty;
         }

@@ -51,11 +51,11 @@ namespace Utility {
             return AllAssetDataRoleValues.Find(data => data.RoleValueType == roleValueType);
         }
 
-
+#if UNITY_EDITOR
         [Button]
         private void RefreshAssetDataPath() {
             foreach (string guid in AssetDatabase.FindAssets("*", new string[]{"Assets/Resources"})) {
-                var path = AssetDatabase.GUIDToAssetPath(guid);
+                var path      = AssetDatabase.GUIDToAssetPath(guid);
                 var assetData = AssetDatabase.LoadAssetAtPath<BaseAssetData>(path);
                 if (assetData == null) {
                     continue;
@@ -64,5 +64,6 @@ namespace Utility {
                 assetData.RefreshResourcePath();
             }
         }
+#endif
     }
 }

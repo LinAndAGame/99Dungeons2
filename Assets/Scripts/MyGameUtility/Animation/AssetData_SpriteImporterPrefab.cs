@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using MyGameExpand;
 using Sirenix.OdinInspector;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace MyGameUtility {
     public class AssetData_SpriteImporterPrefab : ScriptableObject {
@@ -12,6 +15,7 @@ namespace MyGameUtility {
         public List<ImagePathInfo> AllImagePathInfos = new List<ImagePathInfo>();
 
         public void SetPrefab(GameObject prefabObject) {
+#if UNITY_EDITOR
             PrefabObject = prefabObject;
 
             HashSet<Transform> ignoredTrans = new HashSet<Transform>();
@@ -31,6 +35,7 @@ namespace MyGameUtility {
                     AllImagePathInfos.Add(imagePathInfo);
                 }
             }
+#endif
         }
         
         [Serializable]

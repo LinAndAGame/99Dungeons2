@@ -13,6 +13,7 @@ namespace BattleScene.UI {
         public Button Btn_DrawCard;
         public Button Btn_EndTurn;
 
+        
         public Panel_Result          PanelResult;
         public Panel_Round           PanelRound;
         public Panel_EncounterEnemy  PanelEncounterEnemy;

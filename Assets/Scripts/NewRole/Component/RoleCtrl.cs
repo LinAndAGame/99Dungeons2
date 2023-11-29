@@ -37,7 +37,7 @@ namespace NewRole {
                 baseComponent.DestroySelf();
             }
             
-            Destroy(this.gameObject, 3);
+            Destroy(this.gameObject, 0.5f);
         }
 
         public void Death() {
