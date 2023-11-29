@@ -35,7 +35,9 @@ namespace Card {
             var assetData = ComOwner.RuntimeDataCard.SaveData.AssetData;
             TMP_CardName.text              = assetData.CardName;
             TMP_CardLabels.text            = StringUtility.Connect(",", assetData.CardLabels.Select(data => data.ToString()).ToArray());
-            TMP_CardEffectDescription.text = assetData.Description.Replace("#",assetData.MainCardEffect.RoleValueType.GetLocalizedString());
+            if (assetData.MainCardEffect != null) {
+                TMP_CardEffectDescription.text = assetData.Description.Replace("#",assetData.MainCardEffect.RoleValueType.GetLocalizedString());
+            }
             SR_Card.sprite                 = assetData.CardSprite;
         }
 

@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllTeamRoles:
   - {fileID: 11400000, guid: 9e74e94bb26a6ac4ca1b6c94c4be1bcd, type: 2}
+  - {fileID: 11400000, guid: 3e80734914b61a647b8f1a475708a148, type: 2}

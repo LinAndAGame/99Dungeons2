@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ResourcePath: "Card/Card/\u666E\u901A\u4EBA\u5361\u724C"
   CardName: "\u666E\u901A\u4EBA\u5361\u724C"
-  AssetDataCardSelectObject: {fileID: 11400000, guid: 6b040d829e34aca4f9da2ec360d8129d, type: 2}
+  AssetDataCardSelectObject: {fileID: 11400000, guid: 58b16de9fb704484e8256110d90977d4, type: 2}
   CardSprite: {fileID: 0}
   CardLabels: 00000000
   MainCardEffect: {fileID: 11400000, guid: 9a716bc896aebae408331ec0e5427dec, type: 2}
   AllAdditionalCardEffects: []
-  Description: "\u666E\u901A\u4EBA\u5361\u724C"
+  Description: "\u653B\u51FB"
   AllRoleValues:
   - RoleValueType: 0
     Value: 1
+  AllRandomValueEffect: []

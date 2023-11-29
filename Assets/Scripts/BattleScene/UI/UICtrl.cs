@@ -13,6 +13,7 @@ namespace BattleScene.UI {
         public Button Btn_DrawCard;
         public Button Btn_EndTurn;
 
+        public Panel_Result          PanelResult;
         public Panel_Round           PanelRound;
         public Panel_EncounterEnemy  PanelEncounterEnemy;
         public Panel_Lounge          PanelLounge;
@@ -41,14 +42,17 @@ namespace BattleScene.UI {
             
             Btn_EndTurn.onClick.AddListener(() => {
                 DungeonEvent_EncounterEnemyCtrl.I.EnterEnemyTurn();
+                DungeonEvent_EncounterEnemyCtrl.I.CardLayoutCtrlRef.RefreshCard();
             });
             
+            PanelEncounterEnemy.Init();
             PanelRound.Init();
             PanelDungeonEventReturnTown.Init();
             PanelLounge.Init();
             PanelNotTouchBoundary.Init();
             PanelRewardGameSucceed.Init();
             PanelRewardGameFailure.Init();
+            PanelResult.Init();
         }
     }
 }

@@ -25,7 +25,9 @@ namespace Equipment {
                 AllRoleValueChangers.Add(new SaveData_RoleValueChanger(roleValueChanger));
             }
 
-            SaveDataCard = new SaveData_Card(assetData.Card);
+            if (assetData.Card != null) {
+                SaveDataCard = new SaveData_Card(assetData.Card);
+            }
         }
     }
 }

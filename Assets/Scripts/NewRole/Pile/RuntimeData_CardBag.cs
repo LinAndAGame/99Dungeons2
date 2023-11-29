@@ -59,7 +59,7 @@ namespace NewRole {
 
             for (var i = HandPile.AllCards.Count - 1; i >= 0; i--) {
                 var runtimeDataCard = HandPile.AllCards[i];
-                TryMoveCardFromTo(runtimeDataCard, HandPile, UsedPile);
+                UseHandCardToUsedPile(runtimeDataCard);
             }
         }
         

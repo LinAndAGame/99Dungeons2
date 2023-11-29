@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using BattleScene;
 using BattleScene.RoleCards;
 using Card;
 using MyGameUtility;
@@ -85,8 +86,6 @@ namespace Dungeon.EncounterEnemy {
 
         public void Init(SystemData_DungeonEvent_EncounterEnemy systemData) {
             SystemData = systemData;
-
-            StartNewTurn();
         }
 
         public List<RoleCtrl> GetAllOtherRoles(RoleCtrl fromRole) {
@@ -112,10 +111,10 @@ namespace Dungeon.EncounterEnemy {
 
         public void StartNewTurn() {
             FightRound++;
-            foreach (RoleCtrl playerRole in AllPlayerRoles) {
-                playerRole.RuntimeDataRole.DrawCards();
-            }
             OnPlayerTurnStarted.Invoke();
+            foreach (RoleCtrl playerRole in AllPlayerRoles) {
+                playerRole.RuntimeDataRole.RoleEvents.OnTurnStart.Invoke();
+            }
         }
 
         public void RemoveRoleCtrl(RoleCtrl roleCtrl) {
@@ -124,9 +123,13 @@ namespace Dungeon.EncounterEnemy {
 
             if (AllPlayerRoles.IsNullOrEmpty()) {
                 Debug.Log("战斗失败！");
+                BattleSceneCtrl.I.UICtrlRef.PanelResult.Display();
+                BattleSceneCtrl.I.UICtrlRef.PanelResult.RefreshUI(false);
             }
             else if (AllEnemyRoles.IsNullOrEmpty()) {
                 Debug.Log("战斗胜利！");
+                BattleSceneCtrl.I.UICtrlRef.PanelResult.Display();
+                BattleSceneCtrl.I.UICtrlRef.PanelResult.RefreshUI(true);
             }
 
             if (CurControlledRoleCtrl == roleCtrl) {

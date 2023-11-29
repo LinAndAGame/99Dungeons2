@@ -19,7 +19,7 @@ MonoBehaviour:
   CardLabels: 00000000
   MainCardEffect: {fileID: 11400000, guid: 9a716bc896aebae408331ec0e5427dec, type: 2}
   AllAdditionalCardEffects: []
-  Description: "\u653B\u51FB\u76EE\u6807\u3010#\u3011\u4F24\u5BB3"
+  Description: "\u653B\u51FB\u76EE\u6807\u3010#\u3011\u4F24\u5BB3\uFF0C\u9644\u52A04\u5C42\u4E2D\u6BD2"
   AllRoleValues:
   - RoleValueType: 0
     Value: 2

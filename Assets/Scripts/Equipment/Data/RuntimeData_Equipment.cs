@@ -26,6 +26,10 @@ namespace Equipment {
         }
 
         public void SetCardToRoleHandPile() {
+            if (SaveData.SaveDataCard == null) {
+                return;
+            }
+            
             var card = new RuntimeData_Card(BodyPartRef.RoleRef, SaveData.SaveDataCard);
             card.IsTempCard = true;
             BodyPartRef.RoleRef.CardBag.HandPile.AddCard(card);
