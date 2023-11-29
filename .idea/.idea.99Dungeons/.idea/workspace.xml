@@ -5,66 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45d7ef5d-3f09-454f-82d4-4d02a765c22b" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Result.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Result/Panel_Result.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Result/Panel_Result.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Card.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Card/Sprite-0004-Sheet 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Card/Sprite-0004-Sheet 1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Card/Sprite-0004-Sheet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Card/Sprite-0004-Sheet.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0001.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0001.aseprite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0002.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0002.aseprite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0003.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0003.aseprite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0004.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Sprite-0004.aseprite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/ren.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/ren.aseprite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/shilaimu.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/shilaimu.aseprite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/zhanglang_2.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/zhanglang_2.aseprite.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/zhangliang_1.aseprite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/zhangliang_1.aseprite.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.99Dungeons/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Coffee/UIExtensions/UIEffect/UIEffect_Demo_2018.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Easy Save 3/Resources/ES3/ES3GlobalReferences.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Card/Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Role/RoleValue/Com_RoleValue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Role/RoleValue/Com_RoleValue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/Card/AttackCard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/AttackCard.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/Card/EquipmentCard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/EquipmentCard.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/Card/HealCard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/HealCard.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Card/Card/普通人卡牌.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Card/Card/普通人卡牌.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Equipment/大砍刀.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/大砍刀.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Equipment/头盔.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/头盔.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Equipment/手电筒.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/手电筒.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Equipment/护体神甲.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/护体神甲.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Equipment/魔法项链.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Equipment/魔法项链.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/NormalEnemy/Role_蟑螂.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/NormalEnemy/Role_蟑螂.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_圣骑士.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_普通人.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/Player/Role_普通人.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值_圣骑士.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/NewRole/RoleValueCollection/角色数值_圣骑士.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Player/玩家默认数据.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Player/玩家默认数据.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/NewBattleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterEnemy/Panel_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/Dungeon/DungeonEvent_EncounterEnemy/Panel_EncounterEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/UICtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BattleScene/UI/UICtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCom_Model.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCom_Model.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card/Component/CardCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/Component/DungeonEvent_EncounterEnemyCtrl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dungeon/DungeonEvent/ClassLibrary/EncounterEnemy/SystemData_DungeonEvent_EncounterEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Equipment/Data/RuntimeData_Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Equipment/Data/RuntimeData_Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Equipment/Data/SaveData_Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Equipment/Data/SaveData_Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/StandaloneFileBrowser.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MyGameUtility/com.coffee.uieffect_v3.2.0.unitypackage.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_Role.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Data/RuntimeData_RoleEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NewRole/Pile/RuntimeData_CardBag.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,6 +179,7 @@
       <workItem from="1700971393935" duration="8750000" />
       <workItem from="1701090096763" duration="5401000" />
       <workItem from="1701179059477" duration="4467000" />
+      <workItem from="1701259531918" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="合并">
       <created>1699320902205</created>
